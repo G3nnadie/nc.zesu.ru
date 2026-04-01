@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Превентивная медицина — Немецкая семейная клиника</title>
+
+    <!-- Local Fonts -->
+    <link rel="stylesheet" href="css/fonts.css">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/preventive-medicine/style.css">
+</head>
+
+<body class="preventive-page">
+    <!-- ============================================
+         HEADER / MENU (3 уровня)
+    ============================================= -->
+    <header class="header" id="header">
+        <!-- Mobile Header -->
+        <div class="mobile-header">
+            <a href="/" class="mobile-logo">
+                <img src="assets/images/logo.svg" alt="Немецкая семейная клиника">
+            </a>
+            <div class="mobile-header-actions">
+                <a href="tel:+78124323232" class="mobile-header-icon" aria-label="Позвонить">
+                    <img src="assets/images/icons/icon-phone-mob.svg" alt="Телефон">
+                </a>
+                <a href="#" class="mobile-header-icon" aria-label="Поиск">
+                    <img src="assets/images/icons/icon-search-mob.svg" alt="Поиск">
+                </a>
+                <a href="#" class="mobile-header-icon" aria-label="Личный кабинет">
+                    <img src="assets/images/icons/icon-user-mob.svg" alt="Личный кабинет">
+                </a>
+                <a href="#" class="mobile-header-icon" aria-label="Настройки">
+                    <img src="assets/images/icons/icon-star-mob.svg" alt="Настройки">
+                </a>
+                <button class="menu-toggle" type="button" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" role="dialog" aria-modal="true" aria-label="Мобильное меню">
+            <div class="mobile-menu-panel">
+                <!-- Шапка меню -->
+                <div class="mobile-menu-header">
+                    <a href="/" class="mobile-menu-logo">
+                        <img src="assets/images/logo.svg" alt="Немецкая семейная клиника">
+                    </a>
+                    <div class="mobile-menu-header-actions">
+                        <a href="tel:+78124323232" class="mobile-menu-icon" aria-label="Позвонить">
+                            <img src="assets/images/icons/icon-phone-mob.svg" alt="Телефон">
+                        </a>
+                        <a href="#" class="mobile-menu-icon" aria-label="Поиск">
+                            <img src="assets/images/icons/icon-search-mob.svg" alt="Поиск">
+                        </a>
+                        <a href="#" class="mobile-menu-icon" aria-label="Личный кабинет">
+                            <img src="assets/images/icons/icon-user-mob.svg" alt="Личный кабинет">
+                        </a>
+                        <a href="#" class="mobile-menu-icon" aria-label="Настройки">
+                            <img src="assets/images/icons/icon-star-mob.svg" alt="Настройки">
+                        </a>
+                        <button class="mobile-menu-close" type="button" aria-label="Закрыть меню">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 5L5 15M5 5L15 15" stroke="currentColor" stroke-width="1"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Навигация -->
+                <nav class="mobile-menu-nav" role="navigation">
+                    <!-- Услуги (аккордеон) -->
+                    <div class="mobile-nav-item">
+                        <button class="mobile-nav-toggle" type="button" aria-expanded="false">
+                            <span>Услуги</span>
+                            <svg class="mobile-nav-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div class="mobile-nav-submenu">
+                            <a href="#">Для взрослых</a>
+                            <a href="#">Для детей</a>
+                            <a href="#">Стоматология</a>
+                            <a href="#">Стационар и операции</a>
+                            <a href="#">Центры компетенций</a>
+                            <a href="#">Аптека</a>
+                        </div>
+                    </div>
+
+                    <!-- Врачи (простая ссылка) -->
+                    <a href="#" class="mobile-nav-link">Врачи</a>
+
+                    <!-- Программы (аккордеон) -->
+                    <div class="mobile-nav-item">
+                        <button class="mobile-nav-toggle" type="button" aria-expanded="false">
+                            <span>Программы</span>
+                            <svg class="mobile-nav-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div class="mobile-nav-submenu">
+                            <a href="#">Для взрослых</a>
+                            <a href="#">Для детей</a>
+                            <a href="#">Будущим мамам</a>
+                            <a href="#">Для бизнеса</a>
+                            <a href="#">Семейный депозит</a>
+                        </div>
+                    </div>
+
+                    <!-- Инфо (аккордеон) -->
+                    <div class="mobile-nav-item">
+                        <button class="mobile-nav-toggle" type="button" aria-expanded="false">
+                            <span>Инфо</span>
+                            <svg class="mobile-nav-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div class="mobile-nav-submenu">
+                            <a href="about.html">О компании</a>
+                            <a href="#">Награды и рейтинги</a>
+                            <a href="#">Интерьеры</a>
+                            <a href="#">Отзывы</a>
+                            <a href="#">Видео</a>
+                            <a href="#">Карьера</a>
+                            <a href="#">Правовая информация</a>
+                            <a href="#">Налоговый вычет</a>
+                            <a href="#">Информация для пациентов</a>
+                            <a href="#">Подготовка к исследованиям</a>
+                            <a href="#">Памятки</a>
+                            <a href="#">Лечение в кредит</a>
+                            <a href="#">Подарочный сертификат</a>
+                        </div>
+                    </div>
+
+                    <!-- Новости (аккордеон) -->
+                    <div class="mobile-nav-item">
+                        <button class="mobile-nav-toggle" type="button" aria-expanded="false">
+                            <span>Новости</span>
+                            <svg class="mobile-nav-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div class="mobile-nav-submenu">
+                            <a href="#">Новости</a>
+                            <a href="#">Статьи</a>
+                            <a href="#">Видео</a>
+                            <a href="#">Для врачей</a>
+                        </div>
+                    </div>
+
+                    <!-- Контакты (простая ссылка) -->
+                    <a href="#" class="mobile-nav-link">Контакты</a>
+                </nav>
+
+                <!-- Направления -->
+                <div class="mobile-menu-departments">
+                    <a href="#" class="mobile-dept-link mobile-dept-pediatrics">
+                        <img src="assets/images/icons/dept-pediatrics.svg" alt="" width="16" height="18">
+                        <span>Педиатрия</span>
+                    </a>
+                    <a href="#" class="mobile-dept-link mobile-dept-ophthalmology">
+                        <img src="assets/images/icons/dept-ophthalmology.svg" alt="" width="16" height="18">
+                        <span>Экспертная офтальмология</span>
+                    </a>
+                    <a href="#" class="mobile-dept-link mobile-dept-preventive">
+                        <img src="assets/images/icons/dept-preventive.svg" alt="" width="16" height="18">
+                        <span>Превентивная медицина</span>
+                    </a>
+                    <a href="#" class="mobile-dept-link mobile-dept-dentistry">
+                        <img src="assets/images/icons/dept-dentistry.svg" alt="" width="16" height="18">
+                        <span>Стоматология</span>
+                    </a>
+                    <a href="#" class="mobile-dept-link mobile-dept-aesthetic">
+                        <img src="assets/images/icons/dept-aesthetic.svg" alt="" width="16" height="18">
+                        <span>Эстетическая медицина</span>
+                    </a>
+                </div>
+
+                <!-- Кнопки действий -->
+                <div class="mobile-menu-actions">
+                    <a href="#" class="mobile-menu-btn">Записаться на приём</a>
+                    <a href="#" class="mobile-menu-btn">Оплатить</a>
+                    <a href="#" class="mobile-menu-btn">Заказать звонок</a>
+                </div>
+
+                <!-- Контактная информация -->
+                <div class="mobile-menu-contacts">
+                    <a href="tel:+78124323232" class="mobile-menu-phone">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.8333 9.87V11.62C12.8339 11.7825 12.8007 11.9433 12.7357 12.0923C12.6707 12.2413 12.5751 12.3753 12.4553 12.4856C12.3355 12.596 12.1942 12.6802 12.0403 12.7326C11.8863 12.7851 11.7232 12.8045 11.5617 12.7894C9.76663 12.5939 8.04469 11.9783 6.52917 11.0015C5.11803 10.0996 3.92291 8.90449 3.02083 7.49335C2.04063 5.97092 1.42479 4.2404 1.23333 2.43835C1.21832 2.27733 1.23752 2.11484 1.28959 1.96136C1.34166 1.80789 1.42547 1.66693 1.53546 1.54728C1.64545 1.42763 1.77909 1.33201 1.92772 1.26661C2.07636 1.20122 2.2369 1.16743 2.39958 1.16765H4.14958C4.43063 1.16474 4.70299 1.26399 4.91538 1.44631C5.12776 1.62862 5.26558 1.88167 5.30333 2.16027C5.37417 2.71669 5.50802 3.26317 5.70222 3.78985C5.77972 3.99722 5.79461 4.22249 5.7451 4.43819C5.69559 4.65388 5.58366 4.85024 5.42316 5.0043L4.67444 5.75302C5.50342 7.20037 6.69963 8.39658 8.14698 9.22556L8.8957 8.47684C9.04976 8.31634 9.24612 8.20441 9.46181 8.1549C9.67751 8.10539 9.90278 8.12028 10.1101 8.19778C10.6368 8.39198 11.1833 8.52583 11.7397 8.59667C12.0222 8.63479 12.2784 8.77575 12.4611 8.99282C12.6439 9.20989 12.7405 9.48726 12.7333 9.77156L12.8333 9.87Z"
+                                stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <span>8 (812) 432-32-32 / 8 (812) 337-12-12</span>
+                    </a>
+                    <div class="mobile-menu-time">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.2" />
+                            <path d="M7 3.5V7L9.5 9.5" stroke="currentColor" stroke-width="1.2"
+                                stroke-linecap="round" />
+                        </svg>
+                        <span>с 07:30 до 22:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu Level 1 - Направления -->
+        <div class="menu-level-1">
+            <div class="menu-level-1-inner">
+                <a href="#" class="department-link department-pediatrics">
+                    <span class="dept-icon">
+                        <img src="assets/images/icons/dept-pediatrics.svg" alt="" width="16" height="18">
+                    </span>
+                    Педиатрия
+                </a>
+                <div class="dept-divider"></div>
+                <a href="#" class="department-link department-ophthalmology">
+                    <span class="dept-icon">
+                        <img src="assets/images/icons/dept-ophthalmology.svg" alt="" width="16" height="18">
+                    </span>
+                    Экспертная офтальмология
+                </a>
+                <div class="dept-divider"></div>
+                <a href="#" class="department-link department-preventive">
+                    <span class="dept-icon">
+                        <img src="assets/images/icons/dept-preventive.svg" alt="" width="16" height="18">
+                    </span>
+                    Превентивная медицина
+                </a>
+                <div class="dept-divider"></div>
+                <a href="#" class="department-link department-dentistry">
+                    <span class="dept-icon">
+                        <img src="assets/images/icons/dept-dentistry.svg" alt="" width="16" height="18">
+                    </span>
+                    Стоматология
+                </a>
+                <div class="dept-divider"></div>
+                <a href="#" class="department-link department-aesthetic">
+                    <span class="dept-icon">
+                        <img src="assets/images/icons/dept-aesthetic.svg" alt="" width="16" height="18">
+                    </span>
+                    Эстетическая медицина
+                </a>
+            </div>
+        </div>
+
+        <!-- Menu Level 2 - Контакты и поиск -->
+        <div class="menu-level-2">
+            <div class="menu-level-2-inner">
+                <div class="menu-level-2-left">
+                    <a href="tel:+78124323232" class="contact-link">
+                        <img src="assets/images/icons/icon-phone.svg" alt="" width="14" height="12">
+                        <span>8 (812) 432-32-32 / <span>8 (812) 337-12-12</span></span>
+                    </a>
+                    <div class="time-info">
+                        <img src="assets/images/icons/icon-clock.svg" alt="" width="12" height="12">
+                        <span>c 07:30 до 22:00</span>
+                    </div>
+                </div>
+                <div class="menu-search-box">
+                    <input type="text" class="menu-search-input" placeholder="Поиск">
+                    <img src="assets/images/icons/icon-search.svg" alt="" class="menu-search-icon" width="12"
+                        height="12">
+                </div>
+                <div class="menu-level-2-right">
+                    <a href="#" class="header-link">
+                        <img src="assets/images/icons/icon-star.svg" alt="" width="12" height="12">
+                        <span>Акции</span>
+                    </a>
+                    <a href="#" class="header-link">
+                        <img src="assets/images/icons/icon-user.svg" alt="" width="9" height="12">
+                        <span>Личный кабинет</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu Level 3 - Навигация -->
+        <div class="menu-level-3">
+            <div class="menu-level-3-inner">
+                <nav class="main-nav">
+                    <div class="nav-item-wrapper">
+                        <a href="#" class="nav-link nav-dropdown" data-dropdown="services">
+                            Услуги
+                            <svg class="nav-arrow" width="8" height="4" viewBox="0 0 9 5" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.5 0.5L4.49936 4.5L8.49881 0.5" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <div class="nav-dropdown-menu" id="dropdown-services">
+                            <a href="#">Для взрослых</a>
+                            <a href="#">Для детей</a>
+                            <a href="#">Стоматология</a>
+                            <a href="#">Стационар и операции</a>
+                        </div>
+                    </div>
+                    <div class="nav-item-wrapper">
+                        <a href="#" class="nav-link">Врачи</a>
+                    </div>
+                    <div class="nav-item-wrapper">
+                        <a href="#" class="nav-link nav-dropdown" data-dropdown="programs">
+                            Программы
+                            <svg class="nav-arrow" width="8" height="4" viewBox="0 0 9 5" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.5 0.5L4.49936 4.5L8.49881 0.5" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <div class="nav-dropdown-menu" id="dropdown-programs">
+                            <a href="#">Для взрослых</a>
+                            <a href="#">Для детей</a>
+                            <a href="#">Будущим мамам</a>
+                            <a href="#">Для бизнеса</a>
+                            <a href="#">Семейный депозит</a>
+                        </div>
+                    </div>
+                    <div class="nav-item-wrapper">
+                        <a href="#" class="nav-link nav-dropdown" data-dropdown="info">
+                            Инфо
+                            <svg class="nav-arrow" width="8" height="4" viewBox="0 0 9 5" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.5 0.5L4.49936 4.5L8.49881 0.5" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <div class="nav-dropdown-menu nav-dropdown-menu-wide" id="dropdown-info">
+                            <a href="about.html">О компании</a>
+                            <a href="#">Награды и рейтинги</a>
+                            <a href="#">Интерьеры</a>
+                            <a href="#">Отзывы</a>
+                            <a href="#">Видео</a>
+                            <a href="#">Карьера</a>
+                            <a href="#">Правовая информация, как получить услуги</a>
+                            <a href="#">Налоговый вычет</a>
+                            <a href="#">Информация для пациентов</a>
+                            <a href="#">Подготовка к диагностическим исследованиям</a>
+                            <a href="#">Памятки</a>
+                            <a href="#">Лечение в кредит</a>
+                            <a href="#">Подарочный сертификат</a>
+                        </div>
+                    </div>
+                    <div class="nav-item-wrapper">
+                        <a href="#" class="nav-link nav-dropdown" data-dropdown="news">
+                            Новости
+                            <svg class="nav-arrow" width="8" height="4" viewBox="0 0 9 5" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.5 0.5L4.49936 4.5L8.49881 0.5" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <div class="nav-dropdown-menu" id="dropdown-news">
+                            <a href="#">Новости</a>
+                            <a href="#">Статьи</a>
+                            <a href="#">Статьи для врачей</a>
+                        </div>
+                    </div>
+                    <div class="nav-item-wrapper">
+                        <a href="#" class="nav-link">Контакты</a>
+                    </div>
+                </nav>
+
+                <div class="logo">
+                    <a href="/">
+                        <img src="assets/images/icons/logo-header.svg" alt="Немецкая семейная клиника" class="logo-img">
+                    </a>
+                </div>
+
+                <div class="header-actions">
+                    <a href="#" class="btn-header d-none">Записаться на приём</a>
+                    <a href="#" class="btn-header">Оплатить</a>
+                    <a href="#" class="btn-header d-none">Заказать звонок</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============================================
+         MAIN CONTENT — секции будут добавлены посекционно
+    ============================================= -->
+    <main class="preventive-main">
+        <div class="mobile-breadcrumbs d-md-none">
+            <div class="site-container">
+                <p class="mobile-breadcrumbs__text"><span>Главная</span> / <strong>Центр превентивной и интегративной
+                        медицины</strong></p>
+            </div>
+        </div>
+
+        <!-- ============================================
+             SECTION 1: HERO — Превентивная медицина
+             Figma node: 1634:3962 (1440×745)
+        ============================================= -->
+        <section class="preventive-hero position-relative overflow-hidden text-white py-0" id="hero">
+            <div class="preventive-hero__bg" aria-hidden="true">
+            </div>
+            <!-- Background photo -->
+            <figure class="preventive-hero__surface position-absolute top-0 start-0 w-100 h-100 m-0">
+                <img class="preventive-hero__background w-100 h-100 object-fit-cover d-block"
+                    src="assets/images/preventive-medicine/hero-bg-photo.png"
+                    alt="Врач консультирует пациентку — центр превентивной медицины" loading="eager" decoding="async"
+                    fetchpriority="high" width="1440" height="745">
+            </figure>
+
+            <!-- Body -->
+            <div class="preventive-hero__body position-relative container-fluid">
+                <!-- Logo (top) -->
+                <div class="preventive-hero__logo mb-3">
+                    <img src="assets/images/preventive-medicine/hero-logo-white.svg"
+                         alt="Немецкая семейная клиника — Превентивная медицина"
+                         class="d-block"
+                         width="262"
+                         height="70"
+                         loading="eager">
+                </div>
+
+                <!-- Content (bottom) -->
+                <div class="preventive-hero__content">
+                    <h1 class="preventive-hero__title text-white">
+                        Центр превентивной медицины:<br class="d-none d-md-block">
+                        профилактика здоровья<br class="d-none d-md-block">
+                        и активное долголетие
+                    </h1>
+                    <p class="preventive-hero__lead text-white">
+                        Комплексный подход к сохранению здоровья, раннему выявлению
+                        рисков и улучшению качества жизни на каждом этапе.
+                    </p>
+                    <div class="preventive-hero__tags">
+                        <span class="preventive-hero__tag">Здоровое сердце</span>
+                        <span class="preventive-hero__tag">Пищевая непереносимость</span>
+                        <span class="preventive-hero__tag">Активное долголетие</span>
+                        <span class="w-100 d-none d-md-block"></span>
+                        <span class="preventive-hero__tag">Женское здоровье 45+</span>
+                        <span class="preventive-hero__tag">Здоровый ЖКТ</span>
+                        <span class="preventive-hero__tag">Контроль веса</span>
+                        <span class="preventive-hero__tag">Планирование беременности</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             SECTION 2: ЗАЧЕМ НУЖНА ПРЕВЕНТИВНАЯ МЕДИЦИНА
+             Figma node: 1634:4104 (1440×531)
+        ============================================= -->
+        <section class="preventive-feature" id="why-preventive">
+            <div class="container-fluid px-4">
+                <nav class="preventive-breadcrumbs d-none d-md-block" aria-label="Хлебные крошки">
+                    <a href="/">Главная</a> / <span class="preventive-breadcrumbs__current">Центр превентивной и
+                        интегративной медицины</span>
+                </nav>
+                <div class="row align-items-start">
+                    <!-- Left column: text + buttons -->
+                    <div class="col-lg-7 col-xl-7">
+                        <h2 class="preventive-feature__title">Зачем нужна превентивная медицина</h2>
+                        <div class="preventive-feature__text">
+                            <p>Превентивная медицина направлена на сохранение здоровья и предупреждение заболеваний ещё
+                                до появления выраженных симптомов. Такой подход позволяет выявлять риски на ранних
+                                этапах, корректировать образ жизни и снижать вероятность развития хронических состояний.
+                            </p>
+                            <p>В центре внимания — не отдельный симптом, а общее состояние организма, его ресурсы и
+                                способность к восстановлению.</p>
+                        </div>
+                        <div class="preventive-feature__actions d-flex flex-wrap gap-2">
+                            <a href="#programs" class="preventive-feature__btn">
+                                <span>Выбрать программу</span>
+                                <span class="preventive-feature__btn-arrow">→</span>
+                            </a>
+                            <a href="#" class="preventive-feature__btn preventive-feature__btn--outline">
+                                <span>Записаться на консультацию</span>
+                                <span class="preventive-feature__btn-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Right column: image -->
+                    <div class="col-lg-5 col-xl-4 offset-xl-1 mt-4 mt-lg-0">
+                        <div class="preventive-feature__visual">
+                            <img src="assets/images/preventive-medicine/benefits-visual.png"
+                                alt="Счастливая семья — здоровье и профилактика" class="w-100 h-auto d-block"
+                                loading="lazy" decoding="async" width="440" height="404">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             SECTION 3: ИМИДЖЕВЫЙ БАННЕР 1
+             Figma node: 1634:4120 (1440×580)
+        ============================================= -->
+        <section class="preventive-banner section-teal" id="banner-1">
+            <div class="container-fluid px-4">
+                <div
+                    class="preventive-banner__inner position-relative overflow-hidden d-flex flex-column align-items-center justify-content-center text-center text-white">
+                    <img class="d-none d-md-block preventive-banner__bg position-absolute top-0 start-0 w-100 h-100 object-fit-cover d-block"
+                        src="assets/images/preventive-medicine/quote-banner-1.png" alt="" role="presentation"
+                        loading="lazy" decoding="async" width="1360" height="500">
+                    <img class="d-block d-md-none preventive-banner__bg position-absolute top-0 start-0 w-100 h-100 object-fit-cover d-block"
+                        src="assets/images/preventive-medicine/quote-banner-1-mob.png" alt="" role="presentation"
+                        loading="lazy" decoding="async" width="1360" height="500">
+                    <div class="preventive-banner__content position-relative text-center">
+                        <img class="preventive-banner__logo d-block mx-auto mb-4"
+                             src="assets/images/preventive-medicine/hero-logo-white.svg"
+                             alt="Немецкая семейная клиника — Превентивная медицина"
+                             width="262"
+                             height="70"
+                             loading="lazy">
+                        <blockquote class="preventive-banner__quote mb-0">
+                            Здоровье —<br class="d-block d-md-none"> это процесс, которым<br
+                                class="d-block d-md-none"><br class="d-none d-md-block">
+                            можно и нужно<br class="d-block d-md-none"> управлять
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             SECTION 4: ПРИНЦИПЫ РАБОТЫ ЦЕНТРА
+             Figma node: 1634:4140
+        ============================================= -->
+        <section class="preventive-principles" id="principles">
+            <div class="container-fluid px-4">
+                <div class="preventive-principles__header">
+                    <h2 class="preventive-principles__title">Принципы работы центра</h2>
+                    <div class="preventive-principles__arrows">
+                        <button class="preventive-principles__arrow" type="button" data-dir="prev" aria-label="Назад"></button>
+                        <button class="preventive-principles__arrow" type="button" data-dir="next" aria-label="Вперёд"></button>
+                    </div>
+                </div>
+
+                <div class="preventive-principles__grid">
+                    <article class="preventive-principles__card">
+                        <h3 class="preventive-principles__card-title">Системный<br class="d-block d-md-none"> подход
+                        </h3>
+                        <p class="preventive-principles__card-text">Организм рассматривается как единая взаимосвязанная
+                            система, где важна работа всех органов и процессов.</p>
+                    </article>
+
+                    <article class="preventive-principles__card">
+                        <h3 class="preventive-principles__card-title">Воздействие<br class="d-block d-md-none"> на
+                            причины</h3>
+                        <p class="preventive-principles__card-text">Фокус на устранении причин<br
+                                class="d-block d-md-none"> нарушений, а не только на
+                            работе<br class="d-block d-md-none"> с симптомами.</p>
+                    </article>
+
+                    <article class="preventive-principles__card">
+                        <h3 class="preventive-principles__card-title">Профилактика<br class="d-block d-md-none"> и
+                            диагностика</h3>
+                        <p class="preventive-principles__card-text">Активная профилактика и ранняя<br
+                                class="d-block d-md-none"> диагностика
+                            заболеваний и патологических<br class="d-block d-md-none"> состояний.</p>
+                    </article>
+
+                    <article class="preventive-principles__card">
+                        <h3 class="preventive-principles__card-title">Контроль<br class="d-block d-md-none"> и коррекция
+                        </h3>
+                        <p class="preventive-principles__card-text">Динамический контроль изменений<br
+                                class="d-block d-md-none"> на фоне терапии с
+                            возможностью<br class="d-block d-md-none"> своевременной корректировки<br
+                                class="d-block d-md-none"> диагностических и лечебных схем.</p>
+                    </article>
+
+                    <article class="preventive-principles__card">
+                        <h3 class="preventive-principles__card-title">Индивидуальный<br class="d-block d-md-none">
+                            подход</h3>
+                        <p class="preventive-principles__card-text">Для каждого пациента разрабатывается<br
+                                class="d-block d-md-none"> персональная
+                            программа восстановления<br class="d-block d-md-none"> и оздоровления с учётом возраста,
+                            образа<br class="d-block d-md-none"> жизни и особенностей
+                            организма.</p>
+                    </article>
+
+                    <article class="preventive-principles__card">
+                        <h3 class="preventive-principles__card-title">Врачи-<br class="d-block d-md-none">эксперты</h3>
+                        <p class="preventive-principles__card-text">С пациентом работает команда<br
+                                class="d-block d-md-none"> высококвалифицированных
+                            врачей-<br class="d-block d-md-none">экспертов Немецкой семейной клиники.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             SECTION 5: ПРОГРАММЫ ПРЕВЕНТИВНОЙ МЕДИЦИНЫ
+             Figma node: 1634:4167 (1440×604)
+        ============================================= -->
+        <section class="preventive-programs" id="programs">
+            <div class="container-fluid px-4">
+                <div class="preventive-programs__header">
+                    <h2 class="preventive-programs__title">Программы превентивной медицины</h2>
+                    <p class="preventive-programs__subtitle">Программы формируются индивидуально и направлены на
+                        комплексную оценку состояния организма и снижение рисков развития заболеваний.</p>
+                </div>
+
+                <div class="preventive-programs__tabs">
+                    <button class="preventive-programs__tab active" data-programs-tab="women">Для женщин</button>
+                    <button class="preventive-programs__tab" data-programs-tab="men">Для мужчин</button>
+                    <button class="preventive-programs__tab" data-programs-tab="children">Для детей</button>
+                </div>
+
+                <div class="preventive-programs__grid" id="programs-grid">
+                    <a href="#" class="preventive-programs__item">
+                        <span class="preventive-programs__item-text">Генетический паспорт</span>
+                        <span class="preventive-programs__item-arrow">→
+
+                        </span>
+                    </a>
+                    <a href="#" class="preventive-programs__item">
+                        <span class="preventive-programs__item-text">Снижение риска развития наследственных
+                            заболеваний</span>
+                        <span class="preventive-programs__item-arrow">→
+
+                        </span>
+                    </a>
+                    <a href="#" class="preventive-programs__item">
+                        <span class="preventive-programs__item-text">Определение биологического возраста
+                            организма</span>
+                        <span class="preventive-programs__item-arrow">→
+
+                        </span>
+                    </a>
+                    <a href="#" class="preventive-programs__item">
+                        <span class="preventive-programs__item-text">Биоактивация организма с системным подходом</span>
+                        <span class="preventive-programs__item-arrow">→
+
+                        </span>
+                    </a>
+                    <a href="#" class="preventive-programs__item">
+                        <span class="preventive-programs__item-text">Выявление ранних изменений в работе систем</span>
+                        <span class="preventive-programs__item-arrow">→
+
+                        </span>
+                    </a>
+                    <a href="#" class="preventive-programs__item">
+                        <span class="preventive-programs__item-text">Отоларингология</span>
+                        <span class="preventive-programs__item-arrow">→
+
+                        </span>
+                    </a>
+                </div>
+
+                <div class="preventive-programs__action">
+                    <a href="#" class="preventive-programs__btn">
+                        <span>Записаться на консультацию</span>
+                        <span class="preventive-programs__btn-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             SECTION 6: КОГДА СТОИТ ОБРАТИТЬСЯ
+             Figma node: 1634:4486 (1440×531)
+        ============================================= -->
+        <section class="preventive-symptoms" id="symptoms">
+            <div class="container-fluid px-4">
+                <div class="preventive-symptoms__layout">
+                    <div class="preventive-symptoms__content">
+                        <h2 class="preventive-symptoms__title">Когда стоит обратиться к врачу превентивной медицины</h2>
+                        <p class="preventive-symptoms__subtitle">Превентивная медицина подходит не только при наличии
+                            жалоб, но и в ситуациях, когда важно оценить состояние здоровья, уровень ресурсов организма
+                            и потенциальные риски.</p>
+                        <div class="preventive-symptoms__tags">
+                            <span class="preventive-symptoms__tag">Нарушения сна</span>
+                            <span class="preventive-symptoms__tag">Стресс и тревожность</span>
+                            <span class="preventive-symptoms__tag">Головные боли</span>
+                            <span class="preventive-symptoms__tag">Пищеварительный дискомфорт</span>
+                            <span class="preventive-symptoms__tag">Снижение энергии</span>
+                            <span class="preventive-symptoms__tag">Колебания веса</span>
+                            <span class="preventive-symptoms__tag">Контроль массы тела</span>
+                            <span class="preventive-symptoms__tag">Мышечное напряжение</span>
+                            <span class="preventive-symptoms__tag">Снижение концентрации</span>
+                            <span class="preventive-symptoms__tag">Частые простуды</span>
+                            <span class="preventive-symptoms__tag">Снижение иммунитета</span>
+                        </div>
+                    </div>
+                    <div class="preventive-symptoms__visual">
+                        <img src="assets/images/preventive-medicine/when-to-visit-visual.png"
+                            alt="Врач назначает препараты — превентивная медицина" loading="lazy" decoding="async"
+                            width="440" height="404">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             SECTION 7: ИМИДЖЕВЫЙ БАННЕР 2
+             Figma node: 1810:774 (1440×580)
+        ============================================= -->
+        <section class="preventive-banner section-teal" id="banner-2">
+            <div class="container-fluid px-4">
+                <div
+                    class="preventive-banner__inner position-relative overflow-hidden d-flex flex-column align-items-center justify-content-center text-center text-white">
+                    <img class="d-none d-md-block preventive-banner__bg position-absolute top-0 start-0 w-100 h-100 object-fit-cover d-block"
+                        src="assets/images/preventive-medicine/quote-banner-2.png" alt="" role="presentation"
+                        loading="lazy" decoding="async" width="1360" height="500">
+                        <img class="d-block d-md-none preventive-banner__bg position-absolute top-0 start-0 w-100 h-100 object-fit-cover d-block"
+                        src="assets/images/preventive-medicine/quote-banner-2-mob.png" alt="" role="presentation"
+                        loading="lazy" decoding="async" width="1360" height="500">
+                    <div class="preventive-banner__content position-relative text-center">
+                        <img class="preventive-banner__logo d-block mx-auto mb-4"
+                             src="assets/images/preventive-medicine/hero-logo-white.svg"
+                             alt="Немецкая семейная клиника — Превентивная медицина"
+                             width="262"
+                             height="70"
+                             loading="lazy">
+                        <blockquote class="preventive-banner__quote mb-0">
+                            Комплексный подход<br class="d-block d-md-none"> к здоровью<br class="d-none d-md-block">
+                            и качеству<br class="d-block d-md-none"> жизни
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             SECTION 8: ВРАЧИ ЦЕНТРА
+             Figma node: 1634:4212 (1440×807)
+        ============================================= -->
+        <section class="preventive-doctors" id="doctors">
+            <div class="container-fluid px-4">
+                <div class="preventive-doctors__header">
+                    <h2 class="preventive-doctors__title">Врачи центра превентивной медицины</h2>
+                    <p class="preventive-doctors__subtitle">С пациентами работают врачи с большим опытом в области
+                        превентивной и интегративной медицины. Команда специалистов помогает выстроить долгосрочную
+                        стратегию сохранения здоровья и активного долголетия.</p>
+                </div>
+
+                <div class="preventive-doctors__grid">
+                    <a href="#" class="preventive-doctors__card">
+                        <div class="preventive-doctors__photo">
+                            <img src="assets/images/preventive-medicine/doctor-1.png" alt="Врач превентивной медицины"
+                                loading="lazy" decoding="async" width="256" height="300">
+                        </div>
+                        <h3 class="preventive-doctors__name">Фамилия<br>Имя Отчество</h3>
+                        <p class="preventive-doctors__specialty">Врач превентивной медицины, терапевт, кандидат
+                            медицинских наук</p>
+                    </a>
+
+                    <a href="#" class="preventive-doctors__card">
+                        <div class="preventive-doctors__photo">
+                            <img src="assets/images/preventive-medicine/doctor-2.png" alt="Врач превентивной медицины"
+                                loading="lazy" decoding="async" width="256" height="300">
+                        </div>
+                        <h3 class="preventive-doctors__name">Фамилия<br>Имя Отчество</h3>
+                        <p class="preventive-doctors__specialty">Врач превентивной медицины, эндокринолог, нутрициолог
+                        </p>
+                    </a>
+
+                    <a href="#" class="preventive-doctors__card">
+                        <div class="preventive-doctors__photo">
+                            <img src="assets/images/preventive-medicine/doctor-3.png" alt="Врач превентивной медицины"
+                                loading="lazy" decoding="async" width="256" height="300">
+                        </div>
+                        <h3 class="preventive-doctors__name">Фамилия<br>Имя Отчество</h3>
+                        <p class="preventive-doctors__specialty">Врач превентивной медицины, гастроэнтеролог, диетолог
+                        </p>
+                    </a>
+
+                    <a href="#" class="preventive-doctors__card">
+                        <div class="preventive-doctors__photo">
+                            <img src="assets/images/preventive-medicine/doctor-4.png" alt="Врач превентивной медицины"
+                                loading="lazy" decoding="async" width="256" height="300">
+                        </div>
+                        <h3 class="preventive-doctors__name">Фамилия<br>Имя Отчество</h3>
+                        <p class="preventive-doctors__specialty">Врач превентивной медицины, кардиолог, терапевт</p>
+                    </a>
+
+                    <a href="#" class="preventive-doctors__card">
+                        <div class="preventive-doctors__photo">
+                            <img src="assets/images/preventive-medicine/doctor-5.png" alt="Врач превентивной медицины"
+                                loading="lazy" decoding="async" width="256" height="300">
+                        </div>
+                        <h3 class="preventive-doctors__name">Фамилия<br>Имя Отчество</h3>
+                        <p class="preventive-doctors__specialty">Врач превентивной медицины, невролог, реабилитолог</p>
+                    </a>
+                </div>
+
+                <div class="preventive-doctors__action">
+                    <a href="#" class="preventive-doctors__btn">
+                        <span>Перейти ко всем врачам</span>
+                        <span class="preventive-doctors__btn-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             SECTION 9: КАК ПРОХОДИТ ПРИЁМ
+             Figma node: 1634:3937 (1440×543)
+        ============================================= -->
+        <section class="preventive-journey" id="journey">
+            <div class="container-fluid px-4">
+                <div class="preventive-journey__header">
+                    <h2 class="preventive-journey__title">Как проходит приём<br>врача превентивной медицины</h2>
+                    <p class="preventive-journey__subtitle">Приём отличается большей продолжительностью и акцентом на
+                        детальный сбор анамнеза. Это позволяет предупредить развитие заболеваний и выстроить
+                        индивидуальный план сохранения здоровья на протяжении всей жизни.</p>
+                </div>
+
+                <div class="preventive-journey__arrows">
+                    <button class="preventive-journey__arrow preventive-journey__arrow--prev" type="button"
+                        aria-label="Предыдущий шаг"></button>
+                    <button class="preventive-journey__arrow preventive-journey__arrow--next" type="button"
+                        aria-label="Следующий шаг"></button>
+                </div>
+
+                <div class="preventive-journey__slider">
+                    <div class="preventive-journey__timeline">
+                        <div class="preventive-journey__track">
+                            <span class="preventive-journey__dot active"></span>
+                            <span class="preventive-journey__dot"></span>
+                            <span class="preventive-journey__dot"></span>
+                            <span class="preventive-journey__dot"></span>
+                            <span class="preventive-journey__dot"></span>
+                            <span class="preventive-journey__dot"></span>
+                            <span class="preventive-journey__dot"></span>
+                        </div>
+                    </div>
+
+                    <div class="preventive-journey__viewport">
+                        <div class="preventive-journey__steps">
+                            <div class="preventive-journey__step">
+                                <h3 class="preventive-journey__step-title step-1">01. Знакомство</h3>
+                                <p class="preventive-journey__step-text">Подробный сбор анамнеза, обсуждение образа
+                                    жизни, привычек и текущего состояния здоровья пациента.</p>
+                            </div>
+                            <div class="preventive-journey__step step-2">
+                                <h3 class="preventive-journey__step-title">02. Диагностика</h3>
+                                <p class="preventive-journey__step-text">Индивидуальный чек-ап и анализы для оценки
+                                    работы систем организма и выявления возможных рисков.</p>
+                            </div>
+                            <div class="preventive-journey__step step-3">
+                                <h3 class="preventive-journey__step-title">03. План терапии</h3>
+                                <p class="preventive-journey__step-text">Формирование персонального плана наблюдения и
+                                    оздоровления с учётом полученных данных.</p>
+                            </div>
+                            <div class="preventive-journey__step step-4">
+                                <h3 class="preventive-journey__step-title">04. Дообследование</h3>
+                                <p class="preventive-journey__step-text">Дополнительные исследования при необходимости
+                                    для уточнения диагноза и корректировки стратегии.</p>
+                            </div>
+                            <div class="preventive-journey__step step-5">
+                                <h3 class="preventive-journey__step-title">05. Промежуточная оценка</h3>
+                                <p class="preventive-journey__step-text">Анализ динамики изменений и корректировка плана
+                                    лечения на основе реакции организма.</p>
+                            </div>
+                            <div class="preventive-journey__step step-6">
+                                <h3 class="preventive-journey__step-title">06. Итоговая оценка</h3>
+                                <p class="preventive-journey__step-text">Оценка достигнутых результатов и рекомендации
+                                    по дальнейшему поддержанию здоровья.</p>
+                            </div>
+                            <div class="preventive-journey__step step-7">
+                                <h3 class="preventive-journey__step-title">07. Дальнейший мониторинг</h3>
+                                <p class="preventive-journey__step-text">Динамическое наблюдение для сохранения
+                                    результата.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             SECTION 10: НУЖНА ПОМОЩЬ ПЕРЕД ПРИЁМОМ
+             Figma node: 1634:4518 (1440×531)
+        ============================================= -->
+        <section class="preventive-pre-visit" id="pre-visit">
+            <div class="container-fluid px-4">
+                <div class="preventive-pre-visit__layout">
+                    <div class="preventive-pre-visit__content">
+                        <h2 class="preventive-pre-visit__title">Нужна помощь перед приёмом?</h2>
+                        <p class="preventive-pre-visit__text">Анкетирование — важный этап подготовки к приёму врача.</p>
+                        <p class="preventive-pre-visit__text">Оно помогает заранее собрать анамнез и уточнить
+                            информацию, чтобы на первичном приёме уделить больше времени общению и индивидуальным
+                            рекомендациям.</p>
+                        <div class="preventive-pre-visit__actions">
+                            <a href="#" class="preventive-pre-visit__btn">
+                                <span>Ответить на вопросы</span>
+                                <span class="preventive-pre-visit__btn-arrow">→</span>
+                            </a>
+                            <a href="#" class="preventive-pre-visit__btn">
+                                <span>Записаться на консультацию</span>
+                                <span class="preventive-pre-visit__btn-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="preventive-pre-visit__visual">
+                        <img src="assets/images/preventive-medicine/pre-visit-visual.png" class="d-none d-md-block"
+                            alt="Врач со стетоскопом — подготовка к приёму" loading="lazy" decoding="async" width="440"
+                            height="404">
+                            <img src="assets/images/preventive-medicine/pre-visit-visual-mob.png" class="d-block d-md-none"
+                            alt="Врач со стетоскопом — подготовка к приёму" loading="lazy" decoding="async" width="440"
+                            height="404">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             SECTION 11: ОТЗЫВЫ ПАЦИЕНТОВ
+             Figma node: 1634:4433 (1440×671)
+        ============================================= -->
+        <section class="reviews-section preventive-reviews" id="reviews">
+            <div class="container-fluid px-4">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Отзывы пациентов</h2>
+                    <p class="section-subtitle">Опыт пациентов, которые уже прошли программы превентивной медицины в
+                        Немецкой семейной клинике.</p>
+                </div>
+
+                <div class="slider-arrows mb-4">
+                    <button class="arrow-btn arrow-prev" type="button" aria-label="Предыдущий отзыв"></button>
+                    <button class="arrow-btn arrow-next" type="button" aria-label="Следующий отзыв"></button>
+                </div>
+
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <span class="review-date">23 декабря 2025</span>
+                        <h5 class="review-doctor">Врач: Камалетдинов Р. Н.</h5>
+                        <p class="review-text">
+                            Очень классный молодой <br class="d-block d-md-none"> доктор:видно,что ему<br
+                                class="d-none d-md-block"> нравится его работа. К детям без лишних<br
+                                class="d-none d-md-block"><br class="d-block d-md-none">
+                            сюсюканий,но именно это и<br class="d-block d-md-none"> располагает ребенка<br
+                                class="d-none d-md-block"> к врачу. С
+                            точки<br class="d-block d-md-none"> зрения назначаемого лечения<br
+                                class="d-none d-md-block"> тоже все<br class="d-block d-md-none"> отлично-все
+                            помогает,при этом без<br class="d-none d-md-block"><br class="d-block d-md-none"> лишних
+                            препаратов.
+                        </p>
+                        <div class="review-footer">
+                            <span class="review-author">Автор отзыва: Анна</span>
+                            <a href="#" class="review-more">Читать полностью <span class="review-more-arrow">→</span></a>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <span class="review-date">20 декабря 2025</span>
+                        <h5 class="review-doctor">Врач: Маркова Ю. А.</h5>
+                        <p class="review-text">Обратилась к Юлии Александровне как<br class="d-none d-md-block"><br
+                                class="d-block d-md-none">
+                            колопроктологу. Приём прошел<br class="d-block d-md-none"> комфортно,<br
+                                class="d-none d-md-block"> в дружелюбной
+                            атмосфере,<br class="d-block d-md-none"> что немаловажно<br class="d-none d-md-block"> при
+                            обращении с<br class="d-block d-md-none"> деликатной проблемой.<br
+                                class="d-none d-md-block"> Также доктор<br class="d-block d-md-none"> грамотно ответила
+                            на все вопросы,<br class="d-none d-md-block"><br class="d-block d-md-none"> рассказала про
+                            план лечения и что <span class="d-none d-md-inline">...</span><span
+                                class="d-block d-md-none"> нужно делать при
+                                возникновении...</span></p>
+                        <div class="review-footer">
+                            <span class="review-author">Автор отзыва: Екатерина</span>
+                            <a href="#" class="review-more">Читать полностью <span class="review-more-arrow">→</span></a>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <span class="review-date">19 декабря 2025</span>
+                        <h5 class="review-doctor">Врач: Смирнов К. А.</h5>
+                        <p class="review-text">Очень понравился прием у доктора<br class="d-block d-md-none"> Кирилла<br
+                                class="d-none d-md-block">
+                            Алексеевича Смирнова.<br class="d-block d-md-none"> Доктор очень<br
+                                class="d-none d-md-block"> внимательно меня<br class="d-block d-md-none"> выслушал,
+                            тщательно изучил<br class="d-none d-md-block"><br class="d-block d-md-none">
+                            результаты проведенных ранее<br class="d-none d-md-block"><br class="d-block d-md-none">
+                            обследований. Подробно и
+                            доходчиво<br class="d-block d-md-none"> ответил<br class="d-none d-md-block"> на все мои
+                            вопросы, которых<br class="d-block d-md-none"> было немало...</p>
+                        <div class="review-footer">
+                            <span class="review-author">Автор отзыва: Анна</span>
+                            <a href="#" class="review-more">Читать полностью <span class="review-more-arrow">→</span></a>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <span class="review-date">18 декабря 2025</span>
+                        <h5 class="review-doctor">Врач: Евтушенко В. В.</h5>
+                        <p class="review-text">Второй раз делаю фгдс у Виктора <br> Владимировича, просто поражаюсь,<br
+                                class="d-block d-md-none"> как быстро<br class="d-none d-md-block"> и точно он все
+                            делает. Я<br class="d-block d-md-none"> много раз делала эту<br class="d-none d-md-block">
+                            процедуру в<br class="d-block d-md-none"> других клиниках - никакого<br
+                                class="d-none d-md-block"> сравнения!<br class="d-block d-md-none"> Все объясняет,
+                            делает все<br class="d-none d-md-block"><br class="d-block d-md-none">
+                            профессионально<span class="d-none d-md-inline">...</span><span class="d-inline d-md-none">. Спасибо большое, всем рекомендую этого эндоскописта...</span></p>
+                        <div class="review-footer">
+                            <span class="review-author">Автор отзыва: Галина</span>
+                            <a href="#" class="review-more">Читать полностью <span class="review-more-arrow">→</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-actions d-flex justify-content-center gap-3 mt-5">
+                    <a href="#" class="btn btn-outline-dark btn-lg">
+                        Оставить отзыв
+                        <span class="btn-arrow">→</span>
+                    </a>
+                    <a href="#" class="btn btn-outline-dark btn-lg">
+                        Смотреть все отзывы
+                        <span class="btn-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             SECTION 12: НАШИ КЛИНИКИ
+             Figma node: 1634:5553 (1440×804)
+        ============================================= -->
+
+        <section class="clinics-section" id="clinics">
+            <div class="container-fluid px-4">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="section-header text-start">
+                            <h2 class="section-title">Наши клиники</h2>
+                            <p class="section-subtitle text-start m-0">
+                                Выберите удобный для вас филиал. Все клиники оснащены современным европейским
+                                оборудованием и работают по единым стандартам качества.
+                            </p>
+                        </div>
+
+                        <div class="map-container">
+                            <img src="assets/images/clinics-map.png" alt="Карта клиник" class="map-image" width="654"
+                                height="511" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="clinics-grid">
+                            <div class="clinic-card">
+                                <span class="clinic-type">Многопрофильная клиника для взрослых и детей</span>
+                                <p class="clinic-hours">Время работы:<br>с 8:00 до 22:00 (Ежедневно)</p>
+                                <span class="clinic-metro red-circle-metro">ст.м. Площадь Восстания</span>
+                                <p class="clinic-address">Санкт-Петербург,<br>Невский пр. 114-116,<br><span
+                                        class="text-muted small">(БЦ Невский Центр (Стокманн), 8 этаж, вход с ул.
+                                        Восстания)</span></p>
+                            </div>
+                            <div class="clinic-card">
+                                <span class="clinic-type">Многопрофильная клиника для взрослых и детей</span>
+                                <p class="clinic-hours">Время работы:<br>с 7:30 до 22:00 (Ежедневно)</p>
+                                <span class="clinic-metro blue-circle-metro">ст.м. Парк Победы</span>
+                                <p class="clinic-address">Санкт-Петербург,<br>пл. Чернышевского д.11 А<br><span
+                                        class="text-muted small">(вход с ул. Варшавская)</span></p>
+                            </div>
+                            <div class="clinic-card">
+                                <span class="clinic-type">Стоматология<br>для взрослых и детей</span>
+                                <p class="clinic-hours">Время работы:<br>с 9:00 до 21:00 (Ежедневно)</p>
+                                <span class="clinic-metro red-circle-metro">ст.м. Площадь Восстания</span>
+                                <p class="clinic-address">Санкт-Петербург,<br>Невский пр. 114-116,<br><span
+                                        class="text-muted small">(БЦ Невский Центр (Стокманн), 8 этаж, вход с ул.
+                                        Восстания)</span></p>
+                            </div>
+                            <div class="clinic-card">
+                                <span class="clinic-type">Клиника для детей<br>им. С.Я.Снигиревой</span>
+                                <p class="clinic-hours">Время работы:<br>с 8:00 до 22:00 (Ежедневно)</p>
+                                <span class="clinic-metro blue-circle-metro">ст.м. Парк Победы</span>
+                                <p class="clinic-address">Санкт-Петербург,<br><span
+                                        class="text-muted small">ул.Варшавская д.23 к. 1</span></p>
+                            </div>
+                            <div class="clinic-card">
+                                <span class="clinic-type">Круглосуточный стационар для взрослых и детей</span>
+                                <p class="clinic-hours">Время работы:<br>Круглосуточно</p>
+                                <span class="clinic-metro blue-circle-metro">ст.м. Парк Победы</span>
+                                <p class="clinic-address">Санкт-Петербург,<br>пл. Чернышевского д.11 А<br><span
+                                        class="text-muted small">(вход с ул. Варшавская)</span></p>
+                            </div>
+                            <div class="clinic-card">
+                                <span class="clinic-type">Центр пластической хирургии и эстетической медицины</span>
+                                <p class="clinic-hours">Время работы:<br>с 8:00 до 21:00 (Ежедневно)</p>
+                                <span class="clinic-metro blue-circle-metro">ст.м. Парк Победы</span>
+                                <p class="clinic-address">Санкт-Петербург,<br>пл. Чернышевского д.11 А<br><span
+                                        class="text-muted small">(вход с ул. Варшавская)</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============================================
+         FOOTER
+    ============================================= -->
+    <footer class="footer" id="footer">
+        <div class="container-fluid px-4">
+            <!-- Footer top: Logo left, Buttons right -->
+            <div class="footer-top">
+                <div class="footer-top-left">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo-white.svg" alt="Немецкая семейная клиника">
+                    </div>
+                    <a href="#header" class="btn btn-footer-outline btn-back-to-top btn-back-to-top-desktop">
+                        <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.5 13.5L4.5 0.5M4.5 0.5L0.5 5.5M4.5 0.5L8 5.5" stroke="white"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+
+                        Наверх
+                    </a>
+                </div>
+                <div class="footer-buttons-right">
+                    <a href="#" class="btn btn-footer-glass btn-appointment">Записаться на приём</a>
+                    <a href="#" class="btn btn-footer-outline btn-callback">Заказать звонок</a>
+                    <a href="#" class="btn btn-footer-outline btn-pay">Оплатить</a>
+                    <a href="#" class="btn btn-footer-glass btn-personal-cabinet btn-personal-cabinet-desktop">
+                        <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.63636 3C1.63636 1.34578 2.92141 0 4.49999 0C6.07856 0 7.36362 1.34571 7.36362 3C7.36362 4.65429 6.07856 6 4.49999 6C2.92141 6 1.63636 4.65429 1.63636 3ZM4.90908 6.42857H4.0909C1.83534 6.42857 0 8.35131 0 10.7143C0 11.1723 0.310908 11.5639 0.739425 11.6454C1.97794 11.8805 3.24305 12 4.50004 12C5.75702 12 7.02409 11.8805 8.26262 11.6454C8.6896 11.5645 9 11.1729 9 10.7143C9 8.35131 7.16463 6.42857 4.90908 6.42857Z"
+                                fill="white" />
+                        </svg>
+
+                        Личный кабинет
+                    </a>
+                </div>
+                <div class="footer-buttons-bottom">
+                    <a href="#header" class="btn btn-footer-outline btn-back-to-top-mobile">
+                        <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.5 13.5L4.5 0.5M4.5 0.5L0.5 5.5M4.5 0.5L8 5.5" stroke="white"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+
+                        Наверх
+                    </a>
+                    <a href="#" class="btn btn-footer-glass btn-personal-cabinet">
+                        <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.63636 3C1.63636 1.34578 2.92141 0 4.49999 0C6.07856 0 7.36362 1.34571 7.36362 3C7.36362 4.65429 6.07856 6 4.49999 6C2.92141 6 1.63636 4.65429 1.63636 3ZM4.90908 6.42857H4.0909C1.83534 6.42857 0 8.35131 0 10.7143C0 11.1723 0.310908 11.5639 0.739425 11.6454C1.97794 11.8805 3.24305 12 4.50004 12C5.75702 12 7.02409 11.8805 8.26262 11.6454C8.6896 11.5645 9 11.1729 9 10.7143C9 8.35131 7.16463 6.42857 4.90908 6.42857Z"
+                                fill="white" />
+                        </svg>
+
+
+                        Личный кабинет
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer navigation -->
+            <div class="footer-nav">
+                <div class="footer-nav-grid">
+                    <div class="footer-nav-block footer-nav-uslugi">
+                        <h6 class="footer-nav-title">Услуги</h6>
+                        <ul class="footer-nav-list">
+                            <li><a href="#">Для взрослых</a></li>
+                            <li><a href="#">Для детей</a></li>
+                            <li><a href="#">Стоматология</a></li>
+                            <li><a href="#">Стационар и операции</a></li>
+                            <li><a href="#">Центры компетенций</a></li>
+                            <li><a href="#">Аптека</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-block footer-nav-programmy">
+                        <h6 class="footer-nav-title">Программы</h6>
+                        <ul class="footer-nav-list">
+                            <li><a href="#">Для взрослых</a></li>
+                            <li><a href="#">Для детей</a></li>
+                            <li><a href="#">Будущим мамам</a></li>
+                            <li><a href="#">Для бизнеса</a></li>
+                            <li><a href="#">Семейный депозит</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-block footer-nav-vrachi">
+                        <h6 class="footer-nav-title">Врачи</h6>
+                        <ul class="footer-nav-list">
+                            <li><a href="#">Для взрослых</a></li>
+                            <li><a href="#">Для детей</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-block footer-nav-info">
+                        <h6 class="footer-nav-title">Инфо</h6>
+                        <ul class="footer-nav-list">
+                            <li><a href="about.html">О компании</a></li>
+                            <li><a href="#">Награды и рейтинги</a></li>
+                            <li><a href="#">Интерьеры</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Карьера</a></li>
+                            <li><a href="#">Правовая информация, как получить услуги</a></li>
+                            <li><a href="#">Налоговый вычет</a></li>
+                            <li><a href="#">Информация для пациентов</a></li>
+                            <li><a href="#">Подготовка к диагностическим исследованиям</a></li>
+                            <li><a href="#">Памятки</a></li>
+                            <li><a href="#">Лечение в кредит</a></li>
+                            <li><a href="#">Подарочный сертификат</a></li>
+                            <li><a href="#">Карта сайта</a></li>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                            <li><a href="#">Общая правовая информация</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-block footer-nav-novosti">
+                        <h6 class="footer-nav-title">Новости</h6>
+                        <ul class="footer-nav-list">
+                            <li><a href="#">Акции</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Видео</a></li>
+                            <li><a href="#">Статьи</a></li>
+                            <li><a href="#">Статьи для врачей</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-block footer-nav-kontakty">
+                        <h6 class="footer-nav-title">Контакты</h6>
+                        <ul class="footer-nav-list footer-contacts">
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="tel:+78124323232">8 (812) 432-32-32</a></li>
+                            <li><a href="tel:+78123771212">8 (812) 377-12-12</a></li>
+                            <li><a href="mailto:info@german.clinic">info@german.clinic</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-block footer-nav-social">
+                        <h6 class="footer-nav-title">Соц сети</h6>
+                        <ul class="footer-nav-list">
+                            <li><a href="#">ВКонтакте</a></li>
+                            <li><a href="#">Дзен</a></li>
+                            <li><a href="#">Телеграм</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer divider line -->
+            <div class="footer-divider"></div>
+
+            <!-- Footer locations -->
+            <div class="footer-locations">
+                <div class="footer-locations-grid">
+                    <div class="footer-location">
+                        <h6 class="location-title">Многопрофильная клиника <br class="d-block d-sm-none">для взрослых и
+                            детей</h6>
+                        <span class="location-hours">Время работы:<br>с 8:00 до 22:00 (Ежедневно)</span>
+                        <span class="location-metro red-circle-metro">ст.м. Площадь Восстания</span>
+                        <p class="location-address">Санкт-Петербург,<br>Невский пр. 114-116,<br><span
+                                class="text-muted-footer">(БЦ Невский Центр (Стокманн), 8 этаж, вход с ул.
+                                Восстания)</span></p>
+                    </div>
+                    <div class="footer-location">
+                        <h6 class="location-title">Многопрофильная клиника <br class="d-block d-sm-none">для взрослых и
+                            детей</h6>
+                        <span class="location-hours">Время работы:<br>с 7:30 до 22:00 (Ежедневно)</span>
+                        <span class="location-metro blue-circle-metro">ст.м. Парк Победы</span>
+                        <p class="location-address">Санкт-Петербург,<br>пл. Чернышевского д.11 А<br><span
+                                class="text-muted-footer">(вход с ул. Варшавская)</span></p>
+                    </div>
+                    <div class="footer-location">
+                        <h6 class="location-title">Стоматология<br>для взрослых и детей</h6>
+                        <span class="location-hours">Время работы:<br>с 9:00 до 21:00 (Ежедневно)</span>
+                        <span class="location-metro red-circle-metro">ст.м. Площадь Восстания</span>
+                        <p class="location-address">Санкт-Петербург,<br>Невский пр. 114-116,<br><span
+                                class="text-muted-footer">(БЦ Невский Центр (Стокманн), 8 этаж, вход с ул.
+                                Восстания)</span></p>
+                    </div>
+                    <div class="footer-location">
+                        <h6 class="location-title">Клиника для детей<br>им. С.Я.Снигиревой</h6>
+                        <span class="location-hours">Время работы:<br>с 8:00 до 22:00 (Ежедневно)</span>
+                        <span class="location-metro blue-circle-metro">ст.м. Парк Победы</span>
+                        <p class="location-address">Санкт-Петербург,<br>ул.Варшавская д.23 к. 1</p>
+                    </div>
+                    <div class="footer-location">
+                        <h6 class="location-title">Круглосуточный <br class="d-block d-sm-none"> стационар для взрослых
+                            <br class="d-block d-sm-none">и детей
+                        </h6>
+                        <span class="location-hours">Время работы:<br>Круглосуточно</span>
+                        <span class="location-metro blue-circle-metro">ст.м. Парк Победы</span>
+                        <p class="location-address">Санкт-Петербург,<br>пл. Чернышевского д.11 А<br><span
+                                class="text-muted-footer">(вход с ул. Варшавская)</span></p>
+                    </div>
+                    <div class="footer-location">
+                        <h6 class="location-title">Центр пластической <br class="d-block d-sm-none">хирургии и
+                            эстетической <br class="d-block d-sm-none">медицины</h6>
+                        <span class="location-hours">Время работы:<br>с 8:00 до 21:00 (Ежедневно)</span>
+                        <span class="location-metro blue-circle-metro">ст.м. Парк Победы</span>
+                        <p class="location-address">Санкт-Петербург,<br>пл. Чернышевского д.11 А<br><span
+                                class="text-muted-footer">(вход с ул. Варшавская)</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer bottom -->
+            <div class="footer-bottom">
+                <div class="footer-divider"></div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="footer-copyright">© 2025 г. ООО "Немецкая клиника"</span>
+                    <span class="footer-license">Лицензия № Л041-01148-78/00555167</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

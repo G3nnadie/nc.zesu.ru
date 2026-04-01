@@ -1,0 +1,216 @@
+.section-6 {
+  min-height: 844px;
+  background: #fff;
+}
+
+.section-6__heading {
+  width: 100%;
+  max-width: clamp(620px, 49.9vw, 880px);
+  margin: 0 auto clamp(28px, 2.36vw, 44px);
+  text-align: center;
+}
+
+.section-6__title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(44px, 3.6vw, 64px);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #381d02;
+}
+
+.section-6__subtitle {
+  margin: clamp(16px, 1.39vw, 26px) 0 0;
+  font-family: var(--font-body);
+  font-size: clamp(16px, 1.25vw, 22px);
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  color: rgba(56, 29, 2, 0.9);
+}
+
+.teacher-carousel {
+  overflow: hidden;
+}
+
+.teacher-track {
+  display: flex;
+  gap: 0;
+  transition: transform 0.45s ease;
+  will-change: transform;
+  touch-action: pan-y;
+}
+
+.teacher-page {
+  flex: 0 0 100%;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.teacher-slide {
+  min-width: 0;
+}
+
+.teacher-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.teacher-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 256 / 300;
+  object-fit: cover;
+  object-position: center top;
+  background: #ececec;
+}
+
+.teacher-card h3 {
+  margin: clamp(16px, 1.39vw, 26px) 0 clamp(10px, 0.83vw, 16px);
+  font-family: var(--font-heading);
+  font-size: clamp(18px, 1.39vw, 26px);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #381d02;
+}
+
+.teacher-card p {
+  margin: 0 0 10px;
+  font-family: var(--font-ui);
+  font-size: clamp(11px, 0.83vw, 15px);
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: 0;
+  color: #381D0299;
+}
+
+.teacher-card p:last-child {
+  margin-bottom: 0;
+}
+
+.teacher-card p strong {
+  font-weight: 400;
+  color: #381D02E5;
+}
+
+.teacher-pagination {
+  margin-top: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.teacher-pagination__pages {
+  display: flex;
+  gap: 8px;
+}
+
+.teacher-pagination__btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid rgba(56, 29, 2, 0.1);
+  background: transparent;
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+  color: #381d02;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.teacher-pagination__btn.is-active {
+  background: #f5f3f3;
+  border-color: rgba(56, 29, 2, 0.3);
+}
+
+.teacher-pagination__btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+@media (max-width: 1199.98px) {
+  .section-6 {
+    min-height: auto;
+  }
+
+  .teacher-page {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 991.98px) {
+  .teacher-page {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-6 {
+    min-height: 959px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .section-6__heading {
+    max-width: 290px;
+    margin: 0 0 20px;
+    text-align: left;
+  }
+
+  .section-6__title {
+    max-width: 201px;
+    font-size: 28px;
+  }
+
+  .section-6__subtitle {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.3;
+  }
+
+  .teacher-page {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 10px;
+  }
+
+  .teacher-card img {
+    aspect-ratio: 140 / 165;
+  }
+
+  .teacher-card h3 {
+    margin: 10px 0 8px;
+    font-size: 16px;
+  }
+
+  .teacher-card p {
+    margin-bottom: 6px;
+    font-size: 9px;
+    line-height: 1.3;
+  }
+
+  .teacher-pagination {
+    margin-top: 24px;
+    gap: 8px;
+  }
+
+  .teacher-pagination__pages {
+    gap: 8px;
+  }
+
+  .teacher-pagination__btn {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+}

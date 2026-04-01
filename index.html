@@ -1,0 +1,2264 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Немецкая семейная клиника — Санкт-Петербург</title>
+
+    <!-- Local Fonts -->
+    <link rel="stylesheet" href="css/fonts.css">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ============================================
+         HEADER / MENU (3 уровня)
+    ============================================= -->
+    <header class="header" id="header">
+        <!-- Mobile Header -->
+        <div class="mobile-header">
+            <a href="/" class="mobile-logo">
+                <img src="assets/images/logo.svg" alt="Немецкая семейная клиника">
+            </a>
+            <div class="mobile-header-actions">
+                <a href="tel:+78124323232" class="mobile-header-icon" aria-label="Позвонить">
+                    <img src="assets/images/icons/icon-phone-mob.svg" alt="Телефон">
+                </a>
+                <a href="#" class="mobile-header-icon" aria-label="Поиск">
+                    <img src="assets/images/icons/icon-search-mob.svg" alt="Поиск">
+                </a>
+                <a href="#" class="mobile-header-icon" aria-label="Личный кабинет">
+                    <img src="assets/images/icons/icon-user-mob.svg" alt="Личный кабинет">
+                </a>
+                <a href="#" class="mobile-header-icon" aria-label="Настройки">
+                    <img src="assets/images/icons/icon-star-mob.svg" alt="Настройки">
+
+                </a>
+                <button class="menu-toggle" type="button" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" role="dialog" aria-modal="true" aria-label="Мобильное меню">
+            <div class="mobile-menu-panel">
+                <!-- Шапка меню -->
+                <div class="mobile-menu-header">
+                    <a href="/" class="mobile-menu-logo">
+                        <img src="assets/images/logo.svg" alt="Немецкая семейная клиника">
+                    </a>
+                    <div class="mobile-menu-header-actions">
+                        <a href="tel:+78124323232" class="mobile-menu-icon" aria-label="Позвонить">
+                            <img src="assets/images/icons/icon-phone-mob.svg" alt="Телефон">
+                        </a>
+                        <a href="#" class="mobile-menu-icon" aria-label="Поиск">
+                            <img src="assets/images/icons/icon-search-mob.svg" alt="Поиск">
+                        </a>
+                        <a href="#" class="mobile-menu-icon" aria-label="Личный кабинет">
+                            <img src="assets/images/icons/icon-user-mob.svg" alt="Личный кабинет">
+                        </a>
+                        <a href="#" class="mobile-menu-icon" aria-label="Настройки">
+                            <img src="assets/images/icons/icon-star-mob.svg" alt="Настройки">
+
+                        </a>
+                        <button class="mobile-menu-close" type="button" aria-label="Закрыть меню">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 5L5 15M5 5L15 15" stroke="currentColor" stroke-width="1"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Навигация -->
+                <nav class="mobile-menu-nav" role="navigation">
+                    <!-- Услуги (аккордеон) -->
+                    <div class="mobile-nav-item">
+                        <button class="mobile-nav-toggle" type="button" aria-expanded="false">
+                            <span>Услуги</span>
+                            <svg class="mobile-nav-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div class="mobile-nav-submenu">
+                            <a href="#">Для взрослых</a>
+                            <a href="#">Для детей</a>
+                            <a href="#">Стоматология</a>
+                            <a href="#">Стационар и операции</a>
+                            <a href="#">Центры компетенций</a>
+                            <a href="#">Аптека</a>
+                        </div>
+                    </div>
+
+                    <!-- Врачи (простая ссылка) -->
+                    <a href="#" class="mobile-nav-link">Врачи</a>
+
+                    <!-- Программы (аккордеон) -->
+                    <div class="mobile-nav-item">
+                        <button class="mobile-nav-toggle" type="button" aria-expanded="false">
+                            <span>Программы</span>
+                            <svg class="mobile-nav-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div class="mobile-nav-submenu">
+                            <a href="#">Для взрослых</a>
+                            <a href="#">Для детей</a>
+                            <a href="#">Будущим мамам</a>
+                            <a href="#">Для бизнеса</a>
+                            <a href="#">Семейный депозит</a>
+                        </div>
+                    </div>
+
+                    <!-- Инфо (аккордеон) -->
+                    <div class="mobile-nav-item">
+                        <button class="mobile-nav-toggle" type="button" aria-expanded="false">
+                            <span>Инфо</span>
+                            <svg class="mobile-nav-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div class="mobile-nav-submenu">
+                            <a href="about.html">О компании</a>
+                            <a href="#">Награды и рейтинги</a>
+                            <a href="#">Интерьеры</a>
+                            <a href="#">Отзывы</a>
+                            <a href="#">Видео</a>
+                            <a href="#">Карьера</a>
+                            <a href="#">Правовая информация</a>
+                            <a href="#">Налоговый вычет</a>
+                            <a href="#">Информация для пациентов</a>
+                            <a href="#">Подготовка к исследованиям</a>
+                            <a href="#">Памятки</a>
+                            <a href="#">Лечение в кредит</a>
+                            <a href="#">Подарочный сертификат</a>
+                        </div>
+                    </div>
+
+                    <!-- Новости (аккордеон) -->
+                    <div class="mobile-nav-item">
+                        <button class="mobile-nav-toggle" type="button" aria-expanded="false">
+                            <span>Новости</span>
+                            <svg class="mobile-nav-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div class="mobile-nav-submenu">
+                            <a href="#">Новости</a>
+                            <a href="#">Статьи</a>
+                            <a href="#">Видео</a>
+                            <a href="#">Для врачей</a>
+                        </div>
+                    </div>
+
+                    <!-- Контакты (простая ссылка) -->
+                    <a href="#" class="mobile-nav-link">Контакты</a>
+                </nav>
+
+                <!-- Направления -->
+                <div class="mobile-menu-departments">
+                    <a href="#" class="mobile-dept-link mobile-dept-pediatrics">
+                        <img src="assets/images/icons/dept-pediatrics.svg" alt="" width="16" height="18">
+                        <span>Педиатрия</span>
+                    </a>
+                    <a href="#" class="mobile-dept-link mobile-dept-ophthalmology">
+                        <img src="assets/images/icons/dept-ophthalmology.svg" alt="" width="16" height="18">
+                        <span>Экспертная офтальмология</span>
+                    </a>
+                    <a href="#" class="mobile-dept-link mobile-dept-preventive">
+                        <img src="assets/images/icons/dept-preventive.svg" alt="" width="16" height="18">
+                        <span>Превентивная медицина</span>
+                    </a>
+                    <a href="#" class="mobile-dept-link mobile-dept-dentistry">
+                        <img src="assets/images/icons/dept-dentistry.svg" alt="" width="16" height="18">
+                        <span>Стоматология</span>
+                    </a>
+                    <a href="#" class="mobile-dept-link mobile-dept-aesthetic">
+                        <img src="assets/images/icons/dept-aesthetic.svg" alt="" width="16" height="18">
+                        <span>Эстетическая медицина</span>
+                    </a>
+                </div>
+
+                <!-- Кнопки действий -->
+                <div class="mobile-menu-actions">
+                    <a href="#" class="mobile-menu-btn">Записаться на приём</a>
+                    <a href="#" class="mobile-menu-btn">Оплатить</a>
+                    <a href="#" class="mobile-menu-btn">Заказать звонок</a>
+                </div>
+
+                <!-- Контактная информация -->
+                <div class="mobile-menu-contacts">
+                    <a href="tel:+78124323232" class="mobile-menu-phone">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.8333 9.87V11.62C12.8339 11.7825 12.8007 11.9433 12.7357 12.0923C12.6707 12.2413 12.5751 12.3753 12.4553 12.4856C12.3355 12.596 12.1942 12.6802 12.0403 12.7326C11.8863 12.7851 11.7232 12.8045 11.5617 12.7894C9.76663 12.5939 8.04469 11.9783 6.52917 11.0015C5.11803 10.0996 3.92291 8.90449 3.02083 7.49335C2.04063 5.97092 1.42479 4.2404 1.23333 2.43835C1.21832 2.27733 1.23752 2.11484 1.28959 1.96136C1.34166 1.80789 1.42547 1.66693 1.53546 1.54728C1.64545 1.42763 1.77909 1.33201 1.92772 1.26661C2.07636 1.20122 2.2369 1.16743 2.39958 1.16765H4.14958C4.43063 1.16474 4.70299 1.26399 4.91538 1.44631C5.12776 1.62862 5.26558 1.88167 5.30333 2.16027C5.37417 2.71669 5.50802 3.26317 5.70222 3.78985C5.77972 3.99722 5.79461 4.22249 5.7451 4.43819C5.69559 4.65388 5.58366 4.85024 5.42316 5.0043L4.67444 5.75302C5.50342 7.20037 6.69963 8.39658 8.14698 9.22556L8.8957 8.47684C9.04976 8.31634 9.24612 8.20441 9.46181 8.1549C9.67751 8.10539 9.90278 8.12028 10.1101 8.19778C10.6368 8.39198 11.1833 8.52583 11.7397 8.59667C12.0222 8.63479 12.2784 8.77575 12.4611 8.99282C12.6439 9.20989 12.7405 9.48726 12.7333 9.77156L12.8333 9.87Z"
+                                stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <span>8 (812) 432-32-32 / 8 (812) 337-12-12</span>
+                    </a>
+                    <div class="mobile-menu-time">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.2" />
+                            <path d="M7 3.5V7L9.5 9.5" stroke="currentColor" stroke-width="1.2"
+                                stroke-linecap="round" />
+                        </svg>
+                        <span>с 07:30 до 22:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu Level 1 - Направления -->
+        <div class="menu-level-1">
+            <div class="menu-level-1-inner">
+                <a href="#" class="department-link department-pediatrics">
+                    <span class="dept-icon">
+                        <img src="assets/images/icons/dept-pediatrics.svg" alt="" width="16" height="18">
+                    </span>
+                    Педиатрия
+                </a>
+                <div class="dept-divider"></div>
+                <a href="#" class="department-link department-ophthalmology">
+                    <span class="dept-icon">
+                        <img src="assets/images/icons/dept-ophthalmology.svg" alt="" width="16" height="18">
+                    </span>
+                    Экспертная офтальмология
+                </a>
+                <div class="dept-divider"></div>
+                <a href="#" class="department-link department-preventive">
+                    <span class="dept-icon">
+                        <img src="assets/images/icons/dept-preventive.svg" alt="" width="16" height="18">
+                    </span>
+                    Превентивная медицина
+                </a>
+                <div class="dept-divider"></div>
+                <a href="#" class="department-link department-dentistry">
+                    <span class="dept-icon">
+                        <img src="assets/images/icons/dept-dentistry.svg" alt="" width="16" height="18">
+                    </span>
+                    Стоматология
+                </a>
+                <div class="dept-divider"></div>
+                <a href="#" class="department-link department-aesthetic">
+                    <span class="dept-icon">
+                        <img src="assets/images/icons/dept-aesthetic.svg" alt="" width="16" height="18">
+                    </span>
+                    Эстетическая медицина
+                </a>
+            </div>
+        </div>
+
+        <!-- Menu Level 2 - Контакты и поиск -->
+        <div class="menu-level-2">
+            <div class="menu-level-2-inner">
+                <div class="menu-level-2-left">
+                    <a href="tel:+78124323232" class="contact-link">
+                        <img src="assets/images/icons/icon-phone.svg" alt="" width="14" height="12">
+                        <span>8 (812) 432-32-32 / <span>8 (812) 337-12-12</span></span>
+                    </a>
+                    <div class="time-info">
+                        <img src="assets/images/icons/icon-clock.svg" alt="" width="12" height="12">
+                        <span>c 07:30 до 22:00</span>
+                    </div>
+                </div>
+                <div class="menu-search-box">
+                    <input type="text" class="menu-search-input" placeholder="Поиск">
+                    <img src="assets/images/icons/icon-search.svg" alt="" class="menu-search-icon" width="12"
+                        height="12">
+                </div>
+                <div class="menu-level-2-right">
+                    <a href="#" class="header-link">
+                        <img src="assets/images/icons/icon-star.svg" alt="" width="12" height="12">
+                        <span>Акции</span>
+                    </a>
+                    <a href="#" class="header-link">
+                        <img src="assets/images/icons/icon-user.svg" alt="" width="9" height="12">
+                        <span>Личный кабинет</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu Level 3 - Навигация -->
+        <div class="menu-level-3">
+            <div class="menu-level-3-inner">
+                <nav class="main-nav">
+                    <div class="nav-item-wrapper">
+                        <a href="#" class="nav-link nav-dropdown" data-dropdown="services">
+                            Услуги
+                            <svg class="nav-arrow" width="8" height="4" viewBox="0 0 9 5" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.5 0.5L4.49936 4.5L8.49881 0.5" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <div class="nav-dropdown-menu" id="dropdown-services">
+                            <a href="#">Для взрослых</a>
+                            <a href="#">Для детей</a>
+                            <a href="#">Стоматология</a>
+                            <a href="#">Стационар и операции</a>
+                        </div>
+                    </div>
+                    <div class="nav-item-wrapper">
+                        <a href="#" class="nav-link">Врачи</a>
+                    </div>
+                    <div class="nav-item-wrapper">
+                        <a href="#" class="nav-link nav-dropdown" data-dropdown="programs">
+                            Программы
+                            <svg class="nav-arrow" width="8" height="4" viewBox="0 0 9 5" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.5 0.5L4.49936 4.5L8.49881 0.5" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <div class="nav-dropdown-menu" id="dropdown-programs">
+                            <a href="#">Для взрослых</a>
+                            <a href="#">Для детей</a>
+                            <a href="#">Будущим мамам</a>
+                            <a href="#">Для бизнеса</a>
+                            <a href="#">Семейный депозит</a>
+                        </div>
+                    </div>
+                    <div class="nav-item-wrapper">
+                        <a href="#" class="nav-link nav-dropdown" data-dropdown="info">
+                            Инфо
+                            <svg class="nav-arrow" width="8" height="4" viewBox="0 0 9 5" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.5 0.5L4.49936 4.5L8.49881 0.5" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <div class="nav-dropdown-menu nav-dropdown-menu-wide" id="dropdown-info">
+                            <a href="about.html">О компании</a>
+                            <a href="#">Награды и рейтинги</a>
+                            <a href="#">Интерьеры</a>
+                            <a href="#">Отзывы</a>
+                            <a href="#">Видео</a>
+                            <a href="#">Карьера</a>
+                            <a href="#">Правовая информация, как получить услуги</a>
+                            <a href="#">Налоговый вычет</a>
+                            <a href="#">Информация для пациентов</a>
+                            <a href="#">Подготовка к диагностическим исследованиям</a>
+                            <a href="#">Памятки</a>
+                            <a href="#">Лечение в кредит</a>
+                            <a href="#">Подарочный сертификат</a>
+                        </div>
+                    </div>
+                    <div class="nav-item-wrapper">
+                        <a href="#" class="nav-link nav-dropdown" data-dropdown="news">
+                            Новости
+                            <svg class="nav-arrow" width="8" height="4" viewBox="0 0 9 5" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.5 0.5L4.49936 4.5L8.49881 0.5" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <div class="nav-dropdown-menu" id="dropdown-news">
+                            <a href="#">Новости</a>
+                            <a href="#">Статьи</a>
+                            <a href="#">Статьи для врачей</a>
+                        </div>
+                    </div>
+                    <div class="nav-item-wrapper">
+                        <a href="#" class="nav-link">Контакты</a>
+                    </div>
+                </nav>
+
+                <div class="logo">
+                    <a href="/">
+                        <img src="assets/images/icons/logo-header.svg" alt="Немецкая семейная клиника" class="logo-img">
+                    </a>
+                </div>
+
+                <div class="header-actions">
+                    <a href="#" class="btn-header d-none">Записаться на приём</a>
+                    <a href="#" class="btn-header">Оплатить</a>
+                    <a href="#" class="btn-header d-none">Заказать звонок</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ============================================
+             SECTION 1 - HERO SLIDER
+        ============================================= -->
+        <section class="hero-section" id="hero">
+            <!-- Фоновое изображение -->
+            <div class="hero-bg"></div>
+
+            <!-- Слайдер -->
+            <div class="hero-slider">
+                <!-- Слайд 1 - Лучшая многопрофильная клиника -->
+                <div class="hero-slide active" data-slide="1">
+
+                    <!-- Awards - верхний левый угол (Desktop) -->
+                    <div class="hero-awards hero-awards-desktop">
+                        <div class="award-card">
+                            <div class="award-badge">
+                                <img src="assets/images/award-badge.svg" alt="Доктор Питер">
+                            </div>
+                            <div class="award-text">
+                                <strong>Лучшая</strong>
+                                <span>многопрофильная клиника<br>Санкт-Петербурга</span>
+                            </div>
+                        </div>
+                        <div class="award-card">
+                            <div class="award-badge">
+                                <img src="assets/images/award-badge.svg" alt="Доктор Питер">
+                            </div>
+                            <div class="award-text">
+                                <strong>Лучшая</strong>
+                                <span>педиатрическая клиника<br>Санкт-Петербурга</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hero Content -->
+                    <div class="hero-content">
+                        <!-- Левая колонка -->
+                        <div class="hero-col-left">
+                            <!-- Заголовок -->
+                            <h1 class="hero-title">
+                                Лучшая многопрофильная<br>клиника Санкт-Петербурга<span class="hero-asterisk">*</span>
+                            </h1>
+                            <!-- Стрелки навигации (Desktop) -->
+                            <div class="hero-nav hero-nav-desktop">
+                                <div class="hero-arrows">
+                                    <button class="arrow-btn arrow-prev" id="heroPrev" aria-label="Предыдущий слайд">
+                                        <svg width="19" height="16" viewBox="0 0 19 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M18.2071 8L0.707108 8M0.707108 8L8.20711 15.5M0.707108 8L8.20711 0.499999"
+                                                stroke="white" stroke-linecap="round" />
+                                        </svg>
+                                    </button>
+                                    <button class="arrow-btn arrow-next" id="heroNext" aria-label="Следующий слайд">
+                                        <svg width="19" height="16" viewBox="0 0 19 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.5 8H18M18 8L10.5 0.5M18 8L10.5 15.5" stroke="white"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Правая колонка -->
+                        <div class="hero-col-right">
+                            <!-- Преимущества и кнопки -->
+                            <div class="hero-info">
+                                <ul class="hero-features">
+                                    <li>Полный спектр услуг для взрослых и детей</li>
+                                    <li>Врачи с многолетним опытом</li>
+                                    <li>Современное европейское оборудование</li>
+                                    <li>Полноценная анестезиологическая служба</li>
+                                </ul>
+                                <div class="hero-buttons">
+                                    <a href="#" class="btn btn-primary-fill">
+                                        Записаться на приём
+                                        <span class="btn-arrow">→</span>
+                                    </a>
+                                    <div class="d-flex w-100 align-items-center justify-content-between">
+                                        <a href="#" class="btn btn-outline-light">
+                                            Найти врача
+                                            <span class="btn-arrow">→</span>
+                                        </a>
+                                        <!-- Стрелки навигации (Mobile) -->
+                                        <div class="hero-nav hero-nav-mobile">
+                                            <div class="hero-arrows">
+                                                <button class="arrow-btn arrow-prev" id="heroPrev"
+                                                    aria-label="Предыдущий слайд">
+                                                    <svg width="19" height="16" viewBox="0 0 19 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M18.2071 8L0.707108 8M0.707108 8L8.20711 15.5M0.707108 8L8.20711 0.499999"
+                                                            stroke="white" stroke-linecap="round" />
+                                                    </svg>
+                                                </button>
+                                                <button class="arrow-btn arrow-next" id="heroNext"
+                                                    aria-label="Следующий слайд">
+                                                    <svg width="19" height="16" viewBox="0 0 19 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0.5 8H18M18 8L10.5 0.5M18 8L10.5 15.5" stroke="white"
+                                                            stroke-linecap="round" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Сноска -->
+                            <p class="hero-note">
+                                * — По версии портала и премии «Доктор Питер» о здоровье, совместно с «Фонтанка.ру»,
+                                2025г.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Hero Image (Mobile) -->
+                    <div class="hero-image-mobile">
+                        <img src="assets/images/hero-bg-1-mob.png" alt="Награды клиники">
+                    </div>
+
+                    <!-- Awards - мобильная версия (внизу) -->
+                    <div class="hero-awards hero-awards-mobile">
+                        <div class="award-card">
+                            <div class="award-badge">
+                                <img src="assets/images/award-badge.svg" alt="Доктор Питер">
+                            </div>
+                            <div class="award-text">
+                                <strong>Лучшая</strong>
+                                <span>многопрофильная клиника Санкт-Петербурга</span>
+                            </div>
+                        </div>
+                        <div class="award-card">
+                            <div class="award-badge">
+                                <img src="assets/images/award-badge.svg" alt="Доктор Питер">
+                            </div>
+                            <div class="award-text">
+                                <strong>Лучшая</strong>
+                                <span>педиатрическая клиника Санкт-Петербурга</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Слайд 2 - Безупречное немецкое качество -->
+                <div class="hero-slide hero-slide-2 " data-slide="2">
+                    <!-- Фон слайда 2 -->
+                    <div class="hero-bg-slide hero-bg-slide-2"></div>
+
+                    <!-- Awards - верхний левый угол (Desktop) - сетка 2x3 -->
+                    <div class="hero-awards-grid hero-awards-desktop">
+                        <!-- Ряд 1 -->
+                        <div class="award-card-v2">
+                            <div class="award-badge">
+                                <img src="assets/images/award-doktor-piter.svg" alt="Доктор Питер">
+                            </div>
+                            <div class="award-text">
+                                <strong>Лучшая</strong>
+                                <span>многопрофильная клиника<br>Санкт-Петербурга</span>
+                            </div>
+                        </div>
+                        <div class="award-card-v2">
+                            <div class="award-badge">
+                                <img src="assets/images/award-sogaz.svg" alt="СОГАЗ">
+                            </div>
+                            <div class="award-text">
+                                <strong>Клиника года – 2024</strong>
+                                <span>от страховой<br>компании СОГАЗ</span>
+                            </div>
+                        </div>
+                        <!-- Ряд 2 -->
+                        <div class="award-card-v2">
+                            <div class="award-badge">
+                                <img src="assets/images/icons/award-top10-ophthalmology.svg" alt="Топ-10">
+                            </div>
+                            <div class="award-text">
+                                <strong>Топ-10</strong>
+                                <span>офтальмологических клиник<br>Санкт-Петербурга</span>
+                            </div>
+                        </div>
+                        <div class="award-card-v2">
+                            <div class="award-badge">
+                                <img src="assets/images/icons/award-top10-plastic.svg" alt="Топ-10">
+                            </div>
+                            <div class="award-text">
+                                <strong>Топ-10 клиник</strong>
+                                <span>пластической хирургии<br>Санкт-Петербурга</span>
+                            </div>
+                        </div>
+                        <!-- Ряд 3 -->
+                        <div class="award-card-v2">
+                            <div class="award-badge">
+                                <img src="assets/images/icons/award-kids-2024.svg" alt="Лучшая детская клиника 2024">
+                            </div>
+                            <div class="award-text">
+                                <strong>Лучшая</strong>
+                                <span>детская клиника<br>2024</span>
+                            </div>
+                        </div>
+                        <div class="award-card-v2">
+                            <div class="award-badge">
+                                <img src="assets/images/icons/award-kids-2025.svg" alt="Лучшая детская клиника 2025">
+                            </div>
+                            <div class="award-text">
+                                <strong>Лучшая</strong>
+                                <span>детская клиника<br>2025</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hero Content -->
+                    <div class="hero-content hero-content-v2">
+                        <!-- Левая колонка -->
+                        <div class="hero-col-left">
+                            <!-- Заголовок -->
+                            <h2 class="hero-title hero-title-v2">
+                                Качество, <br> которому доверяют
+                            </h2>
+                            <!-- Стрелки навигации (Desktop) -->
+                            <div class="hero-nav hero-nav-desktop">
+                                <div class="hero-arrows">
+                                    <button class="arrow-btn arrow-prev" id="heroPrev" aria-label="Предыдущий слайд">
+                                        <svg width="19" height="16" viewBox="0 0 19 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M18.2071 8L0.707108 8M0.707108 8L8.20711 15.5M0.707108 8L8.20711 0.499999"
+                                                stroke="white" stroke-linecap="round" />
+                                        </svg>
+                                    </button>
+                                    <button class="arrow-btn arrow-next" id="heroNext" aria-label="Следующий слайд">
+                                        <svg width="19" height="16" viewBox="0 0 19 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.5 8H18M18 8L10.5 0.5M18 8L10.5 15.5" stroke="white"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Правая колонка -->
+                        <div class="hero-col-right">
+                            <!-- Описание и кнопки -->
+                            <div class="hero-info hero-info-v2">
+                                <div class="hero-description">
+                                    <p>Немецкая семейная клиника — клиника, основанная специалистами из Германии,
+                                        Генрихом Шнайдером* и доктором Томасом Беком**.</p>
+                                    <p>Мы привносим немецкий подход к точности, профессионализму и системности — в
+                                        медицинскую помощь для взрослых и детей.</p>
+                                </div>
+                                <div class="hero-buttons">
+                                    <a href="#" class="btn btn-primary-fill">
+                                        Записаться на приём
+                                        <span class="btn-arrow">→</span>
+                                    </a>
+                                    <div class="d-flex w-100 align-items-center justify-content-between">
+                                        <a href="#" class="btn btn-outline-light">
+                                            Найти врача
+                                            <span class="btn-arrow">→</span>
+                                        </a>
+                                        <!-- Стрелки навигации (Mobile) -->
+                                        <div class="hero-nav hero-nav-mobile">
+                                            <div class="hero-arrows">
+                                                <button class="arrow-btn arrow-prev" id="heroPrev"
+                                                    aria-label="Предыдущий слайд">
+                                                    <svg width="19" height="16" viewBox="0 0 19 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M18.2071 8L0.707108 8M0.707108 8L8.20711 15.5M0.707108 8L8.20711 0.499999"
+                                                            stroke="white" stroke-linecap="round" />
+                                                    </svg>
+                                                </button>
+                                                <button class="arrow-btn arrow-next" id="heroNext"
+                                                    aria-label="Следующий слайд">
+                                                    <svg width="19" height="16" viewBox="0 0 19 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0.5 8H18M18 8L10.5 0.5M18 8L10.5 15.5" stroke="white"
+                                                            stroke-linecap="round" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Сноска -->
+                            <p class="hero-note">
+                                * — Heinrich Schneider, Deutschland, Frankfurt am Main, ** — Dr.med Thomas Beck,
+                                Deutschland, Frankfurt am Main
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Hero Image (Mobile) -->
+                    <div class="hero-image-mobile">
+                        <img src="assets/images/hero-bg-2-mob.png" alt="Немецкая семейная клиника">
+                    </div>
+
+                    <!-- Awards - мобильная версия (внизу) - сетка 2x3 -->
+                    <div class="hero-awards-grid-mobile hero-awards-mobile">
+                        <!-- Ряд 1 -->
+                        <div class="award-card-v2">
+                            <div class="award-badge">
+                                <img src="assets/images/award-doktor-piter.svg" alt="Доктор Питер">
+                            </div>
+                            <div class="award-text">
+                                <strong>Лучшая</strong>
+                                <span>многопрофильная клиника Санкт-Петербурга</span>
+                            </div>
+                        </div>
+                        <div class="award-card-v2">
+                            <div class="award-badge">
+                                <img src="assets/images/award-sogaz.svg" alt="СОГАЗ">
+                            </div>
+                            <div class="award-text">
+                                <strong>Клиника года – 2024</strong>
+                                <span>от страховой компании СОГАЗ</span>
+                            </div>
+                        </div>
+                        <!-- Ряд 2 -->
+                        <div class="award-card-v2">
+                            <div class="award-badge">
+                                <img src="assets/images/icons/award-top10-ophthalmology.svg" alt="Топ-10">
+                            </div>
+                            <div class="award-text">
+                                <strong>Топ-10</strong>
+                                <span>офтальмологических клиник Санкт-Петербурга</span>
+                            </div>
+                        </div>
+                        <div class="award-card-v2">
+                            <div class="award-badge">
+                                <img src="assets/images/icons/award-top10-plastic.svg" alt="Топ-10">
+                            </div>
+                            <div class="award-text">
+                                <strong>Топ-10 клиник</strong>
+                                <span>пластической хирургии Санкт-Петербурга</span>
+                            </div>
+                        </div>
+                        <!-- Ряд 3 -->
+                        <div class="award-card-v2">
+                            <div class="award-badge">
+                                <img src="assets/images/icons/award-kids-2024.svg" alt="Лучшая детская клиника 2024">
+                            </div>
+                            <div class="award-text">
+                                <strong>Лучшая</strong>
+                                <span>детская клиника 2024</span>
+                            </div>
+                        </div>
+                        <div class="award-card-v2">
+                            <div class="award-badge">
+                                <img src="assets/images/icons/award-kids-2025.svg" alt="Лучшая детская клиника 2025">
+                            </div>
+                            <div class="award-text">
+                                <strong>Лучшая</strong>
+                                <span>детская клиника 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Слайд 3 - Центр экспертной офтальмологии -->
+                <div class="hero-slide hero-slide-3" data-slide="3">
+                    <!-- Фон слайда 3 -->
+                    <div class="hero-bg-slide hero-bg-slide-3"></div>
+
+                    <!-- Awards - верхний левый угол (Desktop) -->
+                    <div class="hero-awards hero-awards-desktop">
+                        <div class="award-card">
+                            <div class="award-badge">
+                                <img src="assets/images/award-doktor-piter.svg" alt="Доктор Питер">
+                            </div>
+                            <div class="award-text">
+                                <strong>Лучшая</strong>
+                                <span>многопрофильная клиника<br>Санкт-Петербурга</span>
+                            </div>
+                        </div>
+                        <div class="award-card">
+                            <div class="award-badge">
+                                <img src="assets/images/icons/award-top10-ophthalmology.svg" alt="Топ-10">
+                            </div>
+                            <div class="award-text">
+                                <strong>Топ-10</strong>
+                                <span>офтальмологических клиник<br>Санкт-Петербурга</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hero Content -->
+                    <div class="hero-content hero-content-v3">
+                        <!-- Левая колонка -->
+                        <div class="hero-col-left">
+                            <!-- Заголовок -->
+                            <h2 class="hero-title hero-title-v3">
+                                Центр экспертной<br>офтальмологии
+                            </h2>
+                            <!-- Стрелки навигации (Desktop) -->
+                            <div class="hero-nav hero-nav-desktop">
+                                <div class="hero-arrows">
+                                    <button class="arrow-btn arrow-prev" id="heroPrev" aria-label="Предыдущий слайд">
+                                        <svg width="19" height="16" viewBox="0 0 19 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M18.2071 8L0.707108 8M0.707108 8L8.20711 15.5M0.707108 8L8.20711 0.499999"
+                                                stroke="white" stroke-linecap="round" />
+                                        </svg>
+                                    </button>
+                                    <button class="arrow-btn arrow-next" id="heroNext" aria-label="Следующий слайд">
+                                        <svg width="19" height="16" viewBox="0 0 19 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.5 8H18M18 8L10.5 0.5M18 8L10.5 15.5" stroke="white"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Правая колонка -->
+                        <div class="hero-col-right">
+                            <!-- Описание и кнопки -->
+                            <div class="hero-info hero-info-v3">
+                                <div class="hero-description hero-description-v3">
+                                    <p>Точная диагностика и лечение заболеваний зрения с применением современных
+                                        технологий.</p>
+                                    <p>Индивидуальный подход и высокий уровень медицинской экспертизы на каждом этапе.
+                                    </p>
+                                </div>
+                                <div class="hero-buttons">
+                                    <a href="#" class="btn btn-primary-fill">
+                                        Записаться на приём
+                                        <span class="btn-arrow">→</span>
+                                    </a>
+                                    <div class="d-flex w-100 align-items-center justify-content-between">
+                                        <a href="#" class="btn btn-outline-light">
+                                            Найти врача
+                                            <span class="btn-arrow">→</span>
+                                        </a>
+                                        <!-- Стрелки навигации (Mobile) -->
+                                        <div class="hero-nav hero-nav-mobile">
+                                            <div class="hero-arrows">
+                                                <button class="arrow-btn arrow-prev" id="heroPrev"
+                                                    aria-label="Предыдущий слайд">
+                                                    <svg width="19" height="16" viewBox="0 0 19 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M18.2071 8L0.707108 8M0.707108 8L8.20711 15.5M0.707108 8L8.20711 0.499999"
+                                                            stroke="white" stroke-linecap="round" />
+                                                    </svg>
+                                                </button>
+                                                <button class="arrow-btn arrow-next" id="heroNext"
+                                                    aria-label="Следующий слайд">
+                                                    <svg width="19" height="16" viewBox="0 0 19 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0.5 8H18M18 8L10.5 0.5M18 8L10.5 15.5" stroke="white"
+                                                            stroke-linecap="round" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Сноска -->
+                            <p class="hero-note">
+                                * — Юрий Иванович Пирогов — Заведующий Центром Экспертной Офтальмологии.
+                                Врач-офтальмолог, кандидат медицинских наук.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Hero Image (Mobile) -->
+                    <div class="hero-image-mobile">
+                        <img src="assets/images/hero-bg-3-mob.png" alt="Центр экспертной офтальмологии">
+                    </div>
+
+                    <!-- Awards - мобильная версия (внизу) -->
+                    <div class="hero-awards hero-awards-mobile">
+                        <div class="award-card">
+                            <div class="award-badge">
+                                <img src="assets/images/award-doktor-piter.svg" alt="Доктор Питер">
+                            </div>
+                            <div class="award-text">
+                                <strong>Лучшая</strong>
+                                <span>многопрофильная клиника Санкт-Петербурга</span>
+                            </div>
+                        </div>
+                        <div class="award-card">
+                            <div class="award-badge">
+                                <img src="assets/images/award-sogaz.svg" alt="СОГАЗ">
+                            </div>
+                            <div class="award-text">
+                                <strong>Клиника года – 2024</strong>
+                                <span>от страховой компании СОГАЗ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Слайд 4 - Детская клиника №1 -->
+                <div class="hero-slide hero-slide-4" data-slide="4">
+                    <!-- Фон слайда 4 -->
+                    <div class="hero-bg-slide hero-bg-slide-4"></div>
+
+                    <!-- Awards - верхний левый угол (Desktop) -->
+                    <div class="hero-awards-grid-4 hero-awards-desktop">
+                        <div class="award-card">
+                            <div class="award-badge">
+                                <img src="assets/images/icons/award-kids-2024.svg" alt="Лучшая детская клиника 2024">
+                            </div>
+                            <div class="award-text">
+                                <strong>Лучшая</strong>
+                                <span>детская клиника<br>2024</span>
+                            </div>
+                        </div>
+                        <div class="award-card">
+                            <div class="award-badge">
+                                <img src="assets/images/icons/award-kids-2025.svg" alt="Лучшая детская клиника 2025">
+                            </div>
+                            <div class="award-text">
+                                <strong>Лучшая</strong>
+                                <span>детская клиника<br>2025</span>
+                            </div>
+                        </div>
+                        <div class="award-card">
+                            <div class="award-badge">
+                                <img src="assets/images/award-doktor-piter.svg" alt="Доктор Питер">
+                            </div>
+                            <div class="award-text">
+                                <strong>Лучшая</strong>
+                                <span>педиатрическая клиника<br>Санкт-Петербурга</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hero Content -->
+                    <div class="hero-content hero-content-v4">
+                        <!-- Левая колонка -->
+                        <div class="hero-col-left">
+                            <!-- Заголовок -->
+                            <h2 class="hero-title hero-title-v4">
+                                Детская клиника №1<br>в Санкт-Петербурге
+                            </h2>
+                            <!-- Стрелки навигации (Desktop) -->
+                            <div class="hero-nav hero-nav-desktop">
+                                <div class="hero-arrows">
+                                    <button class="arrow-btn arrow-prev" id="heroPrev" aria-label="Предыдущий слайд">
+                                        <svg width="19" height="16" viewBox="0 0 19 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M18.2071 8L0.707108 8M0.707108 8L8.20711 15.5M0.707108 8L8.20711 0.499999"
+                                                stroke="white" stroke-linecap="round" />
+                                        </svg>
+                                    </button>
+                                    <button class="arrow-btn arrow-next" id="heroNext" aria-label="Следующий слайд">
+                                        <svg width="19" height="16" viewBox="0 0 19 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.5 8H18M18 8L10.5 0.5M18 8L10.5 15.5" stroke="white"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Правая колонка -->
+                        <div class="hero-col-right">
+                            <!-- Описание и кнопки -->
+                            <div class="hero-info hero-info-v4">
+                                <div class="hero-description hero-description-v4">
+                                    <p>Медицинская помощь детям всех возрастов — от первых дней жизни до подросткового
+                                        периода.</p>
+                                    <p>Безопасный, внимательный и профессиональный подход к детскому здоровью.</p>
+                                </div>
+                                <div class="hero-buttons">
+                                    <a href="#" class="btn btn-primary-fill">
+                                        Записаться на приём
+                                        <span class="btn-arrow">→</span>
+                                    </a>
+                                    <div class="d-flex w-100 align-items-center justify-content-between">
+                                        <a href="#" class="btn btn-outline-light">
+                                            Найти врача
+                                            <span class="btn-arrow">→</span>
+                                        </a>
+                                        <!-- Стрелки навигации (Mobile) -->
+                                        <div class="hero-nav hero-nav-mobile">
+                                            <div class="hero-arrows">
+                                                <button class="arrow-btn arrow-prev" id="heroPrev"
+                                                    aria-label="Предыдущий слайд">
+                                                    <svg width="19" height="16" viewBox="0 0 19 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M18.2071 8L0.707108 8M0.707108 8L8.20711 15.5M0.707108 8L8.20711 0.499999"
+                                                            stroke="white" stroke-linecap="round" />
+                                                    </svg>
+                                                </button>
+                                                <button class="arrow-btn arrow-next" id="heroNext"
+                                                    aria-label="Следующий слайд">
+                                                    <svg width="19" height="16" viewBox="0 0 19 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0.5 8H18M18 8L10.5 0.5M18 8L10.5 15.5" stroke="white"
+                                                            stroke-linecap="round" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hero Image (Mobile) -->
+                    <div class="hero-image-mobile">
+                        <img src="assets/images/hero-bg-4-mob.png" alt="Детская клиника №1">
+                    </div>
+
+                    <!-- Awards - мобильная версия (внизу) -->
+                    <div class="hero-awards-grid-mobile-4 hero-awards-mobile">
+                        <div class="award-card">
+                            <div class="award-badge">
+                                <img src="assets/images/icons/award-kids-2024.svg" alt="Лучшая детская клиника 2024">
+                            </div>
+                            <div class="award-text">
+                                <strong>Лучшая детская</strong>
+                                <span>клиника 2024</span>
+                            </div>
+                        </div>
+                        <div class="award-card">
+                            <div class="award-badge">
+                                <img src="assets/images/icons/award-kids-2025.svg" alt="Лучшая детская клиника 2025">
+                            </div>
+                            <div class="award-text">
+                                <strong>Лучшая детская</strong>
+                                <span>клиника 2025</span>
+                            </div>
+                        </div>
+                        <div class="award-card award-card-wide">
+                            <div class="award-badge">
+                                <img src="assets/images/award-doktor-piter.svg" alt="Доктор Питер">
+                            </div>
+                            <div class="award-text">
+                                <strong>Лучшая</strong>
+                                <span>педиатрическая клиника Санкт-Петербурга</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Слайд 5 - Центр пластической хирургии и косметологии -->
+                <div class="hero-slide hero-slide-5" data-slide="5">
+                    <!-- Фон слайда 5 -->
+                    <div class="hero-bg-slide hero-bg-slide-5"></div>
+
+                    <!-- Awards - верхний левый угол (Desktop) -->
+                    <div class="hero-awards hero-awards-desktop">
+                        <div class="award-card">
+                            <div class="award-badge">
+                                <img src="assets/images/award-doktor-piter.svg" alt="Доктор Питер">
+                            </div>
+                            <div class="award-text">
+                                <strong>Лучшая</strong>
+                                <span>многопрофильная клиника<br>Санкт-Петербурга</span>
+                            </div>
+                        </div>
+                        <div class="award-card">
+                            <div class="award-badge">
+                                <img src="assets/images/icons/award-top10-plastic.svg" alt="Топ-10">
+                            </div>
+                            <div class="award-text">
+                                <strong>Топ-10 клиник</strong>
+                                <span>пластической хирургии<br>Санкт-Петербурга</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hero Content -->
+                    <div class="hero-content hero-content-v5">
+                        <!-- Левая колонка -->
+                        <div class="hero-col-left">
+                            <!-- Заголовок -->
+                            <h2 class="hero-title hero-title-v5">
+                                Центр пластической<br>хирургии и косметологии
+                            </h2>
+                            <!-- Стрелки навигации (Desktop) -->
+                            <div class="hero-nav hero-nav-desktop">
+                                <div class="hero-arrows">
+                                    <button class="arrow-btn arrow-prev" id="heroPrev" aria-label="Предыдущий слайд">
+                                        <svg width="19" height="16" viewBox="0 0 19 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M18.2071 8L0.707108 8M0.707108 8L8.20711 15.5M0.707108 8L8.20711 0.499999"
+                                                stroke="white" stroke-linecap="round" />
+                                        </svg>
+                                    </button>
+                                    <button class="arrow-btn arrow-next" id="heroNext" aria-label="Следующий слайд">
+                                        <svg width="19" height="16" viewBox="0 0 19 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.5 8H18M18 8L10.5 0.5M18 8L10.5 15.5" stroke="white"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Правая колонка -->
+                        <div class="hero-col-right">
+                            <!-- Описание и кнопки -->
+                            <div class="hero-info hero-info-v5">
+                                <div class="hero-description hero-description-v5">
+                                    <p>Выверенные и естественные результаты, основанные на медицинской точности и опыте
+                                        специалистов.</p>
+                                    <p>Индивидуальные решения с учётом анатомии и ожиданий пациента.</p>
+                                </div>
+                                <div class="hero-buttons">
+                                    <a href="#" class="btn btn-primary-fill">
+                                        Записаться на приём
+                                        <span class="btn-arrow">→</span>
+                                    </a>
+                                    <div class="d-flex w-100 align-items-center justify-content-between">
+                                        <a href="#" class="btn btn-outline-light">
+                                            Найти врача
+                                            <span class="btn-arrow">→</span>
+                                        </a>
+                                        <!-- Стрелки навигации (Mobile) -->
+                                        <div class="hero-nav hero-nav-mobile">
+                                            <div class="hero-arrows">
+                                                <button class="arrow-btn arrow-prev" id="heroPrev"
+                                                    aria-label="Предыдущий слайд">
+                                                    <svg width="19" height="16" viewBox="0 0 19 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M18.2071 8L0.707108 8M0.707108 8L8.20711 15.5M0.707108 8L8.20711 0.499999"
+                                                            stroke="white" stroke-linecap="round" />
+                                                    </svg>
+                                                </button>
+                                                <button class="arrow-btn arrow-next" id="heroNext"
+                                                    aria-label="Следующий слайд">
+                                                    <svg width="19" height="16" viewBox="0 0 19 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0.5 8H18M18 8L10.5 0.5M18 8L10.5 15.5" stroke="white"
+                                                            stroke-linecap="round" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hero Image (Mobile) -->
+                    <div class="hero-image-mobile">
+                        <img src="assets/images/hero-bg-5-mob.png" alt="Центр пластической хирургии и косметологии">
+                    </div>
+
+                    <!-- Awards - мобильная версия (внизу) -->
+                    <div class="hero-awards hero-awards-mobile">
+                        <div class="award-card">
+                            <div class="award-badge">
+                                <img src="assets/images/award-doktor-piter.svg" alt="Доктор Питер">
+                            </div>
+                            <div class="award-text">
+                                <strong>Лучшая</strong>
+                                <span>многопрофильная клиника Санкт-Петербурга</span>
+                            </div>
+                        </div>
+                        <div class="award-card">
+                            <div class="award-badge">
+                                <img src="assets/images/icons/award-top10-plastic.svg" alt="Топ-10">
+                            </div>
+                            <div class="award-text">
+                                <strong>Топ-10 клиник</strong>
+                                <span>пластической хирургии Санкт-Петербурга</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             SECTION 2 - ВСЕ НАПРАВЛЕНИЯ
+        ============================================= -->
+        <section class="directions-section section-light" id="directions">
+            <div class="container-fluid px-4">
+                <div class="directions-header">
+                    <h2 class="directions-title">Все направления медицинской помощи</h2>
+                    <p class="directions-subtitle">
+                        Комплексная медицинская помощь с точной диагностикой, современными методами лечения
+                        и индивидуальным наблюдением по международным стандартам.
+                    </p>
+                </div>
+
+                <!-- Tabs -->
+                <div class="directions-tabs">
+                    <button class="directions-tab active" data-tab="adults">Взрослые</button>
+                    <button class="directions-tab" data-tab="children">Дети</button>
+                    <button class="directions-tab" data-tab="dentistry">Стоматология</button>
+                </div>
+
+                <!-- Tab Content -->
+                <div class="directions-content">
+                    <!-- Взрослые -->
+                    <div class="directions-pane active" id="adults">
+                        <div class="directions-grid">
+                            <a href="#" class="direction-item">
+                                <span class="direction-text">Амбулаторная помощь</span>
+                                <span class="direction-arrow">→</span>
+                            </a>
+                            <a href="#" class="direction-item">
+                                <span class="direction-text">Стационар и операции</span>
+                                <span class="direction-arrow">→</span>
+                            </a>
+                            <a href="#" class="direction-item">
+                                <span class="direction-text">Вакцинация</span>
+                                <span class="direction-arrow">→</span>
+                            </a>
+                            <a href="#" class="direction-item">
+                                <span class="direction-text">Центр хирургии стопы</span>
+                                <span class="direction-arrow">→</span>
+                            </a>
+                            <a href="#" class="direction-item">
+                                <span class="direction-text">Гастроэнтерология</span>
+                                <span class="direction-arrow">→</span>
+                            </a>
+                            <a href="#" class="direction-item">
+                                <span class="direction-text">Отоларингология</span>
+                                <span class="direction-arrow">→</span>
+                            </a>
+                            <a href="#" class="direction-item">
+                                <span class="direction-text">Гинекология</span>
+                                <span class="direction-arrow">→</span>
+                            </a>
+                            <a href="#" class="direction-item">
+                                <span class="direction-text">Пластическая хирургия</span>
+                                <span class="direction-arrow">→</span>
+                            </a>
+                            <a href="#" class="direction-item">
+                                <span class="direction-text">Косметология</span>
+                                <span class="direction-arrow">→</span>
+                            </a>
+                            <a href="#" class="direction-item">
+                                <span class="direction-text">Лечение катаракты</span>
+                                <span class="direction-arrow">→</span>
+                            </a>
+                            <a href="#" class="direction-item">
+                                <span class="direction-text">Комплексное обследование (Check-Up)</span>
+                                <span class="direction-arrow">→</span>
+                            </a>
+                            <a href="#" class="direction-item">
+                                <span class="direction-text">Рентгенодиагностика</span>
+                                <span class="direction-arrow">→</span>
+                            </a>
+                            <a href="#" class="direction-item">
+                                <span class="direction-text">Диагностика</span>
+                                <span class="direction-arrow">→</span>
+                            </a>
+                            <a href="#" class="direction-item">
+                                <span class="direction-text">Травматология</span>
+                                <span class="direction-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Дети -->
+                    <div class="directions-pane" id="children">
+                        <div class="directions-grid">
+                            <a href="#" class="direction-item">
+                                <span class="direction-text">Педиатрия</span>
+                                <span class="direction-arrow">→</span>
+                            </a>
+                            <a href="#" class="direction-item">
+                                <span class="direction-text">Детская офтальмология</span>
+                                <span class="direction-arrow">→</span>
+                            </a>
+                            <a href="#" class="direction-item">
+                                <span class="direction-text">Вакцинация детей</span>
+                                <span class="direction-arrow">→</span>
+                            </a>
+                            <a href="#" class="direction-item">
+                                <span class="direction-text">Детская гастроэнтерология</span>
+                                <span class="direction-arrow">→</span>
+                            </a>
+                            <a href="#" class="direction-item">
+                                <span class="direction-text">Детская неврология</span>
+                                <span class="direction-arrow">→</span>
+                            </a>
+                            <a href="#" class="direction-item">
+                                <span class="direction-text">Детская аллергология</span>
+                                <span class="direction-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Стоматология -->
+                    <div class="directions-pane" id="dentistry">
+                        <div class="directions-grid">
+                            <a href="#" class="direction-item">
+                                <span class="direction-text">Терапевтическая стоматология</span>
+                                <span class="direction-arrow">→</span>
+                            </a>
+                            <a href="#" class="direction-item">
+                                <span class="direction-text">Хирургическая стоматология</span>
+                                <span class="direction-arrow">→</span>
+                            </a>
+                            <a href="#" class="direction-item">
+                                <span class="direction-text">Ортодонтия</span>
+                                <span class="direction-arrow">→</span>
+                            </a>
+                            <a href="#" class="direction-item">
+                                <span class="direction-text">Детская стоматология</span>
+                                <span class="direction-arrow">→</span>
+                            </a>
+                            <a href="#" class="direction-item">
+                                <span class="direction-text">Имплантация</span>
+                                <span class="direction-arrow">→</span>
+                            </a>
+                            <a href="#" class="direction-item">
+                                <span class="direction-text">Протезирование</span>
+                                <span class="direction-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="directions-action">
+                    <a href="#" class="btn btn-outline-dark">
+                        Записаться на приём
+                        <span class="btn-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             SECTION 3 - НЕМЕЦКИЙ СТАНДАРТ
+        ============================================= -->
+        <section class="standards-section" id="standards">
+            <div class="container-fluid px-4">
+                <div class="row standards-layout">
+                    <div class="col-lg-5 standards-intro">
+                        <div class="standards-content">
+                            <h2 class="section-title-left">
+                                Немецкий стандарт<br>медицины — на каждом этапе лечения
+                            </h2>
+                            <p class="section-text">
+                                Мы создаём медицинскую помощь, основанную на чётких стандартах, выстроенных процессах и
+                                внимании к пациенту — от первого обращения до полного решения задачи.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 standards-cards">
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <div class="standard-card">
+                                    <h4 class="card-title-sm">Команда профессионалов</h4>
+                                    <p class="card-text-sm">Опытные врачи, эксперты своих направлений, внимательные к
+                                        каждому пациенту</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="standard-card">
+                                    <h4 class="card-title-sm">Широкий спектр медицинских услуг</h4>
+                                    <p class="card-text-sm">Помощь взрослым и детям в одном месте, от профилактики до
+                                        сложных клинических случаев</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="standard-card">
+                                    <h4 class="card-title-sm">Современное оборудование</h4>
+                                    <p class="card-text-sm">Диагностические и лечебные технологии экспертного уровня</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="standard-card">
+                                    <h4 class="card-title-sm">Системность и точность</h4>
+                                    <p class="card-text-sm">Немецкий подход в организации процессов, внимании к деталям
+                                        и качеству лечения.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 standards-action">
+                        <a href="#" class="btn btn-outline-dark btn-lg">
+                            Подробнее о клинике
+                            <span class="btn-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             SECTION 4 - ЦЕНТРЫ КОМПЕТЕНЦИЙ
+        ============================================= -->
+        <section class="competence-section section-light" id="competence">
+            <div class="container-fluid px-4">
+                <div class="section-header competence-header">
+                    <h2 class="section-title">Многопрофильность и центры компетенций</h2>
+                    <p class="section-subtitle">
+                        Система, выстроенная вокруг ключевых медицинских направлений для согласованной и эффективной
+                        помощи.
+                    </p>
+                </div>
+
+                <div class="competence-grid">
+                    <a href="#" class="competence-card competence-card--dark competence-card-1">
+                        <span class="card-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 8.26568L8.58856 8.27491V2.4262L1.01476 10L0 8.98524L7.5738 1.41144L1.73432 1.42066V0H10V8.26568Z"
+                                    fill="white" />
+                            </svg>
+                        </span>
+                        <h3 class="competence-title">Центр превентивной<br>и интегративной<br>медицины</h3>
+                    </a>
+
+                    <a href="#" class="competence-card competence-card--image competence-plastic competence-card-tall">
+                        <span class="card-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 8.26568L8.58856 8.27491V2.4262L1.01476 10L0 8.98524L7.5738 1.41144L1.73432 1.42066V0H10V8.26568Z"
+                                    fill="white" />
+                            </svg>
+                        </span>
+                        <h3 class="competence-title">Центр пластической<br>хирургии и эстетической<br>медицины</h3>
+                    </a>
+
+                    <a href="#" class="competence-card competence-card--dark competence-card-3">
+                        <span class="card-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 8.26568L8.58856 8.27491V2.4262L1.01476 10L0 8.98524L7.5738 1.41144L1.73432 1.42066V0H10V8.26568Z"
+                                    fill="white" />
+                            </svg>
+                        </span>
+                        <h3 class="competence-title">Центр<br>лазерной<br>проктологии</h3>
+                    </a>
+
+                    <a href="#" class="competence-card competence-card--dark competence-card-4">
+                        <span class="card-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 8.26568L8.58856 8.27491V2.4262L1.01476 10L0 8.98524L7.5738 1.41144L1.73432 1.42066V0H10V8.26568Z"
+                                    fill="white" />
+                            </svg>
+                        </span>
+                        <h3 class="competence-title">Центр<br>хирургии<br>стопы</h3>
+                    </a>
+
+                    <a href="#" class="competence-card competence-card--dark competence-card-5">
+                        <span class="card-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 8.26568L8.58856 8.27491V2.4262L1.01476 10L0 8.98524L7.5738 1.41144L1.73432 1.42066V0H10V8.26568Z"
+                                    fill="white" />
+                            </svg>
+                        </span>
+                        <h3 class="competence-title">Немецкая<br>семейная<br>стоматология</h3>
+                    </a>
+
+                    <a href="#"
+                        class="competence-card competence-card--image competence-pediatrics competence-card-wide-1 competence-card--left-gradient">
+                        <span class="card-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 8.26568L8.58856 8.27491V2.4262L1.01476 10L0 8.98524L7.5738 1.41144L1.73432 1.42066V0H10V8.26568Z"
+                                    fill="white" />
+                            </svg>
+                        </span>
+                        <h3 class="competence-title">Педиатрия</h3>
+                    </a>
+
+                    <a href="#"
+                        class="competence-card competence-card--image competence-ophthalmology competence-card-wide-2 competence-card--left-gradient">
+                        <span class="card-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 8.26568L8.58856 8.27491V2.4262L1.01476 10L0 8.98524L7.5738 1.41144L1.73432 1.42066V0H10V8.26568Z"
+                                    fill="white" />
+                            </svg>
+                        </span>
+                        <h3 class="competence-title">Центр<br>экспертной<br>офтальмологии</h3>
+                    </a>
+
+                    <a href="#" class="competence-card competence-card--dark competence-card-8">
+                        <span class="card-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 8.26568L8.58856 8.27491V2.4262L1.01476 10L0 8.98524L7.5738 1.41144L1.73432 1.42066V0H10V8.26568Z"
+                                    fill="white" />
+                            </svg>
+                        </span>
+                        <h3 class="competence-title">Центр<br>экспертной<br>неврологии</h3>
+                    </a>
+
+                    <a href="#" class="competence-card competence-card--dark competence-card-9">
+                        <span class="card-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 8.26568L8.58856 8.27491V2.4262L1.01476 10L0 8.98524L7.5738 1.41144L1.73432 1.42066V0H10V8.26568Z"
+                                    fill="white" />
+                            </svg>
+                        </span>
+                        <h3 class="competence-title">Центр экспертной<br>оперативной<br>гинекологии</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             SECTION 5 - ПОИСК ВРАЧА
+        ============================================= -->
+        <section class="search-section" id="search">
+            <div class="search-card">
+                <div class="search-card-bg"></div>
+                <div class="search-card-overlay"></div>
+                <div class="search-card-content">
+                    <div class="search-text-group">
+                        <h2 class="search-title">Быстрый поиск врача или услуги</h2>
+                        <p class="search-subtitle">
+                            Введите симптом, фамилию врача или медицинское направление — система покажет подходящих
+                            специалистов.
+                        </p>
+                    </div>
+
+                    <div class="search-form-group">
+                        <div class="search-input-wrapper">
+                            <input type="text" class="search-input-field" placeholder="Поиск">
+                            <svg class="search-input-icon" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="5" cy="5" r="4.5" stroke="white" />
+                                <line x1="8.35355" y1="8.64645" x2="12.3536" y2="12.6464" stroke="white" />
+                            </svg>
+                        </div>
+                        <button class="search-btn">
+                            <span>Найти</span>
+                            <span class="search-btn-arrow">→</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             SECTION 6 - КОМАНДА ВРАЧЕЙ
+        ============================================= -->
+        <section class="doctors-section section-light" id="doctors">
+            <div class="container-fluid px-4">
+                <div class="doctors-header">
+                    <h2 class="doctors-title">Профессиональная команда врачей</h2>
+                    <p class="doctors-subtitle">
+                        В Немецкой семейной клинике ведут приём доктора и кандидаты медицинских наук, врачи высшей
+                        квалификационной категории и специалисты редких направлений.
+                    </p>
+                    <p class="doctors-subtitle">
+                        Мы формируем команду, ориентированную на качество и развитие: наши врачи регулярно проходят
+                        стажировки и повышение квалификации.
+                    </p>
+                </div>
+
+                <!-- Tabs -->
+                <div class="doctors-tabs">
+                    <ul class="doctors-tabs-list" role="tablist">
+                        <li class="doctors-tab-item">
+                            <button class="doctors-tab-link active" data-bs-toggle="tab"
+                                data-bs-target="#doctors-children">Для детей</button>
+                        </li>
+                        <li class="doctors-tab-item">
+                            <button class="doctors-tab-link" data-bs-toggle="tab" data-bs-target="#doctors-adults">Для
+                                взрослых</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="doctors-children">
+                        <div class="doctors-grid">
+                            <div class="doctor-card">
+                                <div class="doctor-photo">
+                                    <img src="assets/images/doctor-1.png" alt="Врач">
+                                </div>
+                                <h4 class="doctor-name">Фамилия<br>Имя Отчество</h4>
+                                <p class="doctor-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                            <div class="doctor-card">
+                                <div class="doctor-photo">
+                                    <img src="assets/images/doctor-2.png" alt="Врач">
+                                </div>
+                                <h4 class="doctor-name">Фамилия<br>Имя Отчество</h4>
+                                <p class="doctor-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                            <div class="doctor-card">
+                                <div class="doctor-photo">
+                                    <img src="assets/images/doctor-3.png" alt="Врач">
+                                </div>
+                                <h4 class="doctor-name">Фамилия<br>Имя Отчество</h4>
+                                <p class="doctor-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                            <div class="doctor-card">
+                                <div class="doctor-photo">
+                                    <img src="assets/images/doctor-4.png" alt="Врач">
+                                </div>
+                                <h4 class="doctor-name">Фамилия<br>Имя Отчество</h4>
+                                <p class="doctor-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                            <div class="doctor-card">
+                                <div class="doctor-photo">
+                                    <img src="assets/images/doctor-5.png" alt="Врач">
+                                </div>
+                                <h4 class="doctor-name">Фамилия<br>Имя Отчество</h4>
+                                <p class="doctor-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="doctors-adults">
+                        <div class="doctors-grid">
+                            <div class="doctor-card">
+                                <div class="doctor-photo">
+                                    <img src="assets/images/doctor-2.png" alt="Врач">
+                                </div>
+                                <h4 class="doctor-name">Фамилия<br>Имя Отчество</h4>
+                                <p class="doctor-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                            <div class="doctor-card">
+                                <div class="doctor-photo">
+                                    <img src="assets/images/doctor-3.png" alt="Врач">
+                                </div>
+                                <h4 class="doctor-name">Фамилия<br>Имя Отчество</h4>
+                                <p class="doctor-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                            <div class="doctor-card">
+                                <div class="doctor-photo">
+                                    <img src="assets/images/doctor-4.png" alt="Врач">
+                                </div>
+                                <h4 class="doctor-name">Фамилия<br>Имя Отчество</h4>
+                                <p class="doctor-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                            <div class="doctor-card">
+                                <div class="doctor-photo">
+                                    <img src="assets/images/doctor-5.png" alt="Врач">
+                                </div>
+                                <h4 class="doctor-name">Фамилия<br>Имя Отчество</h4>
+                                <p class="doctor-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                            <div class="doctor-card">
+                                <div class="doctor-photo">
+                                    <img src="assets/images/doctor-1.png" alt="Врач">
+                                </div>
+                                <h4 class="doctor-name">Фамилия<br>Имя Отчество</h4>
+                                <p class="doctor-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="doctors-action">
+                    <a href="#" class="btn btn-outline-dark btn-lg">
+                        Перейти ко всем врачам
+                        <span class="btn-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             SECTION 7 - ПРОГРАММЫ
+        ============================================= -->
+        <section class="programs-section" id="programs">
+            <div class="container-fluid px-4">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Продуманные медицинские<br>программы для всей семьи</h2>
+                    <p class="section-subtitle">
+                        Продуманная система профилактики, диагностики и наблюдения — для тех, кто хочет получать
+                        медицинскую помощь организованно и без лишних хлопот.
+                    </p>
+                </div>
+
+                <div class="programs-arrows slider-arrows">
+                    <button class="arrow-btn arrow-prev"><i class="bi bi-arrow-left"></i></button>
+                    <button class="arrow-btn arrow-next"><i class="bi bi-arrow-right"></i></button>
+                </div>
+
+                <div class="programs-grid">
+                    <a href="#" class="program-card">
+                        <div class="program-content">
+                            <h4 class="program-title">Для взрослых</h4>
+                            <p class="program-desc">Комплексные программы <br> профилактики и лечения<br> для поддержания
+                                здоровья<br> и контроля состояния под<br> наблюдением специалистов.</p>
+                        </div>
+                        <span class="card-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 8.26568L8.58856 8.27491V2.4262L1.01476 10L0 8.98524L7.5738 1.41144L1.73432 1.42066V0H10V8.26568Z"
+                                    fill="#202020" />
+                            </svg>
+                        </span>
+                    </a>
+                    <a href="#" class="program-card">
+                        <div class="program-content">
+                            <h4 class="program-title">Для детей</h4>
+                            <p class="program-desc">Профилактические<br> программы, контроль<br> развития, иммунитета<br> и здоровья
+                                ребёнка<br> на всех этапах взросления.</p>
+                        </div>
+                        <span class="card-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 8.26568L8.58856 8.27491V2.4262L1.01476 10L0 8.98524L7.5738 1.41144L1.73432 1.42066V0H10V8.26568Z"
+                                    fill="#202020" />
+                            </svg>
+                        </span>
+                    </a>
+                    <a href="#" class="program-card">
+                        <div class="program-content">
+                            <h4 class="program-title">Будущим мамам</h4>
+                            <p class="program-desc">Ведение беременности<br> по немецким стандартам:<br> регулярное наблюдение,<br>
+                                современная диагностика<br> и всесторонняя поддержка.</p>
+                        </div>
+                        <span class="card-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 8.26568L8.58856 8.27491V2.4262L1.01476 10L0 8.98524L7.5738 1.41144L1.73432 1.42066V0H10V8.26568Z"
+                                    fill="#202020" />
+                            </svg>
+                        </span>
+                    </a>
+                    <a href="#" class="program-card">
+                        <div class="program-content">
+                            <h4 class="program-title">Для бизнеса</h4>
+                            <p class="program-desc">Надёжные корпоративные<br> программы для сотрудников<br> компаний:
+                                профилактика,<br> сопровождение,<br> диагностика.</p>
+                        </div>
+                        <span class="card-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 8.26568L8.58856 8.27491V2.4262L1.01476 10L0 8.98524L7.5738 1.41144L1.73432 1.42066V0H10V8.26568Z"
+                                    fill="#202020" />
+                            </svg>
+                        </span>
+                    </a>
+                    <a href="#" class="program-card">
+                        <div class="program-content">
+                            <h4 class="program-title">Семейный депозит</h4>
+                            <p class="program-desc">Удобный и выгодный<br> способ планировать<br> медицинские услуги<br> для всех
+                                членов семьи<br> в любое время.</p>
+                        </div>
+                        <span class="card-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 8.26568L8.58856 8.27491V2.4262L1.01476 10L0 8.98524L7.5738 1.41144L1.73432 1.42066V0H10V8.26568Z"
+                                    fill="#202020" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             SECTION 8 - АКТУАЛЬНЫЕ ПРЕДЛОЖЕНИЯ
+        ============================================= -->
+        <section class="offers-section section-light" id="offers">
+            <div class="container-fluid px-4">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Актуальные предложения</h2>
+                    <p class="section-subtitle">
+                        Выгодные условия на профилактику, диагностику и комплексные программы для взрослых и детей.
+                    </p>
+                </div>
+
+                <div class="offers-grid">
+                    <a href="#" class="offer-card">
+                        <div class="offer-image" style="background-image: url('assets/images/offer-1.png');">
+                            <span class="offer-arrow">↗</span>
+                            <span class="offer-badge">-13%</span>
+                            <h4 class="offer-title">Фотоомоложение<br>(лицо + шея + декольте)</h4>
+                        </div>
+                    </a>
+                    <a href="#" class="offer-card">
+                        <div class="offer-image" style="background-image: url('assets/images/offer-2.png');">
+                            <span class="offer-arrow">↗</span>
+                            <span class="offer-badge">-15%</span>
+                            <h4 class="offer-title">Биоревитализация:<br>вторая процедура</h4>
+                        </div>
+                    </a>
+                    <a href="#" class="offer-card">
+                        <div class="offer-image" style="background-image: url('assets/images/offer-4.png');">
+                            <span class="offer-arrow">↗</span>
+                            <span class="offer-badge">Беспроцентная</span>
+                            <h4 class="offer-title">Рассрочка на брекет-<br>систему Damon Q</h4>
+                        </div>
+                    </a>
+                    <a href="#" class="offer-card">
+                        <div class="offer-image" style="background-image: url('assets/images/offer-3.png');">
+                            <span class="offer-arrow">↗</span>
+                            <span class="offer-badge">59 000р.</span>
+                            <h4 class="offer-title">Установка имплантата<br>системы Nobel</h4>
+                        </div>
+                    </a>
+                    <a href="#" class="offer-card">
+                        <div class="offer-image" style="background-image: url('assets/images/offer-5.png');">
+                            <span class="offer-arrow">↗</span>
+                            <span class="offer-badge">от 54 490р.</span>
+                            <h4 class="offer-title">Лечение<br>катаракты</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="section-action text-center mt-5">
+                    <a href="#" class="btn btn-outline-dark btn-lg">
+                        Смотреть все акции
+                        <span class="btn-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             SECTION 9 - НОВОСТИ
+        ============================================= -->
+        <section class="news-section" id="news">
+            <div class="container-fluid px-4">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Новости<br class="d-md-none"> и рекомендации врачей</h2>
+                    <p class="section-subtitle">
+                        Актуальная медицинская информация, советы специалистов и полезные материалы о здоровье взрослых
+                        и детей.
+                    </p>
+                </div>
+
+                <!-- Tabs -->
+                <div class="news-tabs">
+                    <ul class="nav nav-tabs-custom justify-content-center" role="tablist">
+                        <li class="nav-item">
+                            <button class="nav-link-custom active" data-bs-toggle="tab"
+                                data-bs-target="#news-news">Новости</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link-custom" data-bs-toggle="tab"
+                                data-bs-target="#news-articles">Статьи</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link-custom" data-bs-toggle="tab"
+                                data-bs-target="#news-video">Видео</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link-custom" data-bs-toggle="tab" data-bs-target="#news-doctors">Для
+                                врачей</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="news-news">
+                        <div class="news-grid">
+                            <a href="#" class="news-card">
+                                <span class="news-date">29 августа 2025</span>
+                                <h4 class="news-title">Важная информация для пациентов Немецкой семейной клиники</h4>
+                                <p class="news-excerpt">С 1 сентября 2025 года закрывается доступ к парковочным местам
+                                    слева и справа от здания «Буржуа».</p>
+                                <span class="news-arrow">↗</span>
+                            </a>
+                            <a href="#" class="news-card">
+                                <span class="news-date">3 июля 2025</span>
+                                <h4 class="news-title">Немецкая семейная клиника вошла в рейтинг лучших медицинских
+                                    центров страны</h4>
+                                <p class="news-excerpt">Звание присвоено на основании отзывов застрахованных пациентов
+                                    по программе ДМС.</p>
+                                <span class="news-arrow">↗</span>
+                            </a>
+                            <a href="#" class="news-card">
+                                <span class="news-date">1 июля 2025</span>
+                                <h4 class="news-title">Немецкая семейная клиника удостоена высоких наград престижной
+                                    медицинской премии «Доктор Питер-2025»</h4>
+                                <p class="news-excerpt">Самой авторитетной оценки в сфере частной медицины
+                                    Санкт-Петербурга.</p>
+                                <span class="news-arrow">↗</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-action text-center mt-5">
+                    <a href="#" class="btn btn-outline-dark btn-lg">
+                        Все новости
+                        <span class="btn-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             SECTION 10 - ОТЗЫВЫ
+        ============================================= -->
+        <section class="reviews-section section-light" id="reviews">
+            <div class="container-fluid px-4">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Отзывы пациентов</h2>
+                    <p class="section-subtitle">
+                        Мнения людей, которые уже доверили нам заботу о своём здоровье<br>и здоровье своих близких.
+                    </p>
+                </div>
+
+                <div class="slider-arrows mb-5">
+                    <button class="arrow-btn arrow-prev"><i class="bi bi-arrow-left"></i></button>
+                    <button class="arrow-btn arrow-next"><i class="bi bi-arrow-right"></i></button>
+                </div>
+
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <span class="review-date">23 декабря 2025</span>
+                        <h5 class="review-doctor">Врач: Камалетдинов Р. Н.</h5>
+                        <p class="review-text">Очень классный молодой доктор: видно, что ему нравится его работа. К
+                            детям без лишних сюсюканий, но именно это и располагает ребенка к врачу. С точки зрения
+                            назначаемого лечения тоже все отлично — все помогает, при этом без лишних препаратов.</p>
+                        <span class="review-author">Автор отзыва: Анна</span>
+                    </div>
+                    <div class="review-card">
+                        <span class="review-date">20 декабря 2025</span>
+                        <h5 class="review-doctor">Врач: Маркова Ю. А.</h5>
+                        <p class="review-text">Обратилась к Юлии Александровне как колопроктологу. Приём прошел
+                            комфортно, в дружелюбной атмосфере, что немаловажно при обращении с деликатной проблемой.
+                            Также доктор грамотно ответила на все вопросы, рассказала про план лечения и что нужно
+                            делать при возникновении нового обострения. Профессионал своего дела! Спасибо, Юлия
+                            Александровна!</p>
+                        <span class="review-author">Автор отзыва: Екатерина</span>
+                    </div>
+                    <div class="review-card">
+                        <span class="review-date">19 декабря 2025</span>
+                        <h5 class="review-doctor">Врач: Смирнов К. А.</h5>
+                        <p class="review-text">Очень понравился прием у доктора Кирилла Алексеевича Смирнова. Доктор
+                            очень внимательно меня выслушал, тщательно изучил результаты проведенных ранее обследований.
+                            Подробно и доходчиво ответил на все мои вопросы, которых было немало. Объяснил алгоритм
+                            действий и дал направление на дальнейшее обследование. Очень приятно, когда врач уделяет
+                            достаточно времени и внимания каждому пациенту. Благодарю за оказанную помощь и высокий
+                            профессионализм!</p>
+                        <span class="review-author">Автор отзыва: Анна</span>
+                    </div>
+                    <div class="review-card">
+                        <span class="review-date">18 декабря 2025</span>
+                        <h5 class="review-doctor">Врач: Евтушенко В. В.</h5>
+                        <p class="review-text">Второй раз делаю фгдс у Виктора Владимировича, просто поражаюсь, как
+                            быстро и точно он все делает. Я много раз делала эту процедуру в других клиниках — никакого
+                            сравнения! Все объясняет, делает все профессионально. Спасибо большое, всем рекомендую этого
+                            эндоскописта!</p>
+                        <span class="review-author">Автор отзыва: Галина</span>
+                    </div>
+                </div>
+
+                <div class="section-actions d-flex justify-content-center gap-3 mt-5">
+                    <a href="#" class="btn btn-outline-dark btn-lg">
+                        Оставить отзыв
+                        <span class="btn-arrow">→</span>
+                    </a>
+                    <a href="#" class="btn btn-outline-dark btn-lg">
+                        Смотреть все отзывы
+                        <span class="btn-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             SECTION 11 - КЛИНИКИ
+        ============================================= -->
+        <section class="clinics-section" id="clinics">
+            <div class="container-fluid px-4">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="section-header text-start">
+                            <h2 class="section-title">Наши клиники</h2>
+                            <p class="section-subtitle text-start m-0">
+                                Выберите удобный для вас филиал. Все клиники оснащены современным европейским
+                                оборудованием и работают по единым стандартам качества.
+                            </p>
+                        </div>
+
+                        <div class="map-container">
+                            <img src="assets/images/clinics-map.png" alt="Карта клиник" class="map-image" width="654" height="511" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="clinics-grid">
+                            <div class="clinic-card">
+                                <span class="clinic-type">Многопрофильная клиника для взрослых и детей</span>
+                                <p class="clinic-hours">Время работы:<br>с 8:00 до 22:00 (Ежедневно)</p>
+                                <span class="clinic-metro red-circle-metro">ст.м. Площадь Восстания</span>
+                                <p class="clinic-address">Санкт-Петербург,<br>Невский пр. 114-116,<br><span class="text-muted small">(БЦ Невский Центр (Стокманн), 8 этаж, вход с ул. Восстания)</span></p>
+                            </div>
+                            <div class="clinic-card">
+                                <span class="clinic-type">Многопрофильная клиника для взрослых и детей</span>
+                                <p class="clinic-hours">Время работы:<br>с 7:30 до 22:00 (Ежедневно)</p>
+                                <span class="clinic-metro blue-circle-metro">ст.м. Парк Победы</span>
+                                <p class="clinic-address">Санкт-Петербург,<br>пл. Чернышевского д.11 А<br><span class="text-muted small">(вход с ул. Варшавская)</span></p>
+                            </div>
+                            <div class="clinic-card">
+                                <span class="clinic-type">Стоматология<br>для взрослых и детей</span>
+                                <p class="clinic-hours">Время работы:<br>с 9:00 до 21:00 (Ежедневно)</p>
+                                <span class="clinic-metro red-circle-metro">ст.м. Площадь Восстания</span>
+                                <p class="clinic-address">Санкт-Петербург,<br>Невский пр. 114-116,<br><span class="text-muted small">(БЦ Невский Центр (Стокманн), 8 этаж, вход с ул. Восстания)</span></p>
+                            </div>
+                            <div class="clinic-card">
+                                <span class="clinic-type">Клиника для детей<br>им. С.Я.Снигиревой</span>
+                                <p class="clinic-hours">Время работы:<br>с 8:00 до 22:00 (Ежедневно)</p>
+                                <span class="clinic-metro blue-circle-metro">ст.м. Парк Победы</span>
+                                <p class="clinic-address">Санкт-Петербург,<br><span class="text-muted small">ул.Варшавская д.23 к. 1</span></p>
+                            </div>
+                            <div class="clinic-card">
+                                <span class="clinic-type">Круглосуточный стационар для взрослых и детей</span>
+                                <p class="clinic-hours">Время работы:<br>Круглосуточно</p>
+                                <span class="clinic-metro blue-circle-metro">ст.м. Парк Победы</span>
+                                <p class="clinic-address">Санкт-Петербург,<br>пл. Чернышевского д.11 А<br><span class="text-muted small">(вход с ул. Варшавская)</span></p>
+                            </div>
+                            <div class="clinic-card">
+                                <span class="clinic-type">Центр пластической хирургии и эстетической медицины</span>
+                                <p class="clinic-hours">Время работы:<br>с 8:00 до 21:00 (Ежедневно)</p>
+                                <span class="clinic-metro blue-circle-metro">ст.м. Парк Победы</span>
+                                <p class="clinic-address">Санкт-Петербург,<br>пл. Чернышевского д.11 А<br><span class="text-muted small">(вход с ул. Варшавская)</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================
+         FOOTER
+    ============================================= -->
+    <footer class="footer" id="footer">
+        <div class="container-fluid px-4">
+            <!-- Footer top: Logo left, Buttons right -->
+            <div class="footer-top">
+                <div class="footer-top-left">
+                    <!-- Logo -->
+                    <div class="footer-logo">
+                        <img src="assets/images/logo-white.svg" alt="Немецкая семейная клиника">
+                    </div>
+                    <!-- Back to top button (desktop) -->
+                    <a href="#header" class="btn btn-footer-outline btn-back-to-top btn-back-to-top-desktop">
+                        <svg width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 1L2 6M2 1L0.5 2.5M2 1L3.5 2.5" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        Наверх
+                    </a>
+                </div>
+                <!-- Action buttons right -->
+                <div class="footer-buttons-right">
+                    <a href="#" class="btn btn-footer-glass btn-appointment">Записаться на приём</a>
+                    <a href="#" class="btn btn-footer-outline btn-callback">Заказать звонок</a>
+                    <a href="#" class="btn btn-footer-outline btn-pay">Оплатить</a>
+                    <!-- Личный кабинет (desktop only, скрыт на mobile) -->
+                    <a href="#" class="btn btn-footer-glass btn-personal-cabinet btn-personal-cabinet-desktop">
+                        <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="3" cy="2" r="1.5" stroke="currentColor" />
+                            <path d="M0.5 7.5C0.5 5.84 1.84 4.5 3 4.5C4.16 4.5 5.5 5.84 5.5 7.5" stroke="currentColor"
+                                stroke-linecap="round" />
+                        </svg>
+                        Личный кабинет
+                    </a>
+                </div>
+                <!-- Нижний ряд кнопок (mobile only): Наверх слева, Личный кабинет справа -->
+                <div class="footer-buttons-bottom">
+                    <a href="#header" class="btn btn-footer-outline btn-back-to-top-mobile">
+                        <svg width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 1L2 6M2 1L0.5 2.5M2 1L3.5 2.5" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        Наверх
+                    </a>
+                    <a href="#" class="btn btn-footer-glass btn-personal-cabinet">
+                        <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="3" cy="2" r="1.5" stroke="currentColor" />
+                            <path d="M0.5 7.5C0.5 5.84 1.84 4.5 3 4.5C4.16 4.5 5.5 5.84 5.5 7.5" stroke="currentColor"
+                                stroke-linecap="round" />
+                        </svg>
+                        Личный кабинет
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer navigation -->
+            <div class="footer-nav">
+                <div class="footer-nav-grid">
+                    <!-- Услуги -->
+                    <div class="footer-nav-block footer-nav-uslugi">
+                        <h6 class="footer-nav-title">Услуги</h6>
+                        <ul class="footer-nav-list">
+                            <li><a href="#">Для взрослых</a></li>
+                            <li><a href="#">Для детей</a></li>
+                            <li><a href="#">Стоматология</a></li>
+                            <li><a href="#">Стационар и операции</a></li>
+                            <li><a href="#">Центры компетенций</a></li>
+                            <li><a href="#">Аптека</a></li>
+                        </ul>
+                    </div>
+                    <!-- Программы -->
+                    <div class="footer-nav-block footer-nav-programmy">
+                        <h6 class="footer-nav-title">Программы</h6>
+                        <ul class="footer-nav-list">
+                            <li><a href="#">Для взрослых</a></li>
+                            <li><a href="#">Для детей</a></li>
+                            <li><a href="#">Будущим мамам</a></li>
+                            <li><a href="#">Для бизнеса</a></li>
+                            <li><a href="#">Семейный депозит</a></li>
+                        </ul>
+                    </div>
+                    <!-- Врачи -->
+                    <div class="footer-nav-block footer-nav-vrachi">
+                        <h6 class="footer-nav-title">Врачи</h6>
+                        <ul class="footer-nav-list">
+                            <li><a href="#">Для взрослых</a></li>
+                            <li><a href="#">Для детей</a></li>
+                        </ul>
+                    </div>
+                    <!-- Инфо -->
+                    <div class="footer-nav-block footer-nav-info">
+                        <h6 class="footer-nav-title">Инфо</h6>
+                        <ul class="footer-nav-list">
+                            <li><a href="about.html">О компании</a></li>
+                            <li><a href="#">Награды и рейтинги</a></li>
+                            <li><a href="#">Интерьеры</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Карьера</a></li>
+                            <li><a href="#">Правовая информация, как получить услуги</a></li>
+                            <li><a href="#">Налоговый вычет</a></li>
+                            <li><a href="#">Информация для пациентов</a></li>
+                            <li><a href="#">Подготовка к диагностическим исследованиям</a></li>
+                            <li><a href="#">Памятки</a></li>
+                            <li><a href="#">Лечение в кредит</a></li>
+                            <li><a href="#">Подарочный сертификат</a></li>
+                            <li><a href="#">Карта сайта</a></li>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                            <li><a href="#">Общая правовая информация</a></li>
+                        </ul>
+                    </div>
+                    <!-- Новости -->
+                    <div class="footer-nav-block footer-nav-novosti">
+                        <h6 class="footer-nav-title">Новости</h6>
+                        <ul class="footer-nav-list">
+                            <li><a href="#">Акции</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Видео</a></li>
+                            <li><a href="#">Статьи</a></li>
+                            <li><a href="#">Статьи для врачей</a></li>
+                        </ul>
+                    </div>
+                    <!-- Контакты -->
+                    <div class="footer-nav-block footer-nav-kontakty">
+                        <h6 class="footer-nav-title">Контакты</h6>
+                        <ul class="footer-nav-list footer-contacts">
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="tel:+78124323232">8 (812) 432-32-32</a></li>
+                            <li><a href="tel:+78123771212">8 (812) 377-12-12</a></li>
+                            <li><a href="mailto:info@german.clinic">info@german.clinic</a></li>
+                        </ul>
+                    </div>
+                    <!-- Соц сети -->
+                    <div class="footer-nav-block footer-nav-social">
+                        <h6 class="footer-nav-title">Соц сети</h6>
+                        <ul class="footer-nav-list">
+                            <li><a href="#">ВКонтакте</a></li>
+                            <li><a href="#">Дзен</a></li>
+                            <li><a href="#">Телеграм</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer divider line -->
+            <div class="footer-divider"></div>
+
+            <!-- Footer locations -->
+            <div class="footer-locations">
+                <div class="footer-locations-grid">
+                    <div class="footer-location">
+                        <h6 class="location-title">Многопрофильная клиника для взрослых и детей</h6>
+                        <span class="location-hours">Время работы:<br>с 8:00 до 22:00 (Ежедневно)</span>
+                        <span class="location-metro metro-red">ст.м. Площадь Восстания</span>
+                        <p class="location-address">Санкт-Петербург,<br>Невский пр. 114-116,<br><span
+                                class="text-muted-footer">(БЦ Невский Центр
+                                (Стокманн), 8 этаж, вход с ул. Восстания)</span></p>
+                    </div>
+                    <div class="footer-location">
+                        <h6 class="location-title">Многопрофильная клиника для взрослых и детей</h6>
+                        <span class="location-hours">Время работы:<br>с 7:30 до 22:00 (Ежедневно)</span>
+                        <span class="location-metro metro-blue">ст.м. Парк Победы</span>
+                        <p class="location-address">Санкт-Петербург,<br>пл. Чернышевского д.11 А<br><span
+                                class="text-muted-footer">(вход с ул.
+                                Варшавская)</span></p>
+                    </div>
+                    <div class="footer-location">
+                        <h6 class="location-title">Стоматология<br>для взрослых и детей</h6>
+                        <span class="location-hours">Время работы:<br>с 9:00 до 21:00 (Ежедневно)</span>
+                        <span class="location-metro metro-red">ст.м. Площадь Восстания</span>
+                        <p class="location-address">Санкт-Петербург,<br>Невский пр. 114-116,<br><span
+                                class="text-muted-footer">(БЦ Невский Центр
+                                (Стокманн), 8 этаж, вход с ул. Восстания)</span></p>
+                    </div>
+                    <div class="footer-location">
+                        <h6 class="location-title">Клиника для детей<br>им. С.Я.Снигиревой</h6>
+                        <span class="location-hours">Время работы:<br>с 8:00 до 22:00 (Ежедневно)</span>
+                        <span class="location-metro metro-blue">ст.м. Парк Победы</span>
+                        <p class="location-address">Санкт-Петербург,<br>ул.Варшавская д.23 к. 1</p>
+                    </div>
+                    <div class="footer-location">
+                        <h6 class="location-title">Круглосуточный <br class="d-block d-sm-none"> стационар для взрослых
+                            и детей</h6>
+                        <span class="location-hours">Время работы:<br>Круглосуточно</span>
+                        <span class="location-metro metro-blue">ст.м. Парк Победы</span>
+                        <p class="location-address">Санкт-Петербург,<br>пл. Чернышевского д.11 А<br><span
+                                class="text-muted-footer">(вход с ул.
+                                Варшавская)</span></p>
+                    </div>
+                    <div class="footer-location">
+                        <h6 class="location-title">Центр пластической хирургии и эстетической медицины</h6>
+                        <span class="location-hours">Время работы:<br>с 8:00 до 21:00 (Ежедневно)</span>
+                        <span class="location-metro metro-blue">ст.м. Парк Победы</span>
+                        <p class="location-address">Санкт-Петербург,<br>пл. Чернышевского д.11 А<br><span
+                                class="text-muted-footer">(вход с ул.
+                                Варшавская)</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer bottom -->
+            <div class="footer-bottom">
+                <div class="footer-divider"></div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="footer-copyright">© 2025 г. ООО "Немецкая клиника"</span>
+                    <span class="footer-license">Лицензия № Л041-01148-78/00555167</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

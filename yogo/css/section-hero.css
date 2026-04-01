@@ -1,0 +1,208 @@
+.section-hero {
+  position: relative;
+  min-height: clamp(640px, 51.7vw, 960px);
+  padding: 0;
+  overflow: hidden;
+  background-color: #ececec;
+  background-image: url("../assets/hero-bg-346560.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section-hero::before,
+.section-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.section-hero::before {
+  background: linear-gradient(0deg, rgb(102, 111, 82, 1) 0%, rgba(87, 95, 69, 0) 50% );
+  z-index: 1;
+}
+
+.section-hero::after { 
+background: linear-gradient(
+  270deg,
+  rgba(102, 111, 82, 0) 40%,
+  rgba(87, 95, 69, 0.98) 90%
+    );
+  
+  z-index: 1;
+}
+
+.section-hero__container {
+  position: relative;
+  z-index: 2;
+  min-height: clamp(640px, 51.7vw, 960px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-top: clamp(100px, 8.33vw, 160px);
+  padding-bottom: clamp(32px, 2.78vw, 56px);
+}
+
+.section-hero__content {
+  max-width: clamp(560px, 46.5vw, 820px);
+}
+
+.section-hero__title {
+  margin: 0;
+  max-width: clamp(380px, 31vw, 580px);
+  font-family: var(--font-heading);
+  font-size: clamp(48px, 4.17vw, 76px);
+  font-weight: 400;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.section-hero__text {
+  margin: clamp(16px, 1.39vw, 26px) 0 0;
+  max-width: clamp(560px, 46.5vw, 820px);
+  font-family: var(--font-body);
+  font-size: clamp(18px, 1.39vw, 24px);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.section-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(12px, 1.04vw, 20px);
+  margin-top: clamp(24px, 2.08vw, 40px);
+}
+
+.section-hero__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: clamp(8px, 0.63vw, 12px) clamp(18px, 1.53vw, 28px);
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-size: clamp(14px, 1.11vw, 20px);
+  font-weight: 400;
+  line-height: 1.3;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  transition: background-color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.section-hero__btn:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.section-hero__btn-arrow {
+  font-family: var(--font-ui);
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+@media (max-width: 991.98px) {
+  .section-hero__text {
+    max-width: 560px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-hero,
+  .section-hero__container {
+    min-height: 544px;
+  }
+
+  .section-hero {
+    background-size: auto 714px;
+    background-position: center bottom;
+    background: none;
+  }
+
+
+  .programs-hero__bg {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    bottom: 0;
+    left: 0;
+    background-image: url("../assets/women-their-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+  }
+
+
+  .section-hero::before {
+    background: linear-gradient(180.16deg, #515940 30.06%, rgba(81, 89, 64, 0) 59.97%);
+  }
+
+  .section-hero::after {
+    background: linear-gradient(
+      180deg,
+      rgba(81, 89, 64, 0.4) 0%,
+      rgba(81, 89, 64, 0.15) 36%,
+      rgba(81, 89, 64, 0) 58%,
+      rgba(81, 89, 64, 0.2) 100%
+    );
+  }
+
+  .section-hero__container {
+    justify-content: flex-start;
+    padding-top: 39px;
+    padding-bottom: 24px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .section-hero__content {
+    max-width: 290px;
+  }
+
+  .section-hero__title {
+    max-width: 290px;
+    font-size: 32px;
+    line-height: 0.9;
+    letter-spacing: -0.03em;
+  }
+
+  .section-hero__text {
+    margin-top: 16px;
+    max-width: 281px;
+    font-size: 12px;
+    line-height: 1.3;
+    letter-spacing: -0.03em;
+  }
+
+  .section-hero__actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 24px;
+  }
+
+  .section-hero__btn {
+    min-height: 32px;
+    padding: 6px 18px;
+    font-size: 12px;
+  }
+
+  .section-hero__btn--schedule {
+    width: 206px;
+  }
+
+  .section-hero__btn--signup {
+    width: 188px;
+  }
+
+  .section-hero__btn-arrow {
+    font-size: 11px;
+    letter-spacing: 0.02em;
+  }
+}

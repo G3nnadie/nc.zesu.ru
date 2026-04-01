@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Йога. Общий начальный уровень — Студия йога-терапии</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/programs-hero.css" />
+  <link rel="stylesheet" href="css/programs-about.css" />
+  <link rel="stylesheet" href="css/programs-format.css" />
+  <link rel="stylesheet" href="css/programs-safety.css" />
+  <link rel="stylesheet" href="css/programs-result.css" />
+  <link rel="stylesheet" href="css/section-contacts.css" />
+</head>
+
+<body>
+
+  <header class="header" id="header">
+    <div class="mobile-header">
+      <a href="#" class="mobile-logo">
+        <img src="assets/images/logo.svg" alt="Йога-терапия" />
+      </a>
+      <div class="mobile-header-actions">
+        <a href="tel:+78124323232" class="mobile-header-icon" aria-label="Позвонить">
+          <img src="assets/images/icons/icon-phone-mob.svg" alt="Телефон" />
+        </a> 
+        <a href="#" class="mobile-header-icon" aria-label="Личный кабинет">
+          <img src="assets/images/icons/icon-user-mob.svg" alt="Личный кабинет" />
+        </a>
+        <a href="#" class="mobile-header-icon" aria-label="Клиника">
+          <img src="assets/images/icons/icon-star-mob.svg" alt="Клиника" />
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" role="dialog" aria-modal="true" aria-label="Мобильное меню">
+      <div class="mobile-menu-panel">
+        <div class="mobile-menu-header">
+          <a href="#" class="mobile-menu-logo">
+            <img src="assets/images/logo.svg" alt="Йога-терапия" />
+          </a>
+          <div class="mobile-menu-header-actions">
+            <a href="tel:+78124323232" class="mobile-menu-icon" aria-label="Позвонить">
+              <img src="assets/images/icons/icon-phone-mob.svg" alt="Телефон" />
+            </a>
+            <a href="#" class="mobile-menu-icon" aria-label="Личный кабинет">
+              <img src="assets/images/icons/icon-user-mob.svg" alt="Личный кабинет" />
+            </a>
+            <a href="#" class="mobile-menu-icon" aria-label="Клиника">
+              <img src="assets/images/icons/icon-star-mob.svg" alt="Клиника" />
+            </a>
+            <button class="mobile-menu-close" type="button" aria-label="Закрыть меню">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 5L5 15M5 5L15 15" stroke="currentColor" stroke-width="1" stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <nav class="mobile-menu-nav" role="navigation">
+          <a href="#studio" class="mobile-nav-link">О студии</a>
+          <a href="#Направления" class="mobile-nav-link">Направления</a>
+          <a href="#Преподаватели" class="mobile-nav-link">Преподаватели</a>
+          <a href="#schedule" class="mobile-nav-link">Расписание</a>
+          <a href="#" class="mobile-nav-link">Цены</a>
+          <a href="#contacts" class="mobile-nav-link">Контакты</a>
+        </nav>
+
+        <div class="mobile-menu-departments">
+          <a href="#" class="mobile-dept-link" style="color: #191710">
+            <img src="assets/images/icons/icon-star-mob.svg" alt="" width="16" height="18" />
+            <span>Немецкая семейная клиника</span>
+          </a>
+          <a href="#" class="mobile-dept-link" style="color: #CB542D">
+            <img src="assets/images/icons/dept-pediatrics.svg" alt="" width="16" height="18" />
+            <span>Педиатрия</span>
+          </a>
+          <a href="#" class="mobile-dept-link" style="color: #2E57CB">
+            <img src="assets/images/icons/dept-ophthalmology.svg" alt="" width="16" height="18" />
+            <span>Экспертная офтальмология</span>
+          </a>
+          <a href="#" class="mobile-dept-link" style="color: #00687A">
+            <img src="assets/images/icons/dept-preventive.svg" alt="" width="16" height="18" />
+            <span>Превентивная медицина</span>
+          </a>
+          <a href="#" class="mobile-dept-link" style="color: #443E9E">
+            <img src="assets/images/icons/dept-dentistry.svg" alt="" width="16" height="18" />
+            <span>Стоматология</span>
+          </a>
+          <a href="#" class="mobile-dept-link" style="color: #998158">
+            <img src="assets/images/icons/dept-aesthetic.svg" alt="" width="16" height="18" />
+            <span>Эстетическая медицина</span>
+          </a>
+        </div>
+
+        <div class="mobile-menu-actions">
+          <a href="#schedule" class="mobile-menu-btn mobile-menu-btn--schedule">Посмотреть расписание</a>
+          <a href="#contacts" class="mobile-menu-btn mobile-menu-btn--signup">Записаться на занятие</a>
+        </div>
+
+        <div class="mobile-menu-contacts">
+          <a href="tel:+78124323232" class="mobile-menu-phone">
+            <img src="assets/icons/phone_.svg" alt="" width="14" height="12" />
+            <span>8 (812) 432-32-32 / 8 (812) 337-12-12</span>
+          </a>
+          <div class="mobile-menu-time">
+            <img src="assets/icons/clock_.svg" alt="" width="12" height="12" />
+            <span>c 07:30 до 22:00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-top">
+      <div class="site-container header-inner">
+        <div class="header-top__left">
+          <a href="tel:+78124323232" class="top-link">
+            <img src="assets/images/icons/icon-phone.svg" alt="" width="14" height="12" />
+            <span>8 (812) 432-32-32 / 8 (812) 337-12-12</span>
+          </a>
+          <div class="top-link">
+            <img src="assets/images/icons/icon-clock.svg" alt="" width="12" height="12" />
+            <span>c 08:00 до 22:00</span>
+          </div>
+        </div>
+        <div class="header-top__right">
+          <a href="#" class="top-link">
+            <img src="assets/images/icons/icon-star.svg" alt="" width="14" height="15" />
+            <span>Немецкая семейная клиника</span>
+          </a>
+          <a href="#" class="top-link">
+            <img src="assets/images/icons/icon-user.svg" alt="" width="9" height="12" />
+            <span>Личный кабинет</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-main">
+      <div class="site-container header-inner header-main__inner">
+        <nav class="header-nav" aria-label="Основная навигация">
+          <a href="#">О Cтудии</a>
+          <a href="#">Направления</a>
+          <a href="#">Преподаватели</a>
+          <a href="#schedule">Расписание</a>
+          <a href="#">Цены</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+
+        <a href="#" class="header-logo" aria-label="Йога-терапия">
+          <img src="assets/images/logo.svg" alt="Йога-терапия" />
+        </a>
+
+        <div class="header-actions">
+          <a href="#schedule" class="header-btn">Посмотреть расписание</a>
+          <a href="#contacts" class="header-btn">Записаться на занятие</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="mobile-breadcrumbs d-md-none">
+      <div class="site-container">
+        <p class="mobile-breadcrumbs__text"><span>Главная</span> / <span>Йога-терапия</span> / <strong>Йога. Общий
+            начальный уровень</strong></p>
+      </div>
+    </div>
+
+    <section class="programs-hero">
+      <div class="programs-hero__bg" aria-hidden="true"></div>
+      <div class="container-fluid site-container programs-hero__container">
+        <h1 class="programs-hero__title">Йога. Общий<br />начальный уровень</h1>
+        <div class="programs-hero__tags">
+          <span class="programs-hero__tag">Уровень подготовки: начальный</span>
+          <span class="programs-hero__tag">Нагрузка: умеренная</span>
+          <span class="programs-hero__tag">Темп: спокойный</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section programs-about">
+      <div class="container-fluid site-container">
+        <p class="programs-about__breadcrumbs d-none d-md-block">
+          <span>Главная</span> / <span>Йога-терапия</span> / <strong>Йога. Общий начальный уровень</strong>
+        </p>
+        <div class="row programs-about__layout">
+          <div class="col-12 col-xl-6">
+            <h2 class="programs-about__title">О практике</h2>
+          </div>
+          <div class="col-12 col-xl-6">
+            <div class="programs-about__text">
+              <p>Урок «Йога. Начальный уровень» состоит из практики асан — поз йоги.</p>
+              <p>
+                Как описывает мудрец Патанджали <br class="d-block d-sm-none">в «Йога-сутрах», одном из самых авторитетных источников,
+                раскрывающих суть йоги, асана — это ровное <br class="d-block d-sm-none">и устойчивое положение тела.
+              </p>
+              <p>
+                Практика асан развивает внимательность<br class="d-block d-sm-none"> и усидчивость.
+                Они одновременно<br class="d-block d-sm-none"> укрепляют и делают тело более гибким,<br class="d-block d-sm-none"> а также подготавливают организм<br class="d-block d-sm-none">
+                к практике пранаямы — работе<br class="d-block d-sm-none"> с дыханием.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section programs-format">
+      <div class="container-fluid site-container">
+        <div class="row programs-format__layout align-items-stretch">
+          <div class="col-12 col-xl-6">
+            <div class="programs-format__left h-100 d-flex flex-column">
+              <h2 class="programs-format__title">Формат <br class="d-block d-sm-none">и содержание занятия</h2>
+              <p class="programs-format__desc d-none d-md-block">
+                На первом занятии ученики знакомятся с базовыми асанами
+                <br class="d-none d-sm-block">и постепенно осваивают их по принципу «от простого к сложному».
+              </p>
+              <p class="programs-format__desc d-md-none">
+                Мы предлагаем несколько форматов<br class="d-block d-sm-none"> практики, направленных<br class="d-block d-sm-none">
+                на восстановление, снижение напряжения<br class="d-block d-sm-none"> и мягкую работу с телом.
+              </p>
+              <div class="programs-format__actions d-none d-xl-flex">
+                <a href="index.html#schedule" class="programs-format__btn programs-format__btn--schedule">
+                  <span>Посмотреть расписание</span>
+                  <span class="programs-format__btn-arrow" aria-hidden="true">→</span>
+                </a>
+                <a href="index.html#contacts" class="programs-format__btn programs-format__btn--signup">
+                  <span>Записаться на занятие</span>
+                  <span class="programs-format__btn-arrow" aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xl-6">
+            <div class="programs-format__right h-100 d-flex flex-column">
+              <h3 class="programs-format__list-title">В рамках урока изучаются:</h3>
+              <ul class="programs-format__list">
+                <li>Асаны в положениях стоя и сидя</li>
+                <li>Наклоны вперёд и назад</li>
+                <li>Ротации</li>
+                <li>Абдоминальные асаны</li>
+                <li>Подготовительные упражнения <br class="d-block d-sm-none">к перевёрнутым асанам</li>
+              </ul>
+              <p class="programs-format__note">
+                Также ученики получают базовые знания<br class="d-block d-sm-none"> анатомии,
+                необходимые для осознанного<br class="d-block d-sm-none"> выполнения упражнений.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="programs-format__actions d-xl-none">
+          <a href="index.html#schedule" class="programs-format__btn programs-format__btn--schedule">
+            <span>Посмотреть расписание</span>
+            <span class="programs-format__btn-arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="index.html#contacts" class="programs-format__btn programs-format__btn--signup">
+            <span>Записаться на занятие</span>
+            <span class="programs-format__btn-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section programs-safety">
+      <div class="container-fluid site-container">
+        <div class="row programs-safety__layout">
+          <div class="col-12 col-xl-6">
+            <h2 class="programs-safety__title">Индивидуальный подход<br />и безопасность</h2>
+          </div>
+          <div class="col-12 col-xl-6">
+            <div class="programs-safety__text">
+              <p>
+                На уроке разбирается, какое оборудование<br class="d-block d-sm-none"> использовать на практике<br class="d-none d-md-block">
+                и как его<br class="d-block d-sm-none"> применять в зависимости от<br class="d-block d-sm-none"> индивидуальных особенностей<br class="d-none d-md-block"><br class="d-block d-sm-none">
+                и потребностей. При необходимости<br class="d-block d-sm-none"> ученики совместно<br class="d-none d-md-block">
+                с преподавателем<br class="d-block d-sm-none"> адаптируют упражнения с учётом<br class="d-block d-sm-none"> имеющихся ограничений.
+              </p>
+              <p>
+                Особое внимание уделяется элементам<br class="d-block d-sm-none"> техники безопасности, в том <br class="d-none d-md-block">
+                числе<br class="d-block d-sm-none"> правильному положению суставов,<br class="d-block d-sm-none"> конечностей и позвоночника.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="programs-result">
+      <div class="container-fluid site-container">
+        <div class="programs-result__card position-relative overflow-hidden">
+          <div class="programs-result__bg position-absolute top-0 start-0 w-100 h-100" aria-hidden="true"></div>
+          <div
+            class="programs-result__content position-relative d-flex flex-column align-items-center justify-content-center text-center h-100">
+            <div
+              class="programs-result__tags d-flex flex-column flex-md-row justify-content-center align-items-center mb-5">
+              <span class="programs-result__tag">Уровень подготовки: начальный</span>
+              <span class="programs-result__tag">Нагрузка: умеренная</span>
+              <span class="programs-result__tag">Темп: спокойный</span>
+            </div>
+            <h2 class="programs-result__title">Результат и параметры занятия</h2>
+            <p class="programs-result__text">
+              Таким образом, данный формат занятия закладывает прочную основу
+              для дальнейшего развития в йоге.
+            </p>
+            <div
+              class="programs-result__actions d-flex flex-column flex-md-row justify-content-center align-items-center gap-2 gap-md-3 mt-3 mt-md-4">
+              <a href="index.html#schedule" class="programs-result__btn programs-result__btn--schedule">
+                <span>Посмотреть расписание</span>
+                <span class="programs-result__btn-arrow" aria-hidden="true">→</span>
+              </a>
+              <a href="index.html#contacts" class="programs-result__btn programs-result__btn--signup">
+                <span>Записаться на занятие</span>
+                <span class="programs-result__btn-arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-contacts" id="contacts">
+      <div class="container-fluid site-container">
+        <div class="row section-contacts__layout g-4 g-xl-5 align-items-start">
+          <div class="col-12 col-xl-6">
+            <h2 class="section-contacts__title">Контакты студии</h2>
+            <p class="section-contacts__subtitle">
+              Мы всегда на связи и будем рады ответить на ваши вопросы, помочь с выбором занятия и
+              записью на практику.
+            </p>
+
+            <div class="section-contacts__item mt-4 mt-md-1">
+              <h3>Адрес студии:</h3>
+              <p>
+                г. Санкт-Петербург, Невский пр. 114-116,<br />
+                (БЦ Невский Центр, 8 этаж, вход с ул. Восстания)
+              </p>
+            </div>
+
+            <div class="section-contacts__item mt-4 mt-md-1">
+              <h3>Телефон:</h3>
+              <p>8 (812) 432-32-32 / 8 (812) 337-12-12</p>
+            </div>
+
+            <div class="section-contacts__item mt-4 mt-md-1">
+              <h3>Часы работы:</h3>
+              <p>Ежедневно с 8:00 до 22:00</p>
+            </div>
+
+            <div class="section-contacts__actions">
+              <a href="#schedule" class="section-contacts__btn section-contacts__btn--schedule">Посмотреть расписание <span>→</span></a>
+              <a href="#" class="section-contacts__btn section-contacts__btn--signup">Записаться на занятие <span>→</span></a>
+            </div>
+          </div>
+
+          <div class="col-12 col-xl-6">
+            <div class="contacts-map" role="img" aria-label="Карта расположения студии">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="container-fluid site-container">
+      <div class="footer-desktop d-none d-xl-block">
+        <div class="footer-desktop__top">
+          <div class="footer-brand">
+            <img src="assets/images/logo-white.svg" alt="Йога-терапия" class="footer-logo" />
+            <p class="footer-about-text">
+              Студия йога-терапии — часть экосистемы здоровья Немецкой семейной клиники.<br /><br />
+              Мы работаем с телом бережно, осознанно и с опорой на профессиональный подход к здоровью и
+              долголетию.
+            </p>
+            <a href="#header" class="footer-btn footer-btn--light footer-btn--up">↑ Наверх</a>
+          </div>
+
+          <div class="footer-col footer-col--info">
+            <h3>Инфо</h3>
+            <a href="index.html">О студии</a>
+            <a href="index.html">Направления</a>
+            <a href="index.html">Преподаватели</a>
+            <a href="index.html#schedule">Расписание</a>
+            <a href="index.html">Цены</a>
+            <a href="index.html#contacts">Контакты</a>
+          </div>
+
+          <div class="footer-meta">
+            <div class="footer-col footer-col--social">
+              <h3>Соц сети</h3>
+              <a href="#">ВКонтакте</a>
+              <a href="#">Дзен</a>
+              <a href="#">Телеграм</a>
+            </div>
+            <div class="footer-col footer-col--contacts">
+              <h3>Контакты</h3>
+              <a href="index.html#contacts">Контакты</a>
+              <a href="tel:+78124323232">8 (812) 432-32-32</a>
+              <a href="tel:+78123771212">8 (812) 377-12-12</a>
+              <a href="mailto:info@german.clinic">info@german.clinic</a>
+            </div>
+            <div class="footer-col footer-col--address">
+              <h3>Адрес</h3>
+              <p>
+                г. Санкт-Петербург, Невский пр. 114-116,<br />
+                (БЦ Невский Центр, 8 этаж, вход с ул. Восстания)
+              </p>
+            </div>
+          </div>
+
+          <div class="footer-actions">
+            <div class="footer-actions__primary">
+              <a href="index.html#contacts" class="footer-btn footer-btn--dark footer-btn--join">Записаться на
+                занятие</a>
+              <a href="index.html#schedule" class="footer-btn footer-btn--light footer-btn--schedule">Посмотреть
+                расписание</a>
+            </div>
+            <div class="footer-actions__secondary">
+              <a href="#" class="footer-btn footer-btn--outline footer-btn--icon footer-btn--clinic">
+                <img src="assets/images/icons/icon-star.svg" alt="" width="12" height="12" />
+                <span>Немецкая семейная клиника</span>
+              </a>
+              <a href="#" class="footer-btn footer-btn--dark footer-btn--icon footer-btn--account">
+                <img src="assets/images/icons/icon-user.svg" alt="" width="9" height="12" />
+                <span>Личный кабинет</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© 2026 г. ООО "Немецкая клиника"</span>
+          <span>Лицензия № Л041-01148-78/00555167</span>
+        </div>
+      </div>
+
+      <div class="footer-mobile d-xl-none">
+        <div class="row g-0 footer-mobile__top">
+          <div class="col-6 footer-brand">
+            <img src="assets/images/logo-white.svg" alt="Йога-терапия" class="footer-logo" />
+            <p class="footer-about-text">
+              Студия йога-терапии — часть экосистемы здоровья Немецкой семейной клиники.<br /><br />
+              Мы работаем с телом бережно, осознанно и с опорой на профессиональный подход к здоровью и
+              долголетию.
+            </p>
+            <a href="#header" class="footer-btn footer-btn--light footer-btn--up">↑ Наверх</a>
+          </div>
+
+          <div class="col-6 footer-actions">
+            <div class="footer-actions__primary">
+              <a href="index.html#contacts" class="footer-btn footer-btn--dark footer-btn--join">Записаться на
+                занятие</a>
+              <a href="#" class="footer-btn footer-btn--light footer-btn--call">Заказать звонок</a>
+              <a href="#" class="footer-btn footer-btn--light footer-btn--pay">Оплатить</a>
+            </div>
+            <div class="footer-actions__secondary">
+              <a href="#" class="footer-btn footer-btn--dark footer-btn--icon footer-btn--account">
+                <img src="assets/images/icons/icon-user.svg" alt="" width="9" height="12" />
+                <span>Личный кабинет</span>
+              </a>
+              <a href="#" class="footer-btn footer-btn--outline footer-btn--icon footer-btn--clinic">
+                <img src="assets/images/icons/icon-star.svg" alt="" width="12" height="12" />
+                <span>Немецкая семейная клиника</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-0 footer-mobile__links">
+          <div class="col-6">
+            <div class="footer-col footer-col--info">
+              <h3>Инфо</h3>
+              <a href="index.html">О студии</a>
+              <a href="index.html">Направления</a>
+              <a href="index.html">Преподаватели</a>
+              <a href="index.html#schedule">Расписание</a>
+              <a href="index.html">Цены</a>
+              <a href="index.html#contacts">Контакты</a>
+            </div>
+
+            <div class="footer-col footer-col--contacts">
+              <h3>Контакты</h3>
+              <a href="index.html#contacts">Контакты</a>
+              <a href="tel:+78124323232">8 (812) 432-32-32</a>
+              <a href="tel:+78123771212">8 (812) 377-12-12</a>
+              <a href="mailto:info@german.clinic">info@german.clinic</a>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="footer-col footer-col--social">
+              <h3>Соц сети</h3>
+              <a href="#">ВКонтакте</a>
+              <a href="#">Дзен</a>
+              <a href="#">Телеграм</a>
+            </div>
+
+            <div class="footer-col footer-col--address">
+              <h3>Адрес</h3>
+              <p>
+                г. Санкт-Петербург, Невский пр. 114-116,<br />
+                (БЦ Невский Центр, 8 этаж, вход с ул. Восстания)
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© 2026 г. ООО "Немецкая клиника"</span>
+          <span>Лицензия № Л041-01148-78/00555167</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

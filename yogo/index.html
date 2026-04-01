@@ -1,0 +1,1146 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Студия йога-терапии</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/section-hero.css" />
+    <link rel="stylesheet" href="css/section-3.css" />
+    <link rel="stylesheet" href="css/section-6.css" />
+    <link rel="stylesheet" href="css/section-7.css" />
+    <link rel="stylesheet" href="css/section-8.css" />
+    <link rel="stylesheet" href="css/section-9.css" />
+    <link rel="stylesheet" href="css/section-10.css" />
+    <link rel="stylesheet" href="css/section-11.css" />
+    <link rel="stylesheet" href="css/section-schedule.css" />
+    <link rel="stylesheet" href="css/section-contacts.css" />
+  </head>
+  <body>
+
+    <header class="header" id="header">
+      <div class="mobile-header">
+        <a href="#" class="mobile-logo">
+          <img src="assets/images/logo.svg" alt="Йога-терапия" />
+        </a>
+        <div class="mobile-header-actions">
+          <a href="tel:+78124323232" class="mobile-header-icon" aria-label="Позвонить">
+            <img src="assets/images/icons/icon-phone-mob.svg" alt="Телефон" />
+          </a> 
+          <a href="#" class="mobile-header-icon" aria-label="Личный кабинет">
+            <img src="assets/images/icons/icon-user-mob.svg" alt="Личный кабинет" />
+          </a>
+          <a href="#" class="mobile-header-icon" aria-label="Клиника">
+            <img src="assets/images/icons/icon-star-mob.svg" alt="Клиника" />
+          </a>
+          <button class="menu-toggle" type="button" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-menu" role="dialog" aria-modal="true" aria-label="Мобильное меню">
+        <div class="mobile-menu-panel">
+          <div class="mobile-menu-header">
+            <a href="#" class="mobile-menu-logo">
+              <img src="assets/images/logo.svg" alt="Йога-терапия" />
+            </a>
+            <div class="mobile-menu-header-actions">
+              <a href="tel:+78124323232" class="mobile-menu-icon" aria-label="Позвонить">
+                <img src="assets/images/icons/icon-phone-mob.svg" alt="Телефон" />
+              </a>
+              <a href="#" class="mobile-menu-icon" aria-label="Личный кабинет">
+                <img src="assets/images/icons/icon-user-mob.svg" alt="Личный кабинет" />
+              </a>
+              <a href="#" class="mobile-menu-icon" aria-label="Клиника">
+                <img src="assets/images/icons/icon-star-mob.svg" alt="Клиника" />
+              </a>
+              <button class="mobile-menu-close" type="button" aria-label="Закрыть меню">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15 5L5 15M5 5L15 15" stroke="currentColor" stroke-width="1" stroke-linecap="round" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <nav class="mobile-menu-nav" role="navigation">
+            <a href="#studio" class="mobile-nav-link">О студии</a>
+            <a href="#Направления" class="mobile-nav-link">Направления</a>
+            <a href="#Преподаватели" class="mobile-nav-link">Преподаватели</a>
+            <a href="#schedule" class="mobile-nav-link">Расписание</a>
+            <a href="#" class="mobile-nav-link">Цены</a>
+            <a href="#contacts" class="mobile-nav-link">Контакты</a>
+          </nav>
+
+          <div class="mobile-menu-departments">
+            <a href="#" class="mobile-dept-link" style="color: #191710">
+              <img src="assets/images/icons/icon-star-mob.svg" alt="" width="16" height="18" />
+              <span>Немецкая семейная клиника</span>
+            </a>
+            <a href="#" class="mobile-dept-link" style="color: #CB542D">
+              <img src="assets/images/icons/dept-pediatrics.svg" alt="" width="16" height="18" />
+              <span>Педиатрия</span>
+            </a>
+            <a href="#" class="mobile-dept-link" style="color: #2E57CB">
+              <img src="assets/images/icons/dept-ophthalmology.svg" alt="" width="16" height="18" />
+              <span>Экспертная офтальмология</span>
+            </a>
+            <a href="#" class="mobile-dept-link" style="color: #00687A">
+              <img src="assets/images/icons/dept-preventive.svg" alt="" width="16" height="18" />
+              <span>Превентивная медицина</span>
+            </a>
+            <a href="#" class="mobile-dept-link" style="color: #443E9E">
+              <img src="assets/images/icons/dept-dentistry.svg" alt="" width="16" height="18" />
+              <span>Стоматология</span>
+            </a>
+            <a href="#" class="mobile-dept-link" style="color: #998158">
+              <img src="assets/images/icons/dept-aesthetic.svg" alt="" width="16" height="18" />
+              <span>Эстетическая медицина</span>
+            </a>
+          </div>
+
+          <div class="mobile-menu-actions">
+            <a href="#schedule" class="mobile-menu-btn mobile-menu-btn--schedule">Посмотреть расписание</a>
+            <a href="#contacts" class="mobile-menu-btn mobile-menu-btn--signup">Записаться на занятие</a>
+          </div>
+
+          <div class="mobile-menu-contacts">
+            <a href="tel:+78124323232" class="mobile-menu-phone">
+              <img src="assets/icons/phone_.svg" alt="" width="14" height="12" />
+              <span>8 (812) 432-32-32 / 8 (812) 337-12-12</span>
+            </a>
+            <div class="mobile-menu-time">
+              <img src="assets/icons/clock_.svg" alt="" width="12" height="12" />
+              <span>c 07:30 до 22:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-top">
+        <div class="site-container header-inner">
+          <div class="header-top__left">
+            <a href="tel:+78124323232" class="top-link">
+              <img src="assets/images/icons/icon-phone.svg" alt="" width="14" height="12" />
+              <span>8 (812) 432-32-32 / 8 (812) 337-12-12</span>
+            </a>
+            <div class="top-link">
+              <img src="assets/images/icons/icon-clock.svg" alt="" width="12" height="12" />
+              <span>c 08:00 до 22:00</span>
+            </div>
+          </div>
+          <div class="header-top__right">
+            <a href="#" class="top-link">
+              <img src="assets/images/icons/icon-star.svg" alt="" width="14" height="15" />
+              <span>Немецкая семейная клиника</span>
+            </a>
+            <a href="#" class="top-link">
+              <img src="assets/images/icons/icon-user.svg" alt="" width="9" height="12" />
+              <span>Личный кабинет</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-main">
+        <div class="site-container header-inner header-main__inner">
+          <nav class="header-nav" aria-label="Основная навигация">
+            <a href="#">О Cтудии</a>
+            <a href="#">Направления</a>
+            <a href="#">Преподаватели</a>
+            <a href="#schedule">Расписание</a>
+            <a href="#">Цены</a>
+            <a href="#contacts">Контакты</a>
+          </nav>
+
+          <a href="#" class="header-logo" aria-label="Йога-терапия">
+            <img src="assets/images/logo.svg" alt="Йога-терапия" />
+          </a>
+
+          <div class="header-actions">
+            <a href="#schedule" class="header-btn">Посмотреть расписание</a>
+            <a href="#contacts" class="header-btn">Записаться на занятие</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+
+    <main>
+      <div class="mobile-breadcrumbs d-md-none">
+        <div class="site-container">
+          <p class="mobile-breadcrumbs__text"><span>Главная</span> / <strong>Йога-терапия</strong></p>
+        </div>
+      </div>
+
+      <section class="section section-hero">
+        <div class="programs-hero__bg" aria-hidden="true"></div>
+        <div class="container-fluid site-container section-hero__container">
+          <div class="section-hero__content">
+            <h1 class="section-hero__title">Разумная практика<br />для тела и ума</h1>
+            <p class="section-hero__text">
+              Йога-терапия, направленная на восстановление <br class="d-block d-sm-none">и снижение физического  и психоэмоционального
+              напряжения.
+            </p>
+          </div>
+          <div class="section-hero__actions">
+            <a href="#schedule" class="section-hero__btn section-hero__btn--schedule">
+              <span>Посмотреть расписание</span>
+              <span class="section-hero__btn-arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="#contacts" class="section-hero__btn section-hero__btn--signup">
+              <span>Записаться на занятие</span>
+              <span class="section-hero__btn-arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-3" id="studio">
+        <div class="container-fluid site-container">
+          <p class="section-3__breadcrumbs"><span>Главная</span> / <strong>Йога-терапия</strong></p>
+          <div class="row section-3__layout g-4">
+            <div class="col-12 col-xl-6 section-3__content-col">
+              <div class="section-3__content">
+              <h2 class="section-3__title">Студия йога-терапии <br class="d-none d-md-block"> <br class="d-block d-sm-none"> на базе Немецкой семейной клиники</h2>
+              <p class="section-3__text section-3__text--lead">
+                На базе Немецкой семейной клиники открыта студия йога-терапии — оздоровительной
+                практики, направленной на восстановление <br class="d-none d-md-block">и снижение физического и психоэмоционального
+                напряжения. <br class="d-none d-md-block">В основе подхода лежат забота, внимание и поддержка каждого ученика.
+              </p>
+              <p class="section-3__text">
+                Занятия проходят в спокойной <br class="d-block d-sm-none">и безопасной атмосфере с акцентом <br class="d-none d-md-block"> <br class="d-block d-sm-none"> на правильную технику,
+                дыхание <br class="d-block d-sm-none">и индивидуальные возможности.<br class="d-block d-sm-none"> Практика подходит как для начинающих,<br class="d-block d-sm-none"> так и для
+                тех, кто ищет мягкую нагрузку<br class="d-block d-sm-none"> и осознанную работу с телом.
+              </p>
+              </div>
+            </div>
+            <div class="col-12 col-xl-6">
+              <div class="row section-3__cards g-3 g-md-4">
+                <div class="col-12 col-sm-6">
+                  <article class="benefit-card">
+                    <img class="benefit-card__icon" src="assets/icons/first.svg" alt="" aria-hidden="true" />
+                    <h3>Оздоровительный <br class="d-none d-md-block">и<br class="d-block d-sm-none"> терапевтический формат</h3>
+                  </article>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <article class="benefit-card">
+                    <img class="benefit-card__icon" src="assets/icons/second.svg" alt="" aria-hidden="true" />
+                    <h3>Индивидуальный <br class="d-none d-md-block"><br class="d-block d-sm-none">подбор нагрузки</h3>
+                  </article>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <article class="benefit-card">
+                    <img class="benefit-card__icon" src="assets/icons/third.svg" alt="" aria-hidden="true" />
+                    <h3>Малые группы, индивидуальный подход</h3>
+                  </article>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <article class="benefit-card">
+                    <img class="benefit-card__icon" src="assets/icons/fourth.svg" alt="" aria-hidden="true" />
+                    <h3>Внимание к самочувствию и состоянию тела</h3>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-7">
+        <div class="container-fluid site-container">
+          <div class="section-7__heading">
+            <h2 class="section-7__title">Форматы йога-терапии</h2>
+            <p class="section-7__subtitle">
+              Мы предлагаем несколько форматов практики, направленных<br class="d-block d-sm-none"> на восстановление, снижение
+              напряжения <br class="d-block d-sm-none">и мягкую работу с телом.
+            </p>
+          </div>
+          <div class="section-7__controls">
+            <button class="section-7__arrow" type="button" data-direction="prev" aria-label="Назад">←</button>
+            <button class="section-7__arrow" type="button" data-direction="next" aria-label="Вперёд">→</button>
+          </div>
+          <div class="section-7__cards-wrap">
+            <div class="row section-7__cards g-3 g-xl-4 flex-nowrap flex-md-wrap">
+              <div class="col-auto col-md-6 col-xl-3">
+                <article class="format-card">
+                  <h3 class="format-card__title">Йога. Общий <br class="d-none d-md-block">начальный уровень</h3>
+                  <h4 class="format-card__subtitle">Практика <br class="d-none d-md-block"><br class="d-block d-sm-none"> асан</h4>
+                  <p class="format-card__text">
+                    Оздоровительная практика, направленная <br class="d-none d-md-block"><br class="d-block d-sm-none">на мягкое и безопасное освоение базовых асан. <br class="d-none d-md-block">
+                    Занятия помогают улучшить подвижность, <br class="d-none d-md-block">укрепить тело и сформировать правильную <br class="d-none d-md-block">
+                    технику выполнения упражнений.
+                  </p>
+                  <p class="format-card__level">Уровень: начальный</p>
+                  <a href="#" class="format-card__link">Подробнее о практике <span aria-hidden="true">→</span></a>
+                </article>
+              </div>
+              <div class="col-auto col-md-6 col-xl-3">
+                <article class="format-card">
+                  <h3 class="format-card__title">Пранаяма. <br class="d-none d-md-block">Начальный уровень</h3>
+                  <h4 class="format-card__subtitle">Контроль и осознанная <br class="d-none d-md-block"><br class="d-block d-sm-none">работа с дыханием</h4>
+                  <p class="format-card__text">
+                    Практика, направленная на освоение базовых <br class="d-none d-md-block">дыхательных техник. Помогает снизить
+                    уровень <br class="d-none d-md-block"> напряжения, улучшить концентрацию и <br class="d-none d-md-block">научиться управлять дыханием в комфортном
+                    <br class="d-none d-md-block">темпе.
+                  </p>
+                  <p class="format-card__level">Уровень: начальный</p>
+                  <a href="#" class="format-card__link">Подробнее о практике <span aria-hidden="true">→</span></a>
+                </article>
+              </div>
+              <div class="col-auto col-md-6 col-xl-3">
+                <article class="format-card">
+                  <h3 class="format-card__title">Йога-терапия <br class="d-none d-md-block"> позвоночника, динамика</h3>
+                  <h4 class="format-card__subtitle">Динамическая <br class="d-none d-md-block"><br class="d-block d-sm-none">практика лёжа</h4>
+                  <p class="format-card__text">
+                    Терапевтическая практика для мягкой работы <br class="d-none d-md-block"> с позвоночником и мышцами спины.
+                    Упражнения <br class="d-none d-md-block"> выполняются преимущественно лёжа, что <br class="d-none d-md-block"> снижает нагрузку и обеспечивает
+                    безопасное <br class="d-none d-md-block"> включение в движение.
+                  </p>
+                  <p class="format-card__level">Уровень: начальный и средний</p>
+                  <a href="#" class="format-card__link">Подробнее о практике <span aria-hidden="true">→</span></a>
+                </article>
+              </div>
+              <div class="col-auto col-md-6 col-xl-3">
+                <article class="format-card">
+                  <h3 class="format-card__title custom-letter-spacing">Йога-терапия позвоночника,<br class="d-none d-md-block"> <br class="d-block d-sm-none"> расслабление</h3>
+                  <h4 class="format-card__subtitle">Расслабляющая <br class="d-none d-md-block">практика лёжа</h4>
+                  <p class="format-card__text">
+                    Спокойная восстановительная практика <br class="d-none d-md-block"> для снятия мышечного и нервного <br class="d-none d-md-block"> напряжения.
+                    Направлена на расслабление, <br class="d-none d-md-block"> восстановление подвижности и общее <br class="d-none d-md-block"> улучшение самочувствия.
+                  </p>
+                  <p class="format-card__level">Уровень: подходит для всех</p>
+                  <a href="#" class="format-card__link">Подробнее о практике <span aria-hidden="true">→</span></a>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-8">
+        <div class="container-fluid site-container">
+          <div class="section-8__heading">
+            <h2 class="section-8__title">Если вы приходите на занятие впервые</h2>
+            <p class="section-8__subtitle">
+              Мы сделали всё, чтобы первое занятие прошло спокойно, безопасно <br class="d-block d-sm-none">и в комфортном для вас
+              темпе.
+            </p>
+          </div>
+          <div class="row section-8__cards g-3 g-xl-4 row-cols-1 row-cols-md-2 row-cols-xl-4">
+            <div class="col">
+              <article class="first-visit-card">
+                <img src="assets/offer-1.png" alt="Нужна ли подготовка" />
+                <div class="first-visit-card__content">
+                  <h3>Нужна ли подготовка?</h3>
+                  <p>
+                    Специальная физическая подготовка <br class="d-none d-md-block">не требуется. Нагрузка подбирается индивидуально с
+                    учётом состояния и опыта.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="col">
+              <article class="first-visit-card first-visit-card--short">
+                <img src="assets/offer-2.png" alt="Что взять с собой" />
+                <div class="first-visit-card__content">
+                  <h3>Что взять с собой?</h3>
+                  <p>Удобную одежду для занятий. <br class="d-none d-md-block"> Всё необходимое оборудование <br class="d-none d-md-block">предоставляется в студии.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col">
+              <article class="first-visit-card">
+                <img src="assets/offer-3.png" alt="Как проходит первое занятие" />
+                <div class="first-visit-card__content">
+                  <h3>Как проходит первое занятие?</h3>
+                  <p>
+                    Преподаватель помогает безопасно выполнять упражнения, следит за состоянием и при
+                    необходимости корректирует практику.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="col">
+              <article class="first-visit-card first-visit-card--short">
+                <img src="assets/offer-4.png" alt="Как записаться" />
+                <div class="first-visit-card__content">
+                  <h3>Как записаться?</h3>
+                  <p>
+                    Выберите занятие <a href="#schedule" class="text-white">в расписании</a><br class="d-none d-md-block"> и <a href="#contacts" class="text-white">запишитесь онлайн</a> — это займёт несколько минут.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-6">
+        <div class="container-fluid site-container">
+          <div class="section-6__heading">
+            <h2 class="section-6__title">Преподаватели йога-терапии</h2>
+            <p class="section-6__subtitle">
+              Занятия ведёт профессиональный инструктор, который внимательно наблюдает <br class="d-none d-md-block"> за состоянием
+              каждого ученика, помогает безопасно выполнять упражнения <br class="d-none d-md-block">и сопровождает практику <br class="d-block d-sm-none">на всех
+              этапах.
+            </p>
+          </div>
+          <div class="teacher-carousel">
+            <div class="teacher-track">
+              <div class="teacher-page">
+                <div class="teacher-slide">
+                  <article class="teacher-card">
+                    <img src="assets/teacher-4.png" alt="Фамилия Имя 1" />
+                    <h3>Фамилия Имя 1</h3>
+                    <p><strong>Опыт преподавания:</strong> X лет</p>
+                    <p><strong>Специализация:</strong> йога-терапия, восстановительные практики</p>
+                    <p><strong>Подход:</strong> внимательный, спокойный, ориентированный на здоровье</p>
+                  </article>
+                </div>
+                <div class="teacher-slide">
+                  <article class="teacher-card">
+                    <img src="assets/teacher-4.png" alt="Фамилия Имя 2" />
+                    <h3>Фамилия Имя 2</h3>
+                    <p><strong>Опыт преподавания:</strong> X лет</p>
+                    <p><strong>Специализация:</strong> йога-терапия, восстановительные практики</p>
+                    <p><strong>Подход:</strong> внимательный, спокойный, ориентированный на здоровье</p>
+                  </article>
+                </div>
+                <div class="teacher-slide">
+                  <article class="teacher-card">
+                    <img src="assets/teacher-4.png" alt="Фамилия Имя 3" />
+                    <h3>Фамилия Имя 3</h3>
+                    <p><strong>Опыт преподавания:</strong> X лет</p>
+                    <p><strong>Специализация:</strong> йога-терапия, восстановительные практики</p>
+                    <p><strong>Подход:</strong> внимательный, спокойный, ориентированный на здоровье</p>
+                  </article>
+                </div>
+                <div class="teacher-slide">
+                  <article class="teacher-card">
+                    <img src="assets/teacher-4.png" alt="Фамилия Имя 4" />
+                    <h3>Фамилия Имя 4</h3>
+                    <p><strong>Опыт преподавания:</strong> X лет</p>
+                    <p><strong>Специализация:</strong> йога-терапия, восстановительные практики</p>
+                    <p><strong>Подход:</strong> внимательный, спокойный, ориентированный на здоровье</p>
+                  </article>
+                </div>
+                <div class="teacher-slide">
+                  <article class="teacher-card">
+                    <img src="assets/teacher-4.png" alt="Фамилия Имя 5" />
+                    <h3>Фамилия Имя 5</h3>
+                    <p><strong>Опыт преподавания:</strong> X лет</p>
+                    <p><strong>Специализация:</strong> йога-терапия, восстановительные практики</p>
+                    <p><strong>Подход:</strong> внимательный, спокойный, ориентированный на здоровье</p>
+                  </article>
+                </div>
+                <div class="teacher-slide">
+                  <article class="teacher-card">
+                    <img src="assets/teacher-4.png" alt="Фамилия Имя 6" />
+                    <h3>Фамилия Имя 6</h3>
+                    <p><strong>Опыт преподавания:</strong> X лет</p>
+                    <p><strong>Специализация:</strong> йога-терапия, восстановительные практики</p>
+                    <p><strong>Подход:</strong> внимательный, спокойный, ориентированный на здоровье</p>
+                  </article>
+                </div>
+                <div class="teacher-slide">
+                  <article class="teacher-card">
+                    <img src="assets/teacher-4.png" alt="Фамилия Имя 7" />
+                    <h3>Фамилия Имя 7</h3>
+                    <p><strong>Опыт преподавания:</strong> X лет</p>
+                    <p><strong>Специализация:</strong> йога-терапия, восстановительные практики</p>
+                    <p><strong>Подход:</strong> внимательный, спокойный, ориентированный на здоровье</p>
+                  </article>
+                </div>
+                <div class="teacher-slide">
+                  <article class="teacher-card">
+                    <img src="assets/teacher-4.png" alt="Фамилия Имя 8" />
+                    <h3>Фамилия Имя 8</h3>
+                    <p><strong>Опыт преподавания:</strong> X лет</p>
+                    <p><strong>Специализация:</strong> йога-терапия, восстановительные практики</p>
+                    <p><strong>Подход:</strong> внимательный, спокойный, ориентированный на здоровье</p>
+                  </article>
+                </div>
+                <div class="teacher-slide">
+                  <article class="teacher-card">
+                    <img src="assets/teacher-4.png" alt="Фамилия Имя 9" />
+                    <h3>Фамилия Имя 9</h3>
+                    <p><strong>Опыт преподавания:</strong> X лет</p>
+                    <p><strong>Специализация:</strong> йога-терапия, восстановительные практики</p>
+                    <p><strong>Подход:</strong> внимательный, спокойный, ориентированный на здоровье</p>
+                  </article>
+                </div>
+                <div class="teacher-slide">
+                  <article class="teacher-card">
+                    <img src="assets/teacher-4.png" alt="Фамилия Имя 10" />
+                    <h3>Фамилия Имя 10</h3>
+                    <p><strong>Опыт преподавания:</strong> X лет</p>
+                    <p><strong>Специализация:</strong> йога-терапия, восстановительные практики</p>
+                    <p><strong>Подход:</strong> внимательный, спокойный, ориентированный на здоровье</p>
+                  </article>
+                </div>
+                <div class="teacher-slide">
+                  <article class="teacher-card">
+                    <img src="assets/teacher-4.png" alt="Фамилия Имя 11" />
+                    <h3>Фамилия Имя 11</h3>
+                    <p><strong>Опыт преподавания:</strong> X лет</p>
+                    <p><strong>Специализация:</strong> йога-терапия, восстановительные практики</p>
+                    <p><strong>Подход:</strong> внимательный, спокойный, ориентированный на здоровье</p>
+                  </article>
+                </div>
+                <div class="teacher-slide">
+                  <article class="teacher-card">
+                    <img src="assets/teacher-4.png" alt="Фамилия Имя 12" />
+                    <h3>Фамилия Имя 12</h3>
+                    <p><strong>Опыт преподавания:</strong> X лет</p>
+                    <p><strong>Специализация:</strong> йога-терапия, восстановительные практики</p>
+                    <p><strong>Подход:</strong> внимательный, спокойный, ориентированный на здоровье</p>
+                  </article>
+                </div>
+                <div class="teacher-slide">
+                  <article class="teacher-card">
+                    <img src="assets/teacher-4.png" alt="Фамилия Имя 13" />
+                    <h3>Фамилия Имя 13</h3>
+                    <p><strong>Опыт преподавания:</strong> X лет</p>
+                    <p><strong>Специализация:</strong> йога-терапия, восстановительные практики</p>
+                    <p><strong>Подход:</strong> внимательный, спокойный, ориентированный на здоровье</p>
+                  </article>
+                </div>
+                <div class="teacher-slide">
+                  <article class="teacher-card">
+                    <img src="assets/teacher-4.png" alt="Фамилия Имя 14" />
+                    <h3>Фамилия Имя 14</h3>
+                    <p><strong>Опыт преподавания:</strong> X лет</p>
+                    <p><strong>Специализация:</strong> йога-терапия, восстановительные практики</p>
+                    <p><strong>Подход:</strong> внимательный, спокойный, ориентированный на здоровье</p>
+                  </article>
+                </div>
+                <div class="teacher-slide">
+                  <article class="teacher-card">
+                    <img src="assets/teacher-4.png" alt="Фамилия Имя 15" />
+                    <h3>Фамилия Имя 15</h3>
+                    <p><strong>Опыт преподавания:</strong> X лет</p>
+                    <p><strong>Специализация:</strong> йога-терапия, восстановительные практики</p>
+                    <p><strong>Подход:</strong> внимательный, спокойный, ориентированный на здоровье</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav class="teacher-pagination" aria-label="Пагинация преподавателей">
+            <button class="teacher-pagination__btn" type="button" data-direction="prev" aria-label="Назад">←</button>
+            <div class="teacher-pagination__pages"></div>
+            <button class="teacher-pagination__btn" type="button" data-direction="next" aria-label="Вперёд">→</button>
+          </nav>
+        </div>
+      </section>
+
+      <section class="section section-11">
+        <div class="container-fluid site-container">
+          <div class="section-heading">
+            <h2>Пространство <br class="d-block d-sm-none"> для спокойной <br class="d-block d-sm-none">и осознанной практики</h2>
+            <p>
+              Мы создали спокойную и безопасную атмосферу, в которой легко сосредоточиться на практике <br class="d-block d-sm-none">и
+              собственном самочувствии.
+            </p>
+          </div>
+          <div class="space-grid">
+            <img class="space-grid__hero" src="assets/space-1.png" alt="Зал для занятий" />
+            <img class="space-grid__left" src="assets/space-2.png" alt="Пространство студии" />
+            <div class="space-grid__text">
+              <article>
+                <h3>Зал для занятий</h3>
+                <p>
+                  Светлый и просторный зал, оборудованный всем необходимым для комфортной и безопасной
+                  практики. Пространство позволяет сосредоточиться на занятии <br class="d-block d-sm-none">и чувствовать себя
+                  уверенно.
+                </p>
+              </article>
+              <article>
+                <h3>Раздевалки</h3>
+                <p>
+                  Удобные и чистые раздевалки с индивидуальными шкафчиками. Продуманная организация
+                  пространства обеспечивает комфорт до и после занятия.
+                </p>
+              </article>
+            </div>
+            <img class="space-grid__right" src="assets/space-3.png" alt="Интерьер студии" />
+            <img class="space-grid__bottom-left" src="assets/space-4.png" alt="Душевая зона" />
+            <img class="space-grid__bottom-right" src="assets/space-5.png" alt="Ресепшен" />
+            <div class="space-grid__text space-grid__text_row_3">
+              <article>
+                <h3>Душевые</h3>
+                <p>
+                  Душевые комнаты позволяют освежиться после занятия и спокойно продолжить день. Чистота
+                  и комфорт поддерживаются на постоянной основе.
+                </p>
+              </article>
+              <article>
+                <h3>Ресепшен</h3>
+                <p>
+                  Внимательный и доброжелательный ресепшен всегда готов помочь с записью, ответить на
+                  вопросы и сориентировать по занятиям.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-schedule" id="schedule">
+        <div class="container-fluid site-container">
+          <div class="section-schedule__heading">
+            <h2 class="section-schedule__title">Расписание и запись на занятия</h2>
+            <p class="section-schedule__subtitle">
+              Выберите удобное время и направление, ознакомьтесь <br class="d-none d-md-block"> с преподавателем и запишитесь на занятие
+              онлайн.
+            </p>
+          </div>
+
+          <div class="schedule-nav">
+            <button type="button" class="schedule-nav__btn" data-week="prev">
+              <span class="d-none d-md-inline">← Предыдущая неделя</span>
+              <span class="d-md-none">← 26 янв. - 1 фев.</span>
+            </button>
+            <span class="schedule-nav__divider">|</span>
+            <span class="schedule-nav__period" id="weekPeriod">
+              <span class="d-none d-md-inline">2 - 8 Февраля</span>
+              <span class="d-md-none">2 - 8 фев.</span>
+            </span>
+            <span class="schedule-nav__divider">|</span>
+            <button type="button" class="schedule-nav__btn" data-week="next">
+              <span class="d-none d-md-inline">Следующая неделя →</span>
+              <span class="d-md-none">9 - 15 фев. →</span>
+            </button>
+          </div>
+
+          <div class="schedule-days d-md-none position-relative" aria-hidden="true">
+            <div class="schedule-days__item is-active"><span>пн</span><strong>2</strong></div>
+            <div class="schedule-days__item"><span>вт</span><strong>3</strong></div>
+            <div class="schedule-days__item"><span>ср</span><strong>4</strong></div>
+            <div class="schedule-days__item"><span>чт</span><strong>5</strong></div>
+            <div class="schedule-days__item"><span>пт</span><strong>6</strong></div>
+            <div class="schedule-days__item"><span>сб</span><strong>7</strong></div>
+            <div class="schedule-days__item"><span>вс</span><strong>8</strong></div>
+          </div>
+
+          <div class="row schedule-filters g-2 g-md-3 justify-content-center">
+            <div class="col-auto pl-0">
+              <button type="button" class="schedule-filter">
+                <span>Направление</span>
+                <svg class="mobile-nav-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              </button>
+            </div>
+            <div class="col-auto pr-0 pl-0">
+              <button type="button" class="schedule-filter schedule-filter--teacher">
+                <span>Преподаватель</span>
+                <svg class="mobile-nav-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              </button>
+            </div>
+            <div class="col-auto pr-0">
+              <button type="button" class="schedule-filter schedule-filter--level">
+                <span>Уровень</span>
+                <svg class="mobile-nav-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="schedule-table-wrap">
+            <table class="schedule-table">
+              <thead>
+                <tr>
+                  <th class="schedule-table__corner"></th>
+                  <th><strong>2</strong><span>Февраля, понедельник</span></th>
+                  <th><strong>3</strong><span>Февраля, вторник</span></th>
+                  <th><strong>4</strong><span>Февраля, среда</span></th>
+                  <th><strong>5</strong><span>Февраля, четверг</span></th>
+                  <th><strong>6</strong><span>Февраля, пятница</span></th>
+                  <th><strong>7</strong><span>Февраля, суббота</span></th>
+                  <th><strong>8</strong><span>Февраля, воскресенье</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>08:00</th>
+                  <td><div class="schedule-event event-green"><p class="schedule-event__title">Йога (нач.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 3/10</span></p></div></td>
+                  <td></td>
+                  <td><div class="schedule-event event-green"><p class="schedule-event__title">Йога (нач.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 3/10</span></p></div></td>
+                  <td></td>
+                  <td><div class="schedule-event event-green"><p class="schedule-event__title">Йога (нач.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 3/10</span></p></div></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>09:00</th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>10:00</th>
+                  <td></td>
+                  <td><div class="schedule-event event-yellow"><p class="schedule-event__title">Пранаяма (нач.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 3/10</span></p></div></td>
+                  <td></td>
+                  <td><div class="schedule-event event-yellow"><p class="schedule-event__title">Пранаяма (нач.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 3/10</span></p></div></td>
+                  <td></td>
+                  <td><div class="schedule-event event-yellow"><p class="schedule-event__title">Пранаяма (нач.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 3/10</span></p></div></td>
+                  <td><div class="schedule-event event-yellow"><p class="schedule-event__title">Пранаяма (нач.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 3/10</span></p></div></td>
+                </tr>
+                <tr>
+                  <th>11:00</th>
+                  <td><div class="schedule-event event-yellow"><p class="schedule-event__title">Пранаяма (нач.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 5/10</span></p></div></td>
+                  <td><div class="schedule-event event-orange"><p class="schedule-event__title">Йога спины (релакс)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 5/10</span></p></div></td>
+                  <td><div class="schedule-event event-yellow"><p class="schedule-event__title">Пранаяма (нач.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 5/10</span></p></div></td>
+                  <td><div class="schedule-event event-orange"><p class="schedule-event__title">Йога спины (релакс)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 5/10</span></p></div></td>
+                  <td><div class="schedule-event event-yellow"><p class="schedule-event__title">Пранаяма (нач.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 5/10</span></p></div></td>
+                  <td><div class="schedule-event event-orange"><p class="schedule-event__title">Йога спины (релакс)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 5/10</span></p></div></td>
+                  <td><div class="schedule-event event-orange"><p class="schedule-event__title">Йога спины (релакс)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 5/10</span></p></div></td>
+                </tr>
+                <tr>
+                  <th>12:00</th>
+                  <td><div class="schedule-event event-orange"><p class="schedule-event__title">Йога спины (релакс)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 2/10</span></p></div></td>
+                  <td><div class="schedule-event event-pink"><p class="schedule-event__title">Йога спины (дин.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 2/10</span></p></div></td>
+                  <td><div class="schedule-event event-orange"><p class="schedule-event__title">Йога спины (релакс)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 2/10</span></p></div></td>
+                  <td><div class="schedule-event event-pink"><p class="schedule-event__title">Йога спины (дин.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 2/10</span></p></div></td>
+                  <td><div class="schedule-event event-orange"><p class="schedule-event__title">Йога спины (релакс)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 2/10</span></p></div></td>
+                  <td><div class="schedule-event event-pink"><p class="schedule-event__title">Йога спины (дин.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 2/10</span></p></div></td>
+                  <td><div class="schedule-event event-pink"><p class="schedule-event__title">Йога спины (дин.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 2/10</span></p></div></td>
+                </tr>
+                <tr>
+                  <th>13:00</th>
+                  <td><div class="schedule-event event-pink"><p class="schedule-event__title">Йога спины (дин.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 7/10</span></p></div></td>
+                  <td></td>
+                  <td><div class="schedule-event event-pink"><p class="schedule-event__title">Йога спины (дин.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 7/10</span></p></div></td>
+                  <td></td>
+                  <td><div class="schedule-event event-pink"><p class="schedule-event__title">Йога спины (дин.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 7/10</span></p></div></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>14:00</th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>15:00</th>
+                  <td></td>
+                  <td><div class="schedule-event event-green"><p class="schedule-event__title">Йога (нач.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 7/10</span></p></div></td>
+                  <td></td>
+                  <td><div class="schedule-event event-green"><p class="schedule-event__title">Йога (нач.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 7/10</span></p></div></td>
+                  <td></td>
+                  <td><div class="schedule-event event-green"><p class="schedule-event__title">Йога (нач.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 7/10</span></p></div></td>
+                  <td><div class="schedule-event event-green"><p class="schedule-event__title">Йога (нач.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 7/10</span></p></div></td>
+                </tr>
+                <tr>
+                  <th>16:00</th>
+                  <td><div class="schedule-event event-yellow"><p class="schedule-event__title">Пранаяма (нач.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 5/10</span></p></div></td>
+                  <td><div class="schedule-event event-yellow"><p class="schedule-event__title">Пранаяма (нач.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 5/10</span></p></div></td>
+                  <td><div class="schedule-event event-yellow"><p class="schedule-event__title">Пранаяма (нач.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 5/10</span></p></div></td>
+                  <td><div class="schedule-event event-yellow"><p class="schedule-event__title">Пранаяма (нач.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 5/10</span></p></div></td>
+                  <td><div class="schedule-event event-yellow"><p class="schedule-event__title">Пранаяма (нач.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 5/10</span></p></div></td>
+                  <td><div class="schedule-event event-yellow"><p class="schedule-event__title">Пранаяма (нач.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 5/10</span></p></div></td>
+                  <td><div class="schedule-event event-yellow"><p class="schedule-event__title">Пранаяма (нач.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 5/10</span></p></div></td>
+                </tr>
+                <tr>
+                  <th>17:00</th>
+                  <td><div class="schedule-event event-orange"><p class="schedule-event__title">Йога спины (релакс)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 8/10</span></p></div></td>
+                  <td><div class="schedule-event event-orange"><p class="schedule-event__title">Йога спины (релакс)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 8/10</span></p></div></td>
+                  <td><div class="schedule-event event-orange"><p class="schedule-event__title">Йога спины (релакс)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 8/10</span></p></div></td>
+                  <td><div class="schedule-event event-orange"><p class="schedule-event__title">Йога спины (релакс)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 8/10</span></p></div></td>
+                  <td><div class="schedule-event event-orange"><p class="schedule-event__title">Йога спины (релакс)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 8/10</span></p></div></td>
+                  <td><div class="schedule-event event-orange"><p class="schedule-event__title">Йога спины (релакс)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 8/10</span></p></div></td>
+                  <td><div class="schedule-event event-orange"><p class="schedule-event__title">Йога спины (релакс)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 8/10</span></p></div></td>
+                </tr>
+                <tr>
+                  <th>18:00</th>
+                  <td><div class="schedule-event event-pink"><p class="schedule-event__title">Йога спины (дин.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 7/10</span></p></div></td>
+                  <td><div class="schedule-event event-pink"><p class="schedule-event__title">Йога спины (дин.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 7/10</span></p></div></td>
+                  <td><div class="schedule-event event-pink"><p class="schedule-event__title">Йога спины (дин.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 7/10</span></p></div></td>
+                  <td><div class="schedule-event event-pink"><p class="schedule-event__title">Йога спины (дин.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 7/10</span></p></div></td>
+                  <td><div class="schedule-event event-pink"><p class="schedule-event__title">Йога спины (дин.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 7/10</span></p></div></td>
+                  <td><div class="schedule-event event-pink"><p class="schedule-event__title">Йога спины (дин.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 7/10</span></p></div></td>
+                  <td><div class="schedule-event event-pink"><p class="schedule-event__title">Йога спины (дин.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 7/10</span></p></div></td>
+                </tr>
+                <tr>
+                  <th>19:00</th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>20:00</th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>21:00</th>
+                  <td rowspan="2"><div class="schedule-event event-green event-double"><p class="schedule-event__title">Йога (нач.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 5/10</span></p></div></td>
+                  <td rowspan="2"><div class="schedule-event event-green event-double"><p class="schedule-event__title">Йога (нач.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 5/10</span></p></div></td>
+                  <td rowspan="2"><div class="schedule-event event-green event-double"><p class="schedule-event__title">Йога (нач.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 5/10</span></p></div></td>
+                  <td rowspan="2"><div class="schedule-event event-green event-double"><p class="schedule-event__title">Йога (нач.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 5/10</span></p></div></td>
+                  <td rowspan="2"><div class="schedule-event event-green event-double"><p class="schedule-event__title">Йога (нач.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 5/10</span></p></div></td>
+                  <td rowspan="2"><div class="schedule-event event-green event-double"><p class="schedule-event__title">Йога (нач.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 5/10</span></p></div></td>
+                  <td rowspan="2"><div class="schedule-event event-green event-double"><p class="schedule-event__title">Йога (нач.)</p><p class="schedule-event__meta"><span>Преподаватель: Елена К.</span><span>Мест: 5/10</span></p></div></td>
+                </tr>
+                <tr>
+                  <th>22:00</th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-9">
+        <div class="container-fluid site-container">
+          <div class="section-9__heading">
+            <h2 class="section-9__title">Стоимость занятий</h2>
+            <p class="section-9__subtitle">
+              Выгодные условия на профилактику, диагностику и комплексные программы для взрослых и детей.
+            </p>
+          </div>
+          <div class="section-9__controls">
+            <button class="section-9__arrow" type="button" data-direction="prev" aria-label="Назад">←</button>
+            <button class="section-9__arrow" type="button" data-direction="next" aria-label="Вперёд">→</button>
+          </div>
+          <div class="section-9__cards-wrap">
+            <div class="row section-9__cards g-3 g-xl-4 flex-nowrap flex-lg-wrap">
+              <div class="col-auto col-lg-4 d-flex">
+                <article class="price-card price-card--single h-100">
+                  <h3>Разовое занятие</h3>
+                  <div class="price-card__content">
+                    <p class="price-card__price">1 разовое занятие: 1900р.</p>
+                    <p class="price-card__text">
+                      Подходит для тех, кто не может посещать занятия регулярно и предпочитает гибкий формат.
+                    </p>
+                  </div>
+                  <a href="#" class="price-card__link">Записаться на занятие <span>→</span></a>
+                </article>
+              </div>
+              <div class="col-auto col-lg-4 d-flex">
+                <article class="price-card price-card--single price-card--featured">
+                  <h3>Абонементы</h3>
+                  <div class="price-card__content price-card__content--featured">
+                    <p class="price-card__price">Абонемент на 4 занятия: 6000р.</p>
+                    <p class="price-card__text">Подходит для спокойного старта и поддержания практики.</p>
+                    <p class="price-card__price">Абонемент на 8 занятия: 11 600р.</p>
+                    <p class="price-card__text">Оптимальный вариант для регулярных тренировок.</p>
+                    <p class="price-card__price">Абонемент на 12 занятия: 16 800р.</p>
+                    <p class="price-card__text">Для тех, кто планирует заниматься системно.</p>
+                  </div>
+                  <a href="#" class="price-card__link">Записаться на занятие <span>→</span></a>
+                </article>
+              </div>
+              <div class="col-auto col-lg-4 d-flex">
+                <article class="price-card price-card--single h-100">
+                  <h3>Пробное занятие</h3>
+                  <div class="price-card__content">
+                    <p class="price-card__price">1 пробное занятие: 1500р.</p>
+                    <p class="price-card__text">
+                      Возможность познакомиться с форматом занятий <br class="d-none d-md-block">и выбрать подходящее направление.
+                    </p>
+                  </div>
+                  <a href="#" class="price-card__link">Записаться на занятие <span>→</span></a>
+                </article>
+              </div>
+            </div>
+          </div>
+          <p class="section-9__note">
+            Вы можете оплатить занятия в студии удобным для вас способом — наличными или безналичным
+            расчётом.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-10">
+        <div class="container-fluid site-container">
+          <div class="section-10__heading">
+            <h2 class="section-10__title">Актуальные предложения</h2>
+            <p class="section-10__subtitle">
+              <span class="">Возможность начать практику <br class="d-block d-sm-none">на комфортных условиях и выбрать <br class="d-none d-md-block"> удобный формат занятий.</span>
+            </p>
+          </div>
+          <div class="row section-10__cards g-3 g-xl-4 row-cols-1 row-cols-sm-2 row-cols-xl-5">
+            <div class="col">
+              <article class="offer-card">
+                <img src="assets/offer-5.png" alt="Скидка при покупке абонемента" />
+                <a href="#" class="offer-card__arrow" aria-label="Открыть предложение"></a>
+                <span class="offer-card__badge">Скидка</span>
+                <h3>Скидка при покупке <br class="d-block d-sm-none"> абонемента</h3>
+              </article>
+            </div>
+            <div class="col">
+              <article class="offer-card">
+                <img src="assets/offer-6.png" alt="Первое занятие для новых клиентов" />
+                <a href="#" class="offer-card__arrow" aria-label="Открыть предложение"></a>
+                <span class="offer-card__badge">-15%</span>
+                <h3>Первое занятие <br class="d-block d-sm-none"> для новых клиентов</h3>
+              </article>
+            </div>
+            <div class="col">
+              <article class="offer-card">
+                <img src="assets/offer-7.png" alt="Пробное занятие при первой записи" />
+                <a href="#" class="offer-card__arrow" aria-label="Открыть предложение"></a>
+                <span class="offer-card__badge">-20%</span>
+                <h3>Пробное занятие <br class="d-block d-sm-none"> при первой записи</h3>
+              </article>
+            </div>
+            <div class="col">
+              <article class="offer-card">
+                <img src="assets/offer-8.png" alt="Абонемент выгоднее" />
+                <a href="#" class="offer-card__arrow" aria-label="Открыть предложение"></a>
+                <span class="offer-card__badge">2 по цене 1</span>
+                <h3>Абонемент выгоднее: <br class="d-block d-sm-none">2 занятия по цене 1</h3>
+              </article>
+            </div>
+            <div class="col">
+              <article class="offer-card">
+                <img src="assets/offer-9.png" alt="Приведи друга" />
+                <a href="#" class="offer-card__arrow" aria-label="Открыть предложение"></a>
+                <span class="offer-card__badge">-10%</span>
+                <h3>Приведи друга: скидка <br class="d-block d-sm-none">для вас обоих</h3>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-contacts" id="contacts">
+        <div class="container-fluid site-container">
+          <div class="row section-contacts__layout g-4 g-xl-5 align-items-start">
+            <div class="col-12 col-xl-6">
+              <h2 class="section-contacts__title">Контакты студии</h2>
+              <p class="section-contacts__subtitle">
+                Мы всегда на связи и будем рады ответить на ваши вопросы, помочь с выбором занятия и
+                записью на практику.
+              </p>
+
+              <div class="section-contacts__item">
+                <h3>Адрес студии:</h3>
+                <p>
+                  г. Санкт-Петербург, Невский пр. 114-116,<br />
+                  (БЦ Невский Центр, 8 этаж, вход с ул. Восстания)
+                </p>
+              </div>
+
+              <div class="section-contacts__item">
+                <h3>Телефон:</h3>
+                <p>8 (812) 432-32-32 / 8 (812) 337-12-12</p>
+              </div>
+
+              <div class="section-contacts__item">
+                <h3>Часы работы:</h3>
+                <p>Ежедневно с 8:00 до 22:00</p>
+              </div>
+
+              <div class="section-contacts__actions">
+                <a href="#schedule" class="section-contacts__btn section-contacts__btn--schedule">Посмотреть расписание <span>→</span></a>
+                <a href="#" class="section-contacts__btn section-contacts__btn--signup">Записаться на занятие <span>→</span></a>
+              </div>
+            </div>
+
+            <div class="col-12 col-xl-6">
+              <div class="contacts-map" role="img" aria-label="Карта расположения студии">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="container-fluid site-container">
+        <div class="footer-desktop d-none d-xl-block">
+          <div class="footer-desktop__top">
+            <div class="footer-brand">
+              <img src="assets/images/logo-white.svg" alt="Йога-терапия" class="footer-logo" />
+              <p class="footer-about-text">
+                Студия йога-терапии — часть экосистемы здоровья Немецкой семейной клиники.<br /><br />
+                Мы работаем с телом бережно, осознанно и с опорой на профессиональный подход к здоровью и
+                долголетию.
+              </p>
+              <a href="#header" class="footer-btn footer-btn--light footer-btn--up">↑ Наверх</a>
+            </div>
+
+            <div class="footer-col footer-col--info">
+              <h3>Инфо</h3>
+              <a href="#">О студии</a>
+              <a href="#">Направления</a>
+              <a href="#">Преподаватели</a>
+              <a href="#schedule">Расписание</a>
+              <a href="#">Цены</a>
+              <a href="#contacts">Контакты</a>
+            </div>
+
+            <div class="footer-meta">
+              <div class="footer-col footer-col--social">
+                <h3>Соц сети</h3>
+                <a href="#">ВКонтакте</a>
+                <a href="#">Дзен</a>
+                <a href="#">Телеграм</a>
+              </div>
+              <div class="footer-col footer-col--contacts">
+                <h3>Контакты</h3>
+                <a href="#contacts">Контакты</a>
+                <a href="tel:+78124323232">8 (812) 432-32-32</a>
+                <a href="tel:+78123771212">8 (812) 377-12-12</a>
+                <a href="mailto:info@german.clinic">info@german.clinic</a>
+              </div>
+              <div class="footer-col footer-col--address">
+                <h3>Адрес</h3>
+                <p>
+                  г. Санкт-Петербург, Невский пр. 114-116,<br />
+                  (БЦ Невский Центр, 8 этаж, вход с ул. Восстания)
+                </p>
+              </div>
+            </div>
+
+            <div class="footer-actions">
+              <div class="footer-actions__primary">
+                <a href="#contacts" class="footer-btn footer-btn--dark footer-btn--join">Записаться на занятие</a>
+                <a href="#schedule" class="footer-btn footer-btn--light footer-btn--schedule">Посмотреть расписание</a>
+              </div>
+              <div class="footer-actions__secondary">
+                <a href="#" class="footer-btn footer-btn--outline footer-btn--icon footer-btn--clinic">
+                  <img src="assets/images/icons/icon-star.svg" alt="" width="12" height="12" />
+                  <span>Немецкая семейная клиника</span>
+                </a>
+                <a href="#" class="footer-btn footer-btn--dark footer-btn--icon footer-btn--account">
+                  <img src="assets/images/icons/icon-user.svg" alt="" width="9" height="12" />
+                  <span>Личный кабинет</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <span>© 2026 г. ООО "Немецкая клиника"</span>
+            <span>Лицензия № Л041-01148-78/00555167</span>
+          </div>
+        </div>
+
+        <div class="footer-mobile d-xl-none">
+          <div class="row g-0 footer-mobile__top">
+            <div class="col-6 footer-brand">
+              <img src="assets/images/logo-white.svg" alt="Йога-терапия" class="footer-logo" />
+              <p class="footer-about-text">
+                Студия йога-терапии — часть экосистемы здоровья Немецкой семейной клиники.<br /><br />
+                Мы работаем с телом бережно, осознанно и с опорой на профессиональный подход к здоровью и
+                долголетию.
+              </p>
+              <a href="#header" class="footer-btn footer-btn--light footer-btn--up">↑ Наверх</a>
+            </div>
+
+            <div class="col-6 footer-actions">
+              <div class="footer-actions__primary">
+                <a href="#contacts" class="footer-btn footer-btn--dark footer-btn--join">Записаться на занятие</a>
+                <a href="#" class="footer-btn footer-btn--light footer-btn--call">Заказать звонок</a>
+                <a href="#" class="footer-btn footer-btn--light footer-btn--pay">Оплатить</a>
+              </div>
+              <div class="footer-actions__secondary">
+                <a href="#" class="footer-btn footer-btn--dark footer-btn--icon footer-btn--account">
+                  <img src="assets/images/icons/icon-user.svg" alt="" width="9" height="12" />
+                  <span>Личный кабинет</span>
+                </a>
+                <a href="#" class="footer-btn footer-btn--outline footer-btn--icon footer-btn--clinic">
+                  <img src="assets/images/icons/icon-star.svg" alt="" width="12" height="12" />
+                  <span>Немецкая семейная клиника</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-0 footer-mobile__links">
+            <div class="col-6">
+              <div class="footer-col footer-col--info">
+                <h3>Инфо</h3>
+                <a href="#">О студии</a>
+                <a href="#">Направления</a>
+                <a href="#">Преподаватели</a>
+                <a href="#schedule">Расписание</a>
+                <a href="#">Цены</a>
+                <a href="#contacts">Контакты</a>
+              </div>
+
+              <div class="footer-col footer-col--contacts">
+                <h3>Контакты</h3>
+                <a href="#contacts">Контакты</a>
+                <a href="tel:+78124323232">8 (812) 432-32-32</a>
+                <a href="tel:+78123771212">8 (812) 377-12-12</a>
+                <a href="mailto:info@german.clinic">info@german.clinic</a>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="footer-col footer-col--social">
+                <h3>Соц сети</h3>
+                <a href="#">ВКонтакте</a>
+                <a href="#">Дзен</a>
+                <a href="#">Телеграм</a>
+              </div>
+
+              <div class="footer-col footer-col--address">
+                <h3>Адрес</h3>
+                <p>
+                  г. Санкт-Петербург, Невский пр. 114-116,<br />
+                  (БЦ Невский Центр, 8 этаж, вход с ул. Восстания)
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <span>© 2025 г. ООО "Немецкая клиника"</span>
+            <span>Лицензия № Л041-01148-78/00555167</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
