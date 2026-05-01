@@ -1,0 +1,18 @@
+@import url(../ophthalmology/section-directions.css);
+
+.abd-dir_bottom {
+    margin: auto;
+    margin-top: 30px;
+    width: fit-content;
+}
+
+.abd-dir_bottom a {
+    background: transparent;
+}
+
+@media screen and (max-width:768px) {
+    .abd-dir_bottom {
+        margin: unset;
+        margin-top: 20px;
+    }
+}

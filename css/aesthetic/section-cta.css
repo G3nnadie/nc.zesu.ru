@@ -1,0 +1,90 @@
+@import url(../ophthalmology/section-cta.css);
+
+.aesthetic-cta .ophthalmology-cta__inner::before {
+    background: linear-gradient(179.72deg, rgba(153, 129, 88, 0.345) 30.94%, rgba(153, 129, 88, 0.4) 96.32%);
+}
+
+.aesthetic-cta .container-fluid {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+}
+
+.ophthalmology-cta__subtitle {
+    margin-bottom: 25px;
+}
+
+.ophthalmology-cta__content {
+    padding: 0;
+}
+
+.ophthalmology-cta__inner {
+    height: 500px;
+    min-height: unset;
+}
+
+.ophthalmology-cta__logo {
+    width: 191px;
+    height: 50px;
+    margin-bottom: 40px !important;
+}
+
+.ophthalmology-cta__content {
+    max-width: 685px;
+}
+
+.ophthalmology-cta__title br {
+    display: none;
+}
+
+.ophthalmology-cta__btn {
+    height: 39px;
+}
+
+@media screen and (max-width:768px) {
+
+    .aesthetic-cta .container-fluid {
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+    }
+
+    .aesthetic-cta {
+        padding: 15px 0;
+    }
+
+    .aesthetic-cta .ophthalmology-cta__inner {
+        min-height: 500px;
+    }
+
+    .ophthalmology-cta__logo {
+        margin-bottom: 35px !important;
+    }
+
+    .ophthalmology-cta__subtitle {
+        margin-bottom: 15px;
+    }
+
+    .ophthalmology-cta__logo {
+        width: 172px;
+        height: 45px;
+    }
+
+    .ophthalmology-cta__title br {
+        display: block;
+    }
+
+    .ophthalmology-cta__subtitle {
+        max-width: 269px;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    .aesthetic-cta .ophthalmology-cta__inner::before {
+        background: linear-gradient(179.72deg, rgba(153, 129, 88, 0) 30.94%, rgba(153, 129, 88, 0.4) 96.32%);
+    }
+
+    .ophthalmology-cta__btn {
+        padding: 8px 20px;
+        height: 32px;
+        font-size: 12px;
+    }
+}

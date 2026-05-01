@@ -1,0 +1,268 @@
+
+.stom-service-pricing {
+  background-color: #ffffff; /* Или #f8f7f3, если так в макете */
+  padding: 70px 0;
+}
+
+
+
+/* Шапка */
+.stom-service-pricing__header {
+  max-width: 860px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.stom-service-pricing__title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  color: #202020;
+  margin: 0 0 20px 0;
+}
+
+.stom-service-pricing__subtitle {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: rgba(32, 32, 32, 0.9);
+  margin: 0;
+}
+
+/* Сетка с ценами */
+.stom-service-pricing__wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: stretch; /* Чтобы колонки тянулись на всю доступную ширину */
+  margin-bottom: 20px; /* Отступ до дисклеймера */
+}
+
+.stom-service-pricing__column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.stom-service-pricing__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-top: 1px solid rgba(32, 32, 32, 0.4);
+}
+
+.stom-service-pricing__item:last-child {
+  border-bottom: 1px solid rgba(32, 32, 32, 0.4);
+}
+
+.stom-service-pricing__name {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  color: #202020;
+  padding-right: 20px;
+}
+
+.stom-service-pricing__price {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  color: #202020;
+  text-align: right;
+  white-space: nowrap; /* Чтобы цена не переносилась на новую строку */
+}
+
+/* Подвал (текст и кнопки) */
+.stom-service-pricing__footer {
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.stom-service-pricing__disclaimer {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: -0.02em;
+  color: rgba(32, 32, 32, 0.7);
+  margin: 0 0 30px 0; /* Отступ до кнопок */
+}
+
+.stom-service-pricing__actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-left: 65px;
+}
+
+/* Нормальные кнопки (вместо сломанного блюра) */
+.stom-service-pricing__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* Расстояние от текста до стрелки */
+  padding: 9px 22px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: var(--color-text);
+  background: rgba(32, 32, 32, 0.05);
+  border: 1px solid var(--color-text);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Плавность для ховера */
+}
+
+.stom-service-pricing__btn-icon {
+  color: currentColor; /* Иконка наследует цвет текста */
+  transition: transform 0.3s ease;
+}
+
+/* Эффект при наведении */
+.stom-service-pricing__btn:hover {
+  background: rgba(32, 32, 32, 0.12);
+  color: var(--color-text);
+}
+.stomatology-equipment__btn--outline {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.stomatology-equipment__btn--outline:hover {
+  background: rgba(32, 32, 32, 0.08);
+}
+/* Небольшая анимация стрелочки вправо при ховере */
+.stom-service-pricing__btn:hover .stom-service-pricing__btn-icon  {
+  transform: translateX(4px);
+}
+
+/* ========================================= */
+/* АДАПТИВ                                   */
+/* ========================================= */
+
+@media (max-width: 998px) {
+  .stom-service-pricing__title {
+    font-size: 42px;
+  }
+
+  .stom-service-pricing__name, .stom-service-pricing__price {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .stom-service-pricing {
+    padding: 50px 0;
+  }
+
+  .stom-service-pricing__header {
+    text-align: left;
+  }
+
+  .stom-service-pricing__title {
+    text-align: left;
+    font-size: 36px;
+  }
+
+  .stom-service-pricing__subtitle {
+    text-align: left;
+  }
+
+  /* Перестроение сетки цен в одну колонку */
+  .stom-service-pricing__wrapper {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .stom-service-pricing__column {
+    width: 100%;
+  }
+
+  /* Убираем двойные рамки на стыке колонок */
+  .stom-service-pricing__column:first-child .stom-service-pricing__item:last-child {
+    border-bottom: none;
+  }
+
+  .stom-service-pricing__footer {
+    text-align: left;
+  }
+
+  .stom-service-pricing__disclaimer {
+    text-align: left;
+  }
+  .stom-service-pricing__actions{
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .stom-service-pricing__container {
+    padding: 0 20px;
+  }
+
+  .stom-service-pricing {
+    padding: 50px 0;
+  }
+
+  .stom-service-pricing__title {
+    font-size: 32px;
+  }
+
+  .stom-service-pricing__subtitle {
+    font-size: 16px;
+  }
+
+  .stom-service-pricing__item {
+    padding: 16px 0;
+  }
+
+  /* На мобилках строки чуть поуже */
+  /* Кнопки выстраиваем друг под другом на узких экранах */
+  .stom-service-pricing__actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+
+  .stom-service-pricing__btn {
+    width: max-content;
+    justify-content: start;
+  }
+}
+
+@media (max-width: 374px) {
+  .stom-service-pricing__container {
+    padding: 0 15px;
+  }
+
+  .stom-service-pricing__title {
+    font-size: 28px;
+  }
+
+  .stom-service-pricing__subtitle {
+    font-size: 14px;
+  }
+
+  .stom-service-pricing__name {
+    font-size: 14px;
+    padding-right: 10px;
+  }
+
+  .stom-service-pricing__price {
+    font-size: 14px;
+  }
+
+  .stom-service-pricing__disclaimer {
+    font-size: 12px;
+  }
+}

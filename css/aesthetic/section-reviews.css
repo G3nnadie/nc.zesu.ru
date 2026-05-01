@@ -1,0 +1,76 @@
+@import url(../preventive-medicine/section-reviews.css);
+
+.aesthetic-reviews_bottom a:first-of-type {
+    margin-left: 45px;
+}
+
+.reviews-section .section-header {
+    margin-bottom: 20px;
+}
+
+.preventive-reviews .slider-arrows {
+    margin-bottom: 35px !important;
+}
+
+.reviews-section {
+    overflow: hidden;
+}
+
+.preventive-reviews .slider-arrows .arrow-btn {
+    min-width: 39px;
+    min-height: 39px;
+}
+
+.reviews-section {
+    padding: 70px 0;
+}
+
+.reviews-section .section-subtitle {
+    max-width: 591px;
+}
+
+.reviews-section .section-actions {
+    margin-top: 30px !important;
+}
+
+.preventive-reviews .review-doctor {
+    margin-top: 20px;
+}
+
+.review-date {
+    display: block;
+    height: 11px;
+}
+
+@media screen and (max-width:991px) {
+
+    .aesthetic-reviews_bottom a:first-of-type {
+        margin-left: unset;
+    }
+
+    .preventive-reviews .slider-arrows {
+        margin-bottom: 20px !important;
+    }
+
+    .preventive-reviews .slider-arrows .arrow-btn {
+        min-width: 32px;
+        min-height: 32px;
+    }
+
+    .review-card {
+        margin-right: 0;
+    }
+
+    .reviews-grid {
+        margin: unset;
+        margin-right: -20px;
+    }
+
+    .review-card:last-child {
+        margin-right: 0;
+    }
+
+    .reviews-section .section-actions {
+        margin-top: 15px !important;
+    }
+}

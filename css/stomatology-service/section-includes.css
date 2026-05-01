@@ -1,0 +1,300 @@
+/* ============================================
+   PROGRAM PAGE — ЧТО ВХОДИТ В ПРОГРАММУ (Section 3)
+   Figma node: 1467:2952 (1440×506)
+   BG: #F8F7F3 (cream)
+   Layout: Bootstrap row > col-lg-5 + col-lg-7
+   Left: title + desc + meta   Right: numbered list
+   ============================================ */
+
+.program-includes {
+    background: #FFFFFF;
+    padding: 70px 0;
+}
+
+/* ---- Title ----
+   Figma: Forum 52px, lh=46.8 (0.9), ls=-1.04px (-0.02em)
+   At y=70 from section top */
+.program-stom-service-includes__title {
+    font-family: var(--font-heading);
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 0.9;
+    letter-spacing: -0.02em;
+    color: var(--color-text);
+    margin: 0;
+}
+
+/* ---- Description ----
+   Figma: Open Sans 18px, lh=24.3 (1.35), ls=-0.36px (-0.02em)
+   Width 638px, 3 lines */
+.program-stom-service-includes__description {
+    font-family: var(--font-body);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.55;
+    letter-spacing: -0.02em;
+    color: var(--color-text);
+    margin: 0 0 20px;
+}
+.program-service-includes__description{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 140px;
+    margin-top: 30px;
+}
+
+/* ---- Meta (bottom of left col) ----
+   Figma: positioned at y=318..402, Forum 20px for values */
+
+
+.program-includes__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.program-stom-service-includes__item {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: var(--color-text);
+    padding: 20px 0;
+    border-top: 1px solid var(--color-border-light);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.program-stom-service-includes__item span{
+    font-family: var(--font-heading);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: rgba(32, 32, 32, 0.8);
+}
+
+.program-stom-service-includes__item:last-child {
+    border-bottom: 1px solid var(--color-border-light);
+}
+.stomatology-service-equipment__actions {
+    gap: 15px !important;
+    margin-top: auto;
+    display: flex;
+}
+.stomatology-service-equipment__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    height: 39px;
+    padding: 0 22px;
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: var(--color-text);
+    background: rgba(32, 32, 32, 0.05);
+    border: 1px solid var(--color-text);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.stomatology-service-equipment__btn:hover {
+    background: rgba(32, 32, 32, 0.12);
+    color: var(--color-text);
+}
+
+.stomatology-service-equipment__btn--outline {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.stomatology-service-equipment__btn--outline:hover {
+    background: rgba(32, 32, 32, 0.08);
+}
+
+.stomatology-service-equipment__btn-arrow {
+    font-family: var(--font-ui);
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    transition: all 0.3s ease;
+}
+.stomatology-service-equipment__actions-mobile{
+    display: none;
+}
+.stomatology-service-equipment__btn:hover .stomatology-service-equipment__btn-arrow{
+    transform: translateX(4px);
+}
+/* ============================================
+   RESPONSIVE — LARGE DESKTOP (1920px+)
+   ============================================ */
+@media (min-width: 1920px) {
+    .program-includes {
+        padding: 88px 0 120px;
+    }
+
+    .program-stom-service-includes__title {
+        font-size: 58px;
+    }
+
+    .program-stom-service-includes__description {
+        font-size: 20px;
+    }
+
+    .program-stom-service-includes__item {
+        font-size: 22px;
+        padding: 17px 0;
+    }
+}
+@media (max-width: 1640px) {
+    .program-service-includes__description{
+        margin-bottom: 100px;
+    }
+}
+@media (max-width: 1440px) {
+    .program-service-includes__description{
+        margin-bottom: 100px;
+    }
+}
+/* ============================================
+   RESPONSIVE — MEDIUM DESKTOP (до 1200px)
+   ============================================ */
+@media (max-width: 1200px) {
+    .program-stom-service-includes__title {
+        font-size: 44px;
+    }
+
+    .program-stom-service-includes__description {
+        font-size: 16px;
+    }
+
+    .program-stom-service-includes__item {
+        font-size: 18px;
+    }
+}
+
+/* ============================================
+   RESPONSIVE — TABLET (до 992px)
+   ============================================ */
+@media (max-width: 992px) {
+    .stomatology-service-equipment__actions{
+        display: none;
+    }
+    .stomatology-service-equipment__actions-mobile{
+        display: block;
+    }
+    .program-includes {
+        padding: 50px 0 60px;
+    }
+
+    .program-stom-service-includes__title {
+        font-size: 36px;
+    }
+    .stomatology-service-equipment__btn {
+        font-size: 15px;
+        height: 36px;
+        padding: 0 18px;
+    }
+
+    .program-service-includes__description{
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .stomatology-service-equipment__actions-mobile{
+        margin-top: 40px;
+    }
+    .stomatology-service-feature__main{
+        padding-top: 0px;
+    }
+
+}
+
+/* ============================================
+   RESPONSIVE — MOBILE (до 768px)
+   Figma node: 1810:1485 (320×600)
+   Reorder: title → description → list → meta
+   ============================================ */
+@media (max-width: 768px) {
+    .stomatology-service-equipment__btn {
+        font-size: 12px;
+        height: 32px;
+        padding: 0 20px;
+        width: max-content;
+        justify-content: flex-start;
+    }
+
+    .stomatology-service-equipment__actions {
+        flex-direction: column !important;
+        gap: 10px !important;
+    }
+    .program-includes {
+        padding: 50px 0;
+    }
+
+    .program-includes .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .program-includes .row {
+        --bs-gutter-x: 0;
+    }
+
+    .program-includes .row > [class*="col-lg"] {
+        display: contents;
+    }
+
+    .program-stom-service-includes__title {
+        font-size: 28px;
+        line-height: 0.9;
+        letter-spacing: -0.02em;
+        order: 0;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .program-stom-service-includes__description {
+        font-size: 14px;
+        line-height: 1.3;
+        letter-spacing: -0.02em;
+        order: 1;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .program-includes__list {
+
+        width: 100%;
+    }
+
+    .program-stom-service-includes__item {
+        font-size: 16px;
+        line-height: 1.0;
+        letter-spacing: -0.02em;
+        padding: 12px 0;
+    }
+    .program-stom-service-includes__item span{
+        font-size: 14px;
+    }
+
+    .stomatology-service-equipment__actions{
+        display: none;
+    }
+    .stomatology-service-equipment__actions-mobile{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .stomatology-service-equipment__actions-mobile{
+        margin-top: 20px;
+    }
+}

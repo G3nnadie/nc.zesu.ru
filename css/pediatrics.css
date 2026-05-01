@@ -1,0 +1,2592 @@
+/* ============================================
+   PEDIATRICS PAGE - Отдельные стили педиатрии
+   Не конфликтует с основными стилями
+   ============================================ */
+
+/* ============================================
+   HERO SECTION - Педиатрия
+   ============================================ */
+.ped-hero {
+    height: calc(100vh - 139px);
+    box-sizing: border-box;
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    background: #3a2a1a;
+}
+
+/* Hero backgrounds - one per slide, crossfade */
+.ped-hero__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.ped-hero__bg.active {
+    opacity: 1;
+}
+
+.ped-hero__bg--1 {
+    background-image: url('../assets/images/bg-image.png');
+}
+
+/* Slide 2 - Программы наблюдения (замените на нужное фото) */
+.ped-hero__bg--2 {
+    background-image: url('../assets/images/hero__bg--2.png');
+}
+
+/* Slide 3 - Детская стоматология (замените на нужное фото) */
+.ped-hero__bg--3 {
+    background-image: url('../assets/images/hero__bg--3.png');
+}
+
+/* Slide 4 - Комфортная среда (замените на нужное фото) */
+.ped-hero__bg--4 {
+    background-image: url('../assets/images/hero__bg--4.png');
+}
+
+.ped-hero__bg--5 {
+    background-image: url('../assets/images/hero__bg--5.png');
+}
+
+.ped-hero__bg--6 {
+    background-image: url('../assets/images/hero__bg--6.png');
+}
+
+.ped-hero__bg--7 {
+    background-image: url('../assets/images/hero__bg--7.png');
+}
+
+.ped-hero__inner {
+    height: calc(100vh - 139px);
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px var(--content-padding-inline, 40px) 40px;
+}
+
+/* Logo block top-left */
+.ped-hero__logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: auto;
+}
+
+.ped-hero__logo img {
+    height: 56px;
+    width: auto;
+}
+
+/* Slides - crossfade */
+.ped-hero__slide {
+    display: none;
+}
+
+.ped-hero__slide.active {
+    display: block;
+    animation: pedFadeIn 0.6s ease;
+}
+
+@keyframes pedFadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Content area */
+.ped-hero__content {
+    margin-top: auto;
+    max-width: 1000px;
+}
+
+.ped-hero__title {
+    font-family: var(--font-heading, 'Forum', Georgia, serif);
+    font-size: clamp(32px, 3.5vw, 52px);
+    line-height: 100%;
+    font-weight: 400;
+    color: var(--color-white, #fff);
+    margin: 0 0 25px 0;
+}
+
+.ped-hero__subtitle {
+    font-family: var(--font-body, 'Open Sans', sans-serif);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0 0 30px 0;
+    max-width: 570px;
+}
+
+/* Tags / Pills */
+.ped-hero__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 15px;
+    margin-bottom: 58px;
+}
+
+.ped-hero__tag {
+    max-height: 39px;
+    font-family: Open Sans;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0;
+    display: inline-block;
+    padding: 9px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #FFFFFF33;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.2s ease, border-color 0.2s ease;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.ped-hero__tag:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.7);
+    color: #fff;
+    text-decoration: none;
+}
+
+/* CTA button */
+.ped-hero__cta {
+    max-height: 39px;
+    max-width: 230px;
+    font-family: Open Sans;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0;
+    vertical-align: middle;
+    display: inline-flex;
+    align-items: center;
+    gap: 1px;
+    padding: 9px 22px;
+    /* border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px; */
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.2s ease, border-color 0.2s ease;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid #FFFFFF;
+    backdrop-filter: blur(10px);
+}
+
+.ped-hero__cta:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.8);
+    color: #fff;
+    text-decoration: none;
+}
+
+.ped-hero__cta-arrow {
+    width: 14px;
+    height: 13px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    transition: transform 0.2s ease
+}
+
+.ped-hero__cta:hover .ped-hero__cta-arrow {
+    transform: translateX(3px);
+}
+
+/* Navigation: dots + arrows */
+.ped-hero__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+
+.ped-hero__dots {
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+    z-index: 20;
+}
+
+.ped-hero__dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: background 0.2s ease;
+}
+
+.ped-hero__dot.active {
+    background: #000;
+}
+
+.ped-hero__arrows {
+    display: flex;
+    gap: 25px;
+    position: absolute;
+    right: var(--content-padding-inline, 40px);
+    bottom: 40px;
+    z-index: 20;
+}
+
+.ped-hero__arrow {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease;
+    color: #fff;
+}
+
+.ped-hero__arrow:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.7);
+}
+
+.ped-hero__arrow svg {
+    width: 17.5px;
+    height: 15px;
+}
+
+
+/* ============================================
+   SECTION: Зачем нужна педиатрия
+   ============================================ */
+.ped-why {
+    height: 588px;
+    background: #F8F7F3;
+    padding: clamp(40px, 5vw, 40px) 0;
+}
+
+.ped-why__inner {
+    max-width: var(--content-max-width, 1920px);
+    margin: 0 auto;
+    padding: 0 var(--content-padding-inline, 40px);
+}
+
+/* Breadcrumb */
+.ped-why__breadcrumb {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: #000000;
+    margin-bottom: 75px;
+}
+
+.ped-why__breadcrumb a {
+    color: var(--color-text-light, rgba(32, 32, 32, 0.5));
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.ped-why__breadcrumb a:hover {
+    color: var(--color-text, #202020);
+}
+
+.ped-why__breadcrumb span {
+    color: var(--color-text, #202020);
+    font-weight: 600;
+}
+
+/* Layout */
+.ped-why__layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: clamp(30px, 4vw, 80px);
+    align-items: start;
+    justify-items: end;
+}
+
+.ped-why__title {
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 90%;
+    letter-spacing: -0.02em;
+    color: #202020;
+    margin: 0 0 25px 0;
+}
+
+.ped-why__text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    color: rgba(32, 32, 32, 0.9);
+    margin: 0 0 16px 0;
+}
+
+.ped-why__text:last-of-type {
+    margin-bottom: 32px;
+}
+
+/* Buttons */
+.ped-why__buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 118px;
+}
+
+.ped-why__btn {
+    max-height: 39px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 9px 22px;
+    border: 1px solid #202020;
+    background: inherit;
+    backdrop-filter: blur(10px);
+    font-family: 'Open Sans';
+    font-style: Regular;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    display: flex;
+    align-items: center;
+    color: #202020;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.ped-why__btn:hover {
+    background: rgba(32, 32, 32, 0.05);
+    color: #202020;
+}
+
+.ped-why__btn-arrow {
+    width: 14px;
+    height: 13px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #202020;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    transition: transform 0.2s ease;
+}
+
+.ped-why__btn:hover .ped-why__btn-arrow {
+    transform: translateX(3px);
+}
+
+/* Image */
+.ped-why__image {
+    max-width: 440px;
+    overflow: hidden;
+}
+
+.ped-why__image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* ============================================
+   SECTION: Почему родители выбирают нас
+   ============================================ */
+.ped-reasons {
+    height: 737px;
+    padding: clamp(50px, 5vw, 70px) 0;
+    background: var(--color-bg-white, #fff);
+}
+
+.ped-reasons__inner {
+    max-width: var(--content-max-width, 1920px);
+    margin: 0 auto;
+    padding: 0 var(--content-padding-inline, 40px);
+}
+
+.ped-reasons__title {
+    font-family: var(--font-heading, 'Forum', Georgia, serif);
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 90%;
+    color: var(--color-text, #202020);
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.ped-reasons__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.ped-reasons__card {
+    height: 250px;
+    box-sizing: border-box;
+    border: 1px solid #D2D2D2;
+    background: #FCF4F1;
+    padding: clamp(20px, 2vw, 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.ped-reasons__card-title {
+    font-family: var(--font-heading, 'Forum', Georgia, serif);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 90%;
+    color: var(--color-text, #202020);
+    margin: 0;
+}
+
+.ped-reasons__card-text {
+    font-family:'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    color: rgba(32, 32, 32, 0.8);
+    margin: 0;
+}
+
+
+/* ============================================
+   SECTION: Программы наблюдения
+   ============================================ */
+.ped-programs {
+    height: 921px;
+    padding: clamp(50px, 5vw, 70px) 0;
+    background: var(--color-bg-light, #F8F7F3);
+}
+
+.ped-programs__inner {
+    max-width: var(--content-max-width, 1920px);
+    margin: 0 auto;
+    padding: 0 var(--content-padding-inline, 40px);
+}
+
+.ped-programs__title {
+    font-family: var(--font-heading, 'Forum', Georgia, serif);
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 90%;
+    color: var(--color-text, #202020);
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.ped-programs__subtitle {
+    font-family: var(--font-body, 'Open Sans', sans-serif);
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: -2%;
+    max-width: 860px;
+    text-align: center;
+    color: #202020E5;
+;
+    margin: 0 auto clamp(30px, 3vw, 30px);
+}
+
+.ped-programs__grid {
+    display: grid;
+    gap: 5px 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.ped-programs__item {
+    max-height: 56px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--color-border, #D2D2D2);
+    text-decoration: none;
+    color: var(--color-text, #202020);
+    font-family: var(--font-body, 'Open Sans', sans-serif);
+    font-size: 18px;
+    line-height: 1.5;
+    transition: background 0.2s ease, color 0.2s ease;
+    gap: 12px;
+    border: 1px solid var(--color-border, #D2D2D2);
+}
+
+/* Vertical divider between columns */
+.ped-programs__item:nth-child(odd) {
+    border: 1px solid var(--color-border, #D2D2D2);
+}
+
+.ped-programs__item:hover {
+    background: rgba(0, 0, 0, 0.03);
+    color: var(--color-text, #202020);
+    text-decoration: none;
+}
+
+.ped-programs__arrow {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-light, rgba(32, 32, 32, 0.5));
+    transition: transform 0.2s ease;
+}
+
+.ped-programs__arrow svg {
+    width: 18px;
+    height: 20px;
+    color: #202020;
+}
+
+.ped-programs__item:hover .ped-programs__arrow {
+    transform: translateX(3px);
+    color: var(--color-text, #202020);
+}
+
+
+/* ============================================
+   SECTION: Что входит в приём педиатра
+   ============================================ */
+.ped-appointment {
+    height: 550px;
+    padding: clamp(50px, 5vw, 70px) 0;
+    background: var(--color-bg-white, #fff);
+}
+
+.ped-appointment__inner {
+    max-width: var(--content-max-width, 1920px);
+    margin: 0 auto;
+    padding: 0 var(--content-padding-inline, 40px);
+}
+
+.ped-appointment__layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: clamp(30px, 4vw, 80px);
+    align-items: start;
+    justify-items: end;
+}
+
+.ped-appointment__left{
+    width: 100%;
+}
+
+.ped-appointment__title {
+    font-family: var(--font-heading, 'Forum', Georgia, serif);
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 90%;
+    color: var(--color-text, #202020);
+    margin: 0 0 25px 0;
+}
+
+.ped-appointment__desc {
+    font-family: var(--font-body, 'Open Sans', sans-serif);
+    font-weight: 400;
+    font-size: 18px;
+    max-width: 660px;
+    line-height: 130%;
+    color: #202020E5;
+    margin: 0 0 30px 0;
+}
+
+.ped-appointment__label {
+    font-family: Forum;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: -2%;
+    color: var(--color-text, #202020);
+    margin: 0 0 10px 0;
+}
+
+.ped-appointment__list {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 0 0 20px 0;
+}
+
+.ped-appointment__list li {
+    font-family: var(--font-body, 'Open Sans', sans-serif);
+    font-weight: 400;
+    font-size: 18px;
+    font-style: Regular;
+    line-height: 170%;
+    letter-spacing: -2%;
+    color: var(--color-text, #202020);
+    margin-bottom: 2px;
+}
+
+.ped-appointment__list li::marker {
+    color: var(--color-text-light, rgba(32, 32, 32, 0.5));
+}
+
+.ped-appointment__buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.ped-why__breadcrumb_mobile{
+    display: none;
+}
+
+.ped-appointment__image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.ped-appointment__image img {
+    max-width: 440px;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* ============================================
+   SECTION: Детские врачи
+   ============================================ */
+@media(max-width: 1920px) {
+    .ped-doctors {
+    height:  784px!important;
+    }
+    .ped-doctors__photo img{
+        height: 300px!important;
+    }
+}
+
+.ped-doctors {
+    height: auto;
+    padding: clamp(50px, 5vw, 70px) 0;
+    background: var(--color-bg-light, #F8F7F3);
+}
+
+.ped-doctors__inner {
+    max-width: var(--content-max-width, 1920px);
+    margin: 0 auto;
+    padding: 0 var(--content-padding-inline, 40px);
+}
+
+.ped-doctors__title {
+    font-family: var(--font-heading, 'Forum', Georgia, serif);
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 90%;
+    color: var(--color-text, #202020);
+    text-align: center;
+    margin: 0 0 16px 0;
+}
+
+.ped-doctors__subtitle {
+    font-family: var(--font-body, 'Open Sans', sans-serif);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #202020;
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto clamp(30px, 3vw, 30px);
+}
+
+.ped-doctors__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: clamp(16px, 1.5vw, 20px);
+    margin-bottom: clamp(30px, 3vw, 30px);
+}
+
+.ped-doctors__card {
+    text-align: left;
+}
+
+.ped-doctors__photo {
+    width: 100%;
+    /* aspect-ratio: 3 / 4; */
+    overflow: hidden;
+    margin-bottom: 20px;
+    background: #eee;
+}
+
+.ped-doctors__photo img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+}
+
+.ped-doctors__name {
+    font-family: Forum;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 110.00000000000001%;
+    letter-spacing: -2%;
+    color: var(--color-text, #202020);
+    margin: 0 0 10px 0;
+}
+
+.ped-doctors__desc {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 12px;
+    leading-trim: NONE;
+    line-height: 130%;
+    letter-spacing: -2%;
+    font-family: var(--font-body, 'Open Sans', sans-serif);
+    color: #202020;
+    margin: 0;
+}
+
+.ped-doctors__action {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* ============================================
+   SECTION: Популярные услуги
+   ============================================ */
+.ped-services {
+    height: 492px;
+    padding: 70px 0;
+    background: var(--color-bg-white, #fff);
+}
+
+.ped-services__inner {
+    max-width: var(--content-max-width, 1920px);
+    margin: 0 auto;
+    padding: 0 var(--content-padding-inline, 40px);
+}
+
+.ped-services__title {
+    font-family: var(--font-heading, 'Forum', Georgia, serif);
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 90%;
+    color: var(--color-text, #202020);
+    text-align: center;
+    margin: 0px 0 30px 0;
+}
+
+.ped-services__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.ped-services__card {
+    height: 275px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 30px 20px;
+    justify-content: space-between;
+    border: 1px solid var(--color-border, #D2D2D2);
+    text-decoration: none;
+    color: var(--color-text, #202020);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+    background: #F8F7F3;
+}
+
+.ped-services__card:hover {
+    border-color: var(--color-text-light, rgba(32, 32, 32, 0.5));
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    text-decoration: none;
+    color: var(--color-text, #202020);
+}
+
+.ped-services__card-arrow {
+    position: absolute;
+    top: clamp(16px, 1.5vw, 24px);
+    right: clamp(16px, 1.5vw, 24px);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-light, rgba(32, 32, 32, 0.5));
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.ped-services__card-arrow svg {
+    width: 10px;
+    height: 10px;
+    color: #202020;
+}
+
+.ped-services__card:hover .ped-services__card-arrow {
+    transform: translate(2px, -2px);
+    color: var(--color-text, #202020);
+}
+
+.ped-services__card-title {
+    font-family: var(--font-heading, 'Forum', Georgia, serif);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 90%;
+    color: var(--color-text, #202020);
+    margin: 76px 0 15px 0;
+}
+
+.ped-services__card-text {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: -2%;
+    font-family: var(--font-body, 'Open Sans', sans-serif);
+    color: var(--color-text-muted, rgba(32, 32, 32, 0.8));
+    margin: 0;
+}
+
+
+/* ============================================
+   SECTION: Как проходит приём
+   ============================================ */
+.ped-steps {
+    height: 414px;
+    padding: 70px 0;
+    background: var(--color-bg-light, #F8F7F3);
+}
+
+.ped-steps__inner {
+    max-width: var(--content-max-width, 1920px);
+    margin: 0 auto;
+    padding: 0 var(--content-padding-inline, 40px);
+}
+
+.ped-steps__title {
+    font-family: var(--font-heading, 'Forum', Georgia, serif);
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 90%;
+    color: var(--color-text, #202020);
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+
+.ped-steps__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    position: relative;
+}
+
+/* Dashed line connecting steps */
+.dashes{
+    position: absolute;
+    margin-top: 30px;
+    right: 40px;
+    left: 40px;
+    width: -webkit-fill-available;
+}
+/* .ped-steps__grid::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    height: 0;
+    border-top: 1px dashed #202020;
+    stroke-dashoffset: 0;
+    z-index: 0;
+    border-width: 1px;
+} */
+
+.ped-steps__item {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding: 0 clamp(16px, 2vw, 40px);
+}
+
+.ped-steps__number {
+    font-family: Forum;
+    line-height: 110.00000000000001%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #D8D8D8;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: var(--color-text, #202020);
+    background: var(--color-bg-light, #F8F7F3);
+    margin-bottom: 20px;
+}
+
+.ped-steps__item-title {
+    font-family: var(--font-heading, 'Forum', Georgia, serif);
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 110%;
+    color: var(--color-text, #202020);
+    margin: 0 0 10px 0;
+}
+
+.ped-steps__item-text {
+    font-family: var(--font-body, 'Open Sans', sans-serif);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: var(--color-text-muted, rgba(32, 32, 32, 0.8));
+    margin: 0;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ============================================
+   SECTION: Дополнительные возможности и сервис
+   ============================================ */
+.ped-extras {
+    height: 737px;
+    padding: clamp(50px, 5vw, 70px) 0;
+    background: var(--color-bg-white, #fff);
+}
+
+.ped-extras__inner {
+    max-width: var(--content-max-width, 1920px);
+    margin: 0 auto;
+    padding: 0 var(--content-padding-inline, 40px);
+}
+
+.ped-extras__title {
+    font-family: Forum;
+    font-weight: 400;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 90%;
+    color: var(--color-text, #202020);
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.ped-extras__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.ped-extras__card {
+    height: 250px;
+    border: 1px solid #D2D2D2;
+    background: #FCF4F1;
+    padding: 20px 25px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    box-sizing: border-box;
+}
+
+.ped-extras__card-title {
+    font-family: var(--font-heading, 'Forum', Georgia, serif);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 90%;
+    color: var(--color-text, #202020);
+    margin: 0;
+}
+
+.ped-extras__card-text {
+    font-family: var(--font-body, 'Open Sans', sans-serif);
+    font-size: 14px;
+    line-height: 130%;
+    font-weight: 400;
+    color: #202020CC;
+    margin: 0;
+}
+
+
+/* ============================================
+   SECTION: Отзывы пациентов
+   ============================================ */
+.ped-reviews {
+    height: 671px;
+    padding: clamp(50px, 5vw, 70px) 0;
+    background: var(--color-bg-light, #F8F7F3);
+}
+
+.ped-reviews__inner {
+    max-width: var(--content-max-width, 1920px);
+    margin: 0 auto;
+    padding: 0 var(--content-padding-inline, 40px);
+}
+
+.ped-reviews__title {
+    font-family: Forum;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 110.00000000000001%;
+    color: var(--color-text, #202020);
+    text-align: center;
+    margin: 0 0 16px 0;
+}
+
+.ped-reviews__subtitle {
+    font-family: var(--font-body, 'Open Sans', sans-serif);
+    font-size: 18px;
+    line-height: 1.3;
+    color: var(--color-text-muted, rgba(32, 32, 32, 0.8));
+    text-align: center;
+    max-width: 550px;
+    margin: 0 auto 20px;
+}
+
+.ped-reviews__arrows {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+.ped-reviews__arrow {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    border: 1px solid var(--color-text, #202020);
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease;
+    color: var(--color-text, #202020);
+}
+
+.ped-reviews__arrow svg {
+    width: 17.5px;
+    height: 15px;
+}
+
+.ped-reviews__arrow:hover {
+    background: rgba(0, 0, 0, 0.05);
+    border-color: var(--color-text, #202020);
+}
+
+.ped-reviews__track-wrapper {
+    overflow: hidden;
+    margin-bottom: 30px;
+    padding: 2px 0;
+}
+
+.ped-reviews__track {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.4s ease;
+}
+
+.ped-reviews__card {
+    height: 245px;
+    flex: 0 0 calc(25% - 15px);
+    box-sizing: border-box;
+    border: 1px solid var(--color-border, #D2D2D2);
+    padding: 20px;
+    background: var(--color-bg-white, #fff);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ped-reviews__date {
+    font-family: var(--font-body, 'Open Sans', sans-serif);
+    font-size: 12px;
+    color: var(--color-text-light, rgba(32, 32, 32, 0.5));
+}
+
+.ped-reviews__doctor {
+    font-family: var(--font-body, 'Open Sans', sans-serif);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: var(--color-text, #202020);
+    margin: 0;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.ped-reviews__text {
+    font-family: var(--font-body, 'Open Sans', sans-serif);
+    font-size: 12px;
+    line-height: 1.3;
+    color: var(--color-text-muted, rgba(32, 32, 32, 0.8));
+    margin: 0;
+    flex: 1;
+}
+
+.ped-reviews__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding-top: 8px;
+    border-top: 1px solid var(--color-border, #D2D2D2);
+}
+
+.ped-reviews__author {
+    font-family: var(--font-body, 'Open Sans', sans-serif);
+    font-size: 12px;
+    color: var(--color-text-light, rgba(32, 32, 32, 0.5));
+}
+
+.ped-reviews__more {
+    font-family: var(--font-body, 'Open Sans', sans-serif);
+    font-size: 13px;
+    color: var(--color-text, #202020);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 0.2s ease;
+}
+
+.ped-reviews__more:hover {
+    color: var(--color-text-muted, rgba(32, 32, 32, 0.8));
+}
+
+.ped-reviews__actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 0;
+    padding-top: 0;
+    margin-left: 45px;
+}
+
+
+/* ============================================
+   SECTION: Комфортная среда для детей
+   ============================================ */
+.ped-comfort {
+    height: 922px;
+    padding: clamp(50px, 5vw, 70px) 0 0;
+    background: var(--color-bg-white, #fff);
+}
+
+.ped-comfort__inner {
+    max-width: var(--content-max-width, 1920px);
+    margin: 0 auto;
+    padding: 0 var(--content-padding-inline, 40px);
+    margin-bottom: clamp(30px, 3vw, 30px);
+}
+
+.ped-comfort__title {
+    font-family: Forum;
+    line-height: 110.00000000000001%;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 1.15;
+    color: var(--color-text, #202020);
+    text-align: center;
+    margin: 0 0 16px 0;
+}
+
+.ped-comfort__subtitle {
+    font-family: var(--font-body, 'Open Sans', sans-serif);
+    font-size: 18px;
+    line-height: 1.3;
+    font-weight: 400;
+    color: var(--color-text-muted, rgba(32, 32, 32, 0.8));
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.ped-comfort__carousel {
+    height: 659px;
+    padding: 0px 40px 40px 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.ped-comfort__track-wrapper {
+    overflow: hidden;
+}
+
+.ped-comfort__track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.ped-comfort__slide {
+    flex: 0 0 100%;
+    min-width: 100%;
+}
+
+.ped-comfort__slide img {
+    width: 100%;
+    height: 659px;
+    object-fit: cover;
+    display: block;
+}
+
+.ped-comfort__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    z-index: 10;
+    color: #fff;
+}
+
+.ped-comfort__arrow:hover {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.ped-comfort__arrow--prev {
+    left: 60px;
+}
+
+.ped-comfort__arrow--next {
+    right: 60px;
+}
+
+.ped-comfort__dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+}
+
+.ped-comfort__dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #fff);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: background 0.2s ease;
+}
+
+.ped-comfort__dot.active {
+    background: #000;
+}
+
+
+/* ============================================
+   SECTION: Записаться на приём к педиатру (CTA)
+   ============================================ */
+.ped-cta {
+    height: 580px;
+    position: relative;
+    background: #F8F7F3;
+    padding-top: 175px;
+    overflow: hidden;
+}
+
+/* .clinic-type {
+    margin-bottom: 28px;
+} */
+/* .clinic-hours{
+    margin-bottom: 22px;
+} */
+/* .clinic-metro{
+    margin-bottom: 22px;
+} */
+.clinics-section{
+    padding-bottom: 40px;
+}
+.clinics-section .section-header{
+    margin-bottom: 30px;
+}
+.map-image{
+    max-height: 511px;
+}
+
+/* Fix 7: Map — no border-radius */
+.clinics-section .map-container {
+    border-radius: 0;
+}
+
+/* Fix 7 & 8: Clinic cards — increase height */
+
+
+.clinics-section .clinic-card {
+    height: 208px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+@media (min-width: 1920px) {
+    .clinics-section .clinic-card {
+        height: auto;
+    }
+    .map-image{
+        max-height: none;
+    }
+}
+.ped-cta__bg {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+    background-image: url('../assets/images/about/about-interior-1.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.ped-cta__inner {
+    position: relative;
+    z-index: 1;
+    max-width: var(--content-max-width, 1920px);
+    margin: 0 auto;
+    padding: 0 var(--content-padding-inline, 40px);
+    text-align: center;
+}
+
+.ped-cta__logo {
+    margin-bottom: 28px;
+}
+
+.ped-cta__logo img {
+    height: 56px;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.ped-cta__title {
+    font-family: Forum;
+    font-size: 52px;
+    leading-trim: NONE;
+    line-height: 90%;
+    font-weight: 400;
+    color: #fff;
+    margin: 0 0 20px 0;
+}
+
+.ped-cta__subtitle {
+    font-family: var(--font-body, 'Open Sans', sans-serif);
+    font-size: 18px;
+    line-height: 1.35;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 850px;
+    margin: 0 auto 26px;
+}
+
+.ped-cta__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 9px 22px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: #fff;
+    font-family: var(--font-body, 'Open Sans', sans-serif);
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 400;
+    text-decoration: none;
+    transition: background 0.2s ease, border-color 0.2s ease;
+    background: transparent;
+}
+
+.ped-cta__btn:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.8);
+    color: #fff;
+    text-decoration: none;
+}
+
+.ped-cta__btn-arrow {
+    width: 14px;
+    font-size: 16px;
+    transition: transform 0.2s ease;
+}
+
+.ped-cta__btn:hover .ped-cta__btn-arrow {
+    transform: translateX(3px);
+}
+
+
+/* ============================================
+   SECTION: Юридические документы
+   ============================================ */
+.ped-legal {
+    background: var(--color-bg-white, #fff);
+    border-top: 1px solid #20202066;
+    border-bottom: 1px solid #20202066;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+.ped-legal{
+    padding: 0;
+}
+.ped-legal__inner {
+    max-width: var(--content-max-width, 1920px);
+    margin: 0 auto;
+    padding: 15px 0px;
+}
+.ped-legal__toggle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: var(--font-body, 'Open Sans', sans-serif);
+    font-size: 18px;
+    line-height: 110.00000000000001%;
+    font-weight: 400;
+    color: var(--color-text, #202020);
+    transition: color 0.2s ease;
+    font-weight: 400;
+    font-style: Regular;
+    letter-spacing: -2%;
+}
+
+.ped-legal__toggle:hover {
+    color: var(--color-text-muted, rgba(32, 32, 32, 0.8));
+}
+
+.ped-legal__icon {
+    font-size: 20px;
+    font-weight: 300;
+    transition: transform 0.3s ease;
+}
+
+.ped-legal__toggle[aria-expanded="true"] .ped-legal__icon {
+    transform: rotate(45deg);
+}
+
+.ped-legal__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.ped-legal__content.open {
+    max-height: 300px;
+}
+
+.ped-legal__links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 24px;
+}
+
+.ped-legal__links a {
+    font-family: var(--font-body, 'Open Sans', sans-serif);
+    font-size: clamp(13px, 0.85vw, 14px);
+    color: var(--color-text-muted, rgba(32, 32, 32, 0.8));
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.ped-legal__links a:hover {
+    color: var(--color-text, #202020);
+    text-decoration: underline;
+}
+
+/* Hidden on desktop */
+.ped-steps__arrows {
+    display: none;
+}
+
+.ped-reasons__arrows,
+.ped-services__arrows,
+.ped-extras__arrows{
+    display: none;
+}
+
+/* ============================================
+   RESPONSIVE - TABLET
+   ============================================ */
+@media (max-width: 991px) {
+    .ped-hero {
+        height: calc(100vh - 139px);
+    }
+
+    .ped-hero__inner {
+        height: calc(100vh - 139px);
+        padding: 20px var(--content-padding-inline, 20px) 20px;
+    }
+
+    .ped-hero__content {
+        max-width: 100%;
+    }
+
+    .ped-hero__logo img {
+        height: 44px;
+    }
+
+    .ped-hero__arrows {
+        bottom: 20px;
+    }
+
+    .ped-hero__dots {
+        bottom: 28px;
+    }
+
+    .ped-why__layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .ped-why__image {
+        order: -1;
+        max-width: 500px;
+    }
+
+    .ped-reasons__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ped-programs__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ped-appointment__layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .ped-appointment__image {
+        max-width: 500px;
+    }
+
+    .ped-doctors__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .ped-services__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .ped-steps__grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .ped-steps__grid::before {
+        display: none;
+    }
+
+    .ped-extras__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ped-reviews__card {
+        flex: 0 0 calc(50% - 10px);
+        min-width: 240px;
+        min-height: 260px;
+    }
+
+    .ped-comfort__arrow {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* ============================================
+   RESPONSIVE - MOBILE (320px Figma spec)
+   ============================================ */
+@media (max-width: 767px) {
+
+    .clinics-section{
+        padding-bottom: 50px;
+    }
+
+    /* --- Section 1: Hero (fullscreen) --- */
+    .ped-hero {
+        height: calc(100vh - 96px);
+    }
+
+    /* Mobile hero backgrounds */
+    .ped-hero__bg {
+        background-position: center center;
+    }
+
+    .ped-hero__bg--1 { background-image: url('../assets/images/mobile-ped-1.png'); }
+    .ped-hero__bg--2 { background-image: url('../assets/images/mobile-ped-2.png'); }
+    .ped-hero__bg--3 { background-image: url('../assets/images/mobile-ped-3.png'); }
+    .ped-hero__bg--4 { background-image: url('../assets/images/mobile-ped-4.png'); }
+    .ped-hero__bg--5 { background-image: url('../assets/images/mobile-ped-5.png'); }
+    .ped-hero__bg--6 { background-image: url('../assets/images/mobile-ped-6.png'); }
+    .ped-hero__bg--7 { background-image: url('../assets/images/mobile-ped-7.png'); }
+
+    /* Orange gradient: solid at top → transparent at bottom so photo shows */
+    /* .ped-hero__bg::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+            180deg,
+            rgba(203, 84, 45, 0.88) 0%,
+            rgba(203, 84, 45, 0.82) 30%,
+            rgba(203, 84, 45, 0.50) 55%,
+            rgba(203, 84, 45, 0.20) 100%
+        );
+        z-index: 1;
+    } */
+
+    .ped-hero__inner {
+        height: calc(100vh - 96px);
+        padding: 20px 16px 24px;
+        justify-content: flex-start;
+    }
+
+    /* Slide content at top, not bottom */
+    .ped-hero__slide.active {
+        display: flex;
+        flex-direction: column;
+        animation: none;
+    }
+
+    .ped-hero__cta-arrow {
+        font-size: 11px;
+    }
+
+    .ped-hero__content {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        margin-top: 0;
+    }
+
+    .ped-hero__logo {
+        margin-bottom: 24px;
+    }
+
+    .ped-hero__logo img {
+        height: 36px;
+    }
+
+    .ped-why__breadcrumb{
+        display: none;
+    }
+
+    .ped-why__breadcrumb_mobile{
+        display: block;
+        padding: 12px 15px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 120%;
+        color: #000000;
+    }
+    .ped-programs__arrow svg{
+        width: 14px;
+        height: 15px;
+    }
+
+    .ped-why__breadcrumb_mobile a {
+        color: var(--color-text-light, rgba(32, 32, 32, 0.5));
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+
+    .ped-why__breadcrumb_mobile span {
+        color: var(--color-text, #202020);
+        font-weight: 600;
+    }
+    
+
+    .ped-hero__title {
+        width: 80%;
+        font-size: 32px;
+        margin-bottom: 10px;
+        font-family: Forum;
+        font-weight: 400;
+        font-style: Regular;
+        line-height: 90%;
+        letter-spacing: -3%;
+    }
+
+    .ped-hero__subtitle {
+        width: 80%;
+        font-family: Open Sans;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 12px;
+        line-height: 130%;
+        margin-bottom: 15px;
+    }
+
+    /* CTA + Arrows in one row on mobile */
+    .ped-hero__cta-row {
+        display: flex !important;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 0;
+        justify-content: space-between;
+    }
+
+    .ped-hero__cta {
+        font-family: Open Sans;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 12px;
+        line-height: 130%;
+        letter-spacing: 0%;
+        padding: 8px 20px;
+        max-height: 32px;
+        flex: 1;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* Arrows beside CTA */
+    .ped-hero__arrows {
+        position: static !important;
+        display: flex !important;
+        gap: 12px;
+        flex-shrink: 0;
+    }
+
+    .ped-hero__arrow {
+        width: 32px;
+        height: 32px;
+        border: 1px solid #fff;
+    }
+
+    .ped-hero__arrow svg {
+        width: 18px;
+        height: 14px;
+    }
+
+    /* Tags pushed to bottom */
+    .ped-hero__tags {
+        gap: 6px;
+        margin-bottom: 0;
+        margin-top: auto;
+        position: absolute;
+        bottom: 15px;
+    }
+
+    .ped-hero__tag {
+        padding: 0 7px;
+        height: 20px;
+        align-content: center;
+        font-family: Open Sans;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 130%;
+        letter-spacing: 0;
+
+    }
+
+    /* Hide dots on mobile */
+    .ped-hero__dots {
+        display: none;
+    }
+
+    /* --- Section: Зачем нужна педиатрия --- */
+    .ped-why {
+        padding: 50px 0 50px;
+        height: auto;
+    }
+
+    .ped-why__inner {
+        padding: 0 16px;
+    }
+
+    .ped-why__breadcrumb {
+        margin-bottom: 16px;
+        font-size: 11px;
+    }
+
+    .ped-why__layout {
+        grid-template-columns: 1fr;
+    }
+
+    /* Figma: text first, image below */
+    .ped-why__image {
+        order: 1;
+        max-width: 100%;
+    }
+
+    .ped-reviews__footer {
+        display: contents;
+    }
+
+    .ped-why__title {
+        font-size: 28px;
+        margin-bottom: 15px;
+        line-height: 90%;
+    }
+
+    .ped-why__text {
+        font-size: 14px;
+        line-height: 1.3;
+        margin-bottom: 12px;
+    }
+
+    .ped-why__text:last-of-type {
+        margin-bottom: 20px;
+    }
+
+    .ped-why__buttons {
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .ped-why__btn {
+        justify-content: center;
+        padding: 8px 20px;
+        font-size: 12px;
+        line-height: 130%;
+        width: auto;
+        text-align: center;
+        height: 32px;
+    }
+
+    .ped-why__btn-arrow {
+        width: auto;
+        height: 11px;
+        font-size: unset;
+    }
+
+    /* --- Section: Почему родители выбирают нас (dark bg, h-scroll) --- */
+    .ped-reasons {
+        padding: 50px 0;
+        height: auto;
+    }
+
+    .ped-reasons__inner {
+        padding: 0 16px;
+    }
+
+    .ped-reasons__title {
+        font-size: 28px;
+        line-height: 90%;
+        margin-bottom: 15px;
+        text-align: left;
+    }
+
+    .ped-reasons__grid {
+        display: flex;
+        overflow-x: hidden;
+        scroll-snap-type: x mandatory;
+        gap: 10px;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .ped-reasons__card {
+        flex: 0 0 80%;
+        scroll-snap-align: start;
+        padding: 15px;
+        height: auto;
+        min-height: 160px;
+    }
+
+    .ped-reasons__card-title {
+        font-size: 20px;
+        line-height: 90%;
+    }
+
+    .ped-reasons__card-text {
+        font-size: 10px;
+        line-height: 1.3;
+    }
+
+    /* Mobile scroll arrows - shared styles */
+    .ped-reasons__arrows,
+    .ped-services__arrows,
+    .ped-extras__arrows {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .ped-reasons__arrow,
+    .ped-services__arrow,
+    .ped-extras__arrow {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: 1px solid #202020;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: var(--color-text, #202020);
+        transition: background 0.2s ease;
+        padding: 0;
+    }
+
+    .ped-reasons__arrow:hover,
+    .ped-services__arrow:hover,
+    .ped-extras__arrow:hover {
+        background: rgba(0, 0, 0, 0.05);
+    }
+
+    .ped-reasons__arrow svg,
+    .ped-services__arrow svg,
+    .ped-extras__arrow svg {
+        width: 14px;
+        height: 12px;
+    }
+
+    /* --- All sections: remove fixed heights on mobile --- */
+    .ped-why,
+    .ped-reasons,
+    .ped-programs,
+    .ped-appointment,
+    .ped-doctors,
+    .ped-services,
+    .ped-steps,
+    .ped-extras,
+    .ped-reviews,
+    .ped-comfort,
+    .ped-cta {
+        height: auto !important;
+    }
+
+    /* --- Section: Программы (1340px, bg #F8F7F3) --- */
+    .ped-programs {
+        padding: 50px 0;
+    }
+
+    .ped-programs__inner {
+        padding: 0 16px;
+    }
+
+    .ped-programs__title {
+        font-size: 28px;
+        text-align: left;
+        font-family: Forum;
+        font-weight: 400;
+        line-height: 110.00000000000001%;
+        letter-spacing: -2%;
+        margin-bottom: 15px;
+    }
+
+    .ped-programs__subtitle {
+        font-size: 14px;
+        line-height: 130%;
+        text-align: left;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .ped-programs__grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .ped-programs__item {
+        padding: 10px 15px;
+        font-size: 14px;
+        line-height: 110.00000000000001%;
+        gap: 30px;
+        height: 50px;
+    }
+
+    /* --- Section 15: Что входит в приём (877px, white) --- */
+    .ped-appointment {
+        padding: 50px 0;
+    }
+
+    .ped-appointment__inner {
+        padding: 0 16px;
+    }
+
+    .ped-appointment__layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .ped-appointment__title {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .ped-appointment__desc {
+        font-size: 14px;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .ped-appointment__label {
+        font-size: 20px;
+    }
+
+    .ped-appointment__list li {
+        font-size: 14px;
+    }
+
+    .ped-appointment__buttons {
+        gap: 10px;
+    }
+
+    .ped-appointment__buttons .ped-why__btn {
+        padding: 8px 20px;
+        font-size: 12px;
+        line-height: 130%;
+        width: auto;
+        height: 32px;
+    }
+
+    .ped-appointment__image img {
+        max-width: 100%;
+    }
+
+    /* --- Section: Детские врачи (2x2 grid on mobile) --- */
+    .ped-doctors {
+        padding: 50px 0;
+        height: auto;
+    }
+
+    .ped-doctors__inner {
+        padding: 0 16px;
+    }
+
+    .ped-doctors__title {
+        font-size: 28px;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+
+    .ped-doctors__subtitle {
+        font-size: 14px;
+        text-align: left;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .ped-doctors__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px 10px;
+        overflow: visible;
+        margin-bottom: 0;
+    }
+
+    /* Show only first 4 doctors on mobile */
+    .ped-doctors__card:nth-child(n+5) {
+        display: none;
+    }
+
+    .ped-doctors__card {
+        flex: unset;
+    }
+
+    .ped-doctors__photo {
+        aspect-ratio: 3 / 3.5;
+        margin-bottom: 15px;
+    }
+
+    .ped-doctors__photo img {
+        aspect-ratio: 3 / 3.5;
+        height: auto;
+    }
+
+    .ped-doctors__photo img{
+        height: auto!important;
+    }
+
+    .ped-doctors__name {
+        font-size: 16px;
+        line-height: 1.1;
+        margin-bottom: 10px;
+    }
+
+    .ped-doctors__desc {
+        font-size: 10px;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .ped-doctors__action {
+        margin-top: 20px;
+        justify-content: start;
+    }
+
+    /* --- Section: Популярные услуги (h-scroll) --- */
+    .ped-services {
+        padding: 50px 0;
+        height: auto;
+    }
+
+    .ped-services__inner {
+        padding: 0 16px;
+    }
+
+    .ped-services__title {
+        font-size: 28px;
+        text-align: left;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+
+    .ped-services__grid {
+        display: flex;
+        overflow-x: hidden;
+        scroll-snap-type: x mandatory;
+        gap: 10px;
+        -webkit-overflow-scrolling: touch;
+        grid-template-columns: unset;
+    }
+
+    .ped-services__card {
+        flex: 0 0 80%;
+        scroll-snap-align: start;
+        padding: 15px;
+        height: auto;
+        min-height: 200px;
+        justify-content: end;
+    }
+
+
+    .ped-services__card-title {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .ped-services__card-text {
+        font-size: 10px;
+    }
+
+    /* --- Section: Как проходит приём (carousel with arrows) --- */
+    .ped-steps {
+        padding: 32px 0;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .ped-steps__inner {
+        padding: 0 16px;
+        overflow: visible;
+    }
+
+    .ped-steps__title {
+        font-size: 28px;
+        text-align: left;
+        margin-bottom: 16px;
+        margin-top: 0;
+    }
+
+    /* Arrows visible on mobile */
+    .ped-steps__arrows {
+        display: flex;
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
+    .ped-steps__arrow {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: 1px solid #202020;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: var(--color-text, #202020);
+        transition: background 0.2s ease;
+        padding: 0;
+    }
+
+    .ped-steps__arrow:hover {
+        background: rgba(0, 0, 0, 0.05);
+    }
+
+    .ped-steps__arrow svg {
+        width: 14px;
+        height: 12px;
+    }
+
+    .ped-steps__grid {
+        display: flex;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        gap: 0;
+        -webkit-overflow-scrolling: touch;
+        position: relative;
+    }
+
+    /* Dashed line spanning ALL slides */
+    .ped-steps__grid::before {
+        display: block;
+        top: 22px;
+        left: 0;
+        right: auto;
+        width: 150%;
+    }
+
+    .ped-steps__item {
+        flex: 0 0 calc(66.66% - 0px);
+        min-width: 233px;
+        text-align: left;
+        scroll-snap-align: start;
+        padding: 0 8px;
+    }
+
+    .ped-steps__number {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .ped-steps__item-title {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .ped-steps__item-text {
+        font-size: 10px;
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    /* --- Section: Дополнительные возможности (horizontal scroll) --- */
+    .ped-extras {
+        padding: 50px 0;
+        height: auto;
+    }
+
+    .ped-extras__inner {
+        padding: 0 16px;
+    }
+
+    .ped-extras__title {
+        font-size: 28px;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .ped-extras__grid {
+        display: flex;
+        overflow-x: hidden;
+        scroll-snap-type: x mandatory;
+        gap: 10px;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .ped-extras__card {
+        flex: 0 0 80%;
+        scroll-snap-align: start;
+        padding: 14px;
+        height: auto;
+        min-height: 170px;
+    }
+
+    .ped-extras__card-title {
+        font-size: 20px;
+    }
+
+    .ped-extras__card-text {
+        font-size: 10px;
+    }
+
+    /* --- Section: Отзывы пациентов (h-scroll cards) --- */
+    .ped-reviews {
+        padding: 50px 0;
+        height: auto;
+    }
+
+    .ped-reviews__inner {
+        padding: 0 16px;
+    }
+
+    .ped-reviews__title {
+        font-size: 28px;
+        text-align: left;
+    }
+
+    .ped-reviews__subtitle {
+        font-size: 12px;
+        text-align: left;
+        max-width: 100%;
+    }
+
+    .ped-reviews__arrows {
+        justify-content: flex-start;
+        margin-bottom: 20px;
+        gap: 10px;
+    }
+
+    .ped-reviews__arrow {
+        width: 32px;
+        height: 32px;
+        border-width: 1px;
+    }
+
+    .ped-reviews__track-wrapper {
+        overflow: hidden;
+    }
+
+    .ped-reviews__track {
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 10px;
+    }
+
+    .ped-reviews__card {
+        padding: 15px;
+        flex: 0 0 80%;
+        scroll-snap-align: start;
+        height: 248px;
+    }
+    
+
+    .ped-reviews__date {
+        font-size: 11px;
+    }
+
+    .ped-reviews__doctor {
+        font-size: 14px;
+    }
+
+    .ped-reviews__text {
+        font-size: 11px;
+    }
+
+    .ped-reviews__author {
+        font-size: 11px;
+    }
+
+    .ped-reviews__more {
+        font-size: 11px;
+    }
+
+    .ped-reviews__actions {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin-left: 0;
+    }
+
+    .ped-reviews__actions .ped-why__btn {
+    padding: 8px 20px;
+    font-size: 12px;
+    line-height: 130%;
+    width: auto;
+    height: 32px;
+    }
+
+    /* --- Section: Комфортная среда --- */
+    .ped-comfort {
+        padding: 50px 0 0;
+        height: auto;
+    }
+
+    .ped-comfort__inner {
+        padding: 0 16px;
+        margin-bottom: 20px;
+    }
+
+    .ped-comfort__title {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .ped-comfort__subtitle {
+        font-size: 14px;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .ped-comfort__carousel {
+        height: auto;
+        padding: 0 15px 50px 15px;
+    }
+
+    .ped-comfort__slide img {
+        height: 290px;
+    }
+
+    .ped-comfort__arrow {
+        width: 32px;
+        height: 32px;
+    }
+
+    .ped-comfort__arrow svg{
+        width: 14px;
+        height: 12px;
+    }
+    .ped-comfort__arrow--prev{
+        left: 25px;
+    }
+
+        .ped-comfort__arrow--next{
+        right: 25px;
+    }
+
+    .ped-comfort__dot {
+        width: 4px;
+        height: 4px;
+    }
+
+    .ped-comfort__dots {
+        bottom: 62px;
+    }
+
+    /* --- Section: CTA (fullscreen bg) --- */
+    .ped-cta {
+        padding: 0;
+        height: auto;
+        min-height: 560px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ped-cta__bg {
+        top: 30px;
+        left: 15px;
+        right: 15px;
+        bottom: 30px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .ped-cta__inner {
+        padding: 0 24px;
+    }
+
+    .ped-cta__logo img {
+        height: 45px;
+    }
+
+    .ped-cta__title {
+        font-size: 28px;
+    }
+
+    .ped-cta__subtitle {
+        font-size: 14px;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .ped-cta__btn {
+        padding: 8px 20px;
+        font-size: 12px;
+        height: 32px;
+    }
+
+    /* --- Section: Наши клиники --- */
+    .clinics-section .container-fluid {
+        padding: 0 16px !important;
+    }
+
+    .clinics-section .map-container {
+        border-radius: 0;
+        margin-bottom: 24px;
+    }
+
+    .clinics-section .clinics-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .clinics-section .clinic-card {
+        min-height: auto;
+        padding: 15px;
+        align-content: space-around;
+    }
+
+    /* --- Legal accordion --- */
+    .ped-legal{
+        display: none;
+    }
+    /* .ped-legal__inner {
+        padding: 0 16px;
+    }
+
+    .ped-legal__toggle {
+        font-size: 14px;
+        padding: 16px 0;
+    }
+
+    .ped-legal__links a {
+        font-size: 12px;
+    } */
+}
+
+@media (max-width: 380px) {
+    .ped-reviews__card{
+        height: auto;
+    }
+    .ped-services__card {
+        flex: 0 0 200px;
+        width: 200px;
+        height: 200px;
+    }
+
+}

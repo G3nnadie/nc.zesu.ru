@@ -1,0 +1,28 @@
+@import url('../program/section-hero.css');
+
+.abdominoplasty-hero__surface::before {
+    background: linear-gradient(186.78deg, rgba(153, 129, 88, 0) 5.32%, rgba(153, 129, 88, 0.85) 26.77%, #998158 91.89%, transparent 100%);
+    background: linear-gradient(to right, rgba(153, 129, 88, 1) 0%, rgba(153, 129, 88, 1) 30%, #998158 60%, transparent 100%);
+}
+
+.abdominoplasty-hero__surface::after {
+    background: linear-gradient(186.43deg, rgba(153, 129, 88, 0) 5.07%, rgba(153, 129, 88, 0.8) 90.44%);
+    background: linear-gradient(to bottom,
+            transparent 30%,
+            rgba(153, 129, 88, 0) 60%,
+            rgba(153, 129, 88, 0.8) 100%);
+}
+
+@media screen and (max-width:768px) {
+    .program-hero__content {
+        margin-top: 20px;
+    }
+
+    .abdominoplasty-hero__surface::before {
+        background: linear-gradient(180.16deg, #998158 25.67%, rgba(153, 129, 88, 0) 50.98%);
+    }
+
+    .program-hero__bg-img {
+        height: 100%;
+    }
+}

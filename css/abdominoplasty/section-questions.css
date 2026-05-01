@@ -1,0 +1,38 @@
+@import url('../aesthetic/section-questions.css');
+
+.abd-questions .section-title,
+.abd-questions .section-subtitle {
+    text-align: center;
+}
+
+.abd-questions .section-subtitle {
+    margin-bottom: 30px;
+}
+
+.questions .plus-type br {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+
+    .abd-questions .section-title,
+    .abd-questions .section-subtitle {
+        text-align: left;
+    }
+
+    .abd-questions .section-subtitle {
+        margin-bottom: 20px;
+    }
+
+    .questions .plus-type br {
+        display: block;
+    }
+
+    .questions .plus-type.bigln {
+        max-height: 69px;
+    }
+
+    .questions .plus-type.active {
+        max-height: 250px;
+    }
+}

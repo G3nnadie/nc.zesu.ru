@@ -1,0 +1,169 @@
+/* ========================================= */
+/* БЛОК 2: ПРОЦЕСС ЛЕЧЕНИЯ (ТАБЛИЦА)         */
+/* ========================================= */
+.stom-service-process {
+  background-color: #ffffff;
+  padding: 70px 0;
+}
+
+
+.stom-service-process__header {
+  max-width: 860px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.stom-service-process__title {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  color: #202020;
+  margin: 0 0 20px 0;
+}
+
+.stom-service-process__subtitle {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: rgba(32, 32, 32, 0.9);
+  margin: 0;
+}
+
+.stom-service-process__table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.stom-service-process__table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+.stom-service-process__td {
+  border: 1px solid #3b3b3a;
+  padding: 25px 22px;
+  text-align: left;
+}
+.stom-service-process__th {
+  border: 1px solid #3b3b3a;
+  padding: 20px 22px;
+  text-align: left;
+  vertical-align: top;
+}
+.stom-service-process__th {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 0.8;
+  color: #202020;
+  background-color: #f8f7f3;
+}
+
+.stom-service-process__td {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 0.9;
+  color: rgba(32, 32, 32, 0.9);
+  width: 280px;
+}
+
+.stom-service-process__td--stage {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  color: #202020;
+  background-color: #f8f7f3;
+}
+.stom-service-process__td br{
+  display: none;
+}
+@media (max-width: 1440px) {
+  .stom-service-process__td br{
+    display: block;
+  }
+}
+/* Адаптив для блока Процесса */
+@media (max-width: 998px) {
+  .stom-service-process__td br{
+    display: none;
+  }
+  .stom-service-process__title {
+    font-size: 42px;
+  }
+
+  .stom-service-process__th, .stom-service-process__td--stage {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .stom-service-process {
+    padding: 50px 0;
+  }
+
+  .stom-service-process__header {
+    text-align: left;
+  }
+
+  .stom-service-process__title {
+    text-align: left;
+    font-size: 36px;
+  }
+
+  .stom-service-process__subtitle {
+    text-align: left;
+  }
+
+  .stom-service-process__th, .stom-service-process__td {
+    padding: 20px 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .stom-service-process__container {
+    padding: 0 20px;
+  }
+
+  .stom-service-process {
+    padding: 50px 0;
+  }
+
+  .stom-service-process__title {
+    font-size: 32px;
+  }
+
+  .stom-service-process__subtitle {
+    font-size: 16px;
+  }
+  .stom-service-process__subtitle br{
+    display: none;
+  }
+}
+
+@media (max-width: 374px) {
+  .stom-service-process__container {
+    padding: 0 15px;
+  }
+
+  .stom-service-process__title {
+    font-size: 28px;
+  }
+
+  .stom-service-process__subtitle {
+    font-size: 14px;
+  }
+
+  .stom-service-process__th, .stom-service-process__td--stage {
+    font-size: 16px;
+  }
+
+  .stom-service-process__th, .stom-service-process__td {
+    padding: 15px 10px;
+  }
+}

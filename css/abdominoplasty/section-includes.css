@@ -1,0 +1,37 @@
+@import url('../program/section-includes.css');
+
+.program-includes {
+    padding: 70px 0;
+}
+
+.program-includes__description {
+    flex-grow: 1;
+}
+
+.abd-feature-left_bottom {
+    gap: 10px;
+    margin-top: 0px;
+}
+
+.program-includes__item {
+    padding: 20px 0;
+}
+
+@media screen and (max-width:991px) {
+    .abd-feature-left_bottom {
+        margin-top: 0;
+        position: absolute;
+        bottom: 40px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .abdominoplasty-includes {
+        padding-bottom: 144px;
+        position: relative;
+    }
+
+    .program-includes__item {
+        padding: 12px 0;
+    }
+}

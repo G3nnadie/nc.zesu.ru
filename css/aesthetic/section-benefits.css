@@ -1,0 +1,44 @@
+@import url(../ophthalmology/section-benefits.css);
+
+.aesthetic-benefits .ophthalmology-benefits__card {
+    background: #998158;
+}
+
+.ophthalmology-benefits__card-title {
+    margin-bottom: unset;
+}
+
+.ophthalmology-benefits__card:nth-child(4) .ophthalmology-benefits__card-title,
+.ophthalmology-benefits__card:nth-child(5) .ophthalmology-benefits__card-title,
+.ophthalmology-benefits__card:nth-child(6) .ophthalmology-benefits__card-title {
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width:991px) {
+    .ophthalmology-benefits__card-text br {
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .aesthetic-benefits .ophthalmology-benefits__card {
+        max-width: 250px;
+        min-width: 250px;
+    }
+
+    .ophthalmology-benefits__card-text {
+        max-width: 201px;
+    }
+
+    .ophthalmology-benefits__card .ophthalmology-benefits__card-title {
+        margin-bottom: unset;
+    }
+
+    .ophthalmology-benefits__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 160px;
+    }
+}

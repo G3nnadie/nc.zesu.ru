@@ -1,0 +1,71 @@
+@import url(../ophthalmology/section-technologies.css);
+
+.aesthetic-technologies__dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 3.75px;
+}
+
+.aesthetic-technologies__dot {
+    border-radius: 50%;
+    background: #fff;
+    width: 6px;
+    height: 6px;
+}
+
+.aesthetic-technologies__dot.active {
+    background: #202020;
+}
+
+.aesthetic-technologies__arrow {
+    border: 1px solid #fff;
+    left: 20px;
+}
+
+.aesthetic-technologies__arrow--right {
+    right: 20px;
+    left: auto;
+}
+
+.aesthetic-technologies__slider {
+    overflow: hidden;
+    position: relative;
+}
+
+.aesthetic-technologies__slider>div {
+    display: flex;
+}
+
+.aesthetic-technologies__slide {
+    min-width: 100%;
+    flex-shrink: 0;
+}
+
+.aesthetic-technologies__slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.ophthalmology-technologies {
+    padding-bottom: 40px;
+}
+
+.ophthalmology-technologies__slide {
+    max-height: 659px;
+}
+
+@media screen and (max-width:768px) {
+    .aesthetic-technologies__slide img {
+        height: 100%;
+        object-position: center;
+    }
+
+    .ophthalmology-technologies {
+        padding-bottom: 56px;
+    }
+}

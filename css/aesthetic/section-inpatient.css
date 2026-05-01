@@ -1,0 +1,9 @@
+.aesthetic-feature__btn {
+    margin-top: 95px;
+}
+
+@media screen and (max-width:769px) {
+    .aesthetic-feature__btn {
+        margin-top: 0;
+    }
+}

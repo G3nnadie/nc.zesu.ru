@@ -1,0 +1,215 @@
+/* ========================================= */
+/* БЛОК 3: FAQ (АККОРДЕОН)                   */
+/* ========================================= */
+.stom-service-faq {
+  background-color: #f8f7f3;
+  padding: 70px 0;
+}
+
+
+.stom-service-faq__header {
+  max-width: 860px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.stom-service-faq__title {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  color: #202020;
+  margin: 0 0 20px 0;
+}
+
+.stom-service-faq__subtitle {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: rgba(32, 32, 32, 0.9);
+  margin: 0;
+}
+
+.stom-service-faq__wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.stom-service-faq__column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.stom-service-faq__item {
+  border-top: 1px solid rgba(32, 32, 32, 0.4);
+
+}
+
+.stom-service-faq__item:last-child {
+  border-bottom: 1px solid rgba(32, 32, 32, 0.4);
+}
+
+.stom-service-faq__btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  line-height: 0.8;
+}
+
+.stom-service-faq__question {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  color: #202020;
+  padding-right: 20px;
+}
+
+.stom-service-faq__icon {
+  color: #202020;
+  flex-shrink: 0;
+}
+
+.stom-service-faq__icon .icon-vertical {
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.stom-service-faq__item--active .icon-vertical {
+  transform: scaleY(0);
+}
+
+.stom-service-faq__content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+}
+
+.stom-service-faq__item--active .stom-service-faq__content {
+  grid-template-rows: 1fr;
+}
+
+.stom-service-faq__body {
+  overflow: hidden;
+}
+
+.stom-service-faq__body p {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: rgba(32, 32, 32, 0.8);
+  margin: 0;
+  padding-bottom: 24px;
+}
+.stom-service-faq__title br{
+  display: none;
+}
+
+/* Адаптив для блока FAQ */
+@media (max-width: 998px) {
+  .stom-service-faq__title {
+    font-size: 42px;
+  }
+
+  .stom-service-faq__question {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .stom-service-faq {
+    padding: 50px 0;
+  }
+
+  .stom-service-faq__header {
+    text-align: left;
+  }
+
+  .stom-service-faq__title {
+    text-align: left;
+    font-size: 36px;
+  }
+
+  .stom-service-faq__subtitle {
+    text-align: left;
+  }
+
+  /* ИСПРАВЛЕНИЕ ЗДЕСЬ */
+  .stom-service-faq__wrapper {
+    flex-direction: column;
+    gap: 0;
+    align-items: stretch; /* Заставляем колонки тянуться на всю ширину */
+  }
+
+  .stom-service-faq__column {
+    width: 100%; /* Железобетонно отдаем им 100% пространства */
+  }
+
+  /* ----------------- */
+  .stom-service-faq__column:first-child .stom-service-faq__item:last-child {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .stom-service-faq__title br{
+    display: block;
+  }
+  .stom-service-faq__container {
+    padding: 0 20px;
+  }
+
+  .stom-service-faq {
+    padding: 50px 0;
+  }
+
+  .stom-service-faq__title {
+    font-size: 32px;
+  }
+
+  .stom-service-faq__subtitle {
+    font-size: 16px;
+  }
+
+  .stom-service-faq__btn {
+    padding: 20px 0;
+  }
+  .stom-service-faq__subtitle br{
+    display: none;
+  }
+}
+
+@media (max-width: 374px) {
+  .stom-service-faq__container {
+    padding: 0 15px;
+  }
+
+  .stom-service-faq__title {
+    font-size: 28px;
+  }
+
+  .stom-service-faq__subtitle {
+    font-size: 14px;
+  }
+
+  .stom-service-faq__question {
+    font-size: 14px;
+  }
+
+  .stom-service-faq__body p {
+    font-size: 14px;
+  }
+}

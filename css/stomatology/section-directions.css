@@ -1,0 +1,357 @@
+/* ============================================
+   SECTION DIRECTIONS - Все направления
+   ============================================ */
+
+.directions-section {
+    padding: 70px 0 70px 0;
+    background: var(--color-bg-light);
+}
+ 
+/* Header */
+.directions-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+.directions-title {
+    font-family: var(--font-heading);
+    font-size: 48px;
+    font-weight: 400;
+    color: var(--color-text);
+    margin-bottom: 20px;
+    line-height: 0.8;
+    letter-spacing: -0.02em;
+}
+.directions-title br{
+    display: none;
+}
+.directions-subtitle {
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Tabs */
+.directions-tabs {
+    display: flex;
+    justify-content: center;
+    margin-right: 40px;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.directions-tab {
+    background: none;
+    border: none;
+    padding: 12px 40px;
+    font-family: var(--font-heading);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-light);
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.directions-tab::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    width: 180px;
+    background: var(--color-border);
+    transition: background-color 0.3s ease;
+}
+.directions-tab.active {
+    color: var(--color-text);
+}
+
+.directions-tab.active::after {
+    background: var(--color-text);
+}
+
+.directions-tab:hover:not(.active) {
+    color: var(--color-text-muted);
+}
+
+/* Content */
+.directions-content {
+    width: 100%;
+}
+
+.directions-pane {
+    display: none;
+}
+
+.directions-pane.active {
+    display: block;
+}
+
+/* Grid */
+.directions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px 24px;
+}
+
+/* Direction Item */
+.direction-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px;
+    background: #FDFCFA;
+    border: 1px solid var(--color-border);
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    height: 56px;
+}
+
+.direction-item:hover {
+    background: #F4F4F4
+}
+
+.direction-text {
+    font-family: var(--font-body);
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-text);
+    letter-spacing: -0.01em;
+}
+
+.direction-arrow {
+    font-family: var(--font-ui);
+    font-size: 18px;
+    color: var(--color-text-muted);
+    flex-shrink: 0;
+    margin-left: 16px;
+}
+
+/* Action Button */
+.directions-action {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.directions-action .btn {
+    font-size: 15px;
+}
+
+/* ============================================
+   RESPONSIVE - LARGE DESKTOP (1920px+)
+   ============================================ */
+@media (min-width: 1920px) {
+
+    .directions-title {
+        font-size: 58px;
+    }
+
+    .directions-subtitle {
+        font-size: 18px;
+    }
+
+    .directions-grid {
+        gap: 5px 20px;
+    }
+
+    .direction-item {
+        padding: 22px 28px;
+    }
+
+    .direction-text {
+        font-size: 20px;
+    }
+
+    .directions-tab {
+        font-size: 18px;
+        padding: 14px 48px;
+    }
+}
+
+@media (min-width: 2200px) {
+    .directions-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 1840px) {
+    .directions-tab::after{
+        width: 160px;
+    }
+}
+/* ============================================
+   RESPONSIVE - TABLET
+   ============================================ */
+@media (max-width: 992px) {
+    .directions-tab::after{
+        width: 135px;
+    }
+    .directions-section {
+        padding: 60px 0 70px;
+    }
+
+    .directions-title {
+        font-size: 40px;
+    }
+
+    .directions-tab {
+        padding: 12px 30px;
+        font-size: 15px;
+    }
+
+    .direction-text {
+        font-size: 16px;
+    }
+
+    .direction-item {
+        padding: 16px 20px;
+    }
+}
+
+/* ============================================
+   RESPONSIVE - MOBILE
+   ============================================ */
+@media (max-width: 768px) {
+    .directions-tabs {
+        margin-right: 0px;
+
+    }
+
+    .directions-section {
+        padding: 50px 0;
+    }
+
+    .directions-header {
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+    .directions-title {
+        font-size: 28px;
+        margin-bottom: 16px;
+        line-height: 1.1;
+    }
+
+    .directions-subtitle {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    /* Mobile Tabs - vertical согласно дизайну */
+    .directions-tabs {
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 0;
+    }
+
+    .directions-tab {
+        width: 100%;
+        text-align: center;
+        padding: 14px 0;
+        font-size: 14px;
+        letter-spacing: 0.08em;
+        border-bottom: 1px solid var(--color-border);
+        color: var(--color-text-light);
+    }
+
+    .directions-tab::after {
+        display: none;
+    }
+
+    .directions-tab.active {
+        color: var(--color-text);
+        border-bottom-color: var(--color-text);
+    }
+
+    /* Mobile Grid - single column */
+    .directions-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .direction-item {
+        margin-right: 0;
+        padding: 14px 16px;
+        /* border-left: none; */
+        /* border-right: none; */
+        margin-bottom: 5px;
+    }
+
+    .direction-item:first-child {
+        border-top: none;
+    }
+
+    .direction-text {
+        font-size: 14px;
+    }
+
+    .direction-arrow {
+        font-size: 14px;
+        color: var(--color-text-light);
+    }
+
+    .directions-action {
+        justify-content: flex-start;
+        margin-top: 17px;
+    }
+
+    .directions-action .btn {
+        border: 1px solid #202020;
+        padding: 7.21px 20px;
+        backdrop-filter: blur(20px);
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 130%;
+        color: #202020;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .directions-title {
+        font-size: 28px;
+    }
+
+    .directions-subtitle {
+        font-size: 14px;
+    }
+
+    .direction-item {
+        padding: 15px;
+        height: 45px;
+    }
+
+    .direction-text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 374px) {
+    .directions-title {
+        font-size: 24px;
+    }
+    .directions-title br{
+        display: block;
+    }
+    .direction-item {
+        padding: 12px 14px;
+    }
+
+    .direction-text {
+        font-size: 13px;
+    }
+
+}
+@media (max-width: 324px) {
+    .directions-subtitle{
+        width: 300px;
+    }
+}

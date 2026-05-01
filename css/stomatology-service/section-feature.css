@@ -1,0 +1,212 @@
+/* ============================================
+   ОФТАЛЬМОЛОГИЯ — FEATURE (Section 2)
+   «Зачем обращаться в центр экспертной офтальмологии»
+   Figma: placeholder — акцент #2E57CB
+   ============================================ */
+
+.stomatology-service-feature {
+    padding-top: 0;
+    padding-bottom: 50px;
+    background: #f8f7f3;
+}
+.stomatology-service-feature__main{
+    padding-top: 132px;
+}
+.stomatology-service-feature__title {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 90%;
+    letter-spacing: -0.02em;
+    color: #202020;
+    margin: 0 0 30px 0;
+}
+
+
+.stomatology-service-feature__text {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    color: rgba(32, 32, 32, 0.9);
+    max-width: 858px;
+    margin-bottom: 40px;
+}
+
+.stomatology-service-feature__text p {
+    margin: 0 0 16px;
+}
+
+.stomatology-service-feature__text p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+.stomatology-service-breadcrumbs-feature {
+    display: block;
+    font-family: var(--font-body);
+    font-weight: 400;
+    line-height: 120%;
+    color: #9d9d9d;
+    margin-bottom: 75px;
+    margin-top: 40px;
+}
+
+.stomatology-breadcrumbs-feature__current
+{
+    color: #000;
+}
+
+
+
+.stomatology-service-feature__visual {
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    height: auto;
+    margin-left: 45px;
+}
+
+.stomatology-service-feature__visual::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    width: 100%;
+    min-height: 870px;
+    top: -100px;
+    left: 0;
+    opacity: 1;
+    background: linear-gradient(179.72deg,
+            rgba(46, 87, 203, 0) 30.94%,
+            #2e57cb 96.32%);
+}
+
+.stomatology-service-feature__visual img {
+    width: 440px;
+    height: 404px;
+}
+@media (min-width: 1440px)  {
+    .stomatology-service-feature__main{
+        padding-top: 0px;
+    }
+}
+@media (max-width: 1440px) {
+    .stomatology-service-feature__visual {
+        margin-left: 0px;
+    }
+
+    .stomatology-service-feature__main{
+        padding-top: 50px;
+    }
+}
+@media (max-width: 1200px) {
+    .stomatology-service-feature__main{
+        padding-top: 0px;
+    }
+    .stomatology-service-feature__visual {
+        overflow: hidden;
+        position: relative;
+        width: auto;
+        height: auto;
+    }
+
+    .stomatology-service-feature {
+        padding: 60px 0;
+    }
+
+    .stomatology-service-feature__title {
+        font-size: 40px;
+    }
+
+    .stomatology-service-feature__text {
+        font-size: 16px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .stomatology-service-feature__visual {
+        overflow: hidden;
+        position: relative;
+        width: auto;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .stomatology-service-feature {
+        padding: 50px 0;
+    }
+
+    .stomatology-service-feature__title {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .stomatology-service-feature__text {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .stomatology-service-feature__visual {
+        overflow: hidden;
+        position: relative;
+        width: auto;
+        height: auto;
+        margin: 0 !important;
+    }
+
+    .stomatology-service-feature {
+        padding: 50px 0 50px;
+    }
+
+    .stomatology-service-breadcrumbs-feature {
+        display: none;
+    }
+
+    .stomatology-service-feature__title {
+        font-size: 28px;
+        line-height: 0.9;
+        margin-bottom: 15px;
+    }
+
+    .stomatology-service-feature__text {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+
+    .ophthalmology-breadcrumbs {
+        display: none;
+    }
+    .stomatology-service-feature__main{
+        padding-top: 0;
+    }
+
+
+
+    .stomatology-service-feature__visual::before {
+        background: linear-gradient(179.72deg,
+                rgba(46, 87, 203, 0) 30.94%,
+                #2e57cb 96.32%);
+        top: -250px;
+    }
+
+    .stomatology-service-feature__visual img {
+        aspect-ratio: 1 / 1;
+    }
+
+    .stomatology-service-feature__main {
+        margin-top: 0 !important;
+    }
+}
+@media (max-width: 374px) {
+    .stomatology-service-feature__title{
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,465 @@
+/* ============================================
+   СТРАНИЦА ПОДАРОЧНЫЙ СЕРТИФИКАТ
+   Главный файл стилей страницы Подарочный сертификат
+   ============================================ */
+
+.gift-page-hero {
+    padding-top: 32px;
+    padding-bottom: 0;
+}
+
+.gift-page-hero__inner {
+    max-width: 900px;
+    margin: 0px auto;
+    padding-top: 40px;
+    padding-bottom: 0;
+}
+
+.gift-page-hero-title br {
+    display: none;
+}
+
+.gift-page-hero-title {
+    font-family: var( --font-heading);
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: var(--color-text);
+}
+
+.gift-page-hero-image {
+    padding-top: 14px;
+}
+
+.gift-page__text {
+    padding-top: 30px;
+}
+
+.gift-page__text {
+    font-family: var(--font-body);
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: var(--color-text-muted);
+}
+
+.gift-page__text p {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.gift-page__text p strong {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+}
+
+.gift-purchase {
+    padding: 0;
+}
+
+.gift-page-purchase__inner {
+    max-width: 900px;
+    margin: 0px auto;
+    padding-top: 16px;
+}
+
+.gift-form__title {
+    font-family: var( --font-heading);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: var(--color-text);
+}
+
+.gift-form__fields {
+    padding-top: 2px;
+}
+
+.gift-form__buyer-info {
+    margin-top: 1px;
+}
+
+.gift-form__input {
+    width: 100%;
+    height: 44px;
+    margin-bottom: 16px;
+    padding-left: 18px;
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 115%;
+    color: var(--color-text);
+    border-radius: 0;
+    border: 1px solid var(--color-border);
+}
+
+.gift-form__input::placeholder {
+    color: var(--color-text-light);
+}
+
+.gift-form__input:focus {
+    border-radius: 0;
+    outline: none;
+    border-color: var(--color-text);
+}
+
+.gift-form__input::-webkit-inner-spin-button,
+.gift-form__input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.gift-form__is-patronymic {
+    margin-bottom: 9px;
+}
+
+.gift-form__checkbox-text {
+    padding-left: 4px;
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-text);
+}
+
+.gift-form__checkbox {
+    margin-top: 4px;
+    accent-color: var(--color-text);
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.gift-form__checkbox-label {
+    display: flex;
+    justify-content: left;
+    align-items: start;
+}
+
+.gift-form__privacy-text {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--color-text);
+    opacity: 0.6;
+    width: 645px;
+    display: inline-block;
+    padding-left: 6px;
+}
+
+.gift-form__privacy-text a {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+.gift-form__total-cost-text {
+    padding-top: 16px;
+    margin-bottom: 16px;
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: var(--color-text-muted);
+}
+
+.gift-form__captcha {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding-top: 1px;
+}
+
+.gift-form__input-captcha {
+    width: 49%;
+    margin-top: 2px;
+}
+
+.gift-form__captcha-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2px;
+    width: 49%;
+    height: 44px;
+    margin-bottom: 15px;
+    padding-left: 18px;
+    border: 1px solid var(--color-border);
+    border-radius: 0px;
+}
+
+.gift-form__captcha-code{
+    font-family: "Bradley Hand", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--color-text);
+    opacity: 0.4;
+    padding-top: 6px;
+    user-select: none;
+}
+
+.gift-form__captcha-refresh {
+    width: 38px;
+    height: 38px;
+    background-color: var(--color-text);
+    margin: 2px;
+    border: none;
+}
+
+.gift-form__captcha-refresh:hover {
+    background-color: var(--color-text-muted);
+}
+
+.gift-form__button {
+    width: 100%;
+    height: 39px;
+    backdrop-filter: blur(20px);
+    background: var(--color-bg-white);
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    color: var(--color-text);
+    cursor: pointer;
+    border: 1px solid var(--color-text);
+}
+
+.gift-form__button:hover {
+    background: var(--color-bg-button-hover);
+}
+
+.gift-usage {
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.gift-usage__inner {
+    max-width: 900px;
+    margin: 0px auto;
+}
+
+.gift-usage__about-text {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    color: var(--color-text-muted);
+}
+
+.gift-usage__about-text ul,
+.gift-usage__about-text ol {
+    padding-left: 22px;
+}
+
+.gift-usage__about-text ul ::marker {
+    font-size: 8px;
+}
+
+.gift-usage__about-text figure {
+    margin-bottom: 25px;
+}
+
+.gift-usage__about-caption {
+    padding-top: 6px;
+}
+
+.gift-usage__rules-caption {
+    padding-top: 6px;
+    margin-bottom: 14px;
+    font-size: 18px;
+}
+
+a.gift-usage__document-link {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+a.gift-usage__document-link br {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .gift-page__text br {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .gift-page-hero {
+        padding-top: 0px;
+    }
+    .gift-page-hero-title {
+        font-size: 34px;
+    }
+
+    .gift-form__privacy-text br {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .gift-form__captcha {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .gift-form__input-captcha {
+        width: 100%;
+    }
+
+    .gift-form__captcha-display {
+        width: 100%;
+        margin-bottom: 6px;
+    }
+
+    .gift-usage {
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 320px) {
+    .gift-page-hero__inner {
+        padding-top: 20px;
+    }
+
+    .gift-page-hero-title br {
+        display: inline;
+    }
+
+    .gift-page-hero-title {
+        width: 255px;
+        font-size: 28px;
+        line-height: 90%;
+    }
+
+    .gift-page-hero-image {
+        padding-top: 0px;
+    }
+
+    .gift-page__text {
+        padding-top: 18px;
+    }
+
+    .gift-page__text p strong {
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+    .gift-page__text p {
+        font-size: 12px;
+        line-height: 140%;
+    }
+
+    .gift-form__title {
+        font-size: 28px;
+        line-height: 110%;
+        letter-spacing: -0.01em;
+    }
+
+    .gift-page-purchase__inner {
+        padding-top: 9px;
+    }
+
+    .gift-form__title {
+        margin-bottom: 8px;
+    }
+
+    .gift-form__input {
+        height: 32px;
+        font-size: 12px;
+        line-height: 134%;
+        margin: 4px 0;
+        padding-left: 10px;
+    }
+
+    .gift-form__is-patronymic {
+        margin-bottom: 14px;
+    }
+
+    .gift-form__checkbox-text {
+        padding-top: 3px;
+        font-size: 10px;
+    }
+
+    .gift-form__privacy {
+        padding-top: 10px;
+        margin-bottom: 17px;
+    }
+
+    .gift-form__privacy-text {
+        font-size: 10px;
+    }
+
+    .gift-form__captcha {
+        margin-bottom: 15px;
+    }
+
+    .gift-form__captcha-display {
+        height: 32px;
+    }
+
+    .gift-form__captcha-refresh {
+        width: 26px;
+        height: 26px;
+    }
+
+    .gift-form__total-cost-text {
+        display: none;
+    }
+
+    .gift-form__button {
+        height: 32px;
+    }
+
+    .gift-form__submit {
+        padding-top: 0px;
+    }
+
+    .gift-form__button {
+        font-size: 12px;
+    }
+
+    .gift-usage {
+        padding-top: 30px;
+    }
+
+    .gift-usage__about-text {
+        font-size: 10px;
+    }
+
+    .gift-usage__rules-caption {
+        padding-top: 0;
+        font-size: 14px;
+    }
+
+    .gift-usage__about-caption {
+        padding-top: 0;
+        margin-bottom: 0px;
+    }
+
+    .gift-usage__about-text ul {
+        margin-bottom: 0;
+    }
+
+    .gift-usage__about-text figure {
+        margin-bottom: 12px;
+    }
+
+    .gift-usage__about-text ul ::marker {
+        font-size: 7px;
+    }
+
+    .gift-usage__about-text ul, .gift-usage__about-text ol {
+        padding-left: 10px;
+    }
+
+    a.gift-usage__document-link br {
+        display: inline;
+    }
+
+    .gift-usage {
+        padding-bottom: 36px;
+    }
+}

@@ -1,0 +1,277 @@
+.aesthetic-results__arrow--left {
+    left: 0;
+}
+
+.aesthetic-results__arrow--right {
+    right: 0;
+}
+
+.aesthetic-results_left {
+    position: relative;
+    width: 50%;
+    flex-shrink: 0;
+}
+
+.aesthetic-results_left img {
+    width: 100%;
+}
+
+.aesthetic-results_left .offer-badge {
+    bottom: auto;
+    top: 15px;
+    left: 15px;
+    padding: 9px 20px;
+}
+
+.aesthetic-results__slide {
+    display: flex;
+    gap: 20px;
+}
+
+.aesthetic-results_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #fff;
+    flex-grow: 1;
+    padding: 30px;
+}
+
+.aesthetic-results_right p,
+.aesthetic-results_right h3 {
+    font-family: Forum;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: -2%;
+    color: #202020;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.aesthetic-results_right h3 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.aesthetic-results_right span {
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: -2%;
+    color: #202020CC;
+    margin-top: 10px;
+}
+
+.aesthetic-results_right div {
+    margin-top: 25px;
+}
+
+.aesthetic-results__slider {
+    position: relative;
+}
+
+.aesthetic-results__slide {
+    padding: 0 55px;
+}
+
+.twentytwenty-horizontal .twentytwenty-handle::after,
+.twentytwenty-horizontal .twentytwenty-handle::before {
+    width: 2px;
+}
+
+.twentytwenty-handle {
+    border: none;
+    width: 44px;
+    height: 122px;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    margin-top: unset;
+}
+
+.twentytwenty-handle span {
+    position: unset;
+    left: auto;
+    top: auto;
+    bottom: auto;
+    right: auto;
+    margin: unset;
+    background-size: contain;
+    text-indent: -9999px;
+    border: none;
+    width: 14px;
+    height: 48px;
+    display: block;
+}
+
+.twentytwenty-handle span.twentytwenty-left-arrow::after {
+    content: '';
+    width: 6px;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.twentytwenty-handle span.twentytwenty-left-arrow {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="48" viewBox="0 0 14 48"><path d="M0 23.9992L14 48L6.42176 23.9992L14 0L0 23.9992Z" fill="white"/></svg>') no-repeat center center;
+}
+
+.twentytwenty-handle span.twentytwenty-right-arrow {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="48" viewBox="0 0 14 48"><path d="M14 23.9992L0 48L7.57824 23.9992L0 0L14 23.9992Z" fill="white"/></svg>') no-repeat center center;
+}
+
+.twentytwenty-left-arrow,
+.twentytwenty-right-arrow {
+    margin-top: -25px;
+}
+
+.result_images {
+    max-width: 615px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.result_images .before {
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+}
+
+.result_images img {
+    width: 615px;
+    object-fit: cover;
+    margin-top: -150px;
+}
+
+.result_images>div {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.twentytwenty-container img {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.row {
+    max-width: 100%;
+}
+
+.aesthetic-results__slider {
+    overflow: hidden;
+}
+
+.aesthetic-results__slider>div {
+    display: flex;
+}
+
+.aesthetic-results__slide {
+    height: 500px;
+    flex: 0 0 100%;
+}
+
+.results-arow {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+#results .section-header {
+    margin-bottom: 30px;
+}
+
+
+@media screen and (max-width:991px) {
+    .aesthetic-results__slide {
+        flex-direction: column;
+        align-items: center;
+        height: fit-content
+    }
+
+    .aesthetic-results_left {
+        width: 100%;
+    }
+
+    .aesthetic-results_right {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:761px) {
+    .aesthetic-results_left .offer-badge {
+        padding: 5px 12px;
+    }
+
+    .results-arow {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .results-arow button {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        margin: 0;
+        transform: none;
+    }
+
+    .aesthetic-results__slide {
+        gap: 0;
+        padding: 0;
+    }
+
+    .aesthetic-results_right {
+        width: 100%;
+        padding: 30px 15px;
+    }
+
+    .aesthetic-results_right p {
+        font-size: 16px;
+    }
+
+    .aesthetic-results_right h3 {
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+
+    .aesthetic-results_right span {
+        font-size: 12px;
+        margin-top: 8px;
+    }
+
+    .aesthetic-results_right div {
+        margin-top: 20px;
+    }
+
+    .aesthetic-results__slider {
+        padding-top: 52px;
+    }
+
+    .results-arow {
+        transform: unset;
+        top: 0px;
+    }
+
+    .aesthetic-results_left,
+    #comparison1 {
+        height: clamp(290px, -22.22px + 97.41vw, 720px) !important;
+    }
+
+    .twentytwenty-container img {
+        max-height: 100%;
+        height: fit-content;
+    }
+}

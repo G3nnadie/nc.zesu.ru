@@ -1,0 +1,335 @@
+/* ========================================= */
+/* БЛОК 1: РЕЗУЛЬТАТЫ ЛЕЧЕНИЯ                */
+/* ========================================= */
+.stom-service-results {
+  background-color: #f8f7f3;
+  padding: 70px 0;
+  overflow: hidden;
+}
+
+
+
+.stom-service-results__header {
+  max-width: 860px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.stom-service-results__title {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  color: #202020;
+  margin: 0 0 20px 0;
+}
+
+.stom-service-results__subtitle {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: -0.02em;
+  color: rgba(32, 32, 32, 0.9);
+  margin: 0;
+}
+
+.stom-service-results__carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.stom-service-results__arrow-btn {
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  border: 1px solid #202020;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  color: #202020;
+  transition: 0.3s;
+}
+
+.stom-service-results__arrow-btn:hover {
+  border-color: #202020;
+}
+
+.stom-service-results__arrows-mobile {
+  display: none;
+}
+
+.stom-service-results__card {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.stom-service-results__comparison {
+  position: relative;
+  width: 100%;
+  max-width: 615px;
+  height: 500px;
+  overflow: hidden;
+  --pos: 50%;
+}
+
+.stom-service-results__base-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.stom-service-results__whitener {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #F6F6F6;
+  mix-blend-mode: soft-light;
+  clip-path: polygon(var(--pos) 0, 100% 0, 100% 100%, var(--pos) 100%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.stom-service-results__slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: ew-resize;
+  z-index: 10;
+  margin: 0;
+}
+
+.stom-service-results__slider-divider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--pos);
+  width: 2px;
+  background-color: #ffffff;
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 5;
+}
+
+.stom-service-results__slider-thumb {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  width: 44px;
+  height: 122px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.3));
+}
+.stom-service-results__info {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 615px;
+  height: 500px;
+  padding: 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stom-service-results__case-title {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  color: #202020;
+  margin: 0 0 30px 0;
+}
+
+.stom-service-results__info-group {
+  margin-bottom: 20px;
+}
+
+.stom-service-results__info-group:last-child {
+  margin-bottom: 0;
+}
+
+.stom-service-results__info-subtitle {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  color: #202020;
+  margin: 0 0 10px 0;
+}
+
+.stom-service-results__info-text {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: -0.02em;
+  color: rgba(32, 32, 32, 0.8);
+  margin: 0;
+}
+
+/* Адаптив для блока Результатов */
+@media (max-width: 1280px) {
+  .stom-service-results__comparison, .stom-service-results__info {
+    height: 400px;
+  }
+}
+
+@media (max-width: 998px) {
+  .stom-service-results__title {
+    font-size: 42px;
+  }
+
+  .stom-service-results__case-title {
+    font-size: 24px;
+  }
+
+  .stom-service-results__info-subtitle {
+    font-size: 20px;
+  }
+
+  .stom-service-results__info {
+    padding: 25px;
+    height: 350px;
+  }
+
+  .stom-service-results__comparison {
+    height: 350px;
+  }
+
+  .stom-service-results__carousel {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .stom-service-results {
+    padding: 50px 0;
+  }
+
+  .stom-service-results__header {
+    text-align: left;
+  }
+
+  .stom-service-results__title {
+    text-align: left;
+    font-size: 36px;
+  }
+
+  .stom-service-results__subtitle {
+    text-align: left;
+  }
+
+  .stom-service-results__card {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .stom-service-results__comparison {
+    max-width: 100%;
+    height: 400px;
+  }
+
+  .stom-service-results__info {
+    max-width: 100%;
+    height: auto;
+    min-height: 300px;
+    padding: 30px;
+  }
+
+  .stom-service-results__arrow--desktop {
+    display: none;
+  }
+
+  .stom-service-results__arrows-mobile {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 576px) {
+  .stom-service-results__container {
+    padding: 0 20px;
+  }
+
+  .stom-service-results {
+    padding: 50px 0;
+  }
+
+  .stom-service-results__title {
+    font-size: 32px;
+  }
+
+  .stom-service-results__subtitle {
+    font-size: 16px;
+  }
+
+  .stom-service-results__comparison {
+    height: 300px;
+  }
+
+  .stom-service-results__case-title {
+    font-size: 22px;
+  }
+
+  .stom-service-results__info-subtitle {
+    font-size: 18px;
+  }
+
+  .stom-service-results__info {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 374px) {
+  .stom-service-results__container {
+    padding: 0 15px;
+  }
+
+  .stom-service-results__title {
+    font-size: 28px;
+  }
+
+  .stom-service-results__subtitle {
+    font-size: 14px;
+  }
+
+  .stom-service-results__comparison {
+    height: 250px;
+  }
+
+  .stom-service-results__case-title {
+    font-size: 20px;
+  }
+
+  .stom-service-results__info-subtitle {
+    font-size: 16px;
+  }
+
+  .stom-service-results__info-text {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,210 @@
+/* ========================================= */
+/* БЛОК 5: ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ             */
+/* ========================================= */
+.stom-service-extra {
+  background-color: #f8f7f3; /* Общий фон, если он как на макетах */
+  padding: 70px 0;
+}
+
+
+
+/* Шапка */
+.stom-service-extra__header {
+  max-width: 860px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.stom-service-extra__title {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #202020;
+  margin: 0 0 20px 0;
+}
+
+.stom-service-extra__subtitle {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: rgba(32, 32, 32, 0.9);
+  margin: 0;
+}
+
+/* Сетка (Grid) */
+.stom-service-extra__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 колонки одинаковой ширины */
+  column-gap: 20px; /* 20px между колонками */
+  row-gap: 5px; /* Твои 5px между рядами */
+  margin-bottom: 30px; /* Отступ до нижней кнопки */
+}
+
+/* Карточка (Ссылка) */
+.stom-service-extra__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff; /* Белый фон карточки */
+  border: 1px solid #d2d2d2; /* Цвет рамки из ТЗ */
+  padding: 17px 20px;
+  text-decoration: none;
+  color: #202020;
+  transition: all 0.3s ease;
+}
+
+.stom-service-extra__card-text {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  color: #202020;
+  padding-right: 15px; /* Чтобы текст не прилипал к стрелке */
+}
+
+.stom-service-extra__card-icon {
+  color: #202020;
+  flex-shrink: 0;
+  line-height: 0.9;
+  transition: transform 0.3s ease;
+}
+
+/* Эффекты при наведении (Hover) для карточек */
+.stom-service-extra__card:hover {
+  border-color: #202020; /* Рамка темнеет */
+}
+
+.stom-service-extra__card:hover .stom-service-extra__card-icon {
+  transform: translateX(4px); /* Стрелка чуть двигается вправо */
+}
+
+/* Контейнер кнопки */
+.stom-service-extra__actions {
+  display: flex;
+  justify-content: center; /* Центрируем кнопку на десктопе */
+}
+
+/* Кнопка "Перейти ко всем услугам" (Стили как в предыдущем блоке) */
+.stom-service-extra__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 9px 22px;
+  background-color: transparent;
+  border: 1px solid #202020;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #202020;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.stom-service-extra__btn-icon {
+  transition: transform 0.3s ease;
+}
+
+.stom-service-extra__btn:hover {
+  background: rgba(32, 32, 32, 0.12);
+  color: var(--color-text);
+}
+
+.stom-service-extra__btn:hover .stom-service-extra__btn-icon {
+  transform: translateX(4px);
+}
+
+/* ========================================= */
+/* АДАПТИВ                                   */
+/* ========================================= */
+
+@media (max-width: 998px) {
+  .stom-service-extra__title {
+    font-size: 42px;
+  }
+
+  .stom-service-extra__card-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .stom-service-extra {
+    padding: 50px 0;
+  }
+
+  .stom-service-extra__header {
+    text-align: left;
+  }
+
+  .stom-service-extra__title {
+    text-align: left;
+    font-size: 36px;
+  }
+
+  .stom-service-extra__subtitle {
+    text-align: left;
+  }
+
+  /* Переводим сетку в 1 колонку */
+  .stom-service-extra__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .stom-service-extra__container {
+    padding: 0 20px;
+  }
+
+  .stom-service-extra {
+    padding: 50px 0;
+  }
+
+  .stom-service-extra__title {
+    font-size: 32px;
+  }
+
+  .stom-service-extra__subtitle {
+    font-size: 16px;
+  }
+
+  /* На мобилке кнопку прижимаем влево (по твоему прошлому запросу) */
+  .stom-service-extra__actions {
+    justify-content: flex-start;
+  }
+
+  /* Если хочешь, чтобы кнопка была по ширине текста, а не на весь экран */
+  .stom-service-extra__btn {
+    width: max-content;
+  }
+}
+
+@media (max-width: 374px) {
+  .stom-service-extra__container {
+    padding: 0 15px;
+  }
+
+  .stom-service-extra__title {
+    font-size: 28px;
+  }
+
+  .stom-service-extra__subtitle {
+    font-size: 14px;
+  }
+
+  .stom-service-extra__card-text {
+    font-size: 14px;
+  }
+
+  .stom-service-extra__card {
+    padding: 15px;
+  }
+}

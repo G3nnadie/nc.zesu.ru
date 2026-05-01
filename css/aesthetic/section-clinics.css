@@ -1,0 +1,110 @@
+.clinics-documents {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.clinics-documents>div {
+    width: 50%;
+}
+
+.clinics-section {
+    padding-bottom: 40px;
+}
+
+.map-container {
+    flex-grow: 1;
+}
+
+.clinics-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.map-container img {
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width:768px) {
+    .clinics-documents {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .clinics-documents>div {
+        width: 100%;
+        border-bottom: none;
+    }
+
+    .clinics-documents>div:last-of-type {
+        border-bottom: 1px solid #20202066;
+    }
+
+    .clinics-section {
+        padding-bottom: 30px;
+    }
+
+    .map-image {
+        height: 280px;
+        object-fit: cover;
+    }
+
+    .clinics-section .col-lg-6 {
+        padding: 0;
+    }
+
+    .clinics-section .section-header {
+        margin-bottom: 20px;
+    }
+
+    .map-container {
+        margin-bottom: 20px;
+    }
+
+    .clinic-hours,
+    .clinic-metro,
+    .clinic-address {
+        font-size: 10px;
+    }
+
+    .clinic-address br:first-of-type, .clinic-hours br {
+        display: none;
+    }
+
+    .clinic-card {
+        padding: 15px;
+    }
+
+    .aesthetic-offers-section .offer-badge {
+        bottom: 60px !important;
+    }
+
+    .offer-image {
+        height: clamp(160px, calc(53.5714vw - 11.4286px), 400px);
+    }
+
+    .offer-card:nth-child(1) .offer-image {
+        background-image: url(../../assets/images/aesthetic/offer-1_mob.png) !important;
+    }
+
+    .offer-card:nth-child(2) .offer-image {
+        background-image: url(../../assets/images/aesthetic/offer-2_mob.png) !important;
+    }
+
+    .offer-card:nth-child(3) .offer-image {
+        background-image: url(../../assets/images/aesthetic/offer-3_mob.png) !important;
+    }
+
+    .offer-card:nth-child(4) .offer-image {
+        background-image: url(../../assets/images/aesthetic/offer-4_mob.png) !important;
+    }
+
+    .offer-card:nth-child(5) .offer-image {
+        background-image: url(../../assets/images/aesthetic/offer-5_mob.png) !important;
+    }
+
+    .aesthetic-offers-section .offer-image::before {
+        display: none;
+    }
+}

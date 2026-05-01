@@ -1,0 +1,128 @@
+@import url(../ophthalmology/section-feature.css);
+
+.aesthetic-breadcrumbs {
+    margin-bottom: 75px;
+    height: 17px;
+}
+
+.aesthetic-feature__visual::before {
+    background: linear-gradient(179.72deg, rgba(153, 129, 88, 0) 40.09%, #998158 96.32%);
+}
+
+.aesthetic-feature-2__btn {
+    margin-top: 50px;
+}
+
+.aesthetic-feature {
+    padding: 40px 0 52px 0;
+}
+
+.aesthetic-feature-about {
+    padding: 75px 0 52px 0;
+}
+
+.aesthetic-about-1 {
+    padding: 40px 0 52px 0;
+}
+
+.aesthetic-feature-about .ophthalmology-feature__visual img {
+    height: 404px !important;
+}
+
+.aesthetic-installment>div>div>div {
+    padding: 0;
+}
+
+.installment-right {
+    margin-left: 30px;
+}
+
+.ophthalmology-feature__btn {
+    margin-top: 65px;
+}
+
+.aesthetic-feature__visual-inst {
+    height: 404px;
+}
+
+.aesthetic-feature-2__btn {
+    margin-top: 55px;
+}
+
+.aesthetic-installment {
+    padding: 70px 0 52px 0;
+}
+
+.aesthetic-feature-row {
+    display: flex;
+    align-items: stretch;
+}
+
+.aesthetic-feature-row__left .aesthetic-feature__btn {
+    margin-top: 0;
+}
+
+.aesthetic-feature-row__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width:1340px) {
+    .aesthetic-feature-2__btn {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .aesthetic-feature__visual-inst {
+        max-width: fit-content;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:1200px) and (min-width:991px) {
+    .aesthetic-feature__visual-col {
+        width: 38%;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .aesthetic-feature-about .ophthalmology-feature__visual img {
+        height: auto !important;
+    }
+
+    .aesthetic-feature-about .aesthetic-feature__btn {
+        margin-top: 0px;
+    }
+
+    .aesthetic-feature-about {
+        padding: 50px 0;
+    }
+
+    .aesthetic-installment .aesthetic-feature-2__btn {
+        margin-top: 0;
+    }
+
+    .aesthetic-feature>div>div>div,
+    .aesthetic-feature-about>div>div>div {
+        padding: 0;
+    }
+
+    .installment-right {
+        margin-left: unset;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .installment-right {
+        margin-top: unset;
+    }
+
+    .aesthetic-installment {
+        padding: 50px 0;
+    }
+}

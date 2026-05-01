@@ -1,0 +1,32 @@
+.offers-section {
+    padding: 70px 0;
+}
+
+.offers-section .section-header {
+    margin-bottom: 30px;
+}
+
+.aesthetic-offers-section .offer-image::before {
+    background: linear-gradient(179.72deg, rgba(153, 129, 88, 0) 30.94%, #998158 96.32%);
+}
+
+.offers-section .section-subtitle {
+    max-width: 463px;
+    margin-bottom: 0px;
+}
+
+.offers-section .section-action {
+    margin-top: 30px !important;
+}
+
+.offers-section .btn {
+    height: 39px;
+    padding: 9px 40px;
+}
+
+
+@media screen and (max-width:1421px) {
+    .aesthetic-offers-section .offer-badge {
+        bottom: 90px;
+    }
+}

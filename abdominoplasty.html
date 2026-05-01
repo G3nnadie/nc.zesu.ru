@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Программа «Здоровое сердце» — Немецкая семейная клиника</title>
+
+    <!-- Local Fonts -->
+    <link rel="stylesheet" href="css/fonts.css">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css_twenty/foundation.css">
+    <link rel="stylesheet" type="text/css" href="css_twenty/twentytwenty.css">
+    <link rel="stylesheet" href="css/abdominoplasty/style.css">
+</head>
+
+<body class="program-page">
+    <!-- ============================================
+         HEADER / MENU (3 уровня)
+    ============================================= -->
+    <header class="header" id="header">
+        <!-- Mobile Header -->
+        <div class="mobile-header">
+            <a href="/" class="mobile-logo">
+                <img src="assets/images/logo.svg" alt="Немецкая семейная клиника">
+            </a>
+            <div class="mobile-header-actions">
+                <a href="tel:+78124323232" class="mobile-header-icon" aria-label="Позвонить">
+                    <img src="assets/images/icons/icon-phone-mob.svg" alt="Телефон">
+                </a>
+                <a href="#" class="mobile-header-icon" aria-label="Поиск">
+                    <img src="assets/images/icons/icon-search-mob.svg" alt="Поиск">
+                </a>
+                <a href="#" class="mobile-header-icon" aria-label="Личный кабинет">
+                    <img src="assets/images/icons/icon-user-mob.svg" alt="Личный кабинет">
+                </a>
+                <a href="#" class="mobile-header-icon" aria-label="Настройки">
+                    <img src="assets/images/icons/icon-star-mob.svg" alt="Настройки">
+
+                </a>
+                <button class="menu-toggle" type="button" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" role="dialog" aria-modal="true" aria-label="Мобильное меню">
+            <div class="mobile-menu-panel">
+                <!-- Шапка меню -->
+                <div class="mobile-menu-header">
+                    <a href="/" class="mobile-menu-logo">
+                        <img src="assets/images/logo.svg" alt="Немецкая семейная клиника">
+                    </a>
+                    <div class="mobile-menu-header-actions">
+                        <a href="tel:+78124323232" class="mobile-menu-icon" aria-label="Позвонить">
+                            <img src="assets/images/icons/icon-phone-mob.svg" alt="Телефон">
+                        </a>
+                        <a href="#" class="mobile-menu-icon" aria-label="Поиск">
+                            <img src="assets/images/icons/icon-search-mob.svg" alt="Поиск">
+                        </a>
+                        <a href="#" class="mobile-menu-icon" aria-label="Личный кабинет">
+                            <img src="assets/images/icons/icon-user-mob.svg" alt="Личный кабинет">
+                        </a>
+                        <a href="#" class="mobile-menu-icon" aria-label="Настройки">
+                            <img src="assets/images/icons/icon-star-mob.svg" alt="Настройки">
+
+                        </a>
+                        <button class="mobile-menu-close" type="button" aria-label="Закрыть меню">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 5L5 15M5 5L15 15" stroke="currentColor" stroke-width="1"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Навигация -->
+                <nav class="mobile-menu-nav" role="navigation">
+                    <!-- Услуги (аккордеон) -->
+                    <div class="mobile-nav-item">
+                        <button class="mobile-nav-toggle" type="button" aria-expanded="false">
+                            <span>Услуги</span>
+                            <svg class="mobile-nav-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div class="mobile-nav-submenu">
+                            <a href="#">Для взрослых</a>
+                            <a href="#">Для детей</a>
+                            <a href="#">Стоматология</a>
+                            <a href="#">Стационар и операции</a>
+                            <a href="#">Центры компетенций</a>
+                            <a href="#">Аптека</a>
+                        </div>
+                    </div>
+
+                    <!-- Врачи (простая ссылка) -->
+                    <a href="#" class="mobile-nav-link">Врачи</a>
+
+                    <!-- Программы (аккордеон) -->
+                    <div class="mobile-nav-item">
+                        <button class="mobile-nav-toggle" type="button" aria-expanded="false">
+                            <span>Программы</span>
+                            <svg class="mobile-nav-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div class="mobile-nav-submenu">
+                            <a href="#">Для взрослых</a>
+                            <a href="#">Для детей</a>
+                            <a href="#">Будущим мамам</a>
+                            <a href="#">Для бизнеса</a>
+                            <a href="#">Семейный депозит</a>
+                        </div>
+                    </div>
+
+                    <!-- Инфо (аккордеон) -->
+                    <div class="mobile-nav-item">
+                        <button class="mobile-nav-toggle" type="button" aria-expanded="false">
+                            <span>Инфо</span>
+                            <svg class="mobile-nav-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div class="mobile-nav-submenu">
+                            <a href="about.html">О компании</a>
+                            <a href="#">Награды и рейтинги</a>
+                            <a href="#">Интерьеры</a>
+                            <a href="#">Отзывы</a>
+                            <a href="#">Видео</a>
+                            <a href="#">Карьера</a>
+                            <a href="#">Правовая информация</a>
+                            <a href="#">Налоговый вычет</a>
+                            <a href="#">Информация для пациентов</a>
+                            <a href="#">Подготовка к исследованиям</a>
+                            <a href="#">Памятки</a>
+                            <a href="#">Лечение в кредит</a>
+                            <a href="#">Подарочный сертификат</a>
+                        </div>
+                    </div>
+
+                    <!-- Новости (аккордеон) -->
+                    <div class="mobile-nav-item">
+                        <button class="mobile-nav-toggle" type="button" aria-expanded="false">
+                            <span>Новости</span>
+                            <svg class="mobile-nav-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div class="mobile-nav-submenu">
+                            <a href="#">Новости</a>
+                            <a href="#">Статьи</a>
+                            <a href="#">Видео</a>
+                            <a href="#">Для врачей</a>
+                        </div>
+                    </div>
+
+                    <!-- Контакты (простая ссылка) -->
+                    <a href="#" class="mobile-nav-link">Контакты</a>
+                </nav>
+
+                <!-- Направления -->
+                <div class="mobile-menu-departments">
+                    <a href="#" class="mobile-dept-link mobile-dept-pediatrics">
+                        <img src="assets/images/icons/dept-pediatrics.svg" alt="" width="16" height="18">
+                        <span>Педиатрия</span>
+                    </a>
+                    <a href="#" class="mobile-dept-link mobile-dept-ophthalmology">
+                        <img src="assets/images/icons/dept-ophthalmology.svg" alt="" width="16" height="18">
+                        <span>Экспертная офтальмология</span>
+                    </a>
+                    <a href="#" class="mobile-dept-link mobile-dept-preventive">
+                        <img src="assets/images/icons/dept-preventive.svg" alt="" width="16" height="18">
+                        <span>Превентивная медицина</span>
+                    </a>
+                    <a href="#" class="mobile-dept-link mobile-dept-dentistry">
+                        <img src="assets/images/icons/dept-dentistry.svg" alt="" width="16" height="18">
+                        <span>Стоматология</span>
+                    </a>
+                    <a href="#" class="mobile-dept-link mobile-dept-aesthetic">
+                        <img src="assets/images/icons/dept-aesthetic.svg" alt="" width="16" height="18">
+                        <span>Эстетическая медицина</span>
+                    </a>
+                </div>
+
+                <!-- Кнопки действий -->
+                <div class="mobile-menu-actions">
+                    <a href="#" class="mobile-menu-btn">Записаться на приём</a>
+                    <a href="#" class="mobile-menu-btn">Оплатить</a>
+                    <a href="#" class="mobile-menu-btn">Заказать звонок</a>
+                </div>
+
+                <!-- Контактная информация -->
+                <div class="mobile-menu-contacts">
+                    <a href="tel:+78124323232" class="mobile-menu-phone">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.8333 9.87V11.62C12.8339 11.7825 12.8007 11.9433 12.7357 12.0923C12.6707 12.2413 12.5751 12.3753 12.4553 12.4856C12.3355 12.596 12.1942 12.6802 12.0403 12.7326C11.8863 12.7851 11.7232 12.8045 11.5617 12.7894C9.76663 12.5939 8.04469 11.9783 6.52917 11.0015C5.11803 10.0996 3.92291 8.90449 3.02083 7.49335C2.04063 5.97092 1.42479 4.2404 1.23333 2.43835C1.21832 2.27733 1.23752 2.11484 1.28959 1.96136C1.34166 1.80789 1.42547 1.66693 1.53546 1.54728C1.64545 1.42763 1.77909 1.33201 1.92772 1.26661C2.07636 1.20122 2.2369 1.16743 2.39958 1.16765H4.14958C4.43063 1.16474 4.70299 1.26399 4.91538 1.44631C5.12776 1.62862 5.26558 1.88167 5.30333 2.16027C5.37417 2.71669 5.50802 3.26317 5.70222 3.78985C5.77972 3.99722 5.79461 4.22249 5.7451 4.43819C5.69559 4.65388 5.58366 4.85024 5.42316 5.0043L4.67444 5.75302C5.50342 7.20037 6.69963 8.39658 8.14698 9.22556L8.8957 8.47684C9.04976 8.31634 9.24612 8.20441 9.46181 8.1549C9.67751 8.10539 9.90278 8.12028 10.1101 8.19778C10.6368 8.39198 11.1833 8.52583 11.7397 8.59667C12.0222 8.63479 12.2784 8.77575 12.4611 8.99282C12.6439 9.20989 12.7405 9.48726 12.7333 9.77156L12.8333 9.87Z"
+                                stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <span>8 (812) 432-32-32 / 8 (812) 337-12-12</span>
+                    </a>
+                    <div class="mobile-menu-time">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.2" />
+                            <path d="M7 3.5V7L9.5 9.5" stroke="currentColor" stroke-width="1.2"
+                                stroke-linecap="round" />
+                        </svg>
+                        <span>с 07:30 до 22:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu Level 1 - Направления -->
+        <div class="menu-level-1">
+            <div class="menu-level-1-inner">
+                <a href="#" class="department-link department-pediatrics">
+                    <span class="dept-icon">
+                        <img src="assets/images/icons/dept-pediatrics.svg" alt="" width="16" height="18">
+                    </span>
+                    Педиатрия
+                </a>
+                <div class="dept-divider"></div>
+                <a href="#" class="department-link department-ophthalmology">
+                    <span class="dept-icon">
+                        <img src="assets/images/icons/dept-ophthalmology.svg" alt="" width="16" height="18">
+                    </span>
+                    Экспертная офтальмология
+                </a>
+                <div class="dept-divider"></div>
+                <a href="#" class="department-link department-preventive">
+                    <span class="dept-icon">
+                        <img src="assets/images/icons/dept-preventive.svg" alt="" width="16" height="18">
+                    </span>
+                    Превентивная медицина
+                </a>
+                <div class="dept-divider"></div>
+                <a href="#" class="department-link department-dentistry">
+                    <span class="dept-icon">
+                        <img src="assets/images/icons/dept-dentistry.svg" alt="" width="16" height="18">
+                    </span>
+                    Стоматология
+                </a>
+                <div class="dept-divider"></div>
+                <a href="#" class="department-link department-aesthetic">
+                    <span class="dept-icon">
+                        <img src="assets/images/icons/dept-aesthetic.svg" alt="" width="16" height="18">
+                    </span>
+                    Эстетическая медицина
+                </a>
+            </div>
+        </div>
+
+        <!-- Menu Level 2 - Контакты и поиск -->
+        <div class="menu-level-2">
+            <div class="menu-level-2-inner">
+                <div class="menu-level-2-left">
+                    <a href="tel:+78124323232" class="contact-link">
+                        <img src="assets/images/icons/icon-phone.svg" alt="" width="14" height="12">
+                        <span>8 (812) 432-32-32 / <span>8 (812) 337-12-12</span></span>
+                    </a>
+                    <div class="time-info">
+                        <img src="assets/images/icons/icon-clock.svg" alt="" width="12" height="12">
+                        <span>c 07:30 до 22:00</span>
+                    </div>
+                </div>
+                <div class="menu-search-box">
+                    <input type="text" class="menu-search-input" placeholder="Поиск">
+                    <img src="assets/images/icons/icon-search.svg" alt="" class="menu-search-icon" width="12"
+                        height="12">
+                </div>
+                <div class="menu-level-2-right">
+                    <a href="#" class="header-link">
+                        <img src="assets/images/icons/icon-star.svg" alt="" width="12" height="12">
+                        <span>Акции</span>
+                    </a>
+                    <a href="#" class="header-link">
+                        <img src="assets/images/icons/icon-user.svg" alt="" width="9" height="12">
+                        <span>Личный кабинет</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu Level 3 - Навигация -->
+        <div class="menu-level-3">
+            <div class="menu-level-3-inner">
+                <nav class="main-nav">
+                    <div class="nav-item-wrapper">
+                        <a href="#" class="nav-link nav-dropdown" data-dropdown="services">
+                            Услуги
+                            <svg class="nav-arrow" width="8" height="4" viewBox="0 0 9 5" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.5 0.5L4.49936 4.5L8.49881 0.5" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <div class="nav-dropdown-menu" id="dropdown-services">
+                            <a href="#">Для взрослых</a>
+                            <a href="#">Для детей</a>
+                            <a href="#">Стоматология</a>
+                            <a href="#">Стационар и операции</a>
+                        </div>
+                    </div>
+                    <div class="nav-item-wrapper">
+                        <a href="#" class="nav-link">Врачи</a>
+                    </div>
+                    <div class="nav-item-wrapper">
+                        <a href="#" class="nav-link nav-dropdown" data-dropdown="programs">
+                            Программы
+                            <svg class="nav-arrow" width="8" height="4" viewBox="0 0 9 5" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.5 0.5L4.49936 4.5L8.49881 0.5" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <div class="nav-dropdown-menu" id="dropdown-programs">
+                            <a href="#">Для взрослых</a>
+                            <a href="#">Для детей</a>
+                            <a href="#">Будущим мамам</a>
+                            <a href="#">Для бизнеса</a>
+                            <a href="#">Семейный депозит</a>
+                        </div>
+                    </div>
+                    <div class="nav-item-wrapper">
+                        <a href="#" class="nav-link nav-dropdown" data-dropdown="info">
+                            Инфо
+                            <svg class="nav-arrow" width="8" height="4" viewBox="0 0 9 5" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.5 0.5L4.49936 4.5L8.49881 0.5" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <div class="nav-dropdown-menu nav-dropdown-menu-wide" id="dropdown-info">
+                            <a href="about.html">О компании</a>
+                            <a href="#">Награды и рейтинги</a>
+                            <a href="#">Интерьеры</a>
+                            <a href="#">Отзывы</a>
+                            <a href="#">Видео</a>
+                            <a href="#">Карьера</a>
+                            <a href="#">Правовая информация, как получить услуги</a>
+                            <a href="#">Налоговый вычет</a>
+                            <a href="#">Информация для пациентов</a>
+                            <a href="#">Подготовка к диагностическим исследованиям</a>
+                            <a href="#">Памятки</a>
+                            <a href="#">Лечение в кредит</a>
+                            <a href="#">Подарочный сертификат</a>
+                        </div>
+                    </div>
+                    <div class="nav-item-wrapper">
+                        <a href="#" class="nav-link nav-dropdown" data-dropdown="news">
+                            Новости
+                            <svg class="nav-arrow" width="8" height="4" viewBox="0 0 9 5" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.5 0.5L4.49936 4.5L8.49881 0.5" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <div class="nav-dropdown-menu" id="dropdown-news">
+                            <a href="#">Новости</a>
+                            <a href="#">Статьи</a>
+                            <a href="#">Статьи для врачей</a>
+                        </div>
+                    </div>
+                    <div class="nav-item-wrapper">
+                        <a href="#" class="nav-link">Контакты</a>
+                    </div>
+                </nav>
+
+                <div class="logo">
+                    <a href="/">
+                        <img src="assets/images/icons/logo-header.svg" alt="Немецкая семейная клиника" class="logo-img">
+                    </a>
+                </div>
+
+                <div class="header-actions">
+                    <a href="#" class="btn-header d-none">Записаться на приём</a>
+                    <a href="#" class="btn-header">Оплатить</a>
+                    <a href="#" class="btn-header d-none">Заказать звонок</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============================================
+         MAIN CONTENT
+    ============================================= -->
+    <main>
+        <div class="mobile-breadcrumbs d-md-none">
+            <div class="site-container">
+                <p class="mobile-breadcrumbs__text"><span>Главная</span> / <span>Эстетическая медицина /</span>
+                    <strong>Абдоминопластика</strong>
+                </p>
+            </div>
+        </div>
+
+        <!-- ============================================
+             SECTION 1: HERO
+        ============================================= -->
+        <section class="program-hero position-relative overflow-hidden text-white py-0" id="hero">
+            <nav class="program-breadcrumbs d-none d-md-block" aria-label="Хлебные крошки">
+                <a href="/">Главная</a> / <a href>Эстетическая медицина</a> / <span
+                    class="preventive-breadcrumbs__current">Абдоминопластика</span>
+            </nav>
+            <div class="program-hero__surface abdominoplasty-hero__surface position-absolute w-100 h-100">
+                <img src="assets/images/abdominoplasty/abdominoplasty-hero.png" alt=""
+                    class="program-hero__bg-img d-none d-md-block" loading="eager" decoding="async">
+                <img src="assets/images/abdominoplasty/abdominoplasty-hero_mob.png" alt=""
+                    class="program-hero__bg-img d-block d-md-none" loading="eager" decoding="async">
+            </div>
+            <div class="program-hero__body d-flex flex-column container-fluid px-4 position-relative">
+                <div class="program-hero__logo">
+                    <img src="assets/images/aesthetic/hero-logo-white.svg"
+                        alt="Немецкая семейная клиника — Превентивная медицина" loading="eager">
+                </div>
+                <div class="program-hero__content mt-md-auto">
+                    <h1 class="program-hero__title">Абдоминопластика</h1>
+                    <p class="program-hero__subtitle">Хирургическая коррекция области живота для восстановления контуров
+                        тела и устранения избытков кожи.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             SECTION 3: ABOUT - MISSION
+        ============================================= -->
+        <section class="about-mission py-6-custom">
+            <div class="container-fluid px-4">
+                <nav class="aesthetic-breadcrumbs ophthalmology-breadcrumbs d-none d-md-block"
+                    aria-label="Хлебные крошки">
+                    <a href="/">Главная /</a>
+                    <a href="/">Эстетическая медицина /</a>
+                    <span class="ophthalmology-breadcrumbs__current">Абдоминопластика</span>
+                </nav>
+                <div class="row align-items-center g-4 g-lg-5">
+                    <div class="col-12 col-lg-6">
+                        <h3>Абдоминопластика — это операция, направленная на восстановление формы живота после снижения
+                            веса, беременности или возрастных изменений.</h3>
+                        <div class="about-mission__text">
+                            <p>В Центре пластической хирургии «Немецкой семейной клиники» операции проводятся с учётом
+                                анатомических особенностей пациента, с применением современных методик и соблюдением
+                                высоких стандартов безопасности. Это позволяет добиться естественного результата
+                                и комфортного восстановления.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 about-mission__image_p">
+                        <div class="about-mission__image text-lg-end">
+                            <img src="assets/images/abdominoplasty/mission-doctors.png"
+                                alt="Врачи Немецкой семейной клиники" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             SECTION 3: Когда рекомендуется операция
+        ============================================= -->
+        <section class="abdominoplasty-includes program-includes section-white" id="includes">
+            <div class="container-fluid px-4">
+                <div class="row">
+                    <div class="col-lg-6 d-flex flex-column">
+                        <h2 class="program-includes__title">Когда рекомендуется <br> операция</h2>
+                        <p class="program-includes__description">К операции прибегают при наличии избытков кожи
+                            в области живота, снижении тонуса мышц, растяжении передней брюшной стенки или выраженных
+                            эстетических изменениях после беременности и снижения веса.</p>
+                        <div class="row abd-feature-left_bottom">
+                            <a href="#" class="abd-feature__btn">
+                                <span>Записаться на приём</span>
+                                <svg width="11" height="10" viewBox="0 0 11 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.18963 9.54541L5.56108 8.92218L9.26847 5.22013H-1.11759e-07V4.32524H9.26847L5.56108 0.623179L6.18963 -4.44326e-05L10.9624 4.77268L6.18963 9.54541Z"
+                                        fill="#202020" />
+                                </svg>
+                            </a>
+                            <a href="#" class="abd-feature__btn">
+                                <span>Записаться на консультацию</span>
+                                <svg width="11" height="10" viewBox="0 0 11 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.18963 9.54541L5.56108 8.92218L9.26847 5.22013H-1.11759e-07V4.32524H9.26847L5.56108 0.623179L6.18963 -4.44326e-05L10.9624 4.77268L6.18963 9.54541Z"
+                                        fill="#202020" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3>Что входит в операцию:</h3>
+                        <ol class="program-includes__list mt-0 mt-md-4">
+                            <li class="program-includes__item">01. Консультация пластического хирурга</li>
+                            <li class="program-includes__item">02. Предоперационная диагностика</li>
+                            <li class="program-includes__item">03. Проведение операции</li>
+                            <li class="program-includes__item">04. Анестезиологическое сопровождение</li>
+                            <li class="program-includes__item">05. Наблюдение в стационаре</li>
+                            <li class="program-includes__item">06. Послеоперационные рекомендации</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             SECTION 12: Клинические результаты
+        ============================================= -->
+        <section class="section-light" id="results">
+            <div class="container-fluid px-4">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Результаты операций</h2>
+                    <p class="section-subtitle result-subtitle">Фотографии до и после демонстрируют реальные результаты
+                        хирургического лечения. Все материалы размещены с согласия пациентов. Каждый случай
+                        индивидуален, а итог зависит от исходных данных и выбранной методики.</p>
+                </div>
+
+                <div class="aesthetic-results__slider">
+                    <div>
+                        <div class="aesthetic-results__slide">
+                            <div class="aesthetic-results_left">
+                                <span class="offer-badge">18+</span>
+                                <div id="comparison1" class="comparison">
+                                    <img src="assets/images/aesthetic/result-before.jpg">
+                                    <img src="assets/images/aesthetic/result-after.jpg">
+                                </div>
+                            </div>
+
+                            <div class="aesthetic-results_right">
+                                <h3>Абдоминопластика</h3>
+                                <div>
+                                    <p>Запрос пациента:</p>
+                                    <span>Избыточная кожа и снижение тонуса мышц после беременности.</span>
+                                </div>
+                                <div>
+                                    <p>Проведено:</p>
+                                    <span>Удаление избытков кожи и укрепление передней брюшной стенки.</span>
+                                </div>
+                                <div>
+                                    <p>Результат:</p>
+                                    <span>Восстановлен контур живота, улучшены пропорции тела.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="aesthetic-results__slide">
+                            <div class="aesthetic-results_left">
+                                <span class="offer-badge">18+</span>
+                                <div id="comparison1" class="comparison">
+                                    <img src="assets/images/aesthetic/result-before.jpg">
+                                    <img src="assets/images/aesthetic/result-after.jpg">
+                                </div>
+                            </div>
+
+                            <div class="aesthetic-results_right">
+                                <h3>Блефаропластика верхних век</h3>
+                                <div>
+                                    <p>Запрос пациента:</p>
+                                    <span>Выраженные нависшие веки, ощущение тяжести взгляда.</span>
+                                </div>
+                                <div>
+                                    <p>Проведено: </p>
+                                    <span>Верхняя блефаропластика.</span>
+                                </div>
+                                <div>
+                                    <p>Результат: </p>
+                                    <span>Устранено нависание кожи, взгляд стал более открытым и естественным.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="aesthetic-results__slide">
+                            <div class="aesthetic-results_left">
+                                <span class="offer-badge">18+</span>
+                                <div id="comparison1" class="comparison">
+                                    <img src="assets/images/aesthetic/result-before.jpg">
+                                    <img src="assets/images/aesthetic/result-after.jpg">
+                                </div>
+                            </div>
+
+                            <div class="aesthetic-results_right">
+                                <h3>Блефаропластика верхних век</h3>
+                                <div>
+                                    <p>Запрос пациента:</p>
+                                    <span>Выраженные нависшие веки, ощущение тяжести взгляда.</span>
+                                </div>
+                                <div>
+                                    <p>Проведено: </p>
+                                    <span>Верхняя блефаропластика.</span>
+                                </div>
+                                <div>
+                                    <p>Результат: </p>
+                                    <span>Устранено нависание кожи, взгляд стал более открытым и естественным.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="results-arow">
+                        <button class="ophthalmology-technologies__arrow aesthetic-results__arrow--left" type="button"
+                            aria-label="Предыдущий слайд">
+                            <svg width="19" height="16" viewBox="0 0 19 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.2072 8L0.707154 8M0.707154 8L8.20715 15.5M0.707154 8L8.20715 0.499999"
+                                    stroke="#202020" stroke-linecap="round" />
+                            </svg>
+                        </button>
+                        <button class="ophthalmology-technologies__arrow aesthetic-results__arrow--right" type="button"
+                            aria-label="Следующий слайд">
+                            <svg width="19" height="16" viewBox="0 0 19 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.5 8H18M18 8L10.5 0.5M18 8L10.5 15.5" stroke="#202020"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ============================================
+             SECTION: Как проходит операция
+        ============================================= -->
+        <section class="process abd-process" id="process">
+            <div class="container-fluid px-4">
+                <h2 class="section-title">Как проходит операция</h2>
+                <p class="section-subtitle">Основные этапы хирургического лечения и восстановления.</p>
+                <div class="process_table-box">
+                    <div class="process_table">
+                        <div class="process_table-tr">
+                            <p class="process_table-str">Этап</p>
+                            <p class="process_table-str">Действия врача</p>
+                            <p class="process_table-str">Участие пациента</p>
+                            <p class="process_table-str">Результат</p>
+                        </div>
+                        <div class="process_table-td">
+                            <p class="process_table-str">Консультация</p>
+                            <p>Осмотр и планирование</p>
+                            <p>Описывает ожидания</p>
+                            <p>Определена тактика</p>
+                        </div>
+                        <div class="process_table-td">
+                            <p class="process_table-str">Подготовка</p>
+                            <p>Назначение анализов</p>
+                            <p>Проходит обследования</p>
+                            <p>Готовность к операции</p>
+                        </div>
+                        <div class="process_table-td">
+                            <p class="process_table-str">Операция</p>
+                            <p>Выполнение хирургии</p>
+                            <p>Находится под анестезией</p>
+                            <p>Коррекция зоны</p>
+                        </div>
+                        <div class="process_table-td">
+                            <p class="process_table-str">Восстановление</p>
+                            <p>Наблюдение и контроль</p>
+                            <p>Соблюдает рекомендации</p>
+                            <p>Стабильный результат</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+            SECTION: Часто задаваемые вопросы
+        ============================================= -->
+        <section class="questions section-light abd-questions" id="question">
+            <div class="container-fluid px-4">
+                <h2 class="section-title">Часто задаваемые вопросы</h2>
+                <p class="section-subtitle">Ответы на самые распространённые вопросы о подготовке к операции,
+                    реабилитации и результате.</p>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="plus-type bigln">
+                            <div class="plus-type_top">
+                                <p>Нужно ли проходить обследование <br> перед операцией?</p>
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.42127 12V0H6.57873V12H5.42127ZM0 6.5832V5.4168H12V6.5832H0Z"
+                                        fill="#202020" />
+                                </svg>
+                            </div>
+                            <div class="plus-type_main">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi repellendus omnis
+                                praesentium ipsa aperiam repellat in debitis, corporis consequatur perspiciatis expedita
+                                nesciunt labore nam sequi, enim explicabo alias vitae id.
+                            </div>
+                        </div>
+                        <div class="plus-type bigln">
+                            <div class="plus-type_top">
+                                <p>Как подготовиться <br> к пластической операции?</p>
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.42127 12V0H6.57873V12H5.42127ZM0 6.5832V5.4168H12V6.5832H0Z"
+                                        fill="#202020" />
+                                </svg>
+                            </div>
+                            <div class="plus-type_main">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi repellendus omnis
+                                praesentium ipsa aperiam repellat in debitis, corporis consequatur perspiciatis expedita
+                                nesciunt labore nam sequi, enim explicabo alias vitae id.
+                            </div>
+                        </div>
+                        <div class="plus-type">
+                            <div class="plus-type_top">
+                                <p>Сколько длится реабилитация?</p>
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.42127 12V0H6.57873V12H5.42127ZM0 6.5832V5.4168H12V6.5832H0Z"
+                                        fill="#202020" />
+                                </svg>
+                            </div>
+                            <div class="plus-type_main">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi repellendus omnis
+                                praesentium ipsa aperiam repellat in debitis, corporis consequatur perspiciatis expedita
+                                nesciunt labore nam sequi, enim explicabo alias vitae id.
+                            </div>
+                        </div>
+                        <div class="plus-type">
+                            <div class="plus-type_top">
+                                <p>Останутся ли рубцы после операции?</p>
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.42127 12V0H6.57873V12H5.42127ZM0 6.5832V5.4168H12V6.5832H0Z"
+                                        fill="#202020" />
+                                </svg>
+                            </div>
+                            <div class="plus-type_main">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi repellendus omnis
+                                praesentium ipsa aperiam repellat in debitis, corporis consequatur perspiciatis expedita
+                                nesciunt labore nam sequi, enim explicabo alias vitae id.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="plus-type bigln">
+                            <div class="plus-type_top">
+                                <p>Можно ли совмещать несколько <br> операций?</p>
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.42127 12V0H6.57873V12H5.42127ZM0 6.5832V5.4168H12V6.5832H0Z"
+                                        fill="#202020" />
+                                </svg>
+                            </div>
+                            <div class="plus-type_main">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi repellendus omnis
+                                praesentium ipsa aperiam repellat in debitis, corporis consequatur perspiciatis expedita
+                                nesciunt labore nam sequi, enim explicabo alias vitae id.
+                            </div>
+                        </div>
+                        <div class="plus-type bigln">
+                            <div class="plus-type_top">
+                                <p>Под каким видом анестезии <br> проводятся операции?</p>
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.42127 12V0H6.57873V12H5.42127ZM0 6.5832V5.4168H12V6.5832H0Z"
+                                        fill="#202020" />
+                                </svg>
+                            </div>
+                            <div class="plus-type_main">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi repellendus omnis
+                                praesentium ipsa aperiam repellat in debitis, corporis consequatur perspiciatis expedita
+                                nesciunt labore nam sequi, enim explicabo alias vitae id.
+                            </div>
+                        </div>
+                        <div class="plus-type bigln">
+                            <div class="plus-type_top">
+                                <p>Когда можно вернуться <br> к работе и спорту?</p>
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.42127 12V0H6.57873V12H5.42127ZM0 6.5832V5.4168H12V6.5832H0Z"
+                                        fill="#202020" />
+                                </svg>
+                            </div>
+                            <div class="plus-type_main">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi repellendus omnis
+                                praesentium ipsa aperiam repellat in debitis, corporis consequatur perspiciatis expedita
+                                nesciunt labore nam sequi, enim explicabo alias vitae id.
+                            </div>
+                        </div>
+                        <div class="plus-type">
+                            <div class="plus-type_top">
+                                <p>Как долго сохраняется результат?</p>
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.42127 12V0H6.57873V12H5.42127ZM0 6.5832V5.4168H12V6.5832H0Z"
+                                        fill="#202020" />
+                                </svg>
+                            </div>
+                            <div class="plus-type_main">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi repellendus omnis
+                                praesentium ipsa aperiam repellat in debitis, corporis consequatur perspiciatis expedita
+                                nesciunt labore nam sequi, enim explicabo alias vitae id.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+            SECTION: Стоимость операции
+        ============================================= -->
+
+        <section class="cost" id="cost">
+            <div class="container-fluid px-4">
+                <h2 class="section-title">Стоимость операции</h2>
+                <p class="section-subtitle">Ниже представлены ориентировочные цены. Итоговая стоимость зависит от объёма
+                    операции и индивидуальных особенностей.</p>
+                <div class="cost_box">
+                    <div class="cost_item">
+                        <p>Консультация хирурга</p>
+                        <p>от 3 590 ₽</p>
+                    </div>
+                    <div class="cost_item">
+                        <p>Анестезия</p>
+                        <p>от 25 000 ₽</p>
+                    </div>
+                    <div class="cost_item">
+                        <p>Абдоминопластика</p>
+                        <p>от 180 000 ₽</p>
+                    </div>
+                    <div class="cost_item">
+                        <p>Стационар</p>
+                        <p>от 10 000 ₽/сутки</p>
+                    </div>
+                </div>
+                <span>Информация о ценах, размещённая на сайте, носит справочный характер и не является публичной
+                    офертой (ст. 437 ГК РФ). Медицинские услуги оказываются на основании заключённого договора.
+                    Актуальную стоимость услуг уточняйте в регистратуре клиники или в контакт-центре по телефону (812)
+                    337-12-12.</span>
+                <div class="cost-bottom">
+                    <a href="#" class="abd-feature__btn">
+                        <span>Записаться на приём</span>
+                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.18963 9.54541L5.56108 8.92218L9.26847 5.22013H-1.11759e-07V4.32524H9.26847L5.56108 0.623179L6.18963 -4.44326e-05L10.9624 4.77268L6.18963 9.54541Z"
+                                fill="#202020" />
+                        </svg>
+                    </a>
+                    <a href="#" class="abd-feature__btn">
+                        <span>Записаться на консультацию</span>
+                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.18963 9.54541L5.56108 8.92218L9.26847 5.22013H-1.11759e-07V4.32524H9.26847L5.56108 0.623179L6.18963 -4.44326e-05L10.9624 4.77268L6.18963 9.54541Z"
+                                fill="#202020" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ============================================
+             SECTION 4b: Дополнительные услуги
+        ============================================= -->
+        <section class="ophthalmology-directions abd-directions section-light" id="directions">
+            <div class="container-fluid px-4">
+                <div class="ophthalmology-directions__header">
+                    <h2 class="ophthalmology-directions__title">Дополнительные услуги</h2>
+                    <p class="ophthalmology-directions__subtitle">Процедуры и сопровождение, которые повышают точность
+                        лечения и комфорт пациента.</p>
+                </div>
+                <div class="ophthalmology-directions__grid">
+                    <a href="#" class="ophthalmology-directions__item">
+                        <span class="ophthalmology-directions__item-text">Консультация смежных специалистов</span>
+                        <span class="ophthalmology-directions__item-arrow">→</span>
+                    </a>
+                    <a href="#" class="ophthalmology-directions__item">
+                        <span class="ophthalmology-directions__item-text">Индивидуальное ведение после операции</span>
+                        <span class="ophthalmology-directions__item-arrow">→</span>
+                    </a>
+                    <a href="#" class="ophthalmology-directions__item">
+                        <span class="ophthalmology-directions__item-text">Диагностические исследования</span>
+                        <span class="ophthalmology-directions__item-arrow">→</span>
+                    </a>
+                    <a href="#" class="ophthalmology-directions__item">
+                        <span class="ophthalmology-directions__item-text">Подбор компрессионного белья</span>
+                        <span class="ophthalmology-directions__item-arrow">→</span>
+                    </a>
+                </div>
+                <div class="abd-dir_bottom">
+                    <a href="#" class="abd-feature__btn">
+                        <span>Перейти ко всем услугам</span>
+                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.18963 9.54541L5.56108 8.92218L9.26847 5.22013H-1.11759e-07V4.32524H9.26847L5.56108 0.623179L6.18963 -4.44326e-05L10.9624 4.77268L6.18963 9.54541Z"
+                                fill="#202020" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- ============================================
+             SECTION: ВРАЧИ 
+        ============================================= -->
+        <section class="ophthalmology-doctors" id="doctors" aria-labelledby="ophthalmology-doctors-title">
+            <div class="container-fluid px-4">
+                <div class="ophthalmology-doctors__header">
+                    <h2 class="ophthalmology-doctors__title" id="ophthalmology-doctors-title">Пластические хирурги
+                        центра</h2>
+                    <p class="ophthalmology-doctors__subtitle">Операции проводят врачи с подтверждённой квалификацией и
+                        опытом работы в области эстетической и реконструктивной хирургии.</p>
+                </div>
+
+                <div class="ophthalmology-doctors__grid" role="list">
+                    <a href="doctor.html" class="ophthalmology-doctors__card" role="listitem">
+                        <div class="ophthalmology-doctors__photo">
+                            <img src="assets/images/aesthetic/aesthetic_doctor-1.png"
+                                alt="Фамилия Имя Отчество — врач-офтальмолог, офтальмохирург" loading="lazy"
+                                decoding="async" width="256" height="300">
+                        </div>
+                        <h3 class="ophthalmology-doctors__name">Говоров<br>
+                            Антон Владимирович</h3>
+                        <p class="ophthalmology-doctors__specialty">Врач-офтальмолог, офтальмохирург, кандидат
+                            медицинских наук</p>
+                    </a>
+                    <a href="doctor.html" class="ophthalmology-doctors__card" role="listitem">
+                        <div class="ophthalmology-doctors__photo">
+                            <img src="assets/images/aesthetic/aesthetic_doctor-2.png"
+                                alt="Фамилия Имя Отчество — врач-офтальмолог, детский офтальмолог" loading="lazy"
+                                decoding="async" width="256" height="300">
+                        </div>
+                        <h3 class="ophthalmology-doctors__name">Вылегжанин<br>
+                            Андрей Александрович </h3>
+                        <p class="ophthalmology-doctors__specialty">Врач-офтальмолог, детский офтальмолог</p>
+                    </a>
+                    <a href="doctor.html" class="ophthalmology-doctors__card" role="listitem">
+                        <div class="ophthalmology-doctors__photo">
+                            <img src="assets/images/aesthetic/aesthetic_doctor-3.png"
+                                alt="Фамилия Имя Отчество — врач-офтальмолог, офтальмохирург" loading="lazy"
+                                decoding="async" width="256" height="300">
+                        </div>
+                        <h3 class="ophthalmology-doctors__name">Максюта<br>
+                            Вадим Александрович</h3>
+                        <p class="ophthalmology-doctors__specialty">Врач-офтальмолог, офтальмохирург</p>
+                    </a>
+                    <a href="doctor.html" class="ophthalmology-doctors__card" role="listitem">
+                        <div class="ophthalmology-doctors__photo">
+                            <img src="assets/images/aesthetic/aesthetic_doctor-4.png"
+                                alt="Фамилия Имя Отчество — врач-офтальмолог, специалист по сетчатке" loading="lazy"
+                                decoding="async" width="256" height="300">
+                        </div>
+                        <h3 class="ophthalmology-doctors__name">Нестерук<br>Олег Леонидович </h3>
+                        <p class="ophthalmology-doctors__specialty">Врач-офтальмолог, специалист по сетчатке</p>
+                    </a>
+                    <a href="doctor.html" class="ophthalmology-doctors__card" role="listitem">
+                        <div class="ophthalmology-doctors__photo">
+                            <img src="assets/images/aesthetic/aesthetic_doctor-5.png"
+                                alt="Фамилия Имя Отчество — врач-офтальмолог, лазерный хирург" loading="lazy"
+                                decoding="async" width="256" height="300">
+                        </div>
+                        <h3 class="ophthalmology-doctors__name">Шаповалов<br>Сергей Георгиевич </h3>
+                        <p class="ophthalmology-doctors__specialty">Врач-офтальмолог, лазерный хирург</p>
+                    </a>
+                </div>
+
+                <div class="ophthalmology-doctors__action">
+                    <a href="#" class="ophthalmology-doctors__btn">
+                        <span>Перейти ко всем врачам</span>
+                        <span class="ophthalmology-doctors__btn-arrow" aria-hidden="true">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             SECTION 6: Записаться на приём (ФОРМА)
+        ============================================= -->
+        <section class="bg-silver program-form section-light" id="form">
+            <div class="container-fluid px-4">
+                <div class="row form-row_abd">
+                    <div class="col-lg-6">
+                        <div class="program-form__visual">
+                            <img src="assets/images/abdominoplasty/form-visual.png" alt="Консультация врача"
+                                loading="lazy" decoding="async">
+                            <div class="program-form__visual-overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="program-form__title">Записаться на приём</h2>
+                        <p class="program-form__subtitle">Оставьте заявку, и администратор клиники свяжется с вами,
+                            чтобы подобрать удобное время для консультации и ответить на ваши вопросы.</p>
+                        <form class="program-form__fields" action="#" method="post">
+                            <input type="text" class="program-form__input" name="name" placeholder="Имя" required>
+                            <input type="tel" class="program-form__input" name="phone" placeholder="Телефон" required>
+                            <input type="email" class="program-form__input" name="email" placeholder="Email">
+                            <textarea class="program-form__input program-form__input--textarea" name="comment"
+                                placeholder="Ваш комментарий" rows="4"></textarea>
+                            <div class="program-form__captcha-row">
+                                <input type="text" class="program-form__input program-form__input--captcha"
+                                    name="captcha" placeholder="Введите код с картинки">
+                                <div class="program-form__captcha-display">
+                                    <span class="program-form__captcha-code">7 G J 2 N W</span>
+                                    <button type="button" class="program-form__captcha-refresh"
+                                        aria-label="Обновить код"></button>
+                                </div>
+                            </div>
+                            <label class="program-form__privacy">
+                                <input type="checkbox" class="program-form__checkbox" required>
+                                <span class="program-form__privacy-text">В соответствии с Федеральным законом от
+                                    27.07.2006 № 152-ФЗ «О персональных данных», подтверждаю свое <a href="#">согласие
+                                        на обработку персональных данных</a>.</span>
+                            </label>
+                            <div class="program-form__submit">
+                                <button type="submit" class="program-form__btn">
+                                    Отправить
+                                    <span class="btn-arrow">→</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============================================
+         FOOTER
+    ============================================= -->
+    <footer class="footer" id="footer">
+        <div class="container-fluid px-4">
+            <!-- Footer top: Logo left, Buttons right -->
+            <div class="footer-top">
+                <div class="footer-top-left">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo-white.svg" alt="Немецкая семейная клиника">
+                    </div>
+                    <a href="#header" class="btn btn-footer-outline btn-back-to-top btn-back-to-top-desktop">
+                        <svg width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 1L2 6M2 1L0.5 2.5M2 1L3.5 2.5" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        Наверх
+                    </a>
+                </div>
+                <div class="footer-buttons-right">
+                    <a href="#" class="btn btn-footer-glass btn-appointment">Записаться на приём</a>
+                    <a href="#" class="btn btn-footer-outline btn-callback">Заказать звонок</a>
+                    <a href="#" class="btn btn-footer-outline btn-pay">Оплатить</a>
+                    <a href="#" class="btn btn-footer-glass btn-personal-cabinet btn-personal-cabinet-desktop">
+                        <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="3" cy="2" r="1.5" stroke="currentColor" />
+                            <path d="M0.5 7.5C0.5 5.84 1.84 4.5 3 4.5C4.16 4.5 5.5 5.84 5.5 7.5" stroke="currentColor"
+                                stroke-linecap="round" />
+                        </svg>
+                        Личный кабинет
+                    </a>
+                </div>
+                <div class="footer-buttons-bottom">
+                    <a href="#header" class="btn btn-footer-outline btn-back-to-top-mobile">
+                        <svg width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 1L2 6M2 1L0.5 2.5M2 1L3.5 2.5" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        Наверх
+                    </a>
+                    <a href="#" class="btn btn-footer-glass btn-personal-cabinet">
+                        <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="3" cy="2" r="1.5" stroke="currentColor" />
+                            <path d="M0.5 7.5C0.5 5.84 1.84 4.5 3 4.5C4.16 4.5 5.5 5.84 5.5 7.5" stroke="currentColor"
+                                stroke-linecap="round" />
+                        </svg>
+                        Личный кабинет
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer navigation -->
+            <div class="footer-nav">
+                <div class="footer-nav-grid">
+                    <div class="footer-nav-block footer-nav-uslugi">
+                        <h6 class="footer-nav-title">Услуги</h6>
+                        <ul class="footer-nav-list">
+                            <li><a href="#">Для взрослых</a></li>
+                            <li><a href="#">Для детей</a></li>
+                            <li><a href="#">Стоматология</a></li>
+                            <li><a href="#">Стационар и операции</a></li>
+                            <li><a href="#">Центры компетенций</a></li>
+                            <li><a href="#">Аптека</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-block footer-nav-programmy">
+                        <h6 class="footer-nav-title">Программы</h6>
+                        <ul class="footer-nav-list">
+                            <li><a href="#">Для взрослых</a></li>
+                            <li><a href="#">Для детей</a></li>
+                            <li><a href="#">Будущим мамам</a></li>
+                            <li><a href="#">Для бизнеса</a></li>
+                            <li><a href="#">Семейный депозит</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-block footer-nav-vrachi">
+                        <h6 class="footer-nav-title">Врачи</h6>
+                        <ul class="footer-nav-list">
+                            <li><a href="#">Для взрослых</a></li>
+                            <li><a href="#">Для детей</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-block footer-nav-info">
+                        <h6 class="footer-nav-title">Инфо</h6>
+                        <ul class="footer-nav-list">
+                            <li><a href="about.html">О компании</a></li>
+                            <li><a href="#">Награды и рейтинги</a></li>
+                            <li><a href="#">Интерьеры</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Карьера</a></li>
+                            <li><a href="#">Правовая информация, как получить услуги</a></li>
+                            <li><a href="#">Налоговый вычет</a></li>
+                            <li><a href="#">Информация для пациентов</a></li>
+                            <li><a href="#">Подготовка к диагностическим исследованиям</a></li>
+                            <li><a href="#">Памятки</a></li>
+                            <li><a href="#">Лечение в кредит</a></li>
+                            <li><a href="#">Подарочный сертификат</a></li>
+                            <li><a href="#">Карта сайта</a></li>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                            <li><a href="#">Общая правовая информация</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-block footer-nav-novosti">
+                        <h6 class="footer-nav-title">Новости</h6>
+                        <ul class="footer-nav-list">
+                            <li><a href="#">Акции</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Видео</a></li>
+                            <li><a href="#">Статьи</a></li>
+                            <li><a href="#">Статьи для врачей</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-block footer-nav-kontakty">
+                        <h6 class="footer-nav-title">Контакты</h6>
+                        <ul class="footer-nav-list footer-contacts">
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="tel:+78124323232">8 (812) 432-32-32</a></li>
+                            <li><a href="tel:+78123771212">8 (812) 377-12-12</a></li>
+                            <li><a href="mailto:info@german.clinic">info@german.clinic</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-block footer-nav-social">
+                        <h6 class="footer-nav-title">Соц сети</h6>
+                        <ul class="footer-nav-list">
+                            <li><a href="#">ВКонтакте</a></li>
+                            <li><a href="#">Дзен</a></li>
+                            <li><a href="#">Телеграм</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <!-- Footer locations -->
+            <div class="footer-locations">
+                <div class="footer-locations-grid">
+                    <div class="footer-location">
+                        <h6 class="location-title">Многопрофильная клиника <br class="d-block d-sm-none">для взрослых и
+                            детей</h6>
+                        <span class="location-hours">Время работы:<br>с 8:00 до 22:00 (Ежедневно)</span>
+                        <span class="location-metro metro-red">ст.м. Площадь Восстания</span>
+                        <p class="location-address">Санкт-Петербург,<br>Невский пр. 114-116,<br><span
+                                class="text-muted-footer">(БЦ Невский Центр (Стокманн), 8 этаж, вход с ул.
+                                Восстания)</span></p>
+                    </div>
+                    <div class="footer-location">
+                        <h6 class="location-title">Многопрофильная клиника <br class="d-block d-sm-none">для взрослых и
+                            детей</h6>
+                        <span class="location-hours">Время работы:<br>с 7:30 до 22:00 (Ежедневно)</span>
+                        <span class="location-metro metro-blue">ст.м. Парк Победы</span>
+                        <p class="location-address">Санкт-Петербург,<br>пл. Чернышевского д.11 А<br><span
+                                class="text-muted-footer">(вход с ул. Варшавская)</span></p>
+                    </div>
+                    <div class="footer-location">
+                        <h6 class="location-title">Стоматология<br>для взрослых и детей</h6>
+                        <span class="location-hours">Время работы:<br>с 9:00 до 21:00 (Ежедневно)</span>
+                        <span class="location-metro metro-red">ст.м. Площадь Восстания</span>
+                        <p class="location-address">Санкт-Петербург,<br>Невский пр. 114-116,<br><span
+                                class="text-muted-footer">(БЦ Невский Центр (Стокманн), 8 этаж, вход с ул.
+                                Восстания)</span></p>
+                    </div>
+                    <div class="footer-location">
+                        <h6 class="location-title">Клиника для детей<br>им. С.Я.Снигиревой</h6>
+                        <span class="location-hours">Время работы:<br>с 8:00 до 22:00 (Ежедневно)</span>
+                        <span class="location-metro metro-blue">ст.м. Парк Победы</span>
+                        <p class="location-address">Санкт-Петербург,<br>ул.Варшавская д.23 к. 1</p>
+                    </div>
+                    <div class="footer-location">
+                        <h6 class="location-title">Круглосуточный <br class="d-block d-sm-none"> стационар для взрослых
+                            <br class="d-block d-sm-none">и детей
+                        </h6>
+                        <span class="location-hours">Время работы:<br>Круглосуточно</span>
+                        <span class="location-metro metro-blue">ст.м. Парк Победы</span>
+                        <p class="location-address">Санкт-Петербург,<br>пл. Чернышевского д.11 А<br><span
+                                class="text-muted-footer">(вход с ул. Варшавская)</span></p>
+                    </div>
+                    <div class="footer-location">
+                        <h6 class="location-title">Центр пластической <br class="d-block d-sm-none">хирургии и
+                            эстетической <br class="d-block d-sm-none">медицины</h6>
+                        <span class="location-hours">Время работы:<br>с 8:00 до 21:00 (Ежедневно)</span>
+                        <span class="location-metro metro-blue">ст.м. Парк Победы</span>
+                        <p class="location-address">Санкт-Петербург,<br>пл. Чернышевского д.11 А<br><span
+                                class="text-muted-footer">(вход с ул. Варшавская)</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer bottom -->
+            <div class="footer-bottom">
+                <div class="footer-divider"></div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="footer-copyright">© 2025 г. ООО "Немецкая клиника"</span>
+                    <span class="footer-license">Лицензия № Л041-01148-78/00555167</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js_twenty/jquery.event.move.js"></script>
+    <script src="js_twenty/jquery.twentytwenty.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script src="js/aesthetic.js"></script>
+</body>
+
+</html>
