@@ -1,0 +1,420 @@
+ /* ============================================
+   Награды, интерьеры клиники
+   ============================================ */
+
+@import url('../base.css');
+@import url('../components.css');
+@import url('../header.css');
+@import url('../footer.css');
+
+.mobile-breadcrumbs__text br {
+    display: none;
+}
+
+.awards-interiors-section {
+    padding-top: 170px;
+    padding-bottom: 70px;
+}
+
+.awards-interiors-breadcrumbs { 
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 200%;
+    color: var(--color-text-light);
+}
+.awards-interiors-breadcrumbs__current {
+    color: var(--color-text);
+}
+
+.awards-interiors__inner {
+    margin: 0 auto;
+    padding-top: 10px;
+    max-width: 1360px;
+}
+
+.awards-interiors__title-h1 {
+    margin-bottom: 21px;
+    font-family: var(--font-heading);
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--color-text);
+}
+
+.awards-interiors__title-h1 br {
+    display: none;
+}
+
+.awards-interiors__text {
+    margin-bottom: 28px;
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--color-text-muted);
+}
+
+.awards-interiors__text br {
+    display: none;
+}
+
+/* табы */
+
+.awards-interiors__tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.awards-interiors__tab {
+    font-family: var(--font-heading);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0;
+    color: var(--color-text);
+    opacity: 0.5;
+    background: none;
+    border: none;
+    min-width: 180px;
+    padding: 0 0 8px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    transition: opacity 0.2s ease;
+    text-transform: uppercase;
+}
+
+.awards-interiors__tab.active {
+    opacity: 1;
+}
+
+.awards-interiors__tab:hover {
+    opacity: 0.75;
+}
+
+.awards-interiors__tab.active:hover {
+    opacity: 1;
+}
+
+.awards-interiors__tab::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: var(--color-text-muted);
+}
+
+.awards-interiors__tab.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: var(--color-text);
+}
+
+/* картинки */
+
+.awards-interiors__flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.award-image {
+    width: calc((100% - 20px * 5) / 6);
+    max-height: 297px;
+    cursor: pointer;
+}
+
+.award-image img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* модальное окно */
+
+.award-modal {
+    position: relative;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 6px;
+    z-index: 1001;
+}
+
+.award-modal img {
+    margin: 16px;
+    max-width: 600px;
+    object-fit: cover;
+}
+
+.award-modal__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 12px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    color: white;
+    z-index: 1010;
+}
+
+.award-modal__close:hover {
+    background-color: var(--color-black);
+}
+
+.award-modal__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #202020d0;
+    backdrop-filter: blur(1px);
+    z-index: 1000;
+}
+
+.award-modal__hidden {
+    display: none;
+}
+
+.award-modal__images {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.award-modal__images img {
+    max-width: 600px;
+    display: block;
+}
+
+.arrow-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.arrow-prev {
+    left: -50px;
+}
+
+.arrow-next {
+    right: -50px;
+}
+
+@media (max-width: 1200px) {
+    .award-modal__images img {
+        max-width: 540px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .awards-interiors-section {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .awards-interiors-section {
+        padding-top: 8px;
+    }
+    .awards-interiors__title-h1 {
+        margin-bottom: 18px;
+        font-size: 42px;
+    }
+
+    .awards-interiors__text {
+        margin-bottom: 16px;
+        font-size: 16px;
+    }
+
+    .awards-interiors__flex {
+        gap: 10px;
+    }
+
+    .award-image {
+        width: calc((100% - 10px * 4) / 5);
+    }
+
+    .awards-interiors__tabs {
+        margin-bottom: 17px;
+    }
+
+    .award-modal__images img {
+        max-width: 500px;
+    }
+
+    .award-modal__close {
+        top: 5px;
+        right: 5px;
+        width: 36px;
+        height: 36px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .awards-interiors__inner {
+        padding-top: 0px;
+    }
+
+    .award-image {
+        width: calc((100% - 10px * 3) / 4);
+    }
+
+    .award-modal__images img {
+        max-width: 500px;
+    }
+
+    .arrow-prev {
+        left: 20px;
+    }
+
+    .arrow-next {
+        right: 20px;
+    }
+
+    .awards-interiors__title-h1 {
+        margin-bottom: 12px;
+        font-size: 36px;
+    }
+
+    .awards-interiors__text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px)  {
+    .award-image {
+        width: calc((100% - 10px * 2) / 3);
+    }
+}
+
+@media (max-width: 320px) {
+    .awards-interiors__title-h1 {
+        font-size: 32px;
+    }
+    .mobile-breadcrumbs__text br {
+        display: inline;
+    }
+
+    .awards-interiors-section {
+        padding-top: 16px;
+        padding-bottom: 51px;
+    }
+    .awards-interiors__title-h1 {
+        font-size: 28px;
+        text-align: left;
+    }
+
+    .awards-interiors__title-h1 br {
+        margin-bottom: 16px;
+        display: inline;
+    }
+
+    .awards-interiors__text {
+        margin-bottom: 20px;
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .awards-interiors__text br {
+        display: inline;
+    }
+
+    .awards-interiors__tabs {
+        gap: 5px;
+        margin-bottom: 17px;
+    }
+
+    .awards-interiors__tab {
+        width: 140px;
+        font-size: 18px;
+        padding-bottom: 5px;
+    }
+
+    .awards-interiors__tab:nth-child(1) {
+        padding-left: 30px;
+    }
+
+    .awards-interiors__tab:nth-child(2) {
+        padding-right: 30px;
+    }
+
+    .awards-interiors__tab::after {
+        width: 120px;
+    }
+
+    .awards-interiors__tab.active::after {
+        width: 120px;
+    }
+
+    .awards-interiors__tab:nth-child(1)::after {
+        left: 45px;
+    }
+
+    .awards-interiors__tab:nth-child(2)::after {
+        left: 15px;
+    }
+
+    .awards-interiors__tab:nth-child(1).active::after {
+        left: 45px;
+    }
+
+    .awards-interiors__tab:nth-child(2).active::after {
+        left: 15px;
+    }
+
+    .awards-interiors__flex {
+        gap: 10px;
+    }
+
+    .award-image {
+        width: calc((100% - 10px * 1) / 2);
+        height: 198px;
+    }
+
+    .award-modal img {
+        margin: 4px;
+        width: 320px;
+    }
+    
+    .arrow-prev {
+        left: 10px;
+    }
+
+    .arrow-next {
+        right: 10px;
+    }
+
+    .award-modal__close {
+        top: 0px;
+        right: 3px;
+        width: 22px;
+        height: 22px;
+        font-size: 8px;
+    }
+}

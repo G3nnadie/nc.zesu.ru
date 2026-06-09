@@ -20,7 +20,6 @@
     line-height: 57.2px;
     letter-spacing: -0.02em;
     font-weight: 400;
-    color: #202020;
     margin-bottom: 20px;
 }
 
@@ -68,7 +67,6 @@
 }
 
 .doctor-review-card h3 a {
-    color: #202020;
     text-decoration: underline;
     text-underline-offset: 3px;
     text-decoration-thickness: 1px;
@@ -81,7 +79,6 @@
     line-height: 15.6px;
     letter-spacing: -0.02em;
     font-weight: 400;
-    color: #202020;
     flex: 1;
 }
 
@@ -109,7 +106,6 @@
     line-height: 15.6px;
     letter-spacing: -0.02em;
     font-weight: 400;
-    color: #202020;
     text-decoration: none;
     white-space: nowrap;
     display: inline-flex;
@@ -135,15 +131,26 @@
     height: 32px;
     border-radius: 50%;
     border: 1px solid #202020;
-    background: transparent;
-    font-size: 14px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px 13px;
     line-height: 1;
-    color: #202020;
+    font-size: 0;
+    color: transparent;
     cursor: pointer;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     padding: 0;
+}
+
+.doctor-reviews-arrow--prev {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAxNiAxMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE0LjcwNzIgNi41TDAuNzA3MTUzIDYuNU02LjcwNzE1IDAuNUwwLjcwNzE1MyA2LjVMNi43MDcxNSAxMi41IiBzdHJva2U9IiMyMDIwMjAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K");
+}
+
+.doctor-reviews-arrow--next {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAxNiAxMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAuNDk5OTk5IDYuNUwxNC41IDYuNU04LjUgMTIuNUwxNC41IDYuNUw4LjUgMC41MDAwMDEiIHN0cm9rZT0iIzIwMjAyMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+Cjwvc3ZnPgo=");
 }
 
 /* ============================================
@@ -199,8 +206,7 @@
     }
 
     .doctor-reviews .doctor-section-head .section-subtitle {
-        font-size: 14px;
-        line-height: 18.2px;
+            line-height: 18.2px;
         letter-spacing: -0.02em;
         max-width: none;
     }

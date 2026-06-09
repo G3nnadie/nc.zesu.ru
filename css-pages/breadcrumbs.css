@@ -1,0 +1,40 @@
+
+
+.w-breadcrumbs-nav {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2;
+  color: rgba(32, 32, 32, 0.5);
+  padding: 30px 0 40px;
+}
+
+.w-breadcrumbs-nav a {
+  color: rgba(32, 32, 32, 0.5);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.w-breadcrumbs-nav a:hover {
+  color: var(--color-accent-orange);
+}
+
+.w-breadcrumbs-current {
+  color: var(--color-text);
+}
+
+/* =================================== */
+/*                Media                */
+/* =================================== */
+
+@media (max-width: 768px) {
+  .w-breadcrumbs-nav {
+    font-size: 12px;
+    line-height: 1.2;
+    padding: 12px 0 30px;
+  }
+  .w-breadcrumbs-current {
+    color: #000;
+  }
+}
+

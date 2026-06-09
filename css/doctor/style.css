@@ -14,6 +14,10 @@
 @import url('section-review-form.css');
 @import url('section-specialists.css');
 
+.doctor-main {
+    padding-top: 24px;
+}
+
 .doctor-page {
     background: var(--color-bg-cream);
     color: var(--color-text);
@@ -103,11 +107,17 @@
 }
 
 .doctor-mini-card__photo {
-    height: var(--doctor-card-photo-height);
+    /* height: var(--doctor-card-photo-height); */
 }
 
 .doctor-review-card {
     min-height: var(--doctor-review-card-min-height);
+}
+
+@media (max-width: 768px) {
+    .doctor-main {
+        padding-top: 0;
+    }
 }
 
 @media (max-width: 991px) {

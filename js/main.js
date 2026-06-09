@@ -18,6 +18,10 @@ document.addEventListener('DOMContentLoaded', function () {
     initStepsTimeline();
     initOphthalmologyReviewsTabs();
     initBenefitsCarousel();
+    initBlogTabs();
+    initDoctorsPageTabs();
+    initBlogVideoHover();
+    initSpoilerAccordions();
 });
 
 /**
@@ -725,6 +729,191 @@ function initDirectionsTabs() {
 }
 
 /**
+ * Tabbed section: tabs switch visible panels; optional per-tab headings.
+ */
+function initTabbedContent({ tabSelector, panelSelector, headingSelector, tabAttr, panelAttr, headingAttr }) {
+    const tabs = document.querySelectorAll(tabSelector);
+    const panels = document.querySelectorAll(panelSelector);
+    const headings = headingSelector ? document.querySelectorAll(headingSelector) : [];
+
+    if (!tabs.length || !panels.length) return;
+
+    const tabId = (el) => el.getAttribute(tabAttr);
+    const panelId = (el) => el.getAttribute(panelAttr);
+
+    const setActive = (id) => {
+        const nextTab = Array.from(tabs).find((t) => tabId(t) === id) || tabs[0];
+        const nextId = tabId(nextTab);
+
+        tabs.forEach((t) => {
+            const isActive = t === nextTab;
+            t.classList.toggle('active', isActive);
+            t.setAttribute('aria-selected', String(isActive));
+        });
+
+        panels.forEach((p) => {
+            p.hidden = panelId(p) !== nextId;
+        });
+
+        if (headingAttr && headings.length) {
+            headings.forEach((h) => {
+                h.hidden = h.getAttribute(headingAttr) !== nextId;
+            });
+        }
+    };
+
+    tabs.forEach((tab) => {
+        tab.addEventListener('click', () => {
+            setActive(tabId(tab));
+        });
+    });
+
+    const initiallyActive = Array.from(tabs).find((t) => t.classList.contains('active'));
+    const initialId = initiallyActive ? tabId(initiallyActive) : tabId(tabs[0]);
+    setActive(initialId || tabId(tabs[0]));
+}
+
+/**
+ * Blog page tabs (Новости / Статьи / Видео / Для врачей)
+ */
+function initBlogTabs() {
+    initTabbedContent({
+        tabSelector: '.blog-tabs__tab[data-blog-tab]',
+        panelSelector: '.blog-panel[data-blog-panel]',
+        headingSelector: '.blog-heading[data-blog-heading]',
+        tabAttr: 'data-blog-tab',
+        panelAttr: 'data-blog-panel',
+        headingAttr: 'data-blog-heading',
+    });
+}
+
+/**
+ * Doctors listing page tabs (Все / Для детей / Для взрослых)
+ */
+function initDoctorsPageTabs() {
+    initTabbedContent({
+        tabSelector: '.doctors-page-tabs__tab[data-doctors-tab]',
+        panelSelector: '.doctors-page-panel[data-doctors-panel]',
+        headingSelector: '',
+        tabAttr: 'data-doctors-tab',
+        panelAttr: 'data-doctors-panel',
+    });
+}
+
+/**
+ * Blog video cards: play on hover, stop on leave
+ */
+function initBlogVideoHover() {
+    const videos = document.querySelectorAll('video[data-hover-play]');
+    if (!videos.length) return;
+
+    const isCoarse = window.matchMedia && window.matchMedia('(hover: none), (pointer: coarse)').matches;
+
+    const waitForPlayable = (video, timeoutMs = 1500) => {
+        if (video.readyState >= 2) return Promise.resolve();
+        return new Promise((resolve, reject) => {
+            let done = false;
+            const cleanup = () => {
+                video.removeEventListener('loadeddata', onReady);
+                video.removeEventListener('canplay', onReady);
+                clearTimeout(timer);
+            };
+            const onReady = () => {
+                if (done) return;
+                done = true;
+                cleanup();
+                resolve();
+            };
+            const timer = setTimeout(() => {
+                if (done) return;
+                done = true;
+                cleanup();
+                reject(new Error('timeout'));
+            }, timeoutMs);
+
+            video.addEventListener('loadeddata', onReady, { once: true });
+            video.addEventListener('canplay', onReady, { once: true });
+        });
+    };
+
+    const safePlay = async (video) => {
+        try {
+            // Make autoplay on hover максимально вероятным
+            video.muted = true;
+            video.setAttribute('muted', '');
+            video.volume = 0;
+            video.playsInline = true;
+            video.setAttribute('playsinline', '');
+
+            if (video.preload === 'none') video.preload = 'metadata';
+            // Ensure the browser starts fetching
+            video.load();
+
+            await waitForPlayable(video);
+            try {
+                video.currentTime = 0;
+            } catch (_) {}
+
+            await video.play();
+            return true;
+        } catch (_) {
+            return false;
+        }
+    };
+
+    const setPlayingUi = (card, video, isPlaying) => {
+        card.classList.toggle('is-playing', isPlaying);
+        // Controls should appear only when playing
+        video.controls = isPlaying;
+    };
+
+    videos.forEach((video) => {
+        const card = video.closest('.blog-card');
+        if (!card) return;
+
+        // Ensure default state: poster + play icon, no controls
+        video.controls = false;
+        card.classList.remove('is-playing');
+
+        const stop = () => {
+            video.pause();
+            setPlayingUi(card, video, false);
+            try {
+                video.currentTime = 0;
+            } catch (_) {}
+        };
+
+        const start = async () => {
+            // Hide play icon immediately (as requested)
+            setPlayingUi(card, video, true);
+            const ok = await safePlay(video);
+            if (!ok) {
+                // Restore UI if blocked
+                setPlayingUi(card, video, false);
+            }
+        };
+
+        if (!isCoarse) {
+            // Desktop: hover behavior
+            card.addEventListener('mouseenter', start);
+            card.addEventListener('mouseleave', stop);
+        } else {
+            // Touch/tablet: tap/click to start, keep controls visible
+            card.addEventListener('click', (e) => {
+                // If user taps controls, don't hijack
+                if (video.controls && (e.target === video || video.contains(e.target))) return;
+                if (video.paused) {
+                    start();
+                }
+            });
+        }
+
+        // If video ends, restore UI
+        video.addEventListener('ended', stop);
+    });
+}
+
+/**
  * Preventive medicine program filters
  */
 function initPreventiveProgramsFilters() {
@@ -915,6 +1104,35 @@ function initBenefitsCarousel() {
     });
 }
 
+/**
+ * Spoiler accordions (lab, research, nested)
+ * Markup: data-spoiler-accordion="lab" | "research"
+ */
+function initSpoilerAccordions() {
+    document.querySelectorAll('[data-spoiler-accordion]').forEach((accordion) => {
+        const scope = accordion.getAttribute('data-spoiler-accordion');
+        if (!scope) return;
+
+        const headerSelector = `.${scope}__spoiler-header`;
+        const itemSelector = `.${scope}__spoiler`;
+        const activeClass = `${scope}__spoiler--active`;
+
+        accordion.addEventListener('click', (event) => {
+            const header = event.target.closest(headerSelector);
+            if (!header) return;
+
+            const owningAccordion = header.closest('[data-spoiler-accordion]');
+            if (owningAccordion !== accordion) return;
+
+            const item = header.closest(itemSelector);
+            if (!item) return;
+
+            const isActive = item.classList.toggle(activeClass);
+            header.setAttribute('aria-expanded', String(isActive));
+        });
+    });
+}
+
 window.GermanClinic = {
     initHeader,
     initSmoothScroll,
@@ -928,5 +1146,6 @@ window.GermanClinic = {
     initJourneyTimeline,
     initPrinciplesCarousel,
     initStepsTimeline,
-    initBenefitsCarousel
+    initBenefitsCarousel,
+    initSpoilerAccordions
 };
