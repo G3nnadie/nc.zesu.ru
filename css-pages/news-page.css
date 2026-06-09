@@ -399,6 +399,15 @@
   .w-doctors-data span:not(:first-child) {
     font-size: 10px;
   }
+  .w-doctors-btns {
+    margin-top: 20px;
+  }
+  .w-doctors-btn {
+    display: flex;
+  }
+  .w-doctors-btn:not(:last-child) {
+    margin-bottom: 10px;
+  }
   .w-interesting {
     padding-top: 50px;
   }
