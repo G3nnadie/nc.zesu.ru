@@ -34,9 +34,15 @@
 
 @media (max-width: 768px) {
   .w-btn {
+    height: 32px;
     font-size: 12px;
     padding: 0 20px;
-  } 
+  }
+  .w-btn svg {
+    top: 1px;
+    margin-left: 5px;
+    position: relative;
+  }
 }
 
 
