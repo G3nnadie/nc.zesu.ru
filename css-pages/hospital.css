@@ -204,6 +204,7 @@
 }
 
 .w-equipment--2 .w-equipment-img {
+  padding: 15px 0;
   background: #fff;
 }
 
@@ -593,6 +594,9 @@
   .w-equipment-img img {
     max-height: 100%;
   }
+  .w-equipment--2 .w-equipment-img {
+    padding: 7px 0;
+  }
   .w-comfort {
     padding: 50px 0;
   }
@@ -722,5 +726,8 @@
 @media (min-width: 992px) {
   .w-vantage-sl .swiper-wrapper {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .w-comfort-item:nth-child(3) p {
+    margin-right: -12px;
   }
 }
