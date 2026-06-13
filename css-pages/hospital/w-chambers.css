@@ -1,0 +1,61 @@
+
+/* Chambers */
+
+.w-chambers {
+  padding: 70px 0;
+  background: #F8F7F3;
+}
+
+.w-chambers-box {
+  overflow: hidden;
+} 
+
+.w-chambers-item img {
+  width: 100%;
+  display: block;
+}
+
+.w-chambers-sl .swiper-button-next {
+  right: 21px;
+}
+
+.w-chambers-sl .swiper-button-prev {
+  left: 21px;
+}
+
+.w-chambers-text {
+  max-width: 805px;
+  margin: 30px auto 0;
+}
+
+.w-chambers-text span {
+  border-bottom: 1px solid #202020;
+}
+
+/* =================================== */
+/*                Media                */
+/* =================================== */
+
+@media (max-width: 768px) {
+  .w-chambers {
+    padding: 50px 0;
+  }
+  .w-chambers .w-title {
+    margin-bottom: 18px;
+  }
+  .w-chambers .w-title .w-paragraph {
+    margin-top: 15px;
+  }
+  .w-chambers-sl {
+    margin-bottom: 15px;
+  }
+  .w-chambers-sl .swiper-button-prev {
+    left: 10px;
+  }
+  .w-chambers-sl .swiper-button-next {
+    right: 10px;
+  }
+  .w-chambers-text {
+    max-width: 100%;
+  }
+}

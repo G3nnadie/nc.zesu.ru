@@ -1,0 +1,61 @@
+@import url('../../css/base.css');
+@import url('../../css/components.css');
+@import url('../../css/header.css');
+@import url('../../css/footer.css');
+
+@import url('../breadcrumbs.css');
+@import url('../btn.css');
+@import url('../title.css');
+
+@import url('w-textual.css');
+@import url('w-treatment.css');
+@import url('w-doctors.css');
+@import url('w-interesting.css');
+
+.news-page {
+  overflow: hidden;
+  padding-bottom: 70px;
+}
+
+.news-page-container {
+  margin: 0 auto;
+  max-width: 900px;width: 100%;
+}
+
+/* Title */
+
+.w-title-block {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+  color: rgba(32, 32, 32, 0.9);
+}
+
+.w-title-block p:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.w-title-block b {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* =================================== */
+/*                Media                */
+/* =================================== */
+
+@media (max-width: 768px) {
+  .news-page {
+    padding-bottom: 50px;
+  }
+  .w-title-block {
+    font-size: 12px;
+  }
+  .w-title-block p:not(:last-child) {
+    margin-bottom: 12px;
+  }
+  .w-title-block b {
+    font-size: 14px;
+  }
+}

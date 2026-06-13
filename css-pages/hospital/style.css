@@ -1,0 +1,64 @@
+@import url('../../css/base.css');
+@import url('../../css/components.css');
+@import url('../../css/header.css');
+@import url('../../css/footer.css');
+
+@import url('../breadcrumbs.css');
+@import url('../btn.css');
+@import url('../title.css');
+@import url('../paragraph.css');
+@import url('../swiper.css');
+
+@import url('w-hospital-hero.css');
+@import url('w-vantage.css');
+@import url('w-about-hospital.css');
+@import url('w-equipment.css');
+@import url('w-comfort.css');
+@import url('w-video-hospital.css');
+@import url('w-recovery.css');
+@import url('w-chambers.css');
+@import url('w-contacts.css');
+
+
+.w-hospital {
+  overflow: hidden;
+}
+
+/* Breadcrumbs */
+
+.w-hospital .w-breadcrumbs-nav {
+  padding: 40px 0 33px;
+}
+
+
+/* =================================== */
+/*                Media                */
+/* =================================== */
+
+@media (max-width: 768px) {
+  .w-hospital .w-breadcrumbs-nav {
+    padding: 12px 0 24px;
+  }
+}
+
+/* MIN - width */
+
+@media (min-width: 768px) {
+  .w-hospital-head {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

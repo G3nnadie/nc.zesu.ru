@@ -1,0 +1,76 @@
+
+/* Contacts */
+
+.w-contacts {
+  padding: 70px 0;
+}
+
+.w-contacts-box {
+  background: #FFFFFF;
+  padding: 30px 30px 20px;
+  border: 1px solid #D2D2D2;
+}
+
+.w-contacts-group {
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.w-contacts-group p:not(:last-child) {
+  margin-right: 50px;
+}
+
+.w-contacts-group p {
+  margin: 0 0 10px;
+}
+
+.w-contacts-group p i {
+  margin-left: 3px;
+  border-radius: 50%;
+  background: #2E57CB;
+  display: inline-block;
+  width: 10px;height: 10px;
+}
+
+.w-contacts-group p span {
+  opacity: .5;
+}
+
+.w-contacts-map {
+  margin-top: 20px;
+  border: 1px solid #D2D2D2;
+}
+
+.w-contacts-map img,
+.w-contacts-map iframe {
+  width: 100%;
+  display: block;
+}
+
+/* =================================== */
+/*                Media                */
+/* =================================== */
+
+@media (max-width: 768px) {
+  .w-contacts {
+    padding: 50px 0;
+  }
+  .w-contacts-box {
+    padding: 20px 15px;
+  }
+  .w-contacts .w-title {
+    margin-bottom: 0;
+  }
+  .w-contacts-group {
+    font-size: 12px;
+  }
+  .w-contacts-group p {
+    margin: 15px 0 0;
+  }
+  .w-contacts-group p i {
+    width: 7px;height: 7px;
+  }
+  .w-contacts-map {
+    margin-top: 20px;
+  }
+}

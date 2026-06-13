@@ -1,0 +1,99 @@
+
+/* Treatment */
+
+.w-treatment {
+  padding-top: 40px;
+}
+
+.w-treatment-table {
+  padding: 0 20px;
+  margin: 0 -20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  letter-spacing: -0.02em;
+  -webkit-overflow-scrolling: touch;
+}
+
+.w-treatment-table-inner {
+  padding-left: 0;
+  margin-bottom: 0;
+  border: 1px solid #202020;
+  min-width: 738px;width: 100%;
+}
+
+.w-treatment-table li {
+  font-size: 14px;
+  line-height: 1.1;
+  display: flex;
+}
+
+.w-treatment-table li:not(:last-child) {
+  border-bottom: 1px solid rgba(32, 32, 32, 0.3);
+}
+
+.w-treatment-table-head {
+  border-bottom: 1px solid #202020 !important;
+}
+
+.w-treatment-table-cell {
+  padding: 19px;
+  color: rgba(32, 32, 32, 0.9);
+}
+
+.w-treatment-table-cell:not(:last-child) {
+  border-right: 1px solid #202020;
+}
+
+.w-treatment-table-cell--1 {
+  width: 19%;
+}
+
+.w-treatment-table-cell--2 {
+  width: 30%;
+}
+
+.w-treatment-table-cell--3 {
+  width: 26%;
+}
+
+.w-treatment-table-cell--4 {
+  width: 25%;
+}
+
+.w-treatment-table-head .w-treatment-table-cell,
+.w-treatment-table-cell--1 {
+  color: #202020;
+  font-weight: 600;
+  background: #F8F7F3;
+}
+
+/* =================================== */
+/*                Media                */
+/* =================================== */
+
+@media (max-width: 992px) {
+  .w-treatment {
+    padding-top: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .w-treatment {
+    padding-top: 14px;
+  }
+  .w-treatment-table li {
+    font-size: 12px;
+  }
+  .w-treatment-table-cell {
+    padding: 20px 15px;
+  }
+  .w-treatment-table-cell--1 {
+    width: 17%;
+  }
+  .w-treatment-table-cell--2 {
+    width: 34%;
+  }
+  .w-treatment-table-cell--4 {
+    width: 23%;
+  }
+}

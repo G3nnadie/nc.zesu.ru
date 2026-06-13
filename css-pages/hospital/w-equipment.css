@@ -1,0 +1,93 @@
+
+/* Equipment */
+
+.w-equipment {
+  padding: 70px 0;
+}
+
+.w-equipment .row {
+  align-items: center;
+}
+
+.w-equipment-info {
+  color: rgba(32, 32, 32, 0.9);
+  max-width: 614px;width: 100%;
+}
+
+.w-equipment-list {
+  font-size: 18px;
+  line-height: 1.3;
+  padding-left: 28px;
+  letter-spacing: -0.02em;
+}
+
+.w-equipment-list li:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.w-equipment-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* #1 */
+
+.w-equipment--1 .w-equipment-img {
+  background: #F8F7F3;
+}
+
+/* #2 */
+
+.w-equipment--2 {
+  background: #F8F7F3;
+}
+
+.w-equipment--2 .w-equipment-img {
+  padding: 15px 0;
+  background: #fff;
+}
+
+/* =================================== */
+/*                Media                */
+/* =================================== */
+
+@media (max-width: 1200px) {
+  .w-equipment-list {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .w-equipment {
+    padding: 50px 0;
+  }
+  .w-equipment-list {
+    font-size: 14px;
+    padding-left: 20px;
+  }
+  .w-equipment-list li:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  .w-equipment-img {
+    height: 200px;
+    margin-top: 20px;
+  }
+  .w-equipment-img img {
+    max-height: 100%;
+  }
+  .w-comfort-btn .w-btn {
+    max-width: initial;width: initial;
+  }
+  .w-equipment--2 .w-equipment-img {
+    padding: 7px 0;
+  }
+}
+
+/* MIN - width */
+
+@media (min-width: 768px) {
+  .w-equipment--2 .row {
+    flex-direction: row-reverse;
+  }
+}

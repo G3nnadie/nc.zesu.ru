@@ -1,0 +1,145 @@
+
+/* About-hospital */
+
+.w-about-hospital {
+  padding: 70px 0;
+  background: #F8F7F3;
+}
+
+.w-about-hospital .w-title h2 {
+  line-height: 1.1;
+}
+
+.w-about-hospital-subtitle {
+  margin-bottom: 30px;
+  color: rgba(32, 32, 32, 0.9);
+}
+
+.w-about-hospital-subtitle p:first-child {
+  max-width: 1013px;
+}
+
+.w-about-hospital-subtitle p:last-child {
+  max-width: 832px;
+  margin-left: 460px;
+}
+
+.w-about-hospital-subtitle p+p {
+  margin-top: 15px;
+}
+
+.w-about-hospital-img img {
+  width: 100%;
+  display: block;
+}
+
+.w-about-hospital-info {
+  margin-top: 40px;
+  color: rgba(32, 32, 32, 0.9);
+}
+
+.w-about-hospital-info .w-paragraph {
+  line-height: 1.35;
+  padding-right: 60px;
+  padding-bottom: 75px;
+}
+
+.w-about-hospital-list {
+  font-size: 24px;
+  padding-left: 0;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  font-family: var(--font-heading);
+}
+
+.w-about-hospital-list li {
+  padding: 20px 0;
+  list-style: none;
+  border-bottom: 1px solid rgba(32, 32, 32, 0.15);
+}
+
+.w-about-hospital-list li:first-child {
+  border-top: 1px solid rgba(32, 32, 32, 0.15);
+}
+
+.w-about-hospital-list li p {
+  margin: 8px 0 0;
+  font-size: 12px;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  color: rgba(32, 32, 32, 0.6);
+  font-family: var(--font-body);
+}
+
+.w-about-hospital-btn {
+  margin-top: -39px;
+}
+
+.w-about-hospital-btn .w-btn {
+  max-width: 230px;width: 100%;
+}
+
+/* =================================== */
+/*                Media                */
+/* =================================== */
+
+@media (max-width: 1200px) {
+  .w-about-hospital-subtitle p:first-child {
+    max-width: 700px;
+  }
+  .w-about-hospital-subtitle p:last-child {
+    margin-left: 300px;
+  }
+  .w-about-hospital-info .w-paragraph {
+    padding-right: 20px;
+  }
+  .w-about-hospital-list {
+    font-size: 18px;
+  }
+  .w-about-hospital-list li {
+    padding: 15px 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .w-about-hospital-subtitle p:last-child {
+    margin-left: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .w-about-hospital {
+    padding: 50px 0;
+  }
+  .w-about-hospital-subtitle {
+    margin-bottom: 20px;
+  }
+  .w-about-hospital-subtitle p {
+    max-width: 100% !important;
+    margin-left: 0 !important;
+  }
+  .w-about-hospital-info {
+    margin-top: 20px;
+  }
+  .w-about-hospital-info .w-paragraph {
+    padding: 0;
+  }
+  .w-about-hospital-list {
+    line-height: 1;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  .w-about-hospital-list li {
+    padding: 12px 0;
+  }
+  .w-about-hospital-list li p {
+    font-size: 10px;
+    margin-top: 8px;
+  }
+  .w-about-hospital-btn {
+    margin-top: 20px;
+  }
+  .w-about-hospital-btn .w-btn {
+    max-width: initial;width: initial;
+  }
+}
