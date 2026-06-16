@@ -120,6 +120,7 @@
 
 .w-reviews-btns {
   margin-top: 30px;
+  padding-left: 43px;
 }
 
 .w-reviews-btns-inner:not(:last-child) {
@@ -129,6 +130,12 @@
 /* =================================== */
 /*                Media                */
 /* =================================== */
+
+@media (max-width: 1199px) {
+  .w-reviews-btns {
+    padding-left: 0;
+  }
+}
 
 @media (max-width: 767px) {
   .w-reviews {
