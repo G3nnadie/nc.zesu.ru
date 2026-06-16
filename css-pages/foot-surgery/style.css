@@ -1,0 +1,92 @@
+@import url('../../css/base.css');
+@import url('../../css/components.css');
+@import url('../../css/header.css');
+@import url('../../css/footer.css');
+
+@import url('../breadcrumbs.css');
+@import url('../btn.css');
+@import url('../title.css');
+@import url('../paragraph.css');
+@import url('../swiper.css');
+@import url('../w-upper-block.css');
+
+@import url('w-intro.css');
+@import url('w-about.css');
+@import url('../hospital/w-vantage.css');
+@import url('w-diseases.css');
+@import url('../w-types.css');
+@import url('../w-reviews.css');
+@import url('w-results.css');
+@import url('../hospital/w-chambers.css');
+@import url('../hospital/w-contacts.css');
+
+
+/* Breadcrumbs */
+
+.w-foot-surgery .w-breadcrumbs-nav {
+  line-height: 1.2;
+  padding: 40px 0 13px;
+}
+
+/* Vantage */
+
+.w-foot-surgery .w-vantage {
+  padding: 70px 0;
+  overflow: hidden;
+  background: #F8F7F3;
+}
+
+.w-foot-surgery .w-vantage .w-vantage-item {
+  padding: 20px 15px 20px 20px;
+}
+
+/* Chambers */
+
+.w-foot-surgery .w-title h2 {
+  line-height: 1;
+}
+
+.w-foot-surgery .w-chambers-text {
+  max-width: 1100px;
+}
+
+/* =================================== */
+/*                Media                */
+/* =================================== */
+
+@media (max-width: 768px) {
+  .w-foot-surgery .w-breadcrumbs-nav {
+    padding: 12px 0;
+  }
+  .w-foot-surgery .w-vantage {
+    padding: 50px 0;
+  }
+  .w-foot-surgery .w-vantage .w-vantage-item {
+    padding: 15px;
+  }
+  .w-foot-surgery .w-vantage .w-vantage-item br {
+    display: block;
+  }
+}
+
+/* MIN - width */
+
+@media (min-width: 768px) {
+  .w-foot-surgery .w-vantage-sl .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .w-foot-surgery .w-vantage-sl .swiper-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .w-foot-surgery .w-vantage-sl .swiper-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

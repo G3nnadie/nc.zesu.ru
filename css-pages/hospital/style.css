@@ -8,6 +8,7 @@
 @import url('../title.css');
 @import url('../paragraph.css');
 @import url('../swiper.css');
+@import url('../w-upper-block.css');
 
 @import url('w-hospital-hero.css');
 @import url('w-vantage.css');
@@ -30,7 +31,6 @@
   padding: 40px 0 33px;
 }
 
-
 /* =================================== */
 /*                Media                */
 /* =================================== */
@@ -40,25 +40,3 @@
     padding: 12px 0 24px;
   }
 }
-
-/* MIN - width */
-
-@media (min-width: 768px) {
-  .w-hospital-head {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-

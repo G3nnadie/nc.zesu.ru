@@ -1,0 +1,48 @@
+/* Diseases */
+
+.w-diseases {
+  padding: 70px 0;
+  background: #F8F7F3;
+}
+
+.w-diseases .w-title h2 {
+  line-height: 1.04;
+}
+
+.w-diseases .w-title .w-paragraph {
+  max-width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.w-diseases .w-tags {
+  gap: 15px;
+}
+
+/* =================================== */
+/*                Media                */
+/* =================================== */
+
+@media (max-width: 767px) {
+  .w-diseases {
+    padding: 50px 0;
+  }
+  .w-diseases .w-title {
+    margin-bottom: 20px;
+  }
+  .w-diseases .w-title .w-paragraph {
+    margin-top: 15px;
+  }
+  .w-diseases .w-tags {
+    gap: 5px;
+    font-size: 11px;
+  }
+}
+
+/* MIN - width */
+
+@media (min-width: 420px) {
+ .w-diseases .w-tags li br {
+  display: none;
+ }
+}

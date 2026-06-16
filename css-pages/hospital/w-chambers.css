@@ -58,4 +58,13 @@
   .w-chambers-text {
     max-width: 100%;
   }
+  .w-chambers--dots .w-chambers-sl {
+    margin-bottom: 0;
+  }
+  .w-chambers--dots .swiper-pagination {
+    bottom: 10px !important;
+  }
+  .w-chambers--dots .w-chambers-text {
+    margin-top: 20px;
+  }
 }

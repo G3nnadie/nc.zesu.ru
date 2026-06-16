@@ -1,0 +1,152 @@
+@import url('../../css/base.css');
+@import url('../../css/components.css');
+@import url('../../css/header.css');
+@import url('../../css/footer.css');
+
+@import url('../breadcrumbs.css');
+@import url('../btn.css');
+@import url('../title.css');
+@import url('../paragraph.css');
+@import url('../swiper.css');
+@import url('../w-upper-block.css');
+
+@import url('../foot-surgery/w-intro.css');
+@import url('../foot-surgery/w-about.css');
+@import url('../hospital/w-vantage.css');
+@import url('../w-types.css');
+@import url('../news/w-doctors.css');
+@import url('../w-sentence.css');
+@import url('../w-reviews.css');
+@import url('../hospital/w-chambers.css');
+@import url('../hospital/w-contacts.css');
+
+
+/* Breadcrumbs */
+
+.w-pelvic-floor .w-breadcrumbs-nav {
+  line-height: 1.2;
+  padding: 40px 0 13px;
+}
+
+/* Intro*/
+
+.w-intro--pelvic-floor .w-intro-box {
+  max-width: 850px;
+}
+
+/* Vantage */
+
+.w-pelvic-floor .w-vantage {
+  overflow: hidden;
+}
+
+.w-pelvic-floor-vantage-1 .w-title {
+  margin-bottom: 25px;
+}
+
+.w-pelvic-floor-vantage-2 {
+  padding-top: 70px;
+}
+
+.w-pelvic-floor-vantage-2 .w-vantage-item {
+  min-height: 169px;
+}
+
+/* Types */
+
+.w-pelvic-floor .w-types .w-title {
+  margin-bottom: 25px;
+}
+
+/* About */
+
+.w-pelvic-floor .w-about--2 .w-paragraph {
+  max-width: 804px;
+}
+
+.w-pelvic-floor .w-about--2 .w-about-types {
+  max-width: 650px;width: 100%;
+}
+
+/* Chambers */
+
+.w-pelvic-floor .w-chambers .w-chambers-text {
+  max-width: 1100px;
+}
+
+/* =================================== */
+/*                Media                */
+/* =================================== */
+
+@media (max-width: 1200px) {
+  .w-intro--pelvic-floor .w-intro-bg {
+    background-position: 0 100% !important;
+  }
+  .w-intro--pelvic-floor .w-intro-box {
+    max-width: 680px;
+  }
+}
+
+@media (max-width: 767px) {
+  .w-pelvic-floor .w-breadcrumbs-nav {
+    padding: 12px 0;
+  }
+  .w-intro--pelvic-floor .w-intro-bg {
+    background: url(../../img-pages/pelvic-floor-intro-mob.jpg) center 70% / cover no-repeat !important;
+  }
+  .w-intro--pelvic-floor .w-tags li:nth-child(1) {
+    order: 1;
+  }
+  .w-intro--pelvic-floor .w-tags li:nth-child(2) {
+    order: 2;
+  }
+  .w-intro--pelvic-floor .w-tags li:nth-child(3) {
+    order: 4;
+  }
+  .w-intro--pelvic-floor .w-tags li:nth-child(4) {
+    order: 3; 
+  }
+  .w-pelvic-floor-vantage-1 .w-title {
+    margin-bottom: 20px;
+  }
+  .w-pelvic-floor-vantage-1 .w-title .w-paragraph {
+    margin-top: 15px;
+  }
+  .w-pelvic-floor-vantage-2 {
+    padding-top: 50px;
+  }
+  .w-pelvic-floor-vantage-2 .w-vantage-item {
+    min-height: 160px;
+  }
+  .w-pelvic-floor .w-types .w-title {
+    margin-bottom: 20px;
+  }
+  .w-pelvic-floor .w-about--2 .w-about-types .w-tags li span {
+    padding: 6px 10px;
+  }
+  .w-pelvic-floor .w-sentence-inner-bg span {
+    filter: blur(4px);
+    background: url(../../img-pages/w-pelvic-floor-sentence-mb.jpg) center/cover no-repeat !important;
+  }
+}
+
+@media (max-width: 479px) {
+  .w-pelvic-floor .w-about--2 .w-about-types .w-tags li {
+    width: 100%;
+    display: flex;
+  }
+}
+
+/* MIN - width */
+
+@media (min-width: 480px) {
+  .w-pelvic-floor .w-about--2 .w-about-types .w-tags li span br {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .w-pelvic-floor-vantage-1 .w-vantage-btn .w-btn {
+    max-width: 256px;width: 100%;
+  }
+}

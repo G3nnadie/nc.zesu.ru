@@ -1,0 +1,13 @@
+
+/* =================================== */
+/*                Media                */
+/* =================================== */
+
+/* MIN - width */
+
+@media (min-width: 768px) {
+  .w-upper-block {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

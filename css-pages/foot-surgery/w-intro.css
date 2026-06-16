@@ -1,0 +1,137 @@
+
+/* Intro */
+
+.w-intro {
+  z-index: 1;
+  padding: 0;
+  position: relative;
+  color: var(--color-white);
+}
+
+.w-intro-box {
+  padding: 40px 0;
+  min-height: 450px;
+  max-width: 650px;width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.w-intro-logo {
+  margin-bottom: 40px;
+}
+
+.w-intro-logo img {
+  display: block;
+}
+
+.w-intro .w-title {
+  margin: auto 0 25px;
+}
+
+.w-intro .w-paragraph {
+  line-height: 1.5;
+}
+
+.w-intro .w-tags {
+  margin-top: 25px;
+}
+
+.w-tags {
+  padding-left: 0;
+  line-height: 1.3;
+  gap: 8px 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.w-tags li {
+  list-style: none;
+}
+
+.w-tags li span {
+  min-height: 100%;
+  padding: 8px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+}
+
+.w-tags--dark li span {
+  background: rgba(32, 32, 32, 0.05);
+  border: 1px solid rgba(32, 32, 32, 0.3);
+}
+
+.w-intro-bg {
+  z-index: -1;
+  position: absolute;
+  top: 0;left: 0;right: 0;bottom: 0;
+}
+
+/* =================================== */
+/*                Media                */
+/* =================================== */
+@media (max-width: 1200px) {
+  .w-intro--foot-surgery .w-intro-bg {
+    background-position: 0 100% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .w-intro-box {
+    padding: 15px 0;
+    min-height: 532px;
+  }
+  .w-intro-logo {
+    margin-bottom: 15px;
+    max-width: 160px;width: 100%;
+  }
+  .w-intro .w-title {
+    margin: 0 0 15px;
+  }
+  .w-intro .w-paragraph {
+    font-size: 12px;
+    line-height: 1.3;
+    letter-spacing: -0.03em;
+  }
+  .w-intro .w-tags {
+    margin-top: auto;
+  }
+  .w-tags {
+    gap: 4px 5px;
+    font-size: 8px;
+  }
+  .w-tags li span {
+    padding: 4px 8px;
+  }
+  .w-intro--foot-surgery .w-intro-bg {
+    background: url(../../img-pages/w-foot-surgery-intro-mob.jpg) center 80%/cover no-repeat !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .w-intro--foot-surgery .w-intro-bg {
+    background-position: center !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .w-intro--foot-surgery .w-tags li:first-child {
+    margin-right: 20%;
+  }
+}
+
+@media (max-width: 330px) {
+  .w-intro--foot-surgery .w-tags li:first-child {
+    margin-right: 10%;
+  }
+}
+
+/* MIN - width */
+
+@media (min-width: 379px) {
+ .w-intro--foot-surgery .w-tags li br {
+  display: none;
+ }
+}

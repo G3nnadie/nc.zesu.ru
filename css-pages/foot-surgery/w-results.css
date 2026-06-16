@@ -1,0 +1,232 @@
+/* Results */
+
+.w-results {
+  padding: 70px 0;
+  overflow: hidden;
+}
+
+.w-results .w-title h2 {
+  line-height: 1.04;
+}
+
+.w-results .w-title .w-paragraph {
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.w-results-item {
+  padding-left: 55px;
+  padding-right: 55px;
+  display: flex;
+  gap: 0 20px;
+}
+
+.w-results-item-col {
+  width: 50%;
+}
+
+.w-results-images {
+  position: relative;
+}
+
+.w-results-warning {
+  z-index: 2;
+  height: 39px;
+  padding: 0 20px;
+  position: absolute;
+  white-space: nowrap;
+  top: 15px;left: 15px;
+  background: rgba(32, 32, 32, 0.05);
+  border: 1px solid rgba(32, 32, 32, 0.4);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.w-results-slider img {
+  width: 100%;
+  display: block;
+}
+
+.w-results-data {
+  min-height: 100%;
+  background: #F8F7F3;
+  letter-spacing: -0.02em;
+  padding: 62px 44px 62px 30px;
+  display: flex;
+  align-items: center;
+}
+
+.w-results-data h3 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.w-results-data-item {
+  margin-top: 25px;
+}
+
+.w-results-data-item span {
+  display: block;
+  font-size: 24px;
+  line-height: 1.1;
+  font-family: var(--font-heading);
+}
+
+.w-results-data-item p {
+  margin: 10px 0 0;
+  line-height: 1.3;
+  color: rgba(32, 32, 32, 0.8);
+}
+
+.w-results-sl .swiper-button-next {
+  right: 0;
+}
+
+.w-results-sl .swiper-button-prev {
+  left: 0;
+}
+
+/* Slider */
+
+.w-results-slider .twentytwenty-handle {
+  border: 0;
+  margin: 0;
+  border-radius: 0;
+  width: 44px;height: 48px;
+  box-shadow: initial;
+  transform: translate(-50%, -50%);
+}
+
+.w-results-slider .twentytwenty-handle:before,
+.w-results-slider .twentytwenty-handle:after {
+  width: 6px;
+  margin-left: 0;
+  transform: translateX(-50%);
+  box-shadow: 0px 0px 20px rgba(51, 51, 51, 0.3);
+}
+
+.w-results-slider .twentytwenty-handle:before {
+  margin-bottom: 0;
+}
+
+.w-results-slider .twentytwenty-handle:after {
+  margin-top: 0;
+}
+
+.w-results-slider .twentytwenty-left-arrow,
+.w-results-slider .twentytwenty-right-arrow {
+  border: 0;
+  margin: 0;
+  top: 0;bottom: initial;
+  width: 14px;height: 48px;
+}
+
+.w-results-slider .twentytwenty-left-arrow {
+  left: 0;right: initial;
+  background: url(../../img-pages/w-results-slider-left.svg) center/contain no-repeat;
+}
+
+.w-results-slider .twentytwenty-right-arrow {
+  right: 0;left: initial;
+  background: url(../../img-pages/w-results-slider-right.svg) center/contain no-repeat;
+}
+
+/* =================================== */
+/*                Media                */
+/* =================================== */
+
+@media (max-width: 991px) {
+  .w-results-item-col {
+    width: 100%;
+  }
+  .w-results-item {
+    display: block;
+  }
+  .w-results-data h3 br,
+  .w-results-data p br {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .w-results {
+    padding: 50px 0;
+  }
+  .w-results .w-title {
+    margin-bottom: 20px;
+  }
+  .w-results .w-title .w-paragraph {
+    max-width: 100%;
+    margin-top: 15px;
+  }
+  .w-results-sl {
+    overflow: hidden;
+    padding-top: 52px;
+  }
+  .w-results-sl .swiper-button-arrow {
+    top: 0;
+    margin-top: 0;
+    transform: translate(0);
+  }
+  .w-results-sl .swiper-button-next {
+    left: 42px;
+    right: initial;
+  }
+  .w-results-item {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .w-results-warning {
+    height: 26px;
+    padding: 0 12px;
+    font-size: 12px;
+  }
+  .w-results-data {
+    padding: 30px 15px;
+  }
+  .w-results-data h3 {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+  .w-results-data-item {
+    margin-top: 20px;
+  }
+  .w-results-data-item span {
+    font-size: 16px;
+  }
+  .w-results-data-item p {
+    margin-top: 8px;
+    font-size: 12px;
+  }
+  .w-results-slider .twentytwenty-overlay {
+    display: none;
+  }
+  .w-results-slider .twentytwenty-handle {
+    width: 22px;height: 28px;
+  }
+  .w-results-slider .twentytwenty-handle:before, .w-results-slider .twentytwenty-handle:after {
+    width: 3px;
+  }
+  .w-results-slider .twentytwenty-left-arrow, .w-results-slider .twentytwenty-right-arrow {
+    width: 7px;height: 28px;
+  }
+}
+
+/* MIN - width */
+
+@media (min-width: 992px) {
+  .w-results-images {
+    min-height: 500px;
+  }
+  .w-results .twentytwenty-wrapper,
+  .w-results-slider {
+    height: 100% !important;
+  }
+  .w-results-slider img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
