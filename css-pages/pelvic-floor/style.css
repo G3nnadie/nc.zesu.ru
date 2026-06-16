@@ -140,7 +140,8 @@
 /* MIN - width */
 
 @media (min-width: 480px) {
-  .w-pelvic-floor .w-about--2 .w-about-types .w-tags li span br {
+  .w-pelvic-floor .w-about--2 .w-about-types .w-tags li span br,
+  .w-pelvic-floor .w-about--2 .w-about-types .w-tags li a br {
     display: none;
   }
 }
