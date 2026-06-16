@@ -38,6 +38,7 @@
 }
 
 .w-tags {
+  font-size: 16px;
   padding-left: 0;
   line-height: 1.3;
   gap: 8px 15px;
@@ -49,7 +50,9 @@
   list-style: none;
 }
 
-.w-tags li span {
+.w-tags li span,
+.w-tags li a {
+  color: inherit;
   min-height: 100%;
   padding: 8px 20px;
   background: rgba(255, 255, 255, 0.1);
@@ -58,7 +61,8 @@
   align-items: center;
 }
 
-.w-tags--dark li span {
+.w-tags--dark li span,
+.w-tags--dark li a {
   background: rgba(32, 32, 32, 0.05);
   border: 1px solid rgba(32, 32, 32, 0.3);
 }
@@ -96,14 +100,22 @@
     letter-spacing: -0.03em;
   }
   .w-intro .w-tags {
-    margin-top: auto;
-  }
-  .w-tags {
     gap: 4px 5px;
     font-size: 8px;
+    margin-top: auto;
   }
-  .w-tags li span {
-    padding: 4px 8px;
+  .w-intro .w-tags li span,
+  .w-intro .w-tags li a {
+    padding: 5px 8px;
+  }
+  .w-tags {
+    gap: 5px;
+    font-size: 12px;
+    line-height: 1.1;
+  }
+  .w-tags li span,
+  .w-tags li a {
+    padding: 6px 8px;
   }
   .w-intro--foot-surgery .w-intro-bg {
     background: url(../../img-pages/w-foot-surgery-intro-mob.jpg) center 80%/cover no-repeat !important;

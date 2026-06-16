@@ -121,8 +121,8 @@
   .w-pelvic-floor .w-types .w-title {
     margin-bottom: 20px;
   }
-  .w-pelvic-floor .w-about--2 .w-about-types .w-tags li span {
-    padding: 6px 10px;
+  .w-pelvic-floor .w-about--2 .w-about-types .w-tags {
+    line-height: 1.3;
   }
   .w-pelvic-floor .w-sentence-inner-bg span {
     filter: blur(4px);

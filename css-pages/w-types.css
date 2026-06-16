@@ -131,7 +131,7 @@
   .w-types-item {
     font-size: 14px;
     min-height: 45px;
-    padding: 10px 45px 10px 15px;
+    padding: 9px 45px 9px 15px;
   }
   .w-types-item:after {
     right: 15px;
@@ -155,7 +155,7 @@
     margin-top: 20px;
   }
   .w-types--big .w-types-item {
-    padding: 10px 35px 10px 15px;
+    padding: 9px 35px 9px 15px;
   }
   .w-types--big .w-types-item:after {
     top: 15px;right: 15px;

@@ -15,10 +15,6 @@
   margin-right: auto;
 }
 
-.w-diseases .w-tags {
-  gap: 15px;
-}
-
 /* =================================== */
 /*                Media                */
 /* =================================== */
@@ -33,10 +29,6 @@
   .w-diseases .w-title .w-paragraph {
     margin-top: 15px;
   }
-  .w-diseases .w-tags {
-    gap: 5px;
-    font-size: 11px;
-  }
 }
 
 /* MIN - width */
@@ -45,4 +37,10 @@
  .w-diseases .w-tags li br {
   display: none;
  }
+}
+
+@media (min-width: 768px) {
+  .w-diseases .w-tags {
+    gap: 15px;
+  }
 }
