@@ -147,6 +147,9 @@
 }
 
 @media (min-width: 768px) {
+  .w-pelvic-floor-vantage-2 .w-vantage-item:first-child {
+    padding-right: 10px;
+  }
   .w-pelvic-floor-vantage-1 .w-vantage-btn .w-btn {
     max-width: 256px;width: 100%;
   }
